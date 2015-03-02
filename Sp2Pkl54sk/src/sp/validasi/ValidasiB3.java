@@ -32,6 +32,7 @@ public class ValidasiB3 {
     public ArrayList<Error> cek() {
         b3listerr = new ArrayList<>();
 
+        cekB3R7();
         cekB3R8();
         cekB3R9();
         cekB3R10();
@@ -46,9 +47,57 @@ public class ValidasiB3 {
         return tx;
     }
 
-    private void cekB3R8()  {
+    private void cekB3R7() {
+        int umur = Integer.valueOf(b3.getB3r3());
+        if (b3.getB3r7().getKode().equals("1") && umur<5){
+            dummy = getError(b3view.getB3r7());
+            b3view.setB3r7(dummy);
+            b3listerr.add(b3listerr.size(), new Error("b3r7", "Kesalahan Korelasi dengan Umur", 2));
+        }
+        if (b3.getB3r7().getKode().equals("2") && umur<10){
+            dummy = getError(b3view.getB3r7());
+            b3view.setB3r7(dummy);
+            b3listerr.add(b3listerr.size(), new Error("b3r7", "Kesalahan Korelasi dengan Umur", 2));
+        }
+        if (b3.getB3r7().getKode().equals("3") && umur<13){
+            dummy = getError(b3view.getB3r7());
+            b3view.setB3r7(dummy);
+            b3listerr.add(b3listerr.size(), new Error("b3r7", "Kesalahan Korelasi dengan Umur", 2));
+        }
+        if (b3.getB3r7().getKode().equals("4") && umur<16){
+            dummy = getError(b3view.getB3r7());
+            b3view.setB3r7(dummy);
+            b3listerr.add(b3listerr.size(), new Error("b3r7", "Kesalahan Korelasi dengan Umur", 2));
+        }
+        if (b3.getB3r7().getKode().equals("5") && umur<16){
+            dummy = getError(b3view.getB3r7());
+            b3view.setB3r7(dummy);
+            b3listerr.add(b3listerr.size(), new Error("b3r7", "Kesalahan Korelasi dengan Umur", 2));
+        }
+        if (b3.getB3r7().getKode().equals("6") && umur<17){
+            dummy = getError(b3view.getB3r7());
+            b3view.setB3r7(dummy);
+            b3listerr.add(b3listerr.size(), new Error("b3r7", "Kesalahan Korelasi dengan Umur", 2));
+        }
+        if (b3.getB3r7().getKode().equals("7") && umur<19){
+            dummy = getError(b3view.getB3r7());
+            b3view.setB3r7(dummy);
+            b3listerr.add(b3listerr.size(), new Error("b3r7", "Kesalahan Korelasi dengan Umur", 2));
+        }
+        if (b3.getB3r7().getKode().equals("8") && umur<20){
+            dummy = getError(b3view.getB3r7());
+            b3view.setB3r7(dummy);
+            b3listerr.add(b3listerr.size(), new Error("b3r7", "Kesalahan Korelasi dengan Umur", 2));
+        }
+        if (b3.getB3r7().getKode().equals("9") && umur<22){
+            dummy = getError(b3view.getB3r7());
+            b3view.setB3r7(dummy);
+            b3listerr.add(b3listerr.size(), new Error("b3r7", "Kesalahan Korelasi dengan Umur", 2));
+        }
+    }
+    private void cekB3R8() {
         if (b3.getB3r7().getKode().equals("1")
-                &&(b3.getB3r8s1().getKode().isEmpty()
+                && (b3.getB3r8s1().getKode().isEmpty()
                 || b3.getB3r8s2().getKode().isEmpty()
                 || b3.getB3r8s3().getKode().isEmpty())) {
             dummy = getError(b3view.getB3r6());
@@ -56,7 +105,7 @@ public class ValidasiB3 {
             b3listerr.add(b3listerr.size(), new Error("b3r6", "Kesalahan Korelasi dengan b3r8a-c", 2));
         }
     }
-    private void cekB3R9()  {
+    private void cekB3R9() {
         if (b3.getB3r9s1d1().getKode().equals("2")
                 && b3.getB3r9s1d2().getKode().equals("2")
                 && b3.getB3r9s1d3().getKode().equals("2")
@@ -92,18 +141,18 @@ public class ValidasiB3 {
         }
     }
     private void cekB3R11() {
-        if (b3.getB3r9s1d1().getKode().equals("1")
+        if ((b3.getB3r9s1d1().getKode().equals("1")
                 && b3.getB3r10().equals("1")
-                && b3.getB3r11().isEmpty()) {
+                && b3.getB3r11().isEmpty()) || b3.getB3r10().equals("2")) {
             dummy = getError(b3view.getB3r11());
             b3view.setB3r11(dummy);
             b3listerr.add(b3listerr.size(), new Error("b3r11", "Kesalahan Korelasi dengan b3r9a1 dan b3r10", 2));
         }
     }
     private void cekB3R12() {
-        if (b3.getB3r9s1d1().getKode().equals("1")
+        if ((b3.getB3r9s1d1().getKode().equals("1")
                 && b3.getB3r10().equals("1")
-                && b3.getB3r12().getKode().isEmpty()) {
+                && b3.getB3r12().getKode().isEmpty()) || b3.getB3r10().equals("2")) {
             dummy = getError(b3view.getB3r12());
             b3view.setB3r12(dummy);
             b3listerr.add(b3listerr.size(), new Error("b3r12", "Kesalahan Korelasi dengan b3r9a1 dan b3r10", 2));
