@@ -1,0 +1,747 @@
+
+Sun Feb 22 11:08:02 ICT 2015	Login
+Sun Feb 22 11:08:08 ICT 2015	Logout
+-----------------------------------------------------------------
+Sun Feb 22 11:13:25 ICT 2015	Login
+Sun Feb 22 11:21:55 ICT 2015	Login
+Sun Feb 22 11:22:00 ICT 2015	Updating table loaded. Found 4 data
+Sun Feb 22 11:23:24 ICT 2015	Login
+Sun Feb 22 11:24:50 ICT 2015	Koneksi ke Database...
+Sun Feb 22 11:24:50 ICT 2015	SuksesB1 Dengan Kode NKS6
+
+Sun Feb 22 11:24:50 ICT 2015	SuksesB2 Dengan Kode NKS6
+
+Sun Feb 22 11:24:50 ICT 2015	SuksesB3 Dengan Kode NKS6
+
+Sun Feb 22 11:24:50 ICT 2015	SuksesB4 Dengan Kode NKS6
+
+Sun Feb 22 11:25:09 ICT 2015	Logout
+-----------------------------------------------------------------
+Sun Feb 22 11:26:27 ICT 2015	Login
+Sun Feb 22 11:26:40 ICT 2015	Updating table loaded. Found 5 data
+Sun Feb 22 11:27:30 ICT 2015	Koneksi ke Database...
+Sun Feb 22 11:27:30 ICT 2015	B1 :
+Exception Description: No transaction is currently active
+
+Sun Feb 22 11:27:30 ICT 2015	B2 :
+Exception Description: No transaction is currently active
+
+Sun Feb 22 11:27:30 ICT 2015	B3 :
+Exception Description: No transaction is currently active
+
+Sun Feb 22 11:27:30 ICT 2015	B4 :
+Exception Description: No transaction is currently active
+
+Sun Feb 22 11:27:49 ICT 2015	Koneksi ke Database...
+Sun Feb 22 11:27:49 ICT 2015	SuksesB1 Dengan Kode NKS8
+
+Sun Feb 22 11:27:49 ICT 2015	SuksesB2 Dengan Kode NKS8
+
+Sun Feb 22 11:27:49 ICT 2015	SuksesB3 Dengan Kode NKS8
+
+Sun Feb 22 11:27:49 ICT 2015	SuksesB4 Dengan Kode NKS8
+
+Sun Feb 22 11:28:31 ICT 2015	Updating table loaded. Found 6 data
+Sun Feb 22 11:28:43 ICT 2015	Logout
+-----------------------------------------------------------------
+Sun Feb 22 12:13:27 ICT 2015	Login
+Sun Feb 22 12:13:31 ICT 2015	Updating table loaded. Found 6 data
+Sun Feb 22 12:13:34 ICT 2015	Data of 8 has been displayed on quesioner successfully
+Sun Feb 22 12:13:37 ICT 2015	Logout
+-----------------------------------------------------------------
+Sun Feb 22 12:14:53 ICT 2015	Koneksi ke Database...
+Sun Feb 22 12:14:53 ICT 2015	SuksesB1 Dengan Kode NKS10
+
+Sun Feb 22 12:14:53 ICT 2015	SuksesB2 Dengan Kode NKS10
+
+Sun Feb 22 12:14:53 ICT 2015	SuksesB3 Dengan Kode NKS10
+
+Sun Feb 22 12:14:53 ICT 2015	SuksesB4 Dengan Kode NKS10
+
+Sun Feb 22 12:15:45 ICT 2015	Koneksi ke Database...
+Sun Feb 22 12:15:45 ICT 2015	B1 :
+Exception Description: No transaction is currently active
+
+Sun Feb 22 12:15:45 ICT 2015	B2 :
+Exception Description: No transaction is currently active
+
+Sun Feb 22 12:15:45 ICT 2015	B3 :
+Exception Description: No transaction is currently active
+
+Sun Feb 22 12:15:45 ICT 2015	B4 :
+Exception Description: No transaction is currently active
+
+Sun Feb 22 12:54:11 ICT 2015	Login
+Sun Feb 22 12:54:15 ICT 2015	Updating table loaded. Found 9 data
+Sun Feb 22 12:54:21 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Sun Feb 22 12:54:24 ICT 2015	Logout
+-----------------------------------------------------------------
+Sun Feb 22 12:54:45 ICT 2015	Koneksi ke Database...
+Sun Feb 22 12:54:45 ICT 2015	B1 :null
+
+Sun Feb 22 12:54:45 ICT 2015	B2 :null
+
+Sun Feb 22 12:54:45 ICT 2015	B3 :null
+
+Sun Feb 22 12:54:45 ICT 2015	B4 :null
+
+Sun Feb 22 12:57:02 ICT 2015	Login
+Sun Feb 22 12:57:04 ICT 2015	Updating table loaded. Found 9 data
+Sun Feb 22 12:57:12 ICT 2015	Updating table loaded. Found 9 data
+Sun Feb 22 12:57:14 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Sun Feb 22 12:57:18 ICT 2015	Logout
+-----------------------------------------------------------------
+Sun Feb 22 12:58:13 ICT 2015	Koneksi ke Database...
+Sun Feb 22 12:58:13 ICT 2015	B1 :null
+
+Sun Feb 22 12:58:13 ICT 2015	B2 :null
+
+Sun Feb 22 12:58:13 ICT 2015	B3 :null
+
+Sun Feb 22 12:58:13 ICT 2015	B4 :null
+
+Tue Feb 24 06:50:47 ICT 2015	Login
+Tue Feb 24 06:51:04 ICT 2015	Updating table loaded. Found 9 data
+Tue Feb 24 06:51:07 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Tue Feb 24 06:51:34 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 06:51:39 ICT 2015	Koneksi ke Database...
+Tue Feb 24 06:51:39 ICT 2015	B1 :null
+
+Tue Feb 24 06:51:39 ICT 2015	B2 :null
+
+Tue Feb 24 06:51:39 ICT 2015	B3 :null
+
+Tue Feb 24 06:51:39 ICT 2015	B4 :null
+
+Tue Feb 24 06:52:14 ICT 2015	Koneksi ke Database...
+Tue Feb 24 06:52:14 ICT 2015	B1 :null
+
+Tue Feb 24 06:52:14 ICT 2015	B2 :null
+
+Tue Feb 24 06:52:14 ICT 2015	B3 :null
+
+Tue Feb 24 06:52:14 ICT 2015	B4 :null
+
+Tue Feb 24 06:53:24 ICT 2015	Koneksi ke Database...
+Tue Feb 24 06:53:24 ICT 2015	B1 :null
+
+Tue Feb 24 06:53:24 ICT 2015	B2 :null
+
+Tue Feb 24 06:53:24 ICT 2015	B3 :null
+
+Tue Feb 24 06:53:24 ICT 2015	B4 :null
+
+Tue Feb 24 06:53:37 ICT 2015	Koneksi ke Database...
+Tue Feb 24 06:53:37 ICT 2015	B1 :null
+
+Tue Feb 24 06:53:37 ICT 2015	B2 :null
+
+Tue Feb 24 06:53:37 ICT 2015	B3 :null
+
+Tue Feb 24 06:53:37 ICT 2015	B4 :null
+
+Tue Feb 24 06:53:37 ICT 2015	Koneksi ke Database...
+Tue Feb 24 06:53:37 ICT 2015	B1 :null
+
+Tue Feb 24 06:53:37 ICT 2015	B2 :null
+
+Tue Feb 24 06:53:37 ICT 2015	B3 :null
+
+Tue Feb 24 06:53:37 ICT 2015	B4 :null
+
+Tue Feb 24 07:02:21 ICT 2015	Login
+Tue Feb 24 07:02:27 ICT 2015	Updating table loaded. Found 9 data
+Tue Feb 24 07:02:29 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Tue Feb 24 07:02:35 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 07:04:02 ICT 2015	Login
+Tue Feb 24 07:04:05 ICT 2015	Updating table loaded. Found 9 data
+Tue Feb 24 07:04:07 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Tue Feb 24 07:04:47 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 07:08:29 ICT 2015	Login
+Tue Feb 24 07:08:35 ICT 2015	Updating table loaded. Found 9 data
+Tue Feb 24 07:08:37 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Tue Feb 24 07:08:39 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 07:10:59 ICT 2015	Login
+Tue Feb 24 07:11:01 ICT 2015	Updating table loaded. Found 9 data
+Tue Feb 24 07:11:03 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Tue Feb 24 07:11:07 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 07:11:41 ICT 2015	Login
+Tue Feb 24 07:11:45 ICT 2015	Koneksi ke Database...
+Tue Feb 24 07:11:45 ICT 2015	B1 :null
+
+Tue Feb 24 07:11:45 ICT 2015	B2 :null
+
+Tue Feb 24 07:11:45 ICT 2015	B3 :null
+
+Tue Feb 24 07:11:45 ICT 2015	B4 :null
+
+Tue Feb 24 07:13:31 ICT 2015	Login
+Tue Feb 24 07:15:25 ICT 2015	Koneksi ke Database...
+Tue Feb 24 07:15:25 ICT 2015	SuksesB1 Dengan Kode NKS101
+
+Tue Feb 24 07:15:25 ICT 2015	SuksesB2 Dengan Kode NKS101
+
+Tue Feb 24 07:15:25 ICT 2015	SuksesB3 Dengan Kode NKS101
+
+Tue Feb 24 07:15:25 ICT 2015	SuksesB4 Dengan Kode NKS101
+
+Tue Feb 24 07:15:36 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 07:16:04 ICT 2015	Login
+Tue Feb 24 07:16:06 ICT 2015	Koneksi ke Database...
+Tue Feb 24 07:16:06 ICT 2015	B1 :null
+
+Tue Feb 24 07:16:06 ICT 2015	B2 :null
+
+Tue Feb 24 07:16:06 ICT 2015	B3 :null
+
+Tue Feb 24 07:16:06 ICT 2015	B4 :null
+
+Tue Feb 24 07:16:31 ICT 2015	Koneksi ke Database...
+Tue Feb 24 07:16:31 ICT 2015	B1 :null
+
+Tue Feb 24 07:16:31 ICT 2015	B2 :null
+
+Tue Feb 24 07:16:31 ICT 2015	B3 :null
+
+Tue Feb 24 07:16:31 ICT 2015	B4 :null
+
+Tue Feb 24 07:16:46 ICT 2015	Koneksi ke Database...
+Tue Feb 24 07:16:46 ICT 2015	B1 :null
+
+Tue Feb 24 07:16:46 ICT 2015	B2 :null
+
+Tue Feb 24 07:16:46 ICT 2015	B3 :null
+
+Tue Feb 24 07:16:46 ICT 2015	B4 :null
+
+Tue Feb 24 08:24:16 ICT 2015	Login
+Tue Feb 24 08:24:19 ICT 2015	Updating table loaded. Found 10 data
+Tue Feb 24 08:24:21 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Tue Feb 24 08:27:59 ICT 2015	Login
+Tue Feb 24 08:28:01 ICT 2015	Updating table loaded. Found 10 data
+Tue Feb 24 08:28:16 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 08:28:19 ICT 2015	Login
+Tue Feb 24 08:30:10 ICT 2015	Koneksi ke Database...
+Tue Feb 24 08:30:10 ICT 2015	B1 :null
+
+Tue Feb 24 08:30:10 ICT 2015	B2 :null
+
+Tue Feb 24 08:30:10 ICT 2015	B3 :null
+
+Tue Feb 24 08:30:10 ICT 2015	B4 :null
+
+Tue Feb 24 08:33:03 ICT 2015	Login
+Tue Feb 24 08:33:08 ICT 2015	Updating table loaded. Found 10 data
+Tue Feb 24 08:33:13 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Tue Feb 24 08:33:54 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 08:34:02 ICT 2015	Login
+Tue Feb 24 08:34:05 ICT 2015	Koneksi ke Database...
+Tue Feb 24 08:34:05 ICT 2015	B1 :null
+
+Tue Feb 24 08:34:05 ICT 2015	B2 :null
+
+Tue Feb 24 08:34:05 ICT 2015	B3 :null
+
+Tue Feb 24 08:34:05 ICT 2015	B4 :null
+
+Tue Feb 24 08:59:26 ICT 2015	Login
+Tue Feb 24 09:30:39 ICT 2015	Login
+Tue Feb 24 09:30:43 ICT 2015	Updating table loaded. Found 10 data
+Tue Feb 24 09:30:45 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Tue Feb 24 09:30:49 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 09:31:59 ICT 2015	Login
+Tue Feb 24 09:32:03 ICT 2015	Koneksi ke Database...
+Tue Feb 24 09:32:03 ICT 2015	B1 :null
+
+Tue Feb 24 09:32:03 ICT 2015	B2 :null
+
+Tue Feb 24 09:32:03 ICT 2015	B3 :null
+
+Tue Feb 24 09:32:03 ICT 2015	B4 :null
+
+Tue Feb 24 09:54:02 ICT 2015	Login
+Tue Feb 24 09:54:06 ICT 2015	Updating table loaded. Found 10 data
+Tue Feb 24 09:54:08 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Tue Feb 24 09:54:14 ICT 2015	Login
+Tue Feb 24 09:54:16 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 09:55:20 ICT 2015	Login
+Tue Feb 24 09:55:23 ICT 2015	Updating table loaded. Found 10 data
+Tue Feb 24 09:55:25 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Tue Feb 24 09:55:26 ICT 2015	Login
+Tue Feb 24 09:55:28 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 10:23:59 ICT 2015	Login
+Tue Feb 24 10:24:02 ICT 2015	Updating table loaded. Found 10 data
+Tue Feb 24 10:24:04 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Tue Feb 24 10:24:06 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 10:25:43 ICT 2015	Login
+Tue Feb 24 10:26:05 ICT 2015	Updating table loaded. Found 10 data
+Tue Feb 24 10:26:07 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Tue Feb 24 10:26:09 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 10:32:20 ICT 2015	Login
+Tue Feb 24 10:32:22 ICT 2015	Updating table loaded. Found 10 data
+Tue Feb 24 10:32:24 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Tue Feb 24 10:32:25 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 10:39:57 ICT 2015	Login
+Tue Feb 24 10:40:00 ICT 2015	Updating table loaded. Found 10 data
+Tue Feb 24 10:40:02 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Tue Feb 24 10:40:04 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 11:01:32 ICT 2015	Login
+Tue Feb 24 11:01:37 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 11:01:39 ICT 2015	Login
+Tue Feb 24 11:02:58 ICT 2015	Login
+Tue Feb 24 11:02:59 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 11:03:13 ICT 2015	Login
+Tue Feb 24 11:03:17 ICT 2015	Updating table loaded. Found 10 data
+Tue Feb 24 11:08:28 ICT 2015	Login
+Tue Feb 24 11:08:31 ICT 2015	Updating table loaded. Found 10 data
+Tue Feb 24 11:08:32 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Tue Feb 24 11:08:41 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 11:08:43 ICT 2015	Login
+Tue Feb 24 11:08:45 ICT 2015	Koneksi ke Database...
+Tue Feb 24 11:08:45 ICT 2015	SuksesB1 Dengan Kode NKS103
+
+Tue Feb 24 11:08:45 ICT 2015	SuksesB2 Dengan Kode NKS103
+
+Tue Feb 24 11:08:45 ICT 2015	SuksesB3 Dengan Kode NKS103
+
+Tue Feb 24 11:08:45 ICT 2015	SuksesB4 Dengan Kode NKS103
+
+Tue Feb 24 11:08:49 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 11:26:36 ICT 2015	Login
+Tue Feb 24 11:26:40 ICT 2015	Updating table loaded. Found 11 data
+Tue Feb 24 11:26:43 ICT 2015	Data of 1 has been displayed on quesioner successfully
+Tue Feb 24 11:26:47 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 11:27:10 ICT 2015	Login
+Tue Feb 24 11:27:16 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 11:27:36 ICT 2015	Login
+Tue Feb 24 11:27:39 ICT 2015	Updating table loaded. Found 11 data
+Tue Feb 24 11:27:45 ICT 2015	Updating table loaded. Found 11 data
+Tue Feb 24 11:27:50 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Tue Feb 24 11:27:54 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 11:28:28 ICT 2015	Login
+Tue Feb 24 11:28:34 ICT 2015	Updating table loaded. Found 11 data
+Tue Feb 24 11:28:36 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 11:42:56 ICT 2015	Login
+Tue Feb 24 11:42:59 ICT 2015	Updating table loaded. Found 11 data
+Tue Feb 24 11:43:01 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Tue Feb 24 11:43:05 ICT 2015	Updating table loaded. Found 11 data
+Tue Feb 24 11:43:07 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 11:43:09 ICT 2015	Login
+Tue Feb 24 11:43:14 ICT 2015	Updating table loaded. Found 11 data
+Tue Feb 24 11:43:16 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Tue Feb 24 11:44:21 ICT 2015	Login
+Tue Feb 24 11:44:27 ICT 2015	Updating table loaded. Found 11 data
+Tue Feb 24 11:44:30 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Tue Feb 24 11:44:32 ICT 2015	Updating table loaded. Found 11 data
+Tue Feb 24 11:44:33 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 11:44:37 ICT 2015	Login
+Tue Feb 24 11:44:40 ICT 2015	Updating table loaded. Found 11 data
+Tue Feb 24 11:44:42 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Tue Feb 24 11:45:13 ICT 2015	Koneksi ke Database...
+Tue Feb 24 11:45:13 ICT 2015	B1 :
+Exception Description: No transaction is currently active
+
+Tue Feb 24 11:45:13 ICT 2015	B2 :
+Exception Description: No transaction is currently active
+
+Tue Feb 24 11:45:13 ICT 2015	B3 :
+Exception Description: No transaction is currently active
+
+Tue Feb 24 11:45:13 ICT 2015	B4 :
+Exception Description: No transaction is currently active
+
+Tue Feb 24 11:45:40 ICT 2015	Koneksi ke Database...
+Tue Feb 24 11:45:40 ICT 2015	SuksesB1 Dengan Kode NKS108
+
+Tue Feb 24 11:45:40 ICT 2015	SuksesB2 Dengan Kode NKS108
+
+Tue Feb 24 11:45:40 ICT 2015	SuksesB3 Dengan Kode NKS108
+
+Tue Feb 24 11:45:40 ICT 2015	SuksesB4 Dengan Kode NKS108
+
+Tue Feb 24 11:45:44 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 12:16:38 ICT 2015	Login
+Tue Feb 24 12:16:44 ICT 2015	Updating table loaded. Found 12 data
+Tue Feb 24 12:16:46 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Tue Feb 24 12:16:56 ICT 2015	Koneksi ke Database...
+Tue Feb 24 12:16:56 ICT 2015	B1 :
+Exception Description: No transaction is currently active
+
+Tue Feb 24 12:16:56 ICT 2015	B2 :
+Exception Description: No transaction is currently active
+
+Tue Feb 24 12:16:56 ICT 2015	B3 :
+Exception Description: No transaction is currently active
+
+Tue Feb 24 12:16:56 ICT 2015	B4 :
+Exception Description: No transaction is currently active
+
+Tue Feb 24 12:17:02 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 12:19:13 ICT 2015	Login
+Tue Feb 24 12:19:18 ICT 2015	Updating table loaded. Found 12 data
+Tue Feb 24 12:19:24 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Tue Feb 24 12:19:35 ICT 2015	Koneksi ke Database...
+Tue Feb 24 12:19:35 ICT 2015	B1 :
+Exception Description: No transaction is currently active
+
+Tue Feb 24 12:19:35 ICT 2015	B2 :
+Exception Description: No transaction is currently active
+
+Tue Feb 24 12:19:35 ICT 2015	B3 :
+Exception Description: No transaction is currently active
+
+Tue Feb 24 12:19:35 ICT 2015	B4 :
+Exception Description: No transaction is currently active
+
+Tue Feb 24 12:19:39 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 12:55:15 ICT 2015	Login
+Tue Feb 24 12:55:19 ICT 2015	Updating table loaded. Found 12 data
+Tue Feb 24 12:55:20 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Tue Feb 24 12:55:28 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 12:57:53 ICT 2015	Login
+Tue Feb 24 12:57:57 ICT 2015	Updating table loaded. Found 12 data
+Tue Feb 24 12:57:59 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Tue Feb 24 12:58:00 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 13:01:14 ICT 2015	Login
+Tue Feb 24 13:01:17 ICT 2015	Updating table loaded. Found 12 data
+Tue Feb 24 13:01:19 ICT 2015	Data of 1 has been displayed on quesioner successfully
+Tue Feb 24 13:01:22 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 13:04:36 ICT 2015	Login
+Tue Feb 24 13:04:41 ICT 2015	Updating table loaded. Found 12 data
+Tue Feb 24 13:04:42 ICT 2015	Data of 108 has been displayed on quesioner successfully
+Tue Feb 24 13:04:44 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 13:06:03 ICT 2015	Login
+Tue Feb 24 13:06:06 ICT 2015	Updating table loaded. Found 12 data
+Tue Feb 24 13:06:08 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Tue Feb 24 13:06:10 ICT 2015	Logout
+-----------------------------------------------------------------
+Wed Feb 25 08:42:38 ICT 2015	Login
+Wed Feb 25 08:42:42 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 08:42:43 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 08:42:46 ICT 2015	Logout
+-----------------------------------------------------------------
+Wed Feb 25 10:53:57 ICT 2015	Login
+Wed Feb 25 10:54:04 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 10:54:06 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 10:55:33 ICT 2015	Login
+Wed Feb 25 10:55:39 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 10:55:41 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:06:41 ICT 2015	Login
+Wed Feb 25 11:06:45 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 11:06:48 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:10:02 ICT 2015	Login
+Wed Feb 25 11:10:05 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 11:12:17 ICT 2015	Login
+Wed Feb 25 11:12:21 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 11:14:14 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:14:16 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:14:17 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:14:17 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:14:17 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:14:17 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:14:17 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:14:18 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:14:18 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:14:18 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:17:59 ICT 2015	Login
+Wed Feb 25 11:18:03 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 11:28:03 ICT 2015	Login
+Wed Feb 25 11:28:05 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 11:30:22 ICT 2015	Login
+Wed Feb 25 11:30:25 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 11:30:27 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:32:14 ICT 2015	Login
+Wed Feb 25 11:32:16 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 11:32:17 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:33:31 ICT 2015	Login
+Wed Feb 25 11:33:36 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 11:33:37 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:34:16 ICT 2015	Login
+Wed Feb 25 11:34:18 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 11:35:58 ICT 2015	Login
+Wed Feb 25 11:36:01 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 11:36:39 ICT 2015	Login
+Wed Feb 25 11:36:41 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 11:37:38 ICT 2015	Login
+Wed Feb 25 11:37:42 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 11:37:44 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:42:43 ICT 2015	Login
+Wed Feb 25 11:42:46 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 11:42:48 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:49:40 ICT 2015	Login
+Wed Feb 25 11:49:46 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 11:49:49 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 11:54:13 ICT 2015	Login
+Wed Feb 25 11:54:15 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 11:54:18 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 12:02:30 ICT 2015	Login
+Wed Feb 25 12:02:33 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 12:02:35 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 12:04:02 ICT 2015	Login
+Wed Feb 25 12:04:05 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 12:04:08 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 12:06:05 ICT 2015	Login
+Wed Feb 25 12:06:08 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 12:06:12 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 12:12:13 ICT 2015	Login
+Wed Feb 25 12:12:20 ICT 2015	Updating table loaded. Found 12 data
+Wed Feb 25 12:12:22 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 13:00:38 ICT 2015	Login
+Wed Feb 25 13:02:52 ICT 2015	Koneksi ke Database...
+Wed Feb 25 13:02:52 ICT 2015	SuksesB1 Dengan Kode NKS100
+
+Wed Feb 25 13:02:52 ICT 2015	SuksesB2 Dengan Kode NKS100
+
+Wed Feb 25 13:02:52 ICT 2015	SuksesB3 Dengan Kode NKS100
+
+Wed Feb 25 13:02:52 ICT 2015	SuksesB4 Dengan Kode NKS100
+
+Wed Feb 25 13:03:03 ICT 2015	Updating table loaded. Found 13 data
+Wed Feb 25 13:03:08 ICT 2015	Updating table loaded. Found 13 data
+Wed Feb 25 13:03:10 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Wed Feb 25 13:03:18 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Wed Feb 25 13:03:52 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 13:04:15 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Wed Feb 25 13:04:25 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Wed Feb 25 13:04:33 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Wed Feb 25 13:04:35 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 13:04:51 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Wed Feb 25 13:05:00 ICT 2015	Logout
+-----------------------------------------------------------------
+Wed Feb 25 13:05:01 ICT 2015	Login
+Wed Feb 25 13:05:04 ICT 2015	Updating table loaded. Found 13 data
+Wed Feb 25 13:06:20 ICT 2015	Login
+Wed Feb 25 13:06:25 ICT 2015	Updating table loaded. Found 13 data
+Wed Feb 25 13:06:27 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Wed Feb 25 13:09:39 ICT 2015	Login
+Wed Feb 25 13:12:23 ICT 2015	Login
+Wed Feb 25 13:12:25 ICT 2015	Updating table loaded. Found 13 data
+Wed Feb 25 13:12:28 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Wed Feb 25 13:16:10 ICT 2015	Login
+Wed Feb 25 13:16:13 ICT 2015	Updating table loaded. Found 13 data
+Wed Feb 25 13:16:15 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Wed Feb 25 13:16:15 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Wed Feb 25 13:16:15 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Wed Feb 25 13:19:08 ICT 2015	Login
+Wed Feb 25 13:24:32 ICT 2015	Updating table loaded. Found 13 data
+Wed Feb 25 13:24:35 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Wed Feb 25 13:24:48 ICT 2015	Koneksi ke Database...
+Wed Feb 25 13:24:48 ICT 2015	Sukses update B1 Dengan Kode NKS100
+
+Wed Feb 25 13:24:48 ICT 2015	Sukses update B2 Dengan Kode NKS100
+
+Wed Feb 25 13:24:48 ICT 2015	Sukses update B3 Dengan Kode NKS100
+
+Wed Feb 25 13:24:48 ICT 2015	Sukses update B4 Dengan Kode NKS100
+
+Wed Feb 25 13:25:31 ICT 2015	Koneksi ke Database...
+Wed Feb 25 13:25:31 ICT 2015	Sukses update B1 Dengan Kode NKS100
+
+Wed Feb 25 13:25:31 ICT 2015	Sukses update B2 Dengan Kode NKS100
+
+Wed Feb 25 13:25:31 ICT 2015	Sukses update B3 Dengan Kode NKS100
+
+Wed Feb 25 13:25:31 ICT 2015	Sukses update B4 Dengan Kode NKS100
+
+Wed Feb 25 15:39:01 ICT 2015	Login
+Wed Feb 25 15:39:03 ICT 2015	Updating table loaded. Found 13 data
+Wed Feb 25 15:39:10 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Wed Feb 25 15:39:27 ICT 2015	Koneksi ke Database...
+Wed Feb 25 15:39:27 ICT 2015	Sukses update B1 Dengan Kode NKS100
+
+Wed Feb 25 15:39:27 ICT 2015	Sukses update B2 Dengan Kode NKS100
+
+Wed Feb 25 15:39:27 ICT 2015	Sukses update B3 Dengan Kode NKS100
+
+Wed Feb 25 15:39:27 ICT 2015	Sukses update B4 Dengan Kode NKS100
+
+Thu Feb 26 21:37:45 ICT 2015	Login
+Thu Feb 26 21:37:54 ICT 2015	Updating table loaded. Found 13 data
+Thu Feb 26 21:37:57 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Thu Feb 26 21:38:22 ICT 2015	Koneksi ke Database...
+Thu Feb 26 21:38:22 ICT 2015	SuksesB1 Dengan Kode NKS120
+
+Thu Feb 26 21:38:22 ICT 2015	SuksesB2 Dengan Kode NKS120
+
+Thu Feb 26 21:38:22 ICT 2015	SuksesB3 Dengan Kode NKS120
+
+Thu Feb 26 21:38:22 ICT 2015	SuksesB4 Dengan Kode NKS120
+
+Thu Feb 26 21:38:33 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 21:38:40 ICT 2015	Data of 120 has been displayed on quesioner successfully
+Thu Feb 26 21:38:52 ICT 2015	Data of 120 has been displayed on quesioner successfully
+Thu Feb 26 21:46:37 ICT 2015	Login
+Thu Feb 26 21:46:41 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 21:46:43 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Thu Feb 26 21:47:40 ICT 2015	Login
+Thu Feb 26 21:47:45 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 21:47:47 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Thu Feb 26 21:47:55 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 21:47:57 ICT 2015	Data of 120 has been displayed on quesioner successfully
+Thu Feb 26 21:48:00 ICT 2015	Data of 2 has been displayed on quesioner successfully
+Thu Feb 26 21:48:10 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 22:01:25 ICT 2015	Login
+Thu Feb 26 22:01:27 ICT 2015	Logout
+-----------------------------------------------------------------
+Thu Feb 26 22:12:38 ICT 2015	Login
+Thu Feb 26 22:37:08 ICT 2015	Login
+Thu Feb 26 22:37:28 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 22:37:35 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Thu Feb 26 22:37:45 ICT 2015	Koneksi ke Database...
+Thu Feb 26 22:37:45 ICT 2015	B1 :
+Exception Description: No transaction is currently active
+
+Thu Feb 26 22:37:45 ICT 2015	B2 :
+Exception Description: No transaction is currently active
+
+Thu Feb 26 22:37:45 ICT 2015	B3 :
+Exception Description: No transaction is currently active
+
+Thu Feb 26 22:37:45 ICT 2015	B4 :
+Exception Description: No transaction is currently active
+
+Thu Feb 26 22:38:02 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Thu Feb 26 22:38:39 ICT 2015	Login
+Thu Feb 26 22:38:43 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 22:38:45 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Thu Feb 26 22:38:50 ICT 2015	Logout
+-----------------------------------------------------------------
+Thu Feb 26 22:38:51 ICT 2015	Login
+Thu Feb 26 22:48:45 ICT 2015	Login
+Thu Feb 26 22:48:47 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 22:48:50 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Thu Feb 26 22:48:56 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 22:48:58 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Thu Feb 26 22:49:03 ICT 2015	Data of 50 has been displayed on quesioner successfully
+Thu Feb 26 22:49:06 ICT 2015	Data of 4 has been displayed on quesioner successfully
+Thu Feb 26 22:51:06 ICT 2015	Login
+Thu Feb 26 22:51:08 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 22:51:10 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Thu Feb 26 22:51:12 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Thu Feb 26 22:51:14 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Thu Feb 26 22:51:15 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Thu Feb 26 22:51:20 ICT 2015	Data of 103 has been displayed on quesioner successfully
+Thu Feb 26 22:51:25 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Thu Feb 26 22:51:28 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 22:51:32 ICT 2015	Data of 1 has been displayed on quesioner successfully
+Thu Feb 26 22:52:27 ICT 2015	Login
+Thu Feb 26 22:52:32 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 22:56:21 ICT 2015	Login
+Thu Feb 26 22:56:25 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 22:56:27 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Thu Feb 26 22:56:30 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Thu Feb 26 22:56:34 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Thu Feb 26 22:56:36 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Thu Feb 26 22:56:39 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Thu Feb 26 22:56:44 ICT 2015	Data of 8 has been displayed on quesioner successfully
+Thu Feb 26 22:56:47 ICT 2015	Data of 51 has been displayed on quesioner successfully
+Thu Feb 26 22:58:00 ICT 2015	Login
+Thu Feb 26 22:58:02 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 22:58:04 ICT 2015	Data of 100 has been displayed on quesioner successfully
+Thu Feb 26 22:58:08 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Thu Feb 26 22:58:11 ICT 2015	Data of 101 has been displayed on quesioner successfully
+Thu Feb 26 22:58:13 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 22:58:18 ICT 2015	Logout
+-----------------------------------------------------------------
+Thu Feb 26 23:01:17 ICT 2015	Login
+Thu Feb 26 23:01:21 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 23:01:23 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Thu Feb 26 23:01:27 ICT 2015	Logout
+-----------------------------------------------------------------
+Thu Feb 26 23:04:38 ICT 2015	Login
+Thu Feb 26 23:04:56 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 23:04:57 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Thu Feb 26 23:05:00 ICT 2015	Logout
+-----------------------------------------------------------------
+Thu Feb 26 23:08:21 ICT 2015	Login
+Thu Feb 26 23:08:24 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 23:08:27 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Thu Feb 26 23:08:29 ICT 2015	Logout
+-----------------------------------------------------------------
+Thu Feb 26 23:08:40 ICT 2015	Login
+Thu Feb 26 23:08:44 ICT 2015	Koneksi ke Database...
+Thu Feb 26 23:08:44 ICT 2015	B1 :
+Exception Description: No transaction is currently active
+
+Thu Feb 26 23:08:44 ICT 2015	B2 :
+Exception Description: No transaction is currently active
+
+Thu Feb 26 23:08:44 ICT 2015	B3 :
+Exception Description: No transaction is currently active
+
+Thu Feb 26 23:08:44 ICT 2015	B4 :
+Exception Description: No transaction is currently active
+
+Thu Feb 26 23:08:49 ICT 2015	Koneksi ke Database...
+Thu Feb 26 23:08:50 ICT 2015	Sukses update B1 Dengan Kode NKS10
+
+Thu Feb 26 23:08:50 ICT 2015	Sukses update B2 Dengan Kode NKS10
+
+Thu Feb 26 23:08:50 ICT 2015	Sukses update B3 Dengan Kode NKS10
+
+Thu Feb 26 23:08:50 ICT 2015	Sukses update B4 Dengan Kode NKS10
+
+Thu Feb 26 23:26:34 ICT 2015	Login
+Thu Feb 26 23:26:47 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 23:26:50 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Thu Feb 26 23:36:59 ICT 2015	Login
+Thu Feb 26 23:37:03 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 23:37:05 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Thu Feb 26 23:37:17 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 23:37:18 ICT 2015	Logout
+-----------------------------------------------------------------
+Thu Feb 26 23:39:23 ICT 2015	Login
+Thu Feb 26 23:39:27 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 23:39:29 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Thu Feb 26 23:39:35 ICT 2015	Logout
+-----------------------------------------------------------------
+Thu Feb 26 23:40:27 ICT 2015	Login
+Thu Feb 26 23:40:30 ICT 2015	Updating table loaded. Found 14 data
+Thu Feb 26 23:40:33 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Thu Feb 26 23:40:42 ICT 2015	Data of 103 has been displayed on quesioner successfully
+Thu Feb 26 23:40:45 ICT 2015	Data of 10 has been displayed on quesioner successfully
+Fri Feb 27 05:50:49 ICT 2015	Logout
+-----------------------------------------------------------------
+Fri Feb 27 05:52:40 ICT 2015	Login
+Fri Feb 27 05:52:45 ICT 2015	Logout
+-----------------------------------------------------------------
+Sun Mar 01 21:27:34 ICT 2015	Login
+Sun Mar 01 21:27:36 ICT 2015	Updating table loaded. Found 2 data
+Sun Mar 01 21:27:38 ICT 2015	Data of 2 has been displayed on quesioner successfully
+Sun Mar 01 21:29:16 ICT 2015	Login
+Sun Mar 01 21:29:18 ICT 2015	Updating table loaded. Found 2 data
+Sun Mar 01 21:29:19 ICT 2015	Data of 2 has been displayed on quesioner successfully
+Sun Mar 01 21:29:20 ICT 2015	Logout
+-----------------------------------------------------------------

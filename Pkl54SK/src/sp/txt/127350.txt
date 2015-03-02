@@ -1,0 +1,36 @@
+Log Message
+ini jTexxtArea
+Tulisan-tulisanLog Message
+ini jTexxtArea
+Tulisan-tulisanLog Message
+ini jTexxtArea
+Tulisan-tulisanLog Message
+ini jTexxtArea
+Tulisan-tulisanLog Message
+ini jTexxtArea
+Tulisan-tulisanLog Message
+ini jTexxtArea
+Tulisan-tulisanSun Feb 22 11:03:49 ICT 2015	Log Message
+LoginSun Feb 22 11:03:53 ICT 2015	Log Message
+Logout
+Sun Feb 22 11:05:03 ICT 2015	Log Message
+Login
+Sun Feb 22 11:05:05 ICT 2015	Log Message
+Logout
+Tue Feb 24 10:36:15 ICT 2015	Login
+Tue Feb 24 10:36:20 ICT 2015	Updating table loaded. Found 13 data
+Tue Feb 24 10:36:26 ICT 2015	Data of 11 has been displayed on quesioner successfully
+Tue Feb 24 10:36:31 ICT 2015	Logout
+-----------------------------------------------------------------
+Tue Feb 24 10:46:00 ICT 2015	Login
+Tue Feb 24 10:46:04 ICT 2015	Updating table loaded. Found 13 data
+Tue Feb 24 10:46:06 ICT 2015	Data of 14 has been displayed on quesioner successfully
+Wed Feb 25 08:30:38 ICT 2015	Login
+Wed Feb 25 08:30:43 ICT 2015	Updating table loaded. Found 13 data
+Wed Feb 25 08:30:57 ICT 2015	Data of 11 has been displayed on quesioner successfully
+Wed Feb 25 08:33:59 ICT 2015	Logout
+-----------------------------------------------------------------
+Wed Feb 25 11:17:38 ICT 2015	Login
+Wed Feb 25 11:17:42 ICT 2015	Updating table loaded. Found 13 data
+Wed Feb 25 11:17:54 ICT 2015	Logout
+-----------------------------------------------------------------

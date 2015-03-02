@@ -1,0 +1,3 @@
+Log Message
+ini jTexxtArea
+Tulisan-tulisanLog Message

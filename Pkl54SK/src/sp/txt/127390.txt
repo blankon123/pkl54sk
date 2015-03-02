@@ -1,0 +1,175 @@
+
+Mon Mar 02 12:12:41 ICT 2015	Login
+Mon Mar 02 12:12:41 ICT 2015	Login
+Mon Mar 02 12:12:47 ICT 2015	Koneksi ke Database...
+Mon Mar 02 12:12:47 ICT 2015	SuksesB1 Dengan Kode NKS731111
+
+Mon Mar 02 12:12:47 ICT 2015	SuksesB2 Dengan Kode NKS731111
+
+Mon Mar 02 12:12:47 ICT 2015	SuksesB3 Dengan Kode NKS731111
+
+Mon Mar 02 12:12:48 ICT 2015	SuksesB4 Dengan Kode NKS731111
+
+Mon Mar 02 12:20:29 ICT 2015	Koneksi ke Database...
+Mon Mar 02 12:20:30 ICT 2015	SuksesB1 Dengan Kode NKS731121
+
+Mon Mar 02 12:20:30 ICT 2015	SuksesB2 Dengan Kode NKS731121
+
+Mon Mar 02 12:20:30 ICT 2015	SuksesB3 Dengan Kode NKS731121
+
+Mon Mar 02 12:20:30 ICT 2015	B4 :
+Exception Description: No transaction is currently active
+
+Mon Mar 02 12:29:19 ICT 2015	Login
+Mon Mar 02 12:32:03 ICT 2015	Koneksi ke Database...
+Mon Mar 02 12:32:03 ICT 2015	SuksesB1 Dengan Kode NKS731112
+
+Mon Mar 02 12:32:03 ICT 2015	SuksesB2 Dengan Kode NKS731112
+
+Mon Mar 02 12:32:03 ICT 2015	SuksesB3 Dengan Kode NKS731112
+
+Mon Mar 02 12:32:04 ICT 2015	SuksesB4 Dengan Kode NKS731112
+
+Mon Mar 02 12:36:30 ICT 2015	Koneksi ke Database...
+Mon Mar 02 12:36:30 ICT 2015	SuksesB1 Dengan Kode NKS73122213
+
+Mon Mar 02 12:36:30 ICT 2015	SuksesB2 Dengan Kode NKS73122213
+
+Mon Mar 02 12:36:30 ICT 2015	SuksesB3 Dengan Kode NKS73122213
+
+Mon Mar 02 12:36:31 ICT 2015	B4 :
+Exception Description: No transaction is currently active
+
+Mon Mar 02 12:43:30 ICT 2015	Login
+Mon Mar 02 12:45:51 ICT 2015	Koneksi ke Database...
+Mon Mar 02 12:45:51 ICT 2015	SuksesB1 Dengan Kode NKS12123212323
+
+Mon Mar 02 12:45:51 ICT 2015	SuksesB2 Dengan Kode NKS12123212323
+
+Mon Mar 02 12:45:51 ICT 2015	SuksesB3 Dengan Kode NKS12123212323
+
+Mon Mar 02 12:45:51 ICT 2015	SuksesB4 Dengan Kode NKS12123212323
+
+Mon Mar 02 12:46:27 ICT 2015	Login
+Mon Mar 02 12:48:20 ICT 2015	Koneksi ke Database...
+Mon Mar 02 12:48:20 ICT 2015	SuksesB1 Dengan Kode NKS12232312
+
+Mon Mar 02 12:48:20 ICT 2015	SuksesB2 Dengan Kode NKS12232312
+
+Mon Mar 02 12:48:20 ICT 2015	SuksesB3 Dengan Kode NKS12232312
+
+Mon Mar 02 12:48:20 ICT 2015	SuksesB4 Dengan Kode NKS12232312
+
+Mon Mar 02 12:48:41 ICT 2015	Login
+Mon Mar 02 12:50:40 ICT 2015	Koneksi ke Database...
+Mon Mar 02 12:50:40 ICT 2015	SuksesB1 Dengan Kode NKS73121214299
+
+Mon Mar 02 12:50:40 ICT 2015	SuksesB2 Dengan Kode NKS73121214299
+
+Mon Mar 02 12:50:40 ICT 2015	SuksesB3 Dengan Kode NKS73121214299
+
+Mon Mar 02 12:50:40 ICT 2015	SuksesB4 Dengan Kode NKS73121214299
+
+Mon Mar 02 12:51:28 ICT 2015	Login
+Mon Mar 02 12:53:16 ICT 2015	Koneksi ke Database...
+Mon Mar 02 12:53:16 ICT 2015	SuksesB1 Dengan Kode NKS73321212412
+
+Mon Mar 02 12:53:16 ICT 2015	SuksesB2 Dengan Kode NKS73321212412
+
+Mon Mar 02 12:53:16 ICT 2015	SuksesB3 Dengan Kode NKS73321212412
+
+Mon Mar 02 12:53:16 ICT 2015	SuksesB4 Dengan Kode NKS73321212412
+
+Mon Mar 02 12:53:38 ICT 2015	Login
+Mon Mar 02 12:55:57 ICT 2015	Koneksi ke Database...
+Mon Mar 02 12:55:58 ICT 2015	SuksesB1 Dengan Kode NKS12232123
+
+Mon Mar 02 12:55:58 ICT 2015	SuksesB2 Dengan Kode NKS12232123
+
+Mon Mar 02 12:55:58 ICT 2015	SuksesB3 Dengan Kode NKS12232123
+
+Mon Mar 02 12:55:58 ICT 2015	SuksesB4 Dengan Kode NKS12232123
+
+Mon Mar 02 12:56:46 ICT 2015	Login
+Mon Mar 02 12:56:54 ICT 2015	Updating table loaded. Found 7 data
+Mon Mar 02 12:57:14 ICT 2015	Data of 731111 has been displayed on quesioner successfully
+Mon Mar 02 12:57:44 ICT 2015	Koneksi ke Database...
+Mon Mar 02 12:57:44 ICT 2015	Sukses update B1 Dengan Kode NKS731111
+
+Mon Mar 02 12:57:44 ICT 2015	Sukses update B2 Dengan Kode NKS731111
+
+Mon Mar 02 12:57:44 ICT 2015	Sukses update B3 Dengan Kode NKS731111
+
+Mon Mar 02 12:57:44 ICT 2015	Sukses update B4 Dengan Kode NKS731111
+
+Mon Mar 02 12:58:07 ICT 2015	Updating table loaded. Found 7 data
+Mon Mar 02 12:58:11 ICT 2015	Data of 12123212323 has been displayed on quesioner successfully
+Mon Mar 02 12:58:14 ICT 2015	Data of 12123212323 has been displayed on quesioner successfully
+Mon Mar 02 12:58:24 ICT 2015	Data of 12232123 has been displayed on quesioner successfully
+Mon Mar 02 12:58:28 ICT 2015	Data of 731111 has been displayed on quesioner successfully
+Mon Mar 02 12:58:32 ICT 2015	Updating table loaded. Found 7 data
+Mon Mar 02 12:58:36 ICT 2015	Data of 731111 has been displayed on quesioner successfully
+Mon Mar 02 12:58:53 ICT 2015	Data of 12123212323 has been displayed on quesioner successfully
+Mon Mar 02 12:59:05 ICT 2015	Koneksi ke Database...
+Mon Mar 02 12:59:05 ICT 2015	Sukses update B1 Dengan Kode NKS12123212323
+
+Mon Mar 02 12:59:05 ICT 2015	Sukses update B2 Dengan Kode NKS12123212323
+
+Mon Mar 02 12:59:05 ICT 2015	Sukses update B3 Dengan Kode NKS12123212323
+
+Mon Mar 02 12:59:05 ICT 2015	Sukses update B4 Dengan Kode NKS12123212323
+
+Mon Mar 02 12:59:44 ICT 2015	Data of 12123212323 has been displayed on quesioner successfully
+Mon Mar 02 13:03:34 ICT 2015	Data of 12123212323 has been displayed on quesioner successfully
+Mon Mar 02 13:03:43 ICT 2015	Koneksi ke Database...
+Mon Mar 02 13:03:43 ICT 2015	Sukses update B1 Dengan Kode NKS12123212323
+
+Mon Mar 02 13:03:43 ICT 2015	Sukses update B2 Dengan Kode NKS12123212323
+
+Mon Mar 02 13:03:43 ICT 2015	Sukses update B3 Dengan Kode NKS12123212323
+
+Mon Mar 02 13:03:43 ICT 2015	Sukses update B4 Dengan Kode NKS12123212323
+
+Mon Mar 02 13:05:28 ICT 2015	Logout
+-----------------------------------------------------------------
+Mon Mar 02 13:05:30 ICT 2015	Login
+Mon Mar 02 13:05:36 ICT 2015	Updating table loaded. Found 8 data
+Mon Mar 02 13:05:42 ICT 2015	Data of 1221212 has been displayed on quesioner successfully
+Mon Mar 02 13:05:51 ICT 2015	Koneksi ke Database...
+Mon Mar 02 13:05:51 ICT 2015	Sukses update B1 Dengan Kode NKS1221212
+
+Mon Mar 02 13:05:51 ICT 2015	Sukses update B2 Dengan Kode NKS1221212
+
+Mon Mar 02 13:05:51 ICT 2015	Sukses update B3 Dengan Kode NKS1221212
+
+Mon Mar 02 13:05:51 ICT 2015	Sukses update B4 Dengan Kode NKS1221212
+
+Mon Mar 02 13:05:56 ICT 2015	Koneksi ke Database...
+Mon Mar 02 13:05:56 ICT 2015	Sukses update B1 Dengan Kode NKS1221212
+
+Mon Mar 02 13:05:56 ICT 2015	Sukses update B2 Dengan Kode NKS1221212
+
+Mon Mar 02 13:05:56 ICT 2015	Sukses update B3 Dengan Kode NKS1221212
+
+Mon Mar 02 13:05:56 ICT 2015	Sukses update B4 Dengan Kode NKS1221212
+
+Mon Mar 02 13:06:00 ICT 2015	Data of 12123212323 has been displayed on quesioner successfully
+Mon Mar 02 13:06:02 ICT 2015	Koneksi ke Database...
+Mon Mar 02 13:06:02 ICT 2015	Sukses update B1 Dengan Kode NKS12123212323
+
+Mon Mar 02 13:06:02 ICT 2015	Sukses update B2 Dengan Kode NKS12123212323
+
+Mon Mar 02 13:06:02 ICT 2015	Sukses update B3 Dengan Kode NKS12123212323
+
+Mon Mar 02 13:06:02 ICT 2015	Sukses update B4 Dengan Kode NKS12123212323
+
+Mon Mar 02 13:06:26 ICT 2015	Koneksi ke Database...
+Mon Mar 02 13:06:26 ICT 2015	Sukses update B1 Dengan Kode NKS12123212323
+
+Mon Mar 02 13:06:26 ICT 2015	Sukses update B2 Dengan Kode NKS12123212323
+
+Mon Mar 02 13:06:26 ICT 2015	Sukses update B3 Dengan Kode NKS12123212323
+
+Mon Mar 02 13:06:26 ICT 2015	Sukses update B4 Dengan Kode NKS12123212323
+
+Mon Mar 02 13:07:10 ICT 2015	Updating table loaded. Found 8 data
