@@ -47,7 +47,7 @@ public class ValidasiB3 {
         return tx;
     }
 
-    private void cekB3R7() {
+    private void cekB3R7()  {
         int umur = Integer.valueOf(b3.getB3r3());
         if (b3.getB3r7().getKode().equals("1") && umur<5){
             dummy = getError(b3view.getB3r7());
@@ -95,7 +95,7 @@ public class ValidasiB3 {
             b3listerr.add(b3listerr.size(), new Error("b3r7", "Kesalahan Korelasi dengan Umur", 2));
         }
     }
-    private void cekB3R8() {
+    private void cekB3R8()  {
         if (b3.getB3r7().getKode().equals("1")
                 && (b3.getB3r8s1().getKode().isEmpty()
                 || b3.getB3r8s2().getKode().isEmpty()
@@ -105,7 +105,7 @@ public class ValidasiB3 {
             b3listerr.add(b3listerr.size(), new Error("b3r6", "Kesalahan Korelasi dengan b3r8a-c", 2));
         }
     }
-    private void cekB3R9() {
+    private void cekB3R9()  {
         if (b3.getB3r9s1d1().getKode().equals("2")
                 && b3.getB3r9s1d2().getKode().equals("2")
                 && b3.getB3r9s1d3().getKode().equals("2")
