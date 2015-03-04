@@ -5,27 +5,24 @@
  */
 package sp.view;
 
+import javax.swing.JLabel;
 import sp.controller.LandingMenuControllerTest;
-import sp.controller.CardLayoutController;
 
-    
 /**
  *
  * @author Tiara Ratna Dewi [12.7403]
  */
 public class Panel extends javax.swing.JPanel {
+
     private LandingMenuControllerTest controller;
-    
+
     /**
      * Creates new form Panel
      */
-    
     public Panel() {
         initComponents();
         navbarButton1.getHomebutton1().setActive(true);
-        
         controller = new LandingMenuControllerTest(getEntryListing(), getDataEntryQuest1(), getUpdateListing1(), updateQuest1, this, MainPanel, getMenuListing(), getMenuQuest(), landingButton1);
-        
     }
 
     /**
@@ -50,6 +47,7 @@ public class Panel extends javax.swing.JPanel {
         closeminbutton1 = new sp.componentButton.Closeminbutton();
         minimizebutton1 = new sp.componentButton.Minimizebutton();
         nimLabel = new javax.swing.JLabel();
+        namaLabel = new javax.swing.JLabel();
 
         MainPanel.setLayout(new java.awt.CardLayout());
         MainPanel.add(landingButton1, "landing");
@@ -70,6 +68,10 @@ public class Panel extends javax.swing.JPanel {
         nimLabel.setForeground(new java.awt.Color(48, 179, 216));
         nimLabel.setText("12.7403");
 
+        namaLabel.setFont(new java.awt.Font("Tekton Pro", 0, 28)); // NOI18N
+        namaLabel.setForeground(new java.awt.Color(48, 179, 216));
+        namaLabel.setText("12.7403");
+
         javax.swing.GroupLayout background1Layout = new javax.swing.GroupLayout(background1);
         background1.setLayout(background1Layout);
         background1Layout.setHorizontalGroup(
@@ -82,6 +84,7 @@ public class Panel extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, background1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(namaLabel)
                     .addComponent(nimLabel)
                     .addGroup(background1Layout.createSequentialGroup()
                         .addComponent(minimizebutton1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -95,8 +98,10 @@ public class Panel extends javax.swing.JPanel {
                 .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(closeminbutton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(minimizebutton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(nimLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(namaLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 608, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -133,6 +138,7 @@ public class Panel extends javax.swing.JPanel {
     private sp.panelcomponent.Menu menuListing;
     private sp.panelcomponent.Menu menuQuest;
     private sp.componentButton.Minimizebutton minimizebutton1;
+    private javax.swing.JLabel namaLabel;
     private sp.panelcomponent.NavbarButton navbarButton1;
     private javax.swing.JLabel nimLabel;
     private sp.panelcomponent.UpdateListing updateListing1;
@@ -193,6 +199,14 @@ public class Panel extends javax.swing.JPanel {
      */
     public sp.componentButton.Minimizebutton getMinimizebutton1() {
         return minimizebutton1;
+    }
+
+    public JLabel getNamaLabel() {
+        return namaLabel;
+    }
+
+    public void setNamaLabel(JLabel namaLabel) {
+        this.namaLabel = namaLabel;
     }
 
     /**

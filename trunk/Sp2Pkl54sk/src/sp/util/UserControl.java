@@ -12,6 +12,7 @@ package sp.util;
 public class UserControl {
 
     private static String nim;
+    private static String nama;
     private static String flag, flag2 = "2";
 
     public static String getNim() {
@@ -22,6 +23,14 @@ public class UserControl {
         UserControl.nim = nim;
     }
 
+    public static String getNama() {
+        return nama;
+    }
+
+    public static void setNama(String nama) {
+        UserControl.nama = nama;
+    }
+
     public static String getFlag() {
         return flag;
     }
@@ -29,7 +38,7 @@ public class UserControl {
     public static void setFlag(String flag) {
         UserControl.flag = flag;
     }
-    
+
     public static String getFlag2() {
         return "2";
     }

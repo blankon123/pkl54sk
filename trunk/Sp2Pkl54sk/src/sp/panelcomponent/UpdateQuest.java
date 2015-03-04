@@ -97,4 +97,10 @@ public class UpdateQuest extends javax.swing.JPanel {
     public sp.componentButton.Backtobutton getBacktobutton1() {
         return backtobutton1;
     }
+
+    public TableUpdate getTableUpdate1() {
+        return tableUpdate1;
+    }
+    
+    
 }

@@ -8,13 +8,23 @@ package sp.controller;
 import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import sp.dao.B1Dao;
+import sp.model.B1;
 import sp.panelcomponent.DataEntryListing;
 import sp.panelcomponent.DataEntryQuest;
 import sp.panelcomponent.LandingButton;
 import sp.panelcomponent.Menu;
 import sp.panelcomponent.UpdateListing;
 import sp.panelcomponent.UpdateQuest;
+import sp.util.LogMessage;
+import sp.util.UserControl;
 import sp.view.Panel;
 
 /**
@@ -47,20 +57,10 @@ public class LandingMenuControllerTest {
         this.menuQuest = menuQuest;
         this.entryListing = entryListing;
         this.entryQuest = entryQuest;
-        this.listing = listing;
-        this.quest = quest;
 
         CardController = new CardLayoutController();
         CardController.setCardLayout((CardLayout) MainPanel.getLayout());
         CardController.setParentCard(MainPanel);
-
-        entryQuest.getStartButton1().addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent ae) {
-                CardController.show("entryformQuest");
-            }
-        });
 
         panel.getNavbarButton1().getHomebutton1().addActionListener(new ActionListener() {
 
@@ -71,7 +71,6 @@ public class LandingMenuControllerTest {
                 panel.getNavbarButton1().getHomebutton1().Activebutton();
             }
         });
-
         panel.getNavbarButton1().getListingbutton1().addActionListener(new ActionListener() {
 
             @Override
@@ -82,7 +81,6 @@ public class LandingMenuControllerTest {
                 panel.getNavbarButton1().getHomebutton1().resetButton();
             }
         });
-
         panel.getNavbarButton1().getQuestionnairebutton1().addActionListener(new ActionListener() {
 
             @Override
@@ -93,7 +91,6 @@ public class LandingMenuControllerTest {
                 panel.getNavbarButton1().getHomebutton1().resetButton();
             }
         });
-
         landingButton.getSelectButton1().addActionListener(new ActionListener() {
 
             @Override
@@ -125,7 +122,6 @@ public class LandingMenuControllerTest {
                 }
             }
         });
-
         menuQuest.getSelectButton1().addActionListener(new ActionListener() {
 
             @Override
@@ -133,13 +129,13 @@ public class LandingMenuControllerTest {
                 if (menuQuest.getState().equalsIgnoreCase("dataentry")) {
                     CardController.show("entryquest");
                 } else if (menuQuest.getState().equalsIgnoreCase("update")) {
+                    loadUpdateDB();
                     CardController.show("updatequest");
                 } else {
 
                 }
             }
         });
-
         menuListing.getBackButton1().addActionListener(new ActionListener() {
 
             @Override
@@ -149,7 +145,6 @@ public class LandingMenuControllerTest {
                 panel.getNavbarButton1().getHomebutton1().Activebutton();
             }
         });
-
         menuQuest.getBackButton1().addActionListener(new ActionListener() {
 
             @Override
@@ -159,7 +154,6 @@ public class LandingMenuControllerTest {
                 panel.getNavbarButton1().getQuestionnairebutton1().resetButton();;
             }
         });
-
         entryListing.getBacktobutton1().addActionListener(new ActionListener() {
 
             @Override
@@ -167,7 +161,6 @@ public class LandingMenuControllerTest {
                 CardController.show("menuListing");
             }
         });
-
         listing.getBacktobutton1().addActionListener(new ActionListener() {
 
             @Override
@@ -175,7 +168,6 @@ public class LandingMenuControllerTest {
                 CardController.show("menuListing");
             }
         });
-
         entryQuest.getBacktobutton1().addActionListener(new ActionListener() {
 
             @Override
@@ -183,7 +175,6 @@ public class LandingMenuControllerTest {
                 CardController.show("menuQuest");
             }
         });
-
         quest.getBacktobutton1().addActionListener(new ActionListener() {
 
             @Override
@@ -191,9 +182,43 @@ public class LandingMenuControllerTest {
                 CardController.show("menuQuest");
             }
         });
+
     }
 
     public void show(String name) {
         CardController.show(name);
+    }
+
+    private void loadUpdateDB() {
+        String refreshTxt = "";
+        try {
+            String nim = UserControl.getNim();
+            if (nim != null) {
+                List<Object> results = B1Dao.getInstance().getBy("B1.findByNim", "nim", nim);
+                if (results.isEmpty()) {
+                    JOptionPane.showMessageDialog(quest, nim + ", Anda belum melakukan Entry Data");
+                } else {
+                    JOptionPane.showMessageDialog(quest, "Ditemukan " + results.size() + " data");
+                    List<B1> data = new ArrayList<>();
+                    int count = results.size();
+                    for (int i = 0; i < count; i++) {
+                        data.add((B1) results.get(i));
+                    }
+                    quest.getTableUpdate1().getModel().setData(data);
+                }
+                quest.getTableUpdate1().setLebarKolom();
+                refreshTxt = "Updating table loaded. Found " + results.size() + " data";
+            } else {
+                JOptionPane.showMessageDialog(quest, "Please login first");
+            }
+        } catch (NullPointerException ep) {
+            refreshTxt = "Failed to load updating table" + ep.getMessage();
+            System.out.println(refreshTxt);
+        }
+        try {
+            LogMessage.write(refreshTxt);
+        } catch (IOException ex) {
+            Logger.getLogger(UpdateController21.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }
