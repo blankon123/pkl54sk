@@ -4,15 +4,11 @@
  */
 package sp.dao;
 
-import java.io.IOException;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.RollbackException;
-import sp.util.LogMessage;
 
 /**
  *
@@ -34,7 +30,7 @@ public class DaoService<T> implements AbstractService<Object> {
 
     public EntityManager entity() {
         if (em == null) {
-            emf = Persistence.createEntityManagerFactory("Pkl54SKPU2");
+            emf = Persistence.createEntityManagerFactory("Sp2Pkl54skPU");
             em = emf.createEntityManager();
         }
         return em;

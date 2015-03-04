@@ -5,6 +5,8 @@
  */
 package sp.view;
 
+import sp.component.Password;
+
 /**
  *
  * @author Tiara Ratna Dewi [12.7403]
@@ -16,6 +18,10 @@ public class LoginPanel extends javax.swing.JPanel {
      */
     public LoginPanel() {
         initComponents();
+    }
+
+    public Password getPassword1() {
+        return password1;
     }
 
     /**
