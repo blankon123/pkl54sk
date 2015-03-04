@@ -8,16 +8,16 @@ package sp.view;
 import static java.awt.Frame.ICONIFIED;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Arrays;
 import javax.swing.JPanel;
 import javax.swing.JTable;
+import sp.controller.LoginController;
 import sp.controller.LoginControllerTest;
 import sp.controller.SaveController;
 import sp.form.*;
 import sp.model.*;
 import sp.panelcomponent.EntryFormListingTest;
 import sp.panelcomponent.EntryFormQuestTest;
-import sp.panelcomponent.ErrorTable;
-import sp.util.ErrorControl;
 
 /**
  *
@@ -40,6 +40,8 @@ public class TesBeta extends javax.swing.JFrame {
         setUndecorated(true);
         setResizable(false);
         setVisible(true);
+        setControllerSave();
+        setLoginController();
 
         loginPanel1.getCloseminbutton1().addActionListener(new ActionListener() {
             @Override
@@ -128,63 +130,6 @@ public class TesBeta extends javax.swing.JFrame {
                 konfirm.setVisible(rootPaneCheckingEnabled);
             }
         });
-        loginPanel1.getLoginButton1().addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent ae) {
-                //   entryListing.getNimLabel().setText(loginPanel1.getLoginTextField1().getText());
-                //   entryQuest.getNimLabel().setText(loginPanel1.getLoginTextField1().getText());
-            }
-        });
-        entryListing.getSaveBtn().addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                ConfirmSave konfirm = new ConfirmSave(null, rootPaneCheckingEnabled);
-                konfirm.setVisible(true);
-                konfirm.getTidak().addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        konfirm.setVisible(false);
-                    }
-                });
-                konfirm.getYa().addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                    }
-                });
-            }
-        });
-
-        entryQuest.getSaveBtn().addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                ConfirmSave konfirm = new ConfirmSave(null, rootPaneCheckingEnabled);
-                konfirm.setVisible(true);
-                B1 b1 = new B1();
-                B2 b2 = new B2();
-                B3 b3 = new B3();
-                B4 b4 = new B4();
-
-                Hal1 hal1 = getEntryQuest().getHal11();
-                Hal2 hal2 = getEntryQuest().getHal21();
-                Hal3 hal3 = getEntryQuest().getHal31();
-                Hal4 hal4 = getEntryQuest().getHal41();
-                Hal5 hal5 = getEntryQuest().getHal51();
-                Hal6 hal6 = getEntryQuest().getHal61();
-                
-                JTable errorTable = getEntryQuest().getErrorTable1().getTabelError();
-
-                SaveController save = new SaveController(b1, b2, b3, b4, hal1, hal2, hal3, hal4, hal5, hal6, MainPanel, errorTable);
-
-                konfirm.getTidak().addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        konfirm.setVisible(false);
-                    }
-                });
-                konfirm.getYa().addActionListener(save);
-            }
-        });
-
         panel1.getMinimizebutton1().addActionListener(new ActionListener() {
 
             @Override
@@ -319,4 +264,25 @@ public class TesBeta extends javax.swing.JFrame {
     private sp.view.LoginPanel loginPanel1;
     private sp.view.Panel panel1;
     // End of variables declaration//GEN-END:variables
+
+    private void setControllerSave() {
+        B1 b1 = new B1();
+        B2 b2 = new B2();
+        B3 b3 = new B3();
+        B4 b4 = new B4();
+        Hal1 hal1 = getEntryQuest().getHal11();
+        Hal2 hal2 = getEntryQuest().getHal21();
+        Hal3 hal3 = getEntryQuest().getHal31();
+        Hal4 hal4 = getEntryQuest().getHal41();
+        Hal5 hal5 = getEntryQuest().getHal51();
+        Hal6 hal6 = getEntryQuest().getHal61();
+        JTable errorTable = getEntryQuest().getErrorTable1().getTabelError();
+        SaveController save = new SaveController(b1, b2, b3, b4, hal1, hal2, hal3, hal4, hal5, hal6, MainPanel, errorTable);
+        entryQuest.getSaveBtn().addActionListener(save);
+    }
+
+    private void setLoginController() {
+        LoginController logcontroll = new LoginController(panel1,MainPanel,getLoginPanel1());
+        loginPanel1.getLoginButton1().addActionListener(logcontroll);
+    }
 }
