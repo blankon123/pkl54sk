@@ -45,9 +45,7 @@ public class DaoService<T> implements AbstractService<Object> {
 //            entityManager.getTransaction().commit();
 
             entity().getTransaction().begin();
-            //System.out.println("ASD1");
             entity().persist(t);
-            //System.out.println("ASD");
             entity().getTransaction().commit();
             if (entity().isOpen()) {
                 entity().close();

@@ -5,7 +5,10 @@
  */
 package sp.panelcomponent;
 
+import javax.swing.JTable;
+import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableColumn;
+import sp.model.TableUpdateModel;
 
 /**
  *
@@ -16,15 +19,19 @@ public class TableUpdate extends javax.swing.JPanel {
     /**
      * Creates new form TableUpdate
      */
+    TableUpdateModel model;
+    
     public TableUpdate() {
         initComponents();
         jScrollPane1.getViewport().setOpaque(false);
         setOpaque(false);
         tabelUpdate.setOpaque(false);
-        this.lebarKolom();
+        setLebarKolom();
+        model = new TableUpdateModel();
+        tabelUpdate.setModel(model);
     }
     
-    public void lebarKolom(){ 
+    public void setLebarKolom(){ 
         TableColumn column;
         this.tabelUpdate.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF); 
         column = this.tabelUpdate.getColumnModel().getColumn(0); 
@@ -34,6 +41,24 @@ public class TableUpdate extends javax.swing.JPanel {
         column = this.tabelUpdate.getColumnModel().getColumn(2); 
         column.setPreferredWidth(140); 
     }
+
+    public TableUpdateModel getModel() {
+        return model;
+    }
+
+    public void setModel(TableUpdateModel model) {
+        this.model = model;
+    }
+
+    public JTable getTabelUpdate() {
+        return tabelUpdate;
+    }
+
+    public void setTabelUpdate(JTable tabelUpdate) {
+        this.tabelUpdate = tabelUpdate;
+    }
+    
+    
    
 
     /**
@@ -45,34 +70,8 @@ public class TableUpdate extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        comboKab = new javax.swing.JComboBox();
-        jLabel2 = new javax.swing.JLabel();
-        comboKec = new javax.swing.JComboBox();
-        jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tabelUpdate = new javax.swing.JTable();
-        comboDesa = new javax.swing.JComboBox();
-
-        jLabel1.setText("Kabupaten");
-
-        comboKab.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Pilih kabupaten", "Bandung", "Indramayu" }));
-        comboKab.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboKabActionPerformed(evt);
-            }
-        });
-
-        jLabel2.setText("Kecamatan");
-
-        comboKec.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Pilih kecamatan" }));
-        comboKec.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboKecActionPerformed(evt);
-            }
-        });
-
-        jLabel3.setText("Desa/Kelurahan");
 
         tabelUpdate.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -95,110 +94,26 @@ public class TableUpdate extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tabelUpdate);
 
-        comboDesa.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Pilih Desa/Kel" }));
-        comboDesa.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboDesaActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 498, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(comboKab, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(68, 68, 68)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(comboKec, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(67, 67, 67)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(comboDesa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3))))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 498, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(comboKab, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(comboKec, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(comboDesa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 286, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 326, Short.MAX_VALUE)
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void comboKabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboKabActionPerformed
-        String kabpilihan = comboKab.getSelectedItem().toString();
-        if ("Bandung".equals(kabpilihan)){
-            comboKec.addItem("KiaraCondong");
-            comboKec.addItem("Cibiru");
-            comboKec.addItem("Cidadap");
-        } else {
-            comboKec.addItem("Hargeulis");
-            comboKec.addItem("Jatibarang");
-            comboKec.addItem("Indramayu");
-        }
-        // TODO add your handling code here:
-    }//GEN-LAST:event_comboKabActionPerformed
-
-    private void comboKecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboKecActionPerformed
-        String kecpilihan= comboKec.getSelectedItem().toString();
-        switch (kecpilihan) {
-            case "KiaraCondong":
-            comboDesa.addItem("Sukapura");
-            comboDesa.addItem("Cicahua");
-            break;
-            case "Cidadap":
-            comboDesa.addItem("Ledeng");
-            break;
-            case "Cibiru":
-            comboDesa.addItem("Cisurupan");
-            comboDesa.addItem("palasari");
-            break;
-            case "Hargeulis":
-            comboDesa.addItem("Cipancuh");
-            comboDesa.addItem("Hargeulis");
-            comboDesa.addItem("Kertanegara");
-            break;
-            case "Jatibarang":
-            comboDesa.addItem("Jatibarang");
-            comboDesa.addItem("Jatibarang baru");
-            comboDesa.addItem("Bulak");
-            break;
-            default:
-            comboDesa.addItem("Dukuh");
-            comboDesa.addItem("Bojongsari");
-            break;
-        }
-    }//GEN-LAST:event_comboKecActionPerformed
-
-    private void comboDesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboDesaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_comboDesaActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox comboDesa;
-    private javax.swing.JComboBox comboKab;
-    private javax.swing.JComboBox comboKec;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tabelUpdate;
     // End of variables declaration//GEN-END:variables

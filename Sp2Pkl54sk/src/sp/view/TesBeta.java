@@ -8,11 +8,9 @@ package sp.view;
 import static java.awt.Frame.ICONIFIED;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Arrays;
 import javax.swing.JPanel;
 import javax.swing.JTable;
 import sp.controller.LoginController;
-import sp.controller.LoginControllerTest;
 import sp.controller.SaveController;
 import sp.form.*;
 import sp.model.*;
@@ -28,14 +26,10 @@ public class TesBeta extends javax.swing.JFrame {
     /**
      * Creates new form TesBeta
      */
-    LoginControllerTest controller;
+    LoginController controller;
 
     public TesBeta() {
         initComponents();
-
-        controller = new LoginControllerTest(panel1, MainPanel, loginPanel1);
-
-        //fullscreen Frame
         dispose();
         setUndecorated(true);
         setResizable(false);
@@ -82,7 +76,7 @@ public class TesBeta extends javax.swing.JFrame {
 
             @Override
             public void actionPerformed(ActionEvent ae) {
-                controller.show("entryquest");
+                controller.show("entryQuest");
             }
         });
         entryQuest.getCloseBtn().addActionListener(new ActionListener() {
@@ -160,26 +154,18 @@ public class TesBeta extends javax.swing.JFrame {
         });
     }
 
-    public LoginControllerTest getController() {
-        return controller;
-    }
-
     public JPanel getMainPanel() {
         return MainPanel;
     }
-
     public EntryFormListingTest getEntryListing() {
         return entryListing;
     }
-
     public EntryFormQuestTest getEntryQuest() {
         return entryQuest;
     }
-
     public LoginPanel getLoginPanel1() {
         return loginPanel1;
     }
-
     public Panel getPanel1() {
         return panel1;
     }
@@ -280,9 +266,8 @@ public class TesBeta extends javax.swing.JFrame {
         SaveController save = new SaveController(b1, b2, b3, b4, hal1, hal2, hal3, hal4, hal5, hal6, MainPanel, errorTable);
         entryQuest.getSaveBtn().addActionListener(save);
     }
-
     private void setLoginController() {
-        LoginController logcontroll = new LoginController(panel1,MainPanel,getLoginPanel1());
-        loginPanel1.getLoginButton1().addActionListener(logcontroll);
+        controller = new LoginController(panel1,MainPanel,getLoginPanel1());
+        loginPanel1.getLoginButton1().addActionListener(controller);
     }
 }

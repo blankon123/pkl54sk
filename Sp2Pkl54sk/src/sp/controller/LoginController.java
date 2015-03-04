@@ -9,6 +9,7 @@ import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -49,13 +50,29 @@ public class LoginController implements ActionListener {
                 controller.previous();
             }
         }));
+        panel.getEntryQuest().getStartButton1().addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                controller.show("entryquest");
+            }
+        });
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        UserControl.setNim(loginPanel.getLoginTextField1().getText());
-        String user = UserControl.getNim();
-        String pw = loginPanel.getPassword1().getPassword().toString();
+
+        String user = loginPanel.getLoginTextField1().getText();
+        String pw = "";
+        String nama = UserDAO.getInstance().getByID(user).getNama();
+        char[] pass = loginPanel.getPassword1().getPassword();
+
+        for (int i = 0; i < pass.length; i++) {
+            pw += pass[i];
+        }
+
+        UserControl.setNim(user);
+        UserControl.setNama(nama);
         CheckConnection.createConnection();
         LogMessage.clearLog();
         try {
@@ -73,9 +90,23 @@ public class LoginController implements ActionListener {
         if (logUser) {
             controller.next();
             panel.getNavbarButton1().getHomebutton1().Activebutton();
+            panel.getNimLabel().setText(UserControl.getNim());
+            panel.getNamaLabel().setText(UserControl.getNama());
         } else {
-            JOptionPane.showMessageDialog(MainPanel, "Error Login");
+            JOptionPane.showMessageDialog(loginPanel, "Error Login");
         }
+    }
+
+    public void show(String ss) {
+        controller.show(ss);
+    }
+
+    public void previous() {
+        controller.previous();
+    }
+
+    public void next() {
+        controller.next();
     }
 
 }
