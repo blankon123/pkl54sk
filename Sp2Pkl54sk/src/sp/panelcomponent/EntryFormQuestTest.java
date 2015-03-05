@@ -9,6 +9,8 @@ import java.awt.CardLayout;
 import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 import sp.controller.CardLayoutController;
 import sp.controller.QuestControllerTest;
 import sp.form.Hal1;
@@ -24,9 +26,10 @@ import sp.form.Hal6;
  */
 public class EntryFormQuestTest extends javax.swing.JPanel {
 
-    public  QuestControllerTest controller;
-    
+    public QuestControllerTest controller;
+
     private CardLayoutController clc;
+
     /**
      * Creates new form EntryFormQuestTest
      */
@@ -35,7 +38,7 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
         setActive(h1);
         setInactive(h2, h3, h4, h5, h6);
         setCardManager();
-        controller = new QuestControllerTest(this, nextBtn, getBackBtn(), getCloseBtn(), getSaveBtn(), MainPanel);
+        controller = new QuestControllerTest(this, nextBtn, getBackBtn(), getCloseBtn(), getSaveBtn(), getUpdateBtn(), MainPanel);
     }
 
     /**
@@ -64,6 +67,7 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
         hal61 = new sp.form.Hal6();
         backBtn = new sp.componentButton.BackminButton();
         nextBtn = new sp.componentButton.NextButton();
+        updateBtn = new javax.swing.JButton();
         saveBtn = new sp.componentButton.Savebutton();
         closeBtn = new sp.componentButton.Closebutton();
         closeminbutton1 = new sp.componentButton.Closeminbutton();
@@ -74,6 +78,7 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
         h4 = new javax.swing.JButton();
         h5 = new javax.swing.JButton();
         h6 = new javax.swing.JButton();
+        errDesc = new javax.swing.JTextField();
 
         MainPanel.setLayout(new java.awt.CardLayout());
 
@@ -115,6 +120,9 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
             }
         });
 
+        updateBtn.setText("Update");
+        updateBtn.setEnabled(false);
+
         saveBtn.setText("");
 
         closeBtn.setText("");
@@ -122,6 +130,11 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
         closeminbutton1.setText("");
 
         minimizebutton1.setText("");
+        minimizebutton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                minimizebutton1ActionPerformed(evt);
+            }
+        });
 
         h1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         h1.setText("Halaman 1");
@@ -146,35 +159,50 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
         h6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         h6.setText("Halaman 6");
 
+        errDesc.setEditable(false);
+        errDesc.setBackground(new java.awt.Color(255, 255, 255));
+        errDesc.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        errDesc.setForeground(new java.awt.Color(0, 51, 102));
+        errDesc.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        errDesc.setBorder(null);
+        errDesc.setCaretColor(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout bgquest1Layout = new javax.swing.GroupLayout(bgquest1);
         bgquest1.setLayout(bgquest1Layout);
         bgquest1Layout.setHorizontalGroup(
             bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bgquest1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(errorTable1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(67, 67, 67)
-                .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(h1)
-                    .addComponent(h2)
-                    .addComponent(h3)
-                    .addComponent(h4)
-                    .addComponent(h5)
-                    .addComponent(h6))
+                .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(bgquest1Layout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addComponent(errorTable1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(67, 67, 67)
+                        .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(h1)
+                            .addComponent(h2)
+                            .addComponent(h3)
+                            .addComponent(h4)
+                            .addComponent(h5)
+                            .addComponent(h6)))
+                    .addGroup(bgquest1Layout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addComponent(errDesc, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(119, 119, 119)
                 .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(bgquest1Layout.createSequentialGroup()
+                        .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 731, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(107, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgquest1Layout.createSequentialGroup()
                         .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(nextBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 427, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(updateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(closeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(66, 66, 66))
-                    .addGroup(bgquest1Layout.createSequentialGroup()
-                        .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 731, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(66, 66, 66))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgquest1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(minimizebutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -184,37 +212,42 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
         bgquest1Layout.setVerticalGroup(
             bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bgquest1Layout.createSequentialGroup()
-                .addGap(280, 280, 280)
-                .addComponent(errorTable1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgquest1Layout.createSequentialGroup()
-                .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(closeminbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(minimizebutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(bgquest1Layout.createSequentialGroup()
+                        .addGap(280, 280, 280)
+                        .addComponent(errorTable1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(errDesc, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, bgquest1Layout.createSequentialGroup()
+                        .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(closeminbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(minimizebutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(bgquest1Layout.createSequentialGroup()
+                                .addGap(231, 231, 231)
+                                .addComponent(h1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(h2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(h3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(h4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(h5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(h6))
+                            .addGroup(bgquest1Layout.createSequentialGroup()
+                                .addGap(169, 169, 169)
+                                .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 454, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(bgquest1Layout.createSequentialGroup()
-                        .addGap(231, 231, 231)
-                        .addComponent(h1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(h2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(h3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(h4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(h5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(h6))
-                    .addGroup(bgquest1Layout.createSequentialGroup()
-                        .addGap(169, 169, 169)
-                        .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 454, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
-                .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(nextBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(closeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(nextBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(closeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(updateBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(60, 60, 60))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -234,61 +267,65 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void nextBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextBtnActionPerformed
-        if(controller.getCardName().equals("hal1")){
+        if (controller.getCardName().equals("hal1")) {
             setActive(getH1());
             setInactive(getH4(), getH2(), getH3(), getH5(), getH6());
 
-        }else if(controller.getCardName().equals("hal2")){
+        } else if (controller.getCardName().equals("hal2")) {
             setActive(getH2());
             setInactive(getH1(), getH4(), getH3(), getH5(), getH6());
 
-        }else if(controller.getCardName().equals("hal3")){
+        } else if (controller.getCardName().equals("hal3")) {
             setActive(getH3());
             setInactive(getH1(), getH2(), getH4(), getH5(), getH6());
 
-        }else if(controller.getCardName().equals("hal4")){
+        } else if (controller.getCardName().equals("hal4")) {
             setActive(getH4());
-            setInactive(getH1(), getH2(), getH3(), getH5(),getH6());
+            setInactive(getH1(), getH2(), getH3(), getH5(), getH6());
 
-        }else if(controller.getCardName().equals("hal5")){
+        } else if (controller.getCardName().equals("hal5")) {
             setActive(getH5());
             setInactive(getH1(), getH2(), getH3(), getH4(), getH6());
-            
-        }else if(controller.getCardName().equals("hal6")){
+
+        } else if (controller.getCardName().equals("hal6")) {
             setActive(getH6());
             setInactive(getH1(), getH2(), getH3(), getH4(), getH5());
         }
     }//GEN-LAST:event_nextBtnActionPerformed
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
-        if(controller.getCardName().equals("hal1")){
+        if (controller.getCardName().equals("hal1")) {
             setActive(getH1());
-            setInactive(getH4(), getH2(), getH3(), getH5(),getH6());
+            setInactive(getH4(), getH2(), getH3(), getH5(), getH6());
 
-        }else if(controller.getCardName().equals("hal2")){
+        } else if (controller.getCardName().equals("hal2")) {
             setActive(getH2());
-            setInactive(getH1(), getH4(), getH3(), getH5(),getH6());
+            setInactive(getH1(), getH4(), getH3(), getH5(), getH6());
 
-        }else if(controller.getCardName().equals("hal3")){
+        } else if (controller.getCardName().equals("hal3")) {
             setActive(getH3());
-            setInactive(getH1(), getH2(), getH4(), getH5(),getH6());
+            setInactive(getH1(), getH2(), getH4(), getH5(), getH6());
 
-        }else if(controller.getCardName().equals("hal4")){
+        } else if (controller.getCardName().equals("hal4")) {
             setActive(getH4());
-            setInactive(getH1(), getH2(), getH3(), getH5(),getH6());
+            setInactive(getH1(), getH2(), getH3(), getH5(), getH6());
 
-        }else if(controller.getCardName().equals("hal5")){
+        } else if (controller.getCardName().equals("hal5")) {
             setActive(getH5());
-            setInactive(getH1(), getH2(), getH3(), getH4(),getH6());
-        }else if(controller.getCardName().equals("hal6")){
+            setInactive(getH1(), getH2(), getH3(), getH4(), getH6());
+        } else if (controller.getCardName().equals("hal6")) {
             setActive(getH6());
-            setInactive(getH1(), getH2(), getH3(), getH4(),getH5());
+            setInactive(getH1(), getH2(), getH3(), getH4(), getH5());
         }
     }//GEN-LAST:event_backBtnActionPerformed
 
     private void h1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_h1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_h1ActionPerformed
+
+    private void minimizebutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minimizebutton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_minimizebutton1ActionPerformed
 
     public void setActive(JButton hal) {
         hal.setForeground(new Color(125, 175, 204));
@@ -308,6 +345,7 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
     private sp.background.Bgquest bgquest1;
     private sp.componentButton.Closebutton closeBtn;
     private sp.componentButton.Closeminbutton closeminbutton1;
+    private javax.swing.JTextField errDesc;
     private sp.panelcomponent.ErrorTable errorTable1;
     private javax.swing.JButton h1;
     private javax.swing.JButton h2;
@@ -330,6 +368,7 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
     private sp.componentButton.Minimizebutton minimizebutton1;
     private sp.componentButton.NextButton nextBtn;
     private sp.componentButton.Savebutton saveBtn;
+    private javax.swing.JButton updateBtn;
     // End of variables declaration//GEN-END:variables
 
     /**
@@ -449,6 +488,14 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
         clc = new CardLayoutController();
         clc.setParentCard(MainPanel);
         clc.setCardLayout((CardLayout) MainPanel.getLayout());
+    }
+
+    public JButton getUpdateBtn() {
+        return updateBtn;
+    }
+
+    public JTextField getErrDesc() {
+        return errDesc;
     }
     
     

@@ -48,6 +48,12 @@ public class LoginController implements ActionListener {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 controller.previous();
+                try {
+                    LogMessage.write("Logout\n-----------------------------------------------------------------");
+                } catch (IOException e){
+                    
+                }
+                UserControl.logOut();
             }
         }));
         panel.getEntryQuest().getStartButton1().addActionListener(new ActionListener() {

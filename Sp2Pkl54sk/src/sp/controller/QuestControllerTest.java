@@ -10,16 +10,21 @@ import java.awt.KeyboardFocusManager;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
 import javax.swing.JViewport;
 import sp.componentButton.BackminButton;
 import sp.componentButton.Closebutton;
 import sp.componentButton.NextButton;
 import sp.componentButton.Savebutton;
+import sp.model.B1;
+import sp.model.B2;
+import sp.model.B3;
+import sp.model.B4;
 import sp.panelcomponent.EntryFormQuestTest;
 import sp.util.CardLayoutController;
 import sp.util.FormControl;
@@ -36,32 +41,36 @@ public class QuestControllerTest {
     BackminButton backButton;
     Closebutton closebutton;
     Savebutton savebutton;
+    JButton updateBtn;
     JPanel Mainpanel;
     String hal = "hal";
     private int i = 1;
     int j = 0;
     private String state;
 
-    public QuestControllerTest(EntryFormQuestTest form, NextButton nextButton, BackminButton backButton, Closebutton closebutton, Savebutton savebutton, JPanel Mainpanel) {
+    public QuestControllerTest(EntryFormQuestTest form, NextButton nextButton, BackminButton backButton, Closebutton closebutton, Savebutton savebutton, JButton updateBtn, JPanel Mainpanel) {
 
         this.form = form;
         this.nextButton = nextButton;
         this.backButton = backButton;
         this.closebutton = closebutton;
         this.savebutton = savebutton;
+        this.updateBtn = updateBtn;
         this.Mainpanel = Mainpanel;
-        
+
         controller = new CardLayoutController();
         controller.setCardLayout((CardLayout) Mainpanel.getLayout());
         controller.setParentCard(Mainpanel);
         FormControl.init(Mainpanel, controller);
-        
+
         for (int k = 0; k < Mainpanel.getComponentCount(); k++) {
             JComponent halScroll1 = (JComponent) Mainpanel.getComponent(k);
-            JComponent halScroll  = (JComponent) halScroll1.getComponent(0);
+            JComponent halScroll = (JComponent) halScroll1.getComponent(0);
             setScrollListener((JPanel) halScroll.getComponent(0));
         }
         FormControl.init(Mainpanel, controller);
+
+        updating();
 
         form.getH1().addActionListener(new ActionListener() {
 
@@ -161,6 +170,42 @@ public class QuestControllerTest {
 
             }
         });
+        
+        form.getErrorTable1().getTabelError().addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                errorTable1MouseClicked(evt);
+            }
+
+            private void errorTable1MouseClicked(MouseEvent evt) {
+                int baris = form.getErrorTable1().getTabelError().getSelectedRow();
+                int hal = (int) form.getErrorTable1().getTabelError().getModel().getValueAt(baris, 2);
+                switch (hal) {
+                    case 1:
+                        FormControl.getController().show("hal1");
+                        break;
+                    case 2:
+                        FormControl.getController().show("hal2");
+                        break;
+                    case 3:
+                        FormControl.getController().show("hal3");
+                        break;
+                    case 4:
+                        FormControl.getController().show("hal4");
+                        break;
+                    case 5:
+                        FormControl.getController().show("hal5");
+                        break;
+                    case 6:
+                        FormControl.getController().show("hal6");
+                        break;
+                    default:
+                        FormControl.getController().show("hal1");
+                        break;
+                }
+                form.getErrDesc().setText((String) form.getErrorTable1().getTabelError().getModel().getValueAt(baris, 1));
+            }
+        });
 
     }
 
@@ -234,5 +279,27 @@ public class QuestControllerTest {
                         }
                     }
                 });
+    }
+
+    private void updating() {
+        updateBtn.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                B1 b1 = new B1();
+                B2 b2 = new B2();
+                B3 b3 = new B3();
+                B4 b4 = new B4();
+                UpdatingController uc = new UpdatingController(b1, b2, b3, b4,
+                        form.getHal11(),
+                        form.getHal21(),
+                        form.getHal31(),
+                        form.getHal41(),
+                        form.getHal51(),
+                        form.getHal61(),
+                        Mainpanel, form.getErrorTable1().getTabelError());
+                updateBtn.addActionListener(uc);
+            }
+        });
     }
 }
