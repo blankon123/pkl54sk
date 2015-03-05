@@ -93,7 +93,7 @@ public class LoginController implements ActionListener {
             panel.getNimLabel().setText(UserControl.getNim());
             panel.getNamaLabel().setText(UserControl.getNama());
         } else {
-            JOptionPane.showMessageDialog(loginPanel, "Error Login");
+            JOptionPane.showMessageDialog(loginPanel, "Username Atau Password Salah","Login Error",JOptionPane.WARNING_MESSAGE);
         }
     }
 

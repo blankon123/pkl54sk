@@ -33,7 +33,6 @@ public class ValidasiB3 {
         b3listerr = new ArrayList<>();
 
         cekB3R7();
-        cekB3R8();
         cekB3R9();
         cekB3R10();
         cekB3R11();
@@ -93,16 +92,6 @@ public class ValidasiB3 {
             dummy = getError(b3view.getB3r7());
             b3view.setB3r7(dummy);
             b3listerr.add(b3listerr.size(), new Error("b3r7", "Kesalahan Korelasi dengan Umur", 2));
-        }
-    }
-    private void cekB3R8()  {
-        if (b3.getB3r7().getKode().equals("1")
-                && (b3.getB3r8s1().getKode().isEmpty()
-                || b3.getB3r8s2().getKode().isEmpty()
-                || b3.getB3r8s3().getKode().isEmpty())) {
-            dummy = getError(b3view.getB3r6());
-            b3view.setB3r6(dummy);
-            b3listerr.add(b3listerr.size(), new Error("b3r6", "Kesalahan Korelasi dengan b3r8a-c", 2));
         }
     }
     private void cekB3R9()  {
