@@ -32,7 +32,7 @@ public class UpdateController21 implements ActionListener {
     private UpdateQuest updateQuest = null;
     private CardLayoutController clc;
 
-    public UpdateController21(JPanel mp, EntryFormQuestTest efq,UpdateQuest uq) {
+    public UpdateController21(JPanel mp, EntryFormQuestTest efq, UpdateQuest uq) {
         this.MainPanel = mp;
         this.entryForm = efq;
         this.updateQuest = uq;
@@ -51,7 +51,6 @@ public class UpdateController21 implements ActionListener {
     }
 
     private void loadData() {
-        String loadData="";
         int baris = updateQuest.getTableUpdate1().getTabelUpdate().getSelectedRow();
         ErrorControl.resetErr();
         TableModel mode = new TableErrorModel();
@@ -64,37 +63,10 @@ public class UpdateController21 implements ActionListener {
             B2 data2 = B2Dao.getInstance().getByID(key);
             B3 data3 = B3Dao.getInstance().getByID(key);
             B4 data4 = B4Dao.getInstance().getByID(key);
-            entryForm.getHal11().setFieldHal1(data1, data2);
-            entryForm.getHal21().setFieldHal2(data3, data4);
-            entryForm.getHal31().setFieldHal3(data4);
-            entryForm.getHal41().setFieldHal4(data4);
-            entryForm.getHal51().setFieldHal5(data4);
-            entryForm.getHal61().setFieldHal6(data4);
 
-            if (data1.getFlag().equals("1")) {
-
-                SaveController a = new SaveController(data1, data2, data3, data4, 
-                        entryForm.getHal11(), 
-                        entryForm.getHal21(), 
-                        entryForm.getHal31(), 
-                        entryForm.getHal41(),
-                        entryForm.getHal51(),
-                        entryForm.getHal61(), 
-                        entryForm);
-                a.Validate(data1, data2, data3, data4);
-                try {
-                    entryForm.getErrorTable1().getTabelError().setModel(ErrorControl.getTableRow());
-                } catch (Exception e) {
-                    loadData = e.getMessage();
-                }
-            }
-            loadData += " Data of " + key + " has been displayed on quesioner successfully";
-            clc.show("entryquest");
-            try {
-                LogMessage.write(loadData);
-            } catch (IOException ex) {
-                Logger.getLogger(UpdateController21.class.getName()).log(Level.SEVERE, null, ex);
-            }
+            setAllField(data1, data2, data3, data4);
+            validAllField(data1, data2, data3, data4);
+            writeToTxt(key);
         }
     }
 
@@ -107,9 +79,48 @@ public class UpdateController21 implements ActionListener {
         B1Controller b1con = new B1Controller(b1, entryForm.getHal11());
         B2Controller b2con = new B2Controller(b2, b1, entryForm.getHal11());
         B3Controller b3con = new B3Controller(b3, b1, entryForm.getHal21());
-        B4Controller b4con = new B4Controller(b4, b1, 
+        B4Controller b4con = new B4Controller(b4, b1,
                 entryForm.getHal31(), entryForm.getHal41(),
                 entryForm.getHal51(), entryForm.getHal61());
 
+    }
+
+    private void setAllField(B1 data1, B2 data2, B3 data3, B4 data4) {
+        entryForm.getHal11().setFieldHal1(data1, data2);
+        entryForm.getHal21().setFieldHal2(data3, data4);
+        entryForm.getHal31().setFieldHal3(data4);
+        entryForm.getHal41().setFieldHal4(data4);
+        entryForm.getHal51().setFieldHal5(data4);
+        entryForm.getHal61().setFieldHal6(data4);
+    }
+
+    private void validAllField(B1 data1, B2 data2, B3 data3, B4 data4) {
+        SaveController a = new SaveController(data1, data2, data3, data4,
+                entryForm.getHal11(),
+                entryForm.getHal21(),
+                entryForm.getHal31(),
+                entryForm.getHal41(),
+                entryForm.getHal51(),
+                entryForm.getHal61(),
+                entryForm,
+                entryForm.getErrorTable1().getTabelError());
+        a.Validate(data1, data2, data3, data4);
+    }
+
+    private void writeToTxt(String key) {
+        String loadData = "";
+        try {
+            entryForm.getErrorTable1().getTabelError().setModel(ErrorControl.getTableRow());
+        } catch (Exception e) {
+            loadData = e.getMessage();
+        }
+
+        loadData += " Data of " + key + " has been displayed on quesioner successfully";
+        clc.show("entryquest");
+        try {
+            LogMessage.write(loadData);
+        } catch (IOException ex) {
+            Logger.getLogger(UpdateController21.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }

@@ -5,8 +5,11 @@
  */
 package sp.panelcomponent;
 
+import java.awt.CardLayout;
 import java.awt.Color;
 import javax.swing.JButton;
+import javax.swing.JPanel;
+import sp.controller.CardLayoutController;
 import sp.controller.QuestControllerTest;
 import sp.form.Hal1;
 import sp.form.Hal2;
@@ -22,7 +25,8 @@ import sp.form.Hal6;
 public class EntryFormQuestTest extends javax.swing.JPanel {
 
     public  QuestControllerTest controller;
-
+    
+    private CardLayoutController clc;
     /**
      * Creates new form EntryFormQuestTest
      */
@@ -30,6 +34,7 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
         initComponents();
         setActive(h1);
         setInactive(h2, h3, h4, h5, h6);
+        setCardManager();
         controller = new QuestControllerTest(this, nextBtn, getBackBtn(), getCloseBtn(), getSaveBtn(), MainPanel);
     }
 
@@ -408,6 +413,10 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
         return errorTable1;
     }
 
+    public JPanel getMainPanel() {
+        return MainPanel;
+    }
+
     public Hal1 getHal11() {
         return hal11;
     }
@@ -430,6 +439,16 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
 
     public Hal6 getHal61() {
         return hal61;
+    }
+
+    public CardLayoutController getClc() {
+        return clc;
+    }
+
+    private void setCardManager() {
+        clc = new CardLayoutController();
+        clc.setParentCard(MainPanel);
+        clc.setCardLayout((CardLayout) MainPanel.getLayout());
     }
     
     

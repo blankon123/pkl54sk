@@ -10,6 +10,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JPanel;
 import javax.swing.JTable;
+import sp.controller.CardLayoutController;
 import sp.controller.LoginController;
 import sp.controller.SaveController;
 import sp.controller.UpdateController21;
@@ -17,6 +18,7 @@ import sp.form.*;
 import sp.model.*;
 import sp.panelcomponent.EntryFormListingTest;
 import sp.panelcomponent.EntryFormQuestTest;
+import sp.util.FormControl;
 
 /**
  *
@@ -35,6 +37,7 @@ public class TesBeta extends javax.swing.JFrame {
         setUndecorated(true);
         setResizable(false);
         setVisible(true);
+
         setControllerSave();
         setLoginController();
         setLoadToFormController();
@@ -94,7 +97,7 @@ public class TesBeta extends javax.swing.JFrame {
                             @Override
                             public void actionPerformed(ActionEvent e) {
                                 konfirm1.setVisible(false);
-                                controller.previous();
+                                closeQuest();
                             }
                         });
                         konfirm1.setVisible(rootPaneCheckingEnabled);
@@ -159,15 +162,19 @@ public class TesBeta extends javax.swing.JFrame {
     public JPanel getMainPanel() {
         return MainPanel;
     }
+
     public EntryFormListingTest getEntryListing() {
         return entryListing;
     }
+
     public EntryFormQuestTest getEntryQuest() {
         return entryQuest;
     }
+
     public LoginPanel getLoginPanel1() {
         return loginPanel1;
     }
+
     public Panel getPanel1() {
         return panel1;
     }
@@ -269,11 +276,19 @@ public class TesBeta extends javax.swing.JFrame {
         entryQuest.getSaveBtn().addActionListener(save);
     }
     private void setLoginController() {
-        controller = new LoginController(panel1,MainPanel,getLoginPanel1());
+        controller = new LoginController(panel1, MainPanel, getLoginPanel1());
         loginPanel1.getLoginButton1().addActionListener(controller);
     }
-    private void setLoadToFormController(){
-        UpdateController21 updateController = new UpdateController21(getMainPanel(),getEntryQuest(),getPanel1().getUpdateQuest1());
+
+    private void setLoadToFormController() {
+        UpdateController21 updateController = new UpdateController21(getMainPanel(), getEntryQuest(), getPanel1().getUpdateQuest1());
         getPanel1().getUpdateQuest1().getNextButton1().addActionListener(updateController);
+    }
+    private void closeQuest() {
+        entryQuest.getClc().first();
+        FormControl.clearAll();
+        controller.previous();
+        TableErrorModel tem = new TableErrorModel();
+        getEntryQuest().getErrorTable1().getTabelError().setModel(tem);
     }
 }
