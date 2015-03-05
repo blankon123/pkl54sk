@@ -78,13 +78,11 @@ public class TableUpdateModel extends AbstractTableModel {
             case 0:
                 return list.get(rowIndex).getB1r7();
             case 1:
-                return list.get(rowIndex).getB1r3();
+                return list.get(rowIndex).getNks();
             case 2:
                 return list.get(rowIndex).getTimestamp();
             case 3:
                 return list.get(rowIndex).getFlag();
-            case 4:
-                return list.get(rowIndex).getNks();
             default:
                 return null;
         }
@@ -106,13 +104,11 @@ public class TableUpdateModel extends AbstractTableModel {
             case 0:
                 return "Nama";
             case 1:
-                return "Kelurahan";
+                return "No NKS";
             case 2:
-                return "Waktu";
+                return "Waktu Entry";
             case 3:
-                return "Flag";
-            case 4:
-                return "nks";
+                return "Clean";
             default:
                 return null;
         }

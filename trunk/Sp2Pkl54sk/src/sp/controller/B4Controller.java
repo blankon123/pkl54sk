@@ -21,15 +21,13 @@ import sp.model.OpsiTingkatKeseringan;
 public class B4Controller {
     public B4 b4;
     public B1 b1;
-    public Hal2 b2view;
     public Hal3 b3view;
     public Hal4 b4view;
     public Hal5 b5view;
     public Hal6 b6view;
     
-     public B4Controller(B4 b4 ,B1 b1,Hal2 b2view,Hal3 b3view,Hal4 b4view, Hal5 b5view, Hal6 b6view) {
+     public B4Controller(B4 b4 ,B1 b1,Hal3 b3view,Hal4 b4view, Hal5 b5view, Hal6 b6view) {
         this.b4 = b4;
-        this.b2view = b2view;
         this.b3view = b3view;
         this.b4view = b4view;
         this.b5view = b5view;

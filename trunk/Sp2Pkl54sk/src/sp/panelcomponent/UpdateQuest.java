@@ -5,6 +5,8 @@
  */
 package sp.panelcomponent;
 
+import sp.componentButton.NextButton;
+
 /**
  *
  * @author HP
@@ -16,6 +18,7 @@ public class UpdateQuest extends javax.swing.JPanel {
      */
     public UpdateQuest() {
         initComponents();
+        getNextButton1().setActionCommand("load");
     }
 
     /**
@@ -101,6 +104,16 @@ public class UpdateQuest extends javax.swing.JPanel {
     public TableUpdate getTableUpdate1() {
         return tableUpdate1;
     }
+
+    public NextButton getNextButton1() {
+        return nextButton1;
+    }
+
+    public void setNextButton1(NextButton nextButton1) {
+        this.nextButton1 = nextButton1;
+    }
+    
+    
     
     
 }

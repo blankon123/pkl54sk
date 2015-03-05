@@ -32,10 +32,10 @@ public class ErrorTable extends javax.swing.JPanel {
         tampung.add(new sp.component.Error("b8r5","umur dan pendidikan tidak match","8"));
         error=new ErrorManager(tampung);
         tabelError.setModel(error.getError());
-        this.lebarKolom();
+        SetLebarKolom();
     }
     
-    public void lebarKolom(){ 
+    public void SetLebarKolom(){ 
         TableColumn column;
         this.tabelError.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF); 
         column = this.tabelError.getColumnModel().getColumn(0); 
