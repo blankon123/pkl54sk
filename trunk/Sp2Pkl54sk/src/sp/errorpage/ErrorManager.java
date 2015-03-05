@@ -23,6 +23,10 @@ public class ErrorManager {
     public ErrorManager(List<Error> err) {
         this.err = err;  
     }
+
+    public ErrorManager() {
+    }
+    
     
     public DefaultTableModel getError()
     {
