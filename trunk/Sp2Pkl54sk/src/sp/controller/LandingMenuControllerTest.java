@@ -204,15 +204,15 @@ public class LandingMenuControllerTest {
                     for (int i = 0; i < count; i++) {
                         data.add((B1) results.get(i));
                     }
-                    quest.getTableUpdate1().getModel().setData(data);
+                    panel.getUpdateQuest1().getTableUpdate1().getModel().setData(data);
                 }
-                quest.getTableUpdate1().setLebarKolom();
+                panel.getUpdateQuest1().getTableUpdate1().setLebarKolom();
                 refreshTxt = "Updating table loaded. Found " + results.size() + " data";
             } else {
                 JOptionPane.showMessageDialog(quest, "Please login first");
             }
         } catch (NullPointerException ep) {
-            refreshTxt = "Failed to load updating table" + ep.getMessage();
+            refreshTxt = "Failed to load updating table " + ep.getMessage();
             System.out.println(refreshTxt);
         }
         try {
