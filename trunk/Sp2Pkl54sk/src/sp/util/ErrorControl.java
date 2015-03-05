@@ -67,7 +67,6 @@ public class ErrorControl {
     }
 
     public static TableErrorModel getTableRow() {
-        
         return model;
     }
     

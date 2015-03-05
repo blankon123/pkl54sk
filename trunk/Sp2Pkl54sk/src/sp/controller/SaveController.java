@@ -110,30 +110,31 @@ public class SaveController implements ActionListener {
         validB4 = new ValidasiB4(b4);
 
         if (validNotNull()) {
-            if (validB1.cek() && validB2.cek() && validB4.cek()) {
+            Validate(b1, b2, b3, b4);
+            if ((validB1.cek() && validB2.cek() && validB4.cek()) && validB3.cek().isEmpty()) {
                 b1.setFlag("0");
                 try {
                     saveToDB();
-                } catch (IOException ex) {
-                    Logger.getLogger(SaveController.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (Exception ex) {
+                    showErrorDB();
                 }
             } else {
                 ErrorControl.resetErr();
                 String err = "";
                 if (!validB1.cek()) {
-                    err += "B1 : NIM\n";
+                    err += "\nB1";
                     ErrorControl.enlistErr(b1view.getListTextField(), 1);
                 }
                 if (!validB2.cek()) {
-                    err += "B2\n";
+                    err += "\nB2";
                     ErrorControl.enlistErr(b2view.getListTextField(), 2);
                 }
-//                if (!validB3.cek()) {
-//                    err += "B3 : Pekerjaan\n";
-//                    ErrorControl.enlistErr(b3view.getListTextField(), 3);
-//                }
+                if (!validB3.cek().isEmpty()) {
+                    err += "\nB3";
+                    ErrorControl.enlistErr(b3view.getListTextField(), 3);
+                }
                 if (!validB4.cek()) {
-                    err += "B4\n";
+                    err += "\nB4";
                     ErrorControl.enlistErr(b4view.getListTextField(), 4);
                 }
                 b1.setFlag("1");
@@ -145,18 +146,13 @@ public class SaveController implements ActionListener {
                 if (ss == JOptionPane.YES_OPTION) {
                     try {
                         saveToDB();
-                    } catch (IOException ex) {
-                        Logger.getLogger(SaveController.class.getName()).log(Level.SEVERE, null, ex);
+                    } catch (Exception ex) {
+                        showErrorDB();
                     }
                 }
             }
-            Validate(b1, b2, b3, b4);
-            tab.setModel(ErrorControl.getTableRow());
         } else {
-            int ss = JOptionPane.showConfirmDialog(FormControl.getParent().getParent(),
-                    "Semua TextField Harus Terisi",
-                    "Error Isian Kosong",
-                    JOptionPane.YES_NO_OPTION);
+            showErrorDB();
         }
     }
 
@@ -178,20 +174,6 @@ public class SaveController implements ActionListener {
         ArrayList<TextField> arr;
 
         arr = b1view.getListTextField();
-        for (TextField arr1 : arr) {
-            if ("".equals(arr1.getText())) {
-                valid = false;
-                break;
-            }
-        }
-        arr = b2view.getListTextField();
-        for (TextField arr1 : arr) {
-            if ("".equals(arr1.getText())) {
-                valid = false;
-                break;
-            }
-        }
-        arr = b3view.getListTextField();
         for (TextField arr1 : arr) {
             if ("".equals(arr1.getText())) {
                 valid = false;
@@ -222,53 +204,17 @@ public class SaveController implements ActionListener {
         return valid;
     }
 
-    private void saveToDB() throws IOException {
-        String[] msg = new String[5];
-//        ((TesQuest) tq).addLogText("Koneksi Ke Database...\n");
-        ((YPane) tq).addLogText("Koneksi Ke Database...\n");
-        LogMessage.write("Koneksi ke Database...");
-        try {
-            try {
-                B1Dao.getInstance().save(b1);
-                msg[0] = ("SuksesB1 Dengan Kode NKS" + b1.getNks() + "\n");
-            } catch (Exception e) {
-                msg[0] = ("B1 :" + e.getMessage() + "\n");
-            }
-//        ((TesQuest) tq).addLogText(msg[0]);
-            ((YPane) tq).addLogText(msg[0]);
-            LogMessage.write(msg[0]);
+    private void saveToDB() {
+        B1Dao.getInstance().save(b1);
+        B2Dao.getInstance().save(b2);
+        B3Dao.getInstance().save(b3);
+        B4Dao.getInstance().save(b4);
+    }
 
-            try {
-                B2Dao.getInstance().save(b2);
-                msg[1] = ("SuksesB2 Dengan Kode NKS" + b2.getNksb2() + "\n");
-            } catch (Exception e) {
-                msg[1] = ("B2 :" + e.getMessage() + "\n");
-            }
-//        ((TesQuest) tq).addLogText(msg[1]);
-            ((YPane) tq).addLogText(msg[1]);
-            LogMessage.write(msg[1]);
-
-            try {
-                B3Dao.getInstance().save(b3);
-                msg[2] = ("SuksesB3 Dengan Kode NKS" + b3.getNksb3() + "\n");
-            } catch (Exception e) {
-                msg[2] = ("B3 :" + e.getMessage() + "\n");
-            }
-//        ((TesQuest) tq).addLogText(msg[2]);
-            ((YPane) tq).addLogText(msg[2]);
-            LogMessage.write(msg[2]);
-
-            try {
-                B4Dao.getInstance().save(b4);
-                msg[3] = ("SuksesB4 Dengan Kode NKS" + b4.getNksb4() + "\n");
-            } catch (Exception e) {
-                msg[3] = ("B4 :" + e.getMessage() + "\n");
-            }
-//        ((TesQuest) tq).addLogText(msg[3]);
-            ((YPane) tq).addLogText(msg[3]);
-            LogMessage.write(msg[3]);
-        } catch (Exception e) {
-            LogMessage.write(e.getMessage());
-        }
+    private void showErrorDB() {
+        int ss = JOptionPane.showConfirmDialog(FormControl.getParent().getParent(),
+                "Semua TextField Harus Terisi",
+                "Error Isian Kosong",
+                JOptionPane.CLOSED_OPTION);
     }
 }
