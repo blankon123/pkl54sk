@@ -50,10 +50,11 @@ public class QuestControllerTest {
         this.closebutton = closebutton;
         this.savebutton = savebutton;
         this.Mainpanel = Mainpanel;
-
+        
         controller = new CardLayoutController();
         controller.setCardLayout((CardLayout) Mainpanel.getLayout());
         controller.setParentCard(Mainpanel);
+        FormControl.init(Mainpanel, controller);
         
         for (int k = 0; k < Mainpanel.getComponentCount(); k++) {
             JComponent halScroll1 = (JComponent) Mainpanel.getComponent(k);
