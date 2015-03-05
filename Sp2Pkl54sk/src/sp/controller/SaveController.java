@@ -115,6 +115,7 @@ public class SaveController implements ActionListener {
                 b1.setFlag("0");
                 try {
                     saveToDB();
+                    showSuccesDB();
                 } catch (Exception ex) {
                     showErrorDB();
                 }
@@ -215,6 +216,13 @@ public class SaveController implements ActionListener {
         int ss = JOptionPane.showConfirmDialog(FormControl.getParent().getParent(),
                 "Semua TextField Harus Terisi",
                 "Error Isian Kosong",
+                JOptionPane.WARNING_MESSAGE);
+    }
+
+    private void showSuccesDB() {
+        int ss = JOptionPane.showConfirmDialog(FormControl.getParent().getParent(),
+                "Sukses Input Dengan NKK="+b1.getNks(),
+                "Sukses",
                 JOptionPane.CLOSED_OPTION);
     }
 }

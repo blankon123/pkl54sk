@@ -8,6 +8,10 @@ public class TableUpdateModel extends AbstractTableModel {
 
     private List<B1> list = new ArrayList<>();
 
+    public TableUpdateModel() {
+        setData(list);
+    }
+
     public List<B1> getList() {
         return list;
     }
@@ -94,7 +98,6 @@ public class TableUpdateModel extends AbstractTableModel {
 //            return super.getColumnClass(columnIndex);
 //        }
 //    }
-
     @Override
     // mendapatkan nama kolom pada index ke-?
     public String getColumnName(int column) {

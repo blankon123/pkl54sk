@@ -23,11 +23,11 @@ public class TableUpdate extends javax.swing.JPanel {
     
     public TableUpdate() {
         initComponents();
+        model = new TableUpdateModel();
         jScrollPane1.getViewport().setOpaque(false);
         setOpaque(false);
         tabelUpdate.setOpaque(false);
         setLebarKolom();
-        model = new TableUpdateModel();
         tabelUpdate.setModel(model);
     }
     
@@ -35,9 +35,9 @@ public class TableUpdate extends javax.swing.JPanel {
         TableColumn column;
         this.tabelUpdate.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF); 
         column = this.tabelUpdate.getColumnModel().getColumn(0); 
-        column.setPreferredWidth(50);
+        column.setPreferredWidth(220);
         column = this.tabelUpdate.getColumnModel().getColumn(1); 
-        column.setPreferredWidth(360); 
+        column.setPreferredWidth(80); 
         column = this.tabelUpdate.getColumnModel().getColumn(2); 
         column.setPreferredWidth(140); 
     }
