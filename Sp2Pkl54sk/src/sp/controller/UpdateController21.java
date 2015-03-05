@@ -63,7 +63,7 @@ public class UpdateController21 implements ActionListener {
             B2 data2 = B2Dao.getInstance().getByID(key);
             B3 data3 = B3Dao.getInstance().getByID(key);
             B4 data4 = B4Dao.getInstance().getByID(key);
-
+            
             setAllField(data1, data2, data3, data4);
             validAllField(data1, data2, data3, data4);
             writeToTxt(key);

@@ -10,7 +10,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JPanel;
 import javax.swing.JTable;
-import sp.controller.CardLayoutController;
 import sp.controller.LoginController;
 import sp.controller.SaveController;
 import sp.controller.UpdateController21;
@@ -81,7 +80,7 @@ public class TesBeta extends javax.swing.JFrame {
 
             @Override
             public void actionPerformed(ActionEvent ae) {
-                controller.show("entryQuest");
+                entryDariNol();
             }
         });
         entryQuest.getCloseBtn().addActionListener(new ActionListener() {
@@ -275,6 +274,7 @@ public class TesBeta extends javax.swing.JFrame {
         SaveController save = new SaveController(b1, b2, b3, b4, hal1, hal2, hal3, hal4, hal5, hal6, MainPanel, errorTable);
         entryQuest.getSaveBtn().addActionListener(save);
     }
+
     private void setLoginController() {
         controller = new LoginController(panel1, MainPanel, getLoginPanel1());
         loginPanel1.getLoginButton1().addActionListener(controller);
@@ -284,11 +284,22 @@ public class TesBeta extends javax.swing.JFrame {
         UpdateController21 updateController = new UpdateController21(getMainPanel(), getEntryQuest(), getPanel1().getUpdateQuest1());
         getPanel1().getUpdateQuest1().getNextButton1().addActionListener(updateController);
     }
+
     private void closeQuest() {
         entryQuest.getClc().first();
         FormControl.clearAll();
         controller.previous();
         TableErrorModel tem = new TableErrorModel();
         getEntryQuest().getErrorTable1().getTabelError().setModel(tem);
+        getEntryQuest().getErrDesc().setText("");
+        getEntryQuest().getErrField().setText("");
+    }
+
+    private void entryDariNol() {
+        entryQuest.getSaveBtn().setEnabled(true);
+        entryQuest.getUpdateBtn().setEnabled(false);
+        FormControl.clearAll();
+        FormControl.getController().first();
+        controller.show("entryQuest");
     }
 }

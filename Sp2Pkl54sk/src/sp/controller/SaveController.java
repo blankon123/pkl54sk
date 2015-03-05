@@ -34,22 +34,22 @@ public class SaveController implements ActionListener {
     private B2Controller b2Controller;
     private B3Controller b3Controller;
     private B4Controller b4Controller;
-    private Hal1 b1view;
-    private Hal2 b2view;
-    private Hal3 b3view;
-    private Hal4 b4view;
-    private Hal5 b5view;
-    private Hal6 b6view;
+    private final Hal1 b1view;
+    private final Hal2 b2view;
+    private final Hal3 b3view;
+    private final Hal4 b4view;
+    private final Hal5 b5view;
+    private final Hal6 b6view;
     private B1 b1;
     private B2 b2;
     private B3 b3;
     private B4 b4;
-    private JTable tab;
+    private final JTable tab;
     private ValidasiB1 validB1;
     private ValidasiB2 validB2;
     private ValidasiB3 validB3;
     private ValidasiB4 validB4;
-    private JPanel mainPanel;
+    private final JPanel mainPanel;
 
     public SaveController(B1 b1, B2 b2, B3 b3, B4 b4, Hal1 b1view, Hal2 b2view, Hal3 b3view, Hal4 b4view, Hal5 b5view, Hal6 b6view, JPanel tq, JTable tab) {
         this.b1 = b1;
@@ -91,6 +91,7 @@ public class SaveController implements ActionListener {
                 try {
                     saveToDB();
                     showSuccesDB();
+                    toDefault();
                 } catch (Exception ex) {
                     showErrorDB();
                 }
@@ -203,5 +204,10 @@ public class SaveController implements ActionListener {
                 "Semua Isian Harus Terisi",
                 "Field Kosong",
                 JOptionPane.WARNING_MESSAGE);
+    }
+
+    private void toDefault() {
+        FormControl.clearAll();
+        FormControl.getController().first();
     }
 }

@@ -78,7 +78,7 @@ public class QuestControllerTest {
             public void actionPerformed(ActionEvent e) {
                 form.setActive(form.getH1());
                 form.setInactive(form.getH2(), form.getH3(), form.getH4(), form.getH5(), form.getH6());
-                form.controller.show("hal1");
+                form.getController().show("hal1");
                 setI(1);
             }
         });
@@ -89,7 +89,7 @@ public class QuestControllerTest {
             public void actionPerformed(ActionEvent e) {
                 form.setActive(form.getH2());
                 form.setInactive(form.getH1(), form.getH3(), form.getH4(), form.getH5(), form.getH6());
-                form.controller.show("hal2");
+                form.getController().show("hal2");
                 setI(2);
             }
         });
@@ -100,7 +100,7 @@ public class QuestControllerTest {
             public void actionPerformed(ActionEvent e) {
                 form.setActive(form.getH3());
                 form.setInactive(form.getH1(), form.getH2(), form.getH4(), form.getH5(), form.getH6());
-                form.controller.show("hal3");
+                form.getController().show("hal3");
                 setI(3);
             }
         });
@@ -111,7 +111,7 @@ public class QuestControllerTest {
             public void actionPerformed(ActionEvent e) {
                 form.setActive(form.getH4());
                 form.setInactive(form.getH1(), form.getH3(), form.getH2(), form.getH5(), form.getH6());
-                form.controller.show("hal4");
+                form.getController().show("hal4");
                 setI(4);
             }
         });
@@ -122,7 +122,7 @@ public class QuestControllerTest {
             public void actionPerformed(ActionEvent e) {
                 form.setActive(form.getH5());
                 form.setInactive(form.getH1(), form.getH3(), form.getH4(), form.getH2(), form.getH6());
-                form.controller.show("hal5");
+                form.getController().show("hal5");
                 setI(5);
             }
         });
@@ -133,7 +133,7 @@ public class QuestControllerTest {
             public void actionPerformed(ActionEvent e) {
                 form.setActive(form.getH6());
                 form.setInactive(form.getH1(), form.getH3(), form.getH4(), form.getH5(), form.getH2());
-                form.controller.show("hal6");
+                form.getController().show("hal6");
                 setI(6);
             }
         });
@@ -170,40 +170,11 @@ public class QuestControllerTest {
 
             }
         });
-        
+
         form.getErrorTable1().getTabelError().addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 errorTable1MouseClicked(evt);
-            }
-
-            private void errorTable1MouseClicked(MouseEvent evt) {
-                int baris = form.getErrorTable1().getTabelError().getSelectedRow();
-                int hal = (int) form.getErrorTable1().getTabelError().getModel().getValueAt(baris, 2);
-                switch (hal) {
-                    case 1:
-                        FormControl.getController().show("hal1");
-                        break;
-                    case 2:
-                        FormControl.getController().show("hal2");
-                        break;
-                    case 3:
-                        FormControl.getController().show("hal3");
-                        break;
-                    case 4:
-                        FormControl.getController().show("hal4");
-                        break;
-                    case 5:
-                        FormControl.getController().show("hal5");
-                        break;
-                    case 6:
-                        FormControl.getController().show("hal6");
-                        break;
-                    default:
-                        FormControl.getController().show("hal1");
-                        break;
-                }
-                form.getErrDesc().setText((String) form.getErrorTable1().getTabelError().getModel().getValueAt(baris, 1));
             }
         });
 
@@ -279,6 +250,36 @@ public class QuestControllerTest {
                         }
                     }
                 });
+    }
+
+    private void errorTable1MouseClicked(MouseEvent evt) {
+        int baris = form.getErrorTable1().getTabelError().getSelectedRow();
+        int hal = (int) form.getErrorTable1().getTabelError().getModel().getValueAt(baris, 2);
+        switch (hal) {
+            case 1:
+                FormControl.getController().show("hal1");
+                break;
+            case 2:
+                FormControl.getController().show("hal2");
+                break;
+            case 3:
+                FormControl.getController().show("hal3");
+                break;
+            case 4:
+                FormControl.getController().show("hal4");
+                break;
+            case 5:
+                FormControl.getController().show("hal5");
+                break;
+            case 6:
+                FormControl.getController().show("hal6");
+                break;
+            default:
+                FormControl.getController().show("hal1");
+                break;
+        }
+        form.getErrField().setText((String) form.getErrorTable1().getTabelError().getModel().getValueAt(baris, 0).toString().toUpperCase());
+        form.getErrDesc().setText((String) form.getErrorTable1().getTabelError().getModel().getValueAt(baris, 1));
     }
 
     private void updating() {
