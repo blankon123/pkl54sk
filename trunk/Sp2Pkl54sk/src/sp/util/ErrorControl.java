@@ -8,7 +8,6 @@ package sp.util;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JTable;
-import sp.component.TextField;
 import sp.model.Error;
 import sp.model.TableErrorModel;
 
@@ -25,6 +24,7 @@ public class ErrorControl {
     static {
         errList = new ArrayList<>();
         errTab = new JTable();
+        model = new TableErrorModel();
     }
 
     public static void setErrList(List<Error> errList) {
@@ -51,18 +51,6 @@ public class ErrorControl {
         return errList.get(index);
     }
 
-    public static void enlistErr(List<TextField> list, int page) {
-        for (TextField tf : list) {
-            if (tf.getValid() == false) {
-                setError(tf.getName(), tf.getText(), page);
-            }
-        }
-        //gantiadd
-        model = new TableErrorModel();
-        model.setData(errList);
-        errTab.setModel(model);
-    }
-
     public static List<Error> getErrList() {
         return errList;
     }
@@ -78,11 +66,9 @@ public class ErrorControl {
     }
     
     public static void addErr(ArrayList<Error> e){
-        for(Error err : e){
+        e.stream().forEach((err) -> {
             errList.add(err);
-        }
-        
-        model = new TableErrorModel();
+        });
         model.setData(errList);
         errTab.setModel(model);
     }

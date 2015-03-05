@@ -112,19 +112,16 @@ public class SaveController implements ActionListener {
                 String err = "";
                 if (!validB1.cek()) {
                     err += "\nB1";
-                    ErrorControl.enlistErr(b1view.getListTextField(), 1);
                 }
                 if (!validB2.cek()) {
                     err += "\nB2";
-                    ErrorControl.enlistErr(b2view.getListTextField(), 2);
                 }
                 if (!validB3.cek().isEmpty()) {
                     err += "\nB3";
-                    ErrorControl.enlistErr(b3view.getListTextField(), 3);
+                    ErrorControl.addErr(validB3.cek());
                 }
                 if (!validB4.cek()) {
                     err += "\nB4";
-                    ErrorControl.enlistErr(b4view.getListTextField(), 4);
                 }
                 b1.setFlag("1");
                 tab.setModel(ErrorControl.getTableRow());
@@ -141,7 +138,7 @@ public class SaveController implements ActionListener {
                 }
             }
         } else {
-            showErrorDB();
+            showNullError();
         }
     }
 
@@ -157,6 +154,7 @@ public class SaveController implements ActionListener {
             ErrorControl.addErr(validb3.cek());
         }
     }
+
     public boolean validNotNull() {
         boolean valid = true;
         ArrayList<TextField> arr;
@@ -191,23 +189,32 @@ public class SaveController implements ActionListener {
         }
         return valid;
     }
-    
+
     private void saveToDB() {
         B1Dao.getInstance().save(b1);
         B2Dao.getInstance().save(b2);
         B3Dao.getInstance().save(b3);
         B4Dao.getInstance().save(b4);
     }
+
     private void showErrorDB() {
         int ss = JOptionPane.showConfirmDialog(mainPanel,
-                "Semua TextField Harus Terisi",
-                "Error Isian Kosong",
+                "Kesalahan Pada SQL Syntax",
+                "Database Error",
                 JOptionPane.WARNING_MESSAGE);
     }
+
     private void showSuccesDB() {
         int ss = JOptionPane.showConfirmDialog(mainPanel,
-                "Sukses Input Dengan NKK="+b1.getNks(),
+                "Sukses Input Dengan NKK=" + b1.getNks(),
                 "Sukses",
                 JOptionPane.CLOSED_OPTION);
+    }
+
+    private void showNullError() {
+        int ss = JOptionPane.showConfirmDialog(mainPanel,
+                "Semua Isian Harus Terisi",
+                "Field Kosong",
+                JOptionPane.WARNING_MESSAGE);
     }
 }
