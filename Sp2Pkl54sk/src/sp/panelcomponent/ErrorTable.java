@@ -16,7 +16,6 @@ import sp.errorpage.ErrorManager;
  */
 public class ErrorTable extends javax.swing.JPanel {
     public ErrorManager error;
-    ArrayList<sp.component.Error> tampung;
     /**
      * Creates new form testTabel
      */
@@ -26,11 +25,7 @@ public class ErrorTable extends javax.swing.JPanel {
      */
     public ErrorTable() {
         initComponents();
-        tampung = new ArrayList<sp.component.Error>();
-        tampung.add(new sp.component.Error("b8r1","umur dan pendidikan tidak match","8"));
-        tampung.add(new sp.component.Error("b8r2","umur dan pendidikan tidak match","8"));
-        tampung.add(new sp.component.Error("b8r5","umur dan pendidikan tidak match","8"));
-        error=new ErrorManager(tampung);
+        error=new ErrorManager();
         tabelError.setModel(error.getError());
         SetLebarKolom();
     }
