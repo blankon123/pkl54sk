@@ -51,20 +51,6 @@ public class SaveController implements ActionListener {
     private ValidasiB4 validB4;
     private JPanel mainPanel;
 
-    public SaveController(B1 b1, B2 b2, B3 b3, B4 b4, Hal1 b1view, Hal2 b2view, Hal3 b3view, Hal4 b4view, Hal5 b5view, Hal6 b6view, JPanel mp) {
-        this.b1 = b1;
-        this.b2 = b2;
-        this.b3 = b3;
-        this.b4 = b4;
-        this.b1view = b1view;
-        this.b2view = b2view;
-        this.b3view = b3view;
-        this.b4view = b4view;
-        this.b5view = b5view;
-        this.b6view = b6view;
-        this.mainPanel = mp;
-    }
-
     public SaveController(B1 b1, B2 b2, B3 b3, B4 b4, Hal1 b1view, Hal2 b2view, Hal3 b3view, Hal4 b4view, Hal5 b5view, Hal6 b6view, JPanel tq, JTable tab) {
         this.b1 = b1;
         this.b2 = b2;
@@ -77,6 +63,7 @@ public class SaveController implements ActionListener {
         this.b5view = b5view;
         this.b6view = b6view;
         this.tab = tab;
+        this.mainPanel = tq;
     }
 
     @Override

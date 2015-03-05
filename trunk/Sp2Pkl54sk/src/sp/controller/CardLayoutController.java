@@ -47,6 +47,10 @@ public class CardLayoutController {
         cardLayout.show(parentCard, cardName);
     }
     
+    public void first(){
+        cardLayout.first(parentCard);
+    }
+    
     
     
 }
