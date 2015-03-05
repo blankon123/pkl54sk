@@ -12,6 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.JTable;
 import sp.controller.LoginController;
 import sp.controller.SaveController;
+import sp.controller.UpdateController21;
 import sp.form.*;
 import sp.model.*;
 import sp.panelcomponent.EntryFormListingTest;
@@ -36,6 +37,7 @@ public class TesBeta extends javax.swing.JFrame {
         setVisible(true);
         setControllerSave();
         setLoginController();
+        setLoadToFormController();
 
         loginPanel1.getCloseminbutton1().addActionListener(new ActionListener() {
             @Override
@@ -269,5 +271,9 @@ public class TesBeta extends javax.swing.JFrame {
     private void setLoginController() {
         controller = new LoginController(panel1,MainPanel,getLoginPanel1());
         loginPanel1.getLoginButton1().addActionListener(controller);
+    }
+    private void setLoadToFormController(){
+        UpdateController21 updateController = new UpdateController21(getMainPanel(),getEntryQuest(),getPanel1().getUpdateQuest1());
+        getPanel1().getUpdateQuest1().getNextButton1().addActionListener(updateController);
     }
 }

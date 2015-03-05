@@ -6,7 +6,6 @@
 package sp.panelcomponent;
 
 import javax.swing.JTable;
-import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableColumn;
 import sp.model.TableUpdateModel;
 
@@ -58,8 +57,6 @@ public class TableUpdate extends javax.swing.JPanel {
         this.tabelUpdate = tabelUpdate;
     }
     
-    
-   
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -75,17 +72,17 @@ public class TableUpdate extends javax.swing.JPanel {
 
         tabelUpdate.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "No", "Nama KRT", "Clean/Error"
+                "No", "Nama KRT", "Tanggal", "Clean/Error"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
 
             public Class getColumnClass(int columnIndex) {

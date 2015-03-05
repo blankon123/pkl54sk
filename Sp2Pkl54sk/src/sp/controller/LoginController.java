@@ -100,11 +100,9 @@ public class LoginController implements ActionListener {
     public void show(String ss) {
         controller.show(ss);
     }
-
     public void previous() {
         controller.previous();
     }
-
     public void next() {
         controller.next();
     }

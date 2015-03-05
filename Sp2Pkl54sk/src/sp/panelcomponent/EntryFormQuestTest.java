@@ -431,4 +431,6 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
     public Hal6 getHal61() {
         return hal61;
     }
+    
+    
 }

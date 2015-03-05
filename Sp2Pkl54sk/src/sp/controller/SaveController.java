@@ -13,26 +13,15 @@ import sp.form.Hal2;
 import sp.form.Hal4;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTable;
 import sp.component.TextField;
-import sp.model.B1;
-import sp.model.B2;
-import sp.dao.B1Dao;
-import sp.dao.B2Dao;
-import sp.dao.B3Dao;
-import sp.dao.B4Dao;
-import sp.form.YPane;
-import sp.model.B3;
-import sp.model.B4;
+import sp.model.*;
+import sp.dao.*;
 import sp.util.ErrorControl;
 import sp.util.FormControl;
-import sp.util.LogMessage;
 import sp.validasi.*;
 
 /**
@@ -55,14 +44,14 @@ public class SaveController implements ActionListener {
     private B2 b2;
     private B3 b3;
     private B4 b4;
-    private JPanel tq;
     private JTable tab;
     private ValidasiB1 validB1;
     private ValidasiB2 validB2;
     private ValidasiB3 validB3;
     private ValidasiB4 validB4;
+    private JPanel mainPanel;
 
-    public SaveController(B1 b1, B2 b2, B3 b3, B4 b4, Hal1 b1view, Hal2 b2view, Hal3 b3view, Hal4 b4view, Hal5 b5view, Hal6 b6view, JPanel tq) {
+    public SaveController(B1 b1, B2 b2, B3 b3, B4 b4, Hal1 b1view, Hal2 b2view, Hal3 b3view, Hal4 b4view, Hal5 b5view, Hal6 b6view, JPanel mp) {
         this.b1 = b1;
         this.b2 = b2;
         this.b3 = b3;
@@ -73,7 +62,7 @@ public class SaveController implements ActionListener {
         this.b4view = b4view;
         this.b5view = b5view;
         this.b6view = b6view;
-        this.tq = tq;
+        this.mainPanel = mp;
     }
 
     public SaveController(B1 b1, B2 b2, B3 b3, B4 b4, Hal1 b1view, Hal2 b2view, Hal3 b3view, Hal4 b4view, Hal5 b5view, Hal6 b6view, JPanel tq, JTable tab) {
@@ -87,7 +76,6 @@ public class SaveController implements ActionListener {
         this.b4view = b4view;
         this.b5view = b5view;
         this.b6view = b6view;
-        this.tq = tq;
         this.tab = tab;
     }
 
@@ -97,7 +85,7 @@ public class SaveController implements ActionListener {
         b1Controller = new B1Controller(b1, b1view);
         b2Controller = new B2Controller(b2, b1, b1view);
         b3Controller = new B3Controller(b3, b1, b2view);
-        b4Controller = new B4Controller(b4, b1, b2view, b3view, b4view, b5view, b6view);
+        b4Controller = new B4Controller(b4, b1, b3view, b4view, b5view, b6view);
 
         b1 = b1Controller.B1hasil();
         b2 = b2Controller.B2hasil();
@@ -140,7 +128,7 @@ public class SaveController implements ActionListener {
                 }
                 b1.setFlag("1");
                 tab.setModel(ErrorControl.getTableRow());
-                int ss = JOptionPane.showConfirmDialog(FormControl.getParent().getParent(),
+                int ss = JOptionPane.showConfirmDialog(mainPanel,
                         "Apakah Anda Yakin Save Ke DB ?\n" + "Anda Memiliki Error di Blok : \n" + err,
                         "Apakah Anda Yakin Save Ke DB ?",
                         JOptionPane.YES_NO_OPTION);
@@ -169,7 +157,6 @@ public class SaveController implements ActionListener {
             ErrorControl.addErr(validb3.cek());
         }
     }
-
     public boolean validNotNull() {
         boolean valid = true;
         ArrayList<TextField> arr;
@@ -204,23 +191,21 @@ public class SaveController implements ActionListener {
         }
         return valid;
     }
-
+    
     private void saveToDB() {
         B1Dao.getInstance().save(b1);
         B2Dao.getInstance().save(b2);
         B3Dao.getInstance().save(b3);
         B4Dao.getInstance().save(b4);
     }
-
     private void showErrorDB() {
-        int ss = JOptionPane.showConfirmDialog(FormControl.getParent().getParent(),
+        int ss = JOptionPane.showConfirmDialog(mainPanel,
                 "Semua TextField Harus Terisi",
                 "Error Isian Kosong",
                 JOptionPane.WARNING_MESSAGE);
     }
-
     private void showSuccesDB() {
-        int ss = JOptionPane.showConfirmDialog(FormControl.getParent().getParent(),
+        int ss = JOptionPane.showConfirmDialog(mainPanel,
                 "Sukses Input Dengan NKK="+b1.getNks(),
                 "Sukses",
                 JOptionPane.CLOSED_OPTION);

@@ -40,7 +40,7 @@ public class UserControl {
     }
 
     public static String getFlag2() {
-        return "2";
+        return flag2;
     }
 
     public static void logOut() {

@@ -57,6 +57,7 @@ public class ErrorControl {
                 setError(tf.getName(), tf.getText(), page);
             }
         }
+        //gantiadd
         model = new TableErrorModel();
         model.setData(errList);
         errTab.setModel(model);

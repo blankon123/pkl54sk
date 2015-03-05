@@ -27,7 +27,6 @@ import sp.dao.B1Dao;
 import sp.dao.B2Dao;
 import sp.dao.B3Dao;
 import sp.dao.B4Dao;
-import sp.form.YPane;
 import sp.model.B3;
 import sp.model.B4;
 import sp.util.ErrorControl;
@@ -97,7 +96,7 @@ public class UpdatingController implements ActionListener {
         b1Controller = new B1Controller(b1, b1view);
         b2Controller = new B2Controller(b2, b1, b1view);
         b3Controller = new B3Controller(b3, b1, b2view);
-        b4Controller = new B4Controller(b4, b1, b2view, b3view, b4view, b5view, b6view);
+        b4Controller = new B4Controller(b4, b1, b3view, b4view, b5view, b6view);
 
         b1 = b1Controller.B1hasil();
         b2 = b2Controller.B2hasil();
@@ -112,7 +111,7 @@ public class UpdatingController implements ActionListener {
         Validate(b1, b2, b3, b4);
 
         if (validNotNull()) {
-            if (validB1.cek() && validB2.cek() && /*validB3.cek() &&*/ validB4.cek()) {
+            if ((validB1.cek() && validB2.cek() && validB4.cek())&& validB3.cek().isEmpty()) {
                 b1.setFlag("0");
                 try {
                     updatingDB();
@@ -123,18 +122,17 @@ public class UpdatingController implements ActionListener {
                 ErrorControl.resetErr();
                 String err = "";
                 if (!validB1.cek()) {
-                    err += "B1 : NIM\n";
+                    err += "/nB1";
                     ErrorControl.enlistErr(b1view.getListTextField(), 1);
-
                 }
                 if (!validB2.cek()) {
-                    err += "B2\n";
+                    err += "\nB2";
                     ErrorControl.enlistErr(b2view.getListTextField(), 2);
                 }
-//                if (!validB3.cek()) {
-//                    err += "B3 : Pekerjaan\n";
-//                    ErrorControl.enlistErr(b3view.getListTextField(), 3);
-//                }
+                if (!validB3.cek().isEmpty()) {
+                    err += "\nB3";
+                    ErrorControl.enlistErr(b3view.getListTextField(), 3);
+                }
                 if (!validB4.cek()) {
                     err += "B4\n";
                     ErrorControl.enlistErr(b4view.getListTextField(), 4);
@@ -222,8 +220,6 @@ public class UpdatingController implements ActionListener {
 
     private void updatingDB() throws IOException {
         String[] msg = new String[5];
-//        ((TesQuest) tq).addLogText("Koneksi Ke Database...\n");
-        ((YPane) tq).addLogText("Koneksi Ke Database...\n");
         LogMessage.write("Koneksi ke Database...");
         try {
             B1Dao.getInstance().update(b1);
@@ -231,8 +227,6 @@ public class UpdatingController implements ActionListener {
         } catch (Exception e) {
             msg[0] = ("B1 :" + e.getMessage() + "\n");
         }
-//        ((TesQuest) tq).addLogText(msg[0]);
-        ((YPane) tq).addLogText(msg[0]);
         LogMessage.write(msg[0]);
 
         try {
@@ -241,8 +235,6 @@ public class UpdatingController implements ActionListener {
         } catch (Exception e) {
             msg[1] = ("B2 :" + e.getMessage() + "\n");
         }
-//        ((TesQuest) tq).addLogText(msg[1]);
-        ((YPane) tq).addLogText(msg[1]);
         LogMessage.write(msg[1]);
 
         try {
@@ -251,8 +243,6 @@ public class UpdatingController implements ActionListener {
         } catch (Exception e) {
             msg[2] = ("B3 :" + e.getMessage() + "\n");
         }
-//        ((TesQuest) tq).addLogText(msg[2]);
-        ((YPane) tq).addLogText(msg[2]);
         LogMessage.write(msg[2]);
 
         try {
@@ -261,8 +251,6 @@ public class UpdatingController implements ActionListener {
         } catch (Exception e) {
             msg[3] = ("B4 :" + e.getMessage() + "\n");
         }
-//        ((TesQuest) tq).addLogText(msg[3]);
-        ((YPane) tq).addLogText(msg[3]);
         LogMessage.write(msg[3]);
     }
 }

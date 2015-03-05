@@ -50,6 +50,7 @@ public class B3Controller  {
         b3.setB3r9s1d2(new OptionYaTidak(b3view.getB3r9s1d2().getText()));
         b3.setB3r9s1d3(new OptionYaTidak(b3view.getB3r9s1d3().getText()));
         b3.setB3r9s1d4(new OptionYaTidak(b3view.getB3r9s1d4().getText()));
+        b3.setB3r9s2(b3view.getB3r9s2().getText()); 
         b3.setB3r10(b3view.getB3r10().getText());
         b3.setB3r11(b3view.getB3r11().getText());
         b3.setB3r12(new OptionB3r12(b3view.getB3r12().getText()));
