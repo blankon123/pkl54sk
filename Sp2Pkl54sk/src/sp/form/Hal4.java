@@ -101,6 +101,7 @@ public class Hal4 extends javax.swing.JPanel {
         getListTextField().add(26, b4br27);
         getListTextField().add(27, b4br28);
         getListTextField().add(28, b4br29);
+        maxPos = getListTextField().size();
     }
 
     public static int getStartPos() {

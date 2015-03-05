@@ -83,6 +83,7 @@ public class Hal5 extends javax.swing.JPanel {
         getListTextField().add(17, b4br47);
         getListTextField().add(18, b4br48);
         getListTextField().add(19, b4br49);
+        maxPos = getListTextField().size();
     }
 
     public static int getStartPos() {
