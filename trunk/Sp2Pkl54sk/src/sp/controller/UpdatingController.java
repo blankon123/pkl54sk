@@ -54,26 +54,12 @@ public class UpdatingController implements ActionListener {
     private B2 b2;
     private B3 b3;
     private B4 b4;
-    private JPanel tq;
+    private JPanel mainPanel;
     private JTable tab;
     private ValidasiB1 validB1;
     private ValidasiB2 validB2;
     private ValidasiB3 validB3;
     private ValidasiB4 validB4;
-
-    public UpdatingController(B1 b1, B2 b2, B3 b3, B4 b4, Hal1 b1view, Hal2 b2view, Hal3 b3view, Hal4 b4view, Hal5 b5view, Hal6 b6view, JPanel tq) {
-        this.b1 = b1;
-        this.b2 = b2;
-        this.b3 = b3;
-        this.b4 = b4;
-        this.b1view = b1view;
-        this.b2view = b2view;
-        this.b3view = b3view;
-        this.b4view = b4view;
-        this.b5view = b5view;
-        this.b6view = b6view;
-        this.tq = tq;
-    }
 
     public UpdatingController(B1 b1, B2 b2, B3 b3, B4 b4, Hal1 b1view, Hal2 b2view, Hal3 b3view, Hal4 b4view, Hal5 b5view, Hal6 b6view, JPanel tq, JTable tab) {
         this.b1 = b1;
@@ -86,7 +72,7 @@ public class UpdatingController implements ActionListener {
         this.b4view = b4view;
         this.b5view = b5view;
         this.b6view = b6view;
-        this.tq = tq;
+        this.mainPanel = tq;
         this.tab = tab;
     }
 
@@ -107,31 +93,33 @@ public class UpdatingController implements ActionListener {
         validB2 = new ValidasiB2(b2);
         validB3 = new ValidasiB3(b3, b2view);
         validB4 = new ValidasiB4(b4);
-        
+
         Validate(b1, b2, b3, b4);
 
         if (validNotNull()) {
-            if ((validB1.cek() && validB2.cek() && validB4.cek())&& validB3.cek().isEmpty()) {
+            if ((validB1.cek() && validB2.cek() && validB4.cek()) && validB3.cek().isEmpty()) {
                 b1.setFlag("0");
                 try {
                     updatingDB();
-                } catch (IOException ex) {
-                    Logger.getLogger(SaveController.class.getName()).log(Level.SEVERE, null, ex);
+                    showSuccessDB();
+                } catch (Exception ex) {
+                    showErrorDB();
                 }
             } else {
                 ErrorControl.resetErr();
                 String err = "";
                 if (!validB1.cek()) {
-                    err += "/nB1";
+                    err += "\nB1";
                 }
                 if (!validB2.cek()) {
                     err += "\nB2";
                 }
                 if (!validB3.cek().isEmpty()) {
                     err += "\nB3";
+                    ErrorControl.addErr(validB3.cek());
                 }
                 if (!validB4.cek()) {
-                    err += "B4\n";
+                    err += "\nB4";
                 }
                 b1.setFlag("1");
                 tab.setModel(ErrorControl.getTableRow());
@@ -142,16 +130,13 @@ public class UpdatingController implements ActionListener {
                 if (ss == JOptionPane.YES_OPTION) {
                     try {
                         updatingDB();
-                    } catch (IOException ex) {
-                        Logger.getLogger(SaveController.class.getName()).log(Level.SEVERE, null, ex);
+                    } catch (Exception ex) {
+                        showErrorDB();
                     }
                 }
             }
         } else {
-            int ss = JOptionPane.showConfirmDialog(FormControl.getParent().getParent(),
-                    "Semua TextField Harus Terisi",
-                    "Error Isian Kosong",
-                    JOptionPane.YES_NO_OPTION);
+            showNullError();
         }
     }
 
@@ -160,6 +145,9 @@ public class UpdatingController implements ActionListener {
         ValidasiB2 validb2 = new ValidasiB2(b2);
         ValidasiB3 validb3 = new ValidasiB3(b3, b2view);
         ValidasiB4 validb4 = new ValidasiB4(b4);
+        if (validb1.cek2() != null) {
+            ErrorControl.addErr(validb1.cek2());
+        }
         if (validb3.cek() != null) {
             ErrorControl.addErr(validb3.cek());
         }
@@ -214,39 +202,31 @@ public class UpdatingController implements ActionListener {
         return valid;
     }
 
-    private void updatingDB() throws IOException {
-        String[] msg = new String[5];
-        LogMessage.write("Koneksi ke Database...");
-        try {
-            B1Dao.getInstance().update(b1);
-            msg[0] = ("Sukses update B1 Dengan Kode NKS" + b1.getNks() + "\n");
-        } catch (Exception e) {
-            msg[0] = ("B1 :" + e.getMessage() + "\n");
-        }
-        LogMessage.write(msg[0]);
+    private void updatingDB() {
+        B1Dao.getInstance().update(b1);
+        B2Dao.getInstance().update(b2);
+        B3Dao.getInstance().update(b3);
+        B4Dao.getInstance().update(b4);
+    }
 
-        try {
-            B2Dao.getInstance().update(b2);
-            msg[1] = ("Sukses update B2 Dengan Kode NKS" + b2.getNksb2() + "\n");
-        } catch (Exception e) {
-            msg[1] = ("B2 :" + e.getMessage() + "\n");
-        }
-        LogMessage.write(msg[1]);
+    private void showSuccessDB() {
+        int ss = JOptionPane.showConfirmDialog(mainPanel,
+                "Sukses Update Dengan NKK=" + b1.getNks(),
+                "Sukses",
+                JOptionPane.CLOSED_OPTION);
+    }
 
-        try {
-            B3Dao.getInstance().update(b3);
-            msg[2] = ("Sukses update B3 Dengan Kode NKS" + b3.getNksb3() + "\n");
-        } catch (Exception e) {
-            msg[2] = ("B3 :" + e.getMessage() + "\n");
-        }
-        LogMessage.write(msg[2]);
+    private void showErrorDB() {
+        int ss = JOptionPane.showConfirmDialog(mainPanel,
+                "Kesalahan Pada SQL Syntax",
+                "Database Error",
+                JOptionPane.WARNING_MESSAGE);
+    }
 
-        try {
-            B4Dao.getInstance().update(b4);
-            msg[3] = ("Sukses update B4 Dengan Kode NKS" + b4.getNksb4() + "\n");
-        } catch (Exception e) {
-            msg[3] = ("B4 :" + e.getMessage() + "\n");
-        }
-        LogMessage.write(msg[3]);
+    private void showNullError() {
+        int ss = JOptionPane.showConfirmDialog(mainPanel,
+                "Semua Isian Harus Terisi",
+                "Field Kosong",
+                JOptionPane.WARNING_MESSAGE);
     }
 }

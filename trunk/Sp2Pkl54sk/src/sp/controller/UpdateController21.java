@@ -117,6 +117,8 @@ public class UpdateController21 implements ActionListener {
 
         loadData += " Data of " + key + " has been displayed on quesioner successfully";
         clc.show("entryquest");
+        entryForm.getSaveBtn().setEnabled(false);
+        entryForm.getUpdateBtn().setEnabled(true);
         try {
             LogMessage.write(loadData);
         } catch (IOException ex) {
