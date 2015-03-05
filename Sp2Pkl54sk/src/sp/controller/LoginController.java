@@ -61,7 +61,16 @@ public class LoginController implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        try {
+            CheckConnection cekCon = new CheckConnection();
+            doLogin();
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(loginPanel, "Koneksi DB Bermasalah", "DB Inconnect", JOptionPane.WARNING_MESSAGE);
+        }
 
+    }
+
+    private void doLogin() {
         String user = loginPanel.getLoginTextField1().getText();
         String pw = "";
         String nama = UserDAO.getInstance().getByID(user).getNama();
@@ -93,16 +102,18 @@ public class LoginController implements ActionListener {
             panel.getNimLabel().setText(UserControl.getNim());
             panel.getNamaLabel().setText(UserControl.getNama());
         } else {
-            JOptionPane.showMessageDialog(loginPanel, "Username Atau Password Salah","Login Error",JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(loginPanel, "Username Atau Password Salah", "Login Error", JOptionPane.WARNING_MESSAGE);
         }
     }
 
     public void show(String ss) {
         controller.show(ss);
     }
+
     public void previous() {
         controller.previous();
     }
+
     public void next() {
         controller.next();
     }

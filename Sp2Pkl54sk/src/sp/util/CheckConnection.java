@@ -5,10 +5,7 @@
  */
 package sp.util;
 
-import sp.dao.B1Dao;
-import sp.dao.B2Dao;
-import sp.dao.B3Dao;
-import sp.dao.B4Dao;
+import sp.dao.*;
 
 /**
  *
@@ -16,15 +13,10 @@ import sp.dao.B4Dao;
  */
 public class CheckConnection {
     public static void createConnection(){
+        UserDAO.getInstance().entity();
         B1Dao.getInstance().entity();
         B2Dao.getInstance().entity();
         B3Dao.getInstance().entity();
         B4Dao.getInstance().entity();
-    }
-    public static void closeConnection(){
-//        B1Dao.getInstance().entity().close();
-//        B2Dao.getInstance().entity().close();
-//        B3Dao.getInstance().entity().close();
-//        B4Dao.getInstance().entity().close();
     }
 }

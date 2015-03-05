@@ -99,7 +99,7 @@ public class ValidasiB3 {
                 && b3.getB3r9s1d2().getKode().equals("2")
                 && b3.getB3r9s1d3().getKode().equals("2")
                 && b3.getB3r9s1d4().getKode().equals("2")) {
-            if (!b3.getB3r9s2().equals("0")) {
+            if (!b3.getB3r9s2().equals("0") || !b3.getB3r9s2().isEmpty()) {
                 dummy = getError(b3view.getB3r9s2());
                 b3view.setB3r9s2(dummy);
                 b3listerr.add(b3listerr.size(), new Error("b3r9s2", "Kesalahan Korelasi dengan b3r9a", 2));
@@ -124,6 +124,11 @@ public class ValidasiB3 {
     }
     private void cekB3R10() {
         if (b3.getB3r9s1d1().getKode().equals("2") && b3.getB3r10().isEmpty()) {
+            dummy = getError(b3view.getB3r10());
+            b3view.setB3r10(dummy);
+            b3listerr.add(b3listerr.size(), new Error("b3r10", "Harus Terisi karena Bekerja", 2));
+        }
+        if (b3.getB3r9s1d1().getKode().equals("1") && !b3.getB3r10().isEmpty()) {
             dummy = getError(b3view.getB3r10());
             b3view.setB3r10(dummy);
             b3listerr.add(b3listerr.size(), new Error("b3r10", "Harus Terisi karena Bekerja", 2));

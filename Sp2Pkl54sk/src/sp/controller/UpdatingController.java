@@ -123,19 +123,15 @@ public class UpdatingController implements ActionListener {
                 String err = "";
                 if (!validB1.cek()) {
                     err += "/nB1";
-                    ErrorControl.enlistErr(b1view.getListTextField(), 1);
                 }
                 if (!validB2.cek()) {
                     err += "\nB2";
-                    ErrorControl.enlistErr(b2view.getListTextField(), 2);
                 }
                 if (!validB3.cek().isEmpty()) {
                     err += "\nB3";
-                    ErrorControl.enlistErr(b3view.getListTextField(), 3);
                 }
                 if (!validB4.cek()) {
                     err += "B4\n";
-                    ErrorControl.enlistErr(b4view.getListTextField(), 4);
                 }
                 b1.setFlag("1");
                 tab.setModel(ErrorControl.getTableRow());
