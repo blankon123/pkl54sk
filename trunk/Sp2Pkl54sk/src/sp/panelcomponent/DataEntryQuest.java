@@ -27,7 +27,8 @@ public class DataEntryQuest extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        listingDataEntry1 = new sp.component.ListingDataEntry();
+        questDataEntry1 = new sp.component.QuestDataEntry();
+        tableUpdate1 = new sp.panelcomponent.TableUpdate();
         startButton1 = new sp.componentButton.StartButton();
         backtobutton1 = new sp.componentButton.Backtobutton();
 
@@ -35,25 +36,31 @@ public class DataEntryQuest extends javax.swing.JPanel {
 
         backtobutton1.setText("");
 
-        javax.swing.GroupLayout listingDataEntry1Layout = new javax.swing.GroupLayout(listingDataEntry1);
-        listingDataEntry1.setLayout(listingDataEntry1Layout);
-        listingDataEntry1Layout.setHorizontalGroup(
-            listingDataEntry1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, listingDataEntry1Layout.createSequentialGroup()
-                .addContainerGap(634, Short.MAX_VALUE)
-                .addGroup(listingDataEntry1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(backtobutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(startButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(131, 131, 131))
+        javax.swing.GroupLayout questDataEntry1Layout = new javax.swing.GroupLayout(questDataEntry1);
+        questDataEntry1.setLayout(questDataEntry1Layout);
+        questDataEntry1Layout.setHorizontalGroup(
+            questDataEntry1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(questDataEntry1Layout.createSequentialGroup()
+                .addGap(91, 91, 91)
+                .addComponent(tableUpdate1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(45, 45, 45)
+                .addGroup(questDataEntry1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(startButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(backtobutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(111, Short.MAX_VALUE))
         );
-        listingDataEntry1Layout.setVerticalGroup(
-            listingDataEntry1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(listingDataEntry1Layout.createSequentialGroup()
-                .addGap(252, 252, 252)
+        questDataEntry1Layout.setVerticalGroup(
+            questDataEntry1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, questDataEntry1Layout.createSequentialGroup()
+                .addContainerGap(139, Short.MAX_VALUE)
+                .addComponent(tableUpdate1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(133, 133, 133))
+            .addGroup(questDataEntry1Layout.createSequentialGroup()
+                .addGap(235, 235, 235)
                 .addComponent(startButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34)
+                .addGap(33, 33, 33)
                 .addComponent(backtobutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(261, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -62,22 +69,24 @@ public class DataEntryQuest extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(listingDataEntry1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(questDataEntry1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(listingDataEntry1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 22, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(questDataEntry1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private sp.componentButton.Backtobutton backtobutton1;
-    private sp.component.ListingDataEntry listingDataEntry1;
+    private sp.component.QuestDataEntry questDataEntry1;
     private sp.componentButton.StartButton startButton1;
+    private sp.panelcomponent.TableUpdate tableUpdate1;
     // End of variables declaration//GEN-END:variables
 
     /**
