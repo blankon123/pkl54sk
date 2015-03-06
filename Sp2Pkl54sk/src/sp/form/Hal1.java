@@ -41,8 +41,10 @@ public class Hal1 extends javax.swing.JPanel {
         b1r2.setText(data1.getB1r2());
         b1r3.setText(data1.getB1r3());
         b1r4.setText(data1.getB1r4().getKode());
-        String dummy = data1.getB1r5().substring(0, data1.getB1r5().indexOf("B"));
-        b1r5.setText(dummy);
+//        if DB using bloksensus+B
+//        String dummy = data1.getB1r5().substring(0, data1.getB1r5().indexOf("B"));
+//        b1r5.setText(dummy);
+        b1r5.setText(data1.getB1r5());
         b1r6.setText(data1.getB1r6());
         b1r7.setText(data1.getB1r7());
         b1r8.setText(data1.getB1r8());
