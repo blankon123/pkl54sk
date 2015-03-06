@@ -93,4 +93,11 @@ public class Aboutbutton extends JButton{
        
         this.active = active;
     }
+
+    public void Activebutton() {
+        icon = new ImageIcon(getClass().getResource("/sp/image/about-active.png"));
+        setIcon(icon);
+        setActive(true);
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
