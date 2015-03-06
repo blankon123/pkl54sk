@@ -45,7 +45,16 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
     private void initComponents() {
 
         bgquest1 = new sp.background.Bgquest();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        errDesc = new javax.swing.JTextArea();
         errorTable1 = new sp.panelcomponent.ErrorTable();
+        errField = new javax.swing.JLabel();
+        h1 = new javax.swing.JButton();
+        h2 = new javax.swing.JButton();
+        h3 = new javax.swing.JButton();
+        h4 = new javax.swing.JButton();
+        h5 = new javax.swing.JButton();
+        h6 = new javax.swing.JButton();
         MainPanel = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         hal11 = new sp.form.Hal1();
@@ -61,20 +70,36 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
         hal61 = new sp.form.Hal6();
         backBtn = new sp.componentButton.BackminButton();
         nextBtn = new sp.componentButton.NextButton();
-        updateBtn = new javax.swing.JButton();
         saveBtn = new sp.componentButton.Savebutton();
         closeBtn = new sp.componentButton.Closebutton();
-        closeminbutton1 = new sp.componentButton.Closeminbutton();
         minimizebutton1 = new sp.componentButton.Minimizebutton();
-        h1 = new javax.swing.JButton();
-        h2 = new javax.swing.JButton();
-        h3 = new javax.swing.JButton();
-        h4 = new javax.swing.JButton();
-        h5 = new javax.swing.JButton();
-        h6 = new javax.swing.JButton();
-        jScrollPane7 = new javax.swing.JScrollPane();
-        errDesc = new javax.swing.JTextArea();
-        errField = new javax.swing.JLabel();
+        closeminbutton1 = new sp.componentButton.Closeminbutton();
+        updateBtn = new javax.swing.JButton();
+
+        errDesc.setColumns(20);
+        errDesc.setRows(5);
+        jScrollPane7.setViewportView(errDesc);
+
+        errField.setFont(new java.awt.Font("abeatbyKai", 0, 18)); // NOI18N
+        errField.setText("jLabel1");
+
+        h1.setFont(new java.awt.Font("abeatbyKai", 0, 11)); // NOI18N
+        h1.setText("hal1");
+
+        h2.setFont(new java.awt.Font("abeatbyKai", 0, 11)); // NOI18N
+        h2.setText("hal2");
+
+        h3.setFont(new java.awt.Font("abeatbyKai", 0, 11)); // NOI18N
+        h3.setText("hal3");
+
+        h4.setFont(new java.awt.Font("abeatbyKai", 0, 11)); // NOI18N
+        h4.setText("hal4");
+
+        h5.setFont(new java.awt.Font("abeatbyKai", 0, 11)); // NOI18N
+        h5.setText("hal5");
+
+        h6.setFont(new java.awt.Font("abeatbyKai", 0, 11)); // NOI18N
+        h6.setText("hal6");
 
         MainPanel.setLayout(new java.awt.CardLayout());
 
@@ -103,147 +128,102 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
         MainPanel.add(jScrollPane6, "hal6");
 
         backBtn.setText("");
-        backBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backBtnActionPerformed(evt);
-            }
-        });
 
         nextBtn.setText("");
-        nextBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nextBtnActionPerformed(evt);
-            }
-        });
-
-        updateBtn.setText("Update");
-        updateBtn.setEnabled(false);
 
         saveBtn.setText("");
 
         closeBtn.setText("");
 
+        minimizebutton1.setText("");
+
         closeminbutton1.setText("");
 
-        minimizebutton1.setText("");
-        minimizebutton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                minimizebutton1ActionPerformed(evt);
-            }
-        });
-
-        h1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        h1.setText("Halaman 1");
-        h1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                h1ActionPerformed(evt);
-            }
-        });
-
-        h2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        h2.setText("Halaman 2");
-
-        h3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        h3.setText("Halaman 3");
-
-        h4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        h4.setText("Halaman 4");
-
-        h5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        h5.setText("Halaman 5");
-
-        h6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        h6.setText("Halaman 6");
-
-        errDesc.setColumns(20);
-        errDesc.setRows(5);
-        jScrollPane7.setViewportView(errDesc);
-
-        errField.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        errField.setText("Error");
+        updateBtn.setText("UPDATE");
 
         javax.swing.GroupLayout bgquest1Layout = new javax.swing.GroupLayout(bgquest1);
         bgquest1.setLayout(bgquest1Layout);
         bgquest1Layout.setHorizontalGroup(
             bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bgquest1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
+                .addGap(34, 34, 34)
                 .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(errField)
+                    .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(bgquest1Layout.createSequentialGroup()
-                        .addComponent(errorTable1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(67, 67, 67)
-                        .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(errorTable1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50)
+                        .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(h1)
                             .addComponent(h2)
                             .addComponent(h3)
                             .addComponent(h4)
                             .addComponent(h5)
-                            .addComponent(h6)))
-                    .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(errField))
-                .addGap(119, 119, 119)
+                            .addComponent(h6))))
+                .addGap(43, 43, 43)
                 .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(bgquest1Layout.createSequentialGroup()
-                        .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 731, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(107, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgquest1Layout.createSequentialGroup()
+                        .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 924, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(32, Short.MAX_VALUE))
+                    .addGroup(bgquest1Layout.createSequentialGroup()
                         .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(nextBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(updateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(updateBtn)
+                        .addGap(18, 18, 18)
                         .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(closeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(66, 66, 66))))
+                        .addGap(48, 48, 48))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgquest1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(minimizebutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(closeminbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(closeminbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         bgquest1Layout.setVerticalGroup(
             bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgquest1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(errorTable1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(53, 53, 53)
+                .addComponent(errField)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(59, 59, 59))
             .addGroup(bgquest1Layout.createSequentialGroup()
                 .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(bgquest1Layout.createSequentialGroup()
-                        .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(closeminbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(minimizebutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(bgquest1Layout.createSequentialGroup()
-                                .addGap(231, 231, 231)
-                                .addComponent(h1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(h2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(h3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(h4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(h5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(h6))
-                            .addGroup(bgquest1Layout.createSequentialGroup()
-                                .addGap(169, 169, 169)
-                                .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 454, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(29, 29, 29)
-                        .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(nextBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(closeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(updateBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(230, 230, 230)
+                        .addComponent(h1)
+                        .addGap(18, 18, 18)
+                        .addComponent(h2)
+                        .addGap(18, 18, 18)
+                        .addComponent(h3)
+                        .addGap(18, 18, 18)
+                        .addComponent(h4)
+                        .addGap(18, 18, 18)
+                        .addComponent(h5)
+                        .addGap(18, 18, 18)
+                        .addComponent(h6))
                     .addGroup(bgquest1Layout.createSequentialGroup()
-                        .addGap(280, 280, 280)
-                        .addComponent(errorTable1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(errField)
-                        .addGap(4, 4, 4)
-                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(35, Short.MAX_VALUE))
+                        .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(minimizebutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(closeminbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(83, 83, 83)
+                        .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 547, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(nextBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(closeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(updateBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -252,7 +232,7 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(bgquest1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 20, Short.MAX_VALUE))
+                .addGap(0, 238, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -261,67 +241,6 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
                 .addGap(0, 22, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    private void nextBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextBtnActionPerformed
-        if (controller.getCardName().equals("hal1")) {
-            setActive(getH1());
-            setInactive(getH4(), getH2(), getH3(), getH5(), getH6());
-
-        } else if (controller.getCardName().equals("hal2")) {
-            setActive(getH2());
-            setInactive(getH1(), getH4(), getH3(), getH5(), getH6());
-
-        } else if (controller.getCardName().equals("hal3")) {
-            setActive(getH3());
-            setInactive(getH1(), getH2(), getH4(), getH5(), getH6());
-
-        } else if (controller.getCardName().equals("hal4")) {
-            setActive(getH4());
-            setInactive(getH1(), getH2(), getH3(), getH5(), getH6());
-
-        } else if (controller.getCardName().equals("hal5")) {
-            setActive(getH5());
-            setInactive(getH1(), getH2(), getH3(), getH4(), getH6());
-
-        } else if (controller.getCardName().equals("hal6")) {
-            setActive(getH6());
-            setInactive(getH1(), getH2(), getH3(), getH4(), getH5());
-        }
-    }//GEN-LAST:event_nextBtnActionPerformed
-
-    private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
-        if (controller.getCardName().equals("hal1")) {
-            setActive(getH1());
-            setInactive(getH4(), getH2(), getH3(), getH5(), getH6());
-
-        } else if (controller.getCardName().equals("hal2")) {
-            setActive(getH2());
-            setInactive(getH1(), getH4(), getH3(), getH5(), getH6());
-
-        } else if (controller.getCardName().equals("hal3")) {
-            setActive(getH3());
-            setInactive(getH1(), getH2(), getH4(), getH5(), getH6());
-
-        } else if (controller.getCardName().equals("hal4")) {
-            setActive(getH4());
-            setInactive(getH1(), getH2(), getH3(), getH5(), getH6());
-
-        } else if (controller.getCardName().equals("hal5")) {
-            setActive(getH5());
-            setInactive(getH1(), getH2(), getH3(), getH4(), getH6());
-        } else if (controller.getCardName().equals("hal6")) {
-            setActive(getH6());
-            setInactive(getH1(), getH2(), getH3(), getH4(), getH5());
-        }
-    }//GEN-LAST:event_backBtnActionPerformed
-
-    private void h1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_h1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_h1ActionPerformed
-
-    private void minimizebutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minimizebutton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_minimizebutton1ActionPerformed
 
     public void setActive(JButton hal) {
         hal.setForeground(new Color(125, 175, 204));

@@ -21,6 +21,7 @@ import sp.panelcomponent.DataEntryListing;
 import sp.panelcomponent.DataEntryQuest;
 import sp.panelcomponent.LandingButton;
 import sp.panelcomponent.Menu;
+import sp.panelcomponent.MenuListing;
 import sp.panelcomponent.UpdateListing;
 import sp.panelcomponent.UpdateQuest;
 import sp.util.LogMessage;
@@ -35,18 +36,19 @@ public class LandingMenuControllerTest {
 
     CardLayoutController CardController;
     Panel panel;
-    Menu menuListing, menuQuest;
+    Menu menuQuest;
+    MenuListing menuListing;
     JPanel MainPanel;
     LandingButton landingButton;
     DataEntryListing entryListing;
     DataEntryQuest entryQuest;
-    UpdateListing listing;
+    
     UpdateQuest quest;
 
     public LandingMenuControllerTest(DataEntryListing entryListing, DataEntryQuest entryQuest,
-            UpdateListing listing, UpdateQuest quest,
+            UpdateQuest quest,
             Panel panel, JPanel MainPanel,
-            Menu menuListing, Menu menuQuest,
+            MenuListing menuListing, Menu menuQuest,
             LandingButton landingButton
     ) {
 
@@ -71,12 +73,25 @@ public class LandingMenuControllerTest {
                 panel.getNavbarButton1().getHomebutton1().Activebutton();
             }
         });
+
+        panel.getNavbarButton1().getAboutbutton1().addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CardController.show("comingsoon");
+                panel.getNavbarButton1().getHomebutton1().resetButton();
+                panel.getNavbarButton1().getAboutbutton1().Activebutton();
+                //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+        });
+
         panel.getNavbarButton1().getListingbutton1().addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent ae) {
                 CardController.show("menuListing");
-                menuListing.getLabel().setText("Listing ...");
+                menuListing.getLabel().setText("Listing VSEM.PKL54.DSART");
                 panel.getNavbarButton1().getListingbutton1().Activebutton();
                 panel.getNavbarButton1().getHomebutton1().resetButton();
             }
@@ -86,7 +101,7 @@ public class LandingMenuControllerTest {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 CardController.show("menuQuest");
-                menuQuest.getLabel().setText("Questionnaire ...");
+                menuQuest.getLabel().setText("Kuesioner VSEM.PKL54.P");
                 panel.getNavbarButton1().getQuestionnairebutton1().Activebutton();
                 panel.getNavbarButton1().getHomebutton1().resetButton();
             }
@@ -97,7 +112,7 @@ public class LandingMenuControllerTest {
             @Override
             public void actionPerformed(ActionEvent e) {
                 CardController.show("menuListing");
-                menuListing.getLabel().setText("Listing DSART");
+                menuListing.getLabel().setText("Listing VSEM.PKL54.DSART");
                 panel.getNavbarButton1().getListingbutton1().Activebutton();
                 panel.getNavbarButton1().getHomebutton1().resetButton();
             }
@@ -134,12 +149,11 @@ public class LandingMenuControllerTest {
 //
 //            }
 //        });
-        menuListing.getDataentrybutton1().addActionListener(new ActionListener(){
-            
+        menuListing.getDataentrybutton1().addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                            CardController.show("entrylisting");
+                CardController.show("entrylisting");
 
                 //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
             }
@@ -217,13 +231,7 @@ public class LandingMenuControllerTest {
                 CardController.show("menuListing");
             }
         });
-        listing.getBacktobutton1().addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent ae) {
-                CardController.show("menuListing");
-            }
-        });
+        
         entryQuest.getBacktobutton1().addActionListener(new ActionListener() {
 
             @Override

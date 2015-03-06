@@ -24,7 +24,7 @@ public class Bgquest extends JPanel{
     private Image image;
     
     public Bgquest(){
-        image = new ImageIcon(getClass().getResource("/sp/image/bgquest5.png")).getImage();
+        image = new ImageIcon(getClass().getResource("/sp/image/bgquest.png")).getImage();
         setPreferredSize(new Dimension(1366,768));
     }
     
