@@ -24,7 +24,7 @@ public class Background extends JPanel{
     private Image image;
     
     public Background(){
-        image = new ImageIcon(getClass().getResource("/sp/image/bg10.png")).getImage();
+        image = new ImageIcon(getClass().getResource("/sp/image/bg.png")).getImage();
         setPreferredSize(new Dimension(1366,768));
     }
     
