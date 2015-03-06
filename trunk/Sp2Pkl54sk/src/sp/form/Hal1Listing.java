@@ -20,15 +20,15 @@ public class Hal1Listing extends javax.swing.JPanel {
      * Creates new form Hal1Listing
      */
     private ArrayList<TextField> listTextFieldHal1Listing = new ArrayList<TextField>();
-    protected static int startPos=0;
+    protected static int startPos = 0;
     protected static int maxPos;
-    
+
     public Hal1Listing() {
         initComponents();
         addListTextfield();
-        setListTextFieldHal1Listing(FormControl.setFixedPos(startPos,getListTextField()));
+        setListTextFieldHal1Listing(FormControl.setFixedPos(startPos, getListTextField()));
     }
-    
+
     public int getMaxPertanyaan() {
         return maxPos;
     }
@@ -36,7 +36,25 @@ public class Hal1Listing extends javax.swing.JPanel {
     public ArrayList<TextField> getListTextField() {
         return listTextFieldHal1Listing;
     }
-    
+
+    //    public void setFieldHal1(B1Listing b) {
+//        b1r1.setText(b.getB1r1());
+//        b1r2.setText(b.getB1r2());
+//        b1r3.setText(b.getB1r3());
+//        b1r4.setText(b.getB1r4());
+//        b1r5.setText(b.getB1r5());
+//        b1r6s1.setText(b.getB1r6s1());
+//        b1r6s2.setText(b.getB1r6s2());
+//        b2r1.setText(b.getB2r1());
+//        b2r2.setText(b.getB2r2());
+//        b2r3s1.setText(b.getB2r3s1());
+//        b2r3s2.setText(b.getB2r3s2());
+//        b2r3s3.setText(b.getB2r3s3());
+//        b2r3s4.setText(b.getB2r3s4());
+//        b3r1.setText(b.getB3r1());
+//        b3r2.setText(b.getB3r2());
+//        b3r3.setText(b.getB3r3());
+//    }
     private void addListTextfield() {
         getListTextField().add(0, b1r1);
         getListTextField().add(1, b1r2);

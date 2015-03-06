@@ -22,13 +22,13 @@ public class Hal2Listing extends javax.swing.JPanel {
     private ArrayList<TextField> listTextFieldHal2Listing = new ArrayList<TextField>();
     protected static int startPos = Hal1Listing.maxPos;
     protected static int maxPos;
-    
+
     public Hal2Listing() {
         initComponents();
         addListTextfield();
-        setListTextFieldHal2Listing(FormControl.setFixedPos(startPos,getListTextField()));
+        setListTextFieldHal2Listing(FormControl.setFixedPos(startPos, getListTextField()));
     }
-    
+
     public int getMaxPertanyaan() {
         return maxPos;
     }
@@ -36,7 +36,17 @@ public class Hal2Listing extends javax.swing.JPanel {
     public ArrayList<TextField> getListTextField() {
         return listTextFieldHal2Listing;
     }
-    
+
+    //    public void setFieldHal1(B2Listing b) {
+//        b4r1.setText(b.getB4r1());
+//        b4r2s1.setText(b.getB4r2s1());
+//        b4r2s2.setText(b.getB4r2s2());
+//        b4r2s3.setText(b.getB4r2s3());
+//        b4r3.setText(b.getB4r3());
+//        b4r4.setText(b.getB4r4());
+//        b4r5.setText(b.getB4r5());
+//        b4r6.setText(b.getB4r6());
+//    }
     private void addListTextfield() {
         getListTextField().add(0, b4r1);
         getListTextField().add(1, b4r2s1);
