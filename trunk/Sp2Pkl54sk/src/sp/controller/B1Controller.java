@@ -40,7 +40,9 @@ public class B1Controller {
         b1.setB1r2(b1view.getB1r2().getText());
         b1.setB1r3(b1view.getB1r3().getText());
         b1.setB1r4(new OptionB1r4(b1view.getB1r4().getText()));
-        b1.setB1r5(b1view.getB1r5().getText()+"B");
+//        if DB using bloksensus+B
+//        b1.setB1r5(b1view.getB1r5().getText()+"B");
+        b1.setB1r5(b1view.getB1r5().getText());
         b1.setB1r6(b1view.getB1r6().getText());
         b1.setB1r7(b1view.getB1r7().getText());
         b1.setB1r8(b1view.getB1r8().getText());
