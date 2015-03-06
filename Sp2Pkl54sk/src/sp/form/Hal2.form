@@ -73,7 +73,7 @@
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="khusus" type="boolean" value="true"/>
                 <Property name="khususType" type="char" value="2"/>
-                <Property name="maxDigit" type="int" value="65"/>
+                <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="posisi" type="int" value="2"/>
                 <Property name="required" type="boolean" value="true"/>
@@ -296,11 +296,10 @@
             <Component class="sp.component.TextField" name="b3r11">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="2"/>
-                <Property name="maxDigit" type="int" value="99"/>
+                <Property name="maxDigit" type="int" value="10"/>
+                <Property name="minDigit" type="int" value="1"/>
                 <Property name="posisi" type="int" value="18"/>
-                <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -312,8 +311,8 @@
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="maxDigit" type="int" value="6"/>
+                <Property name="minDigit" type="int" value="1"/>
                 <Property name="posisi" type="int" value="19"/>
-                <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
