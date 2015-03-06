@@ -48,14 +48,13 @@ public class Hal2Listing extends javax.swing.JPanel {
 //        b4r6.setText(b.getB4r6());
 //    }
     private void addListTextfield() {
-        getListTextField().add(0, b4r1);
-        getListTextField().add(1, b4r2s1);
-        getListTextField().add(2, b4r2s2);
-        getListTextField().add(3, b4r2s3);
-        getListTextField().add(4, b4r3);
-        getListTextField().add(5, b4r4);
-        getListTextField().add(6, b4r5);
-        getListTextField().add(7, b4r6);
+        getListTextField().add(0, b4r2s1);
+        getListTextField().add(1, b4r2s2);
+        getListTextField().add(2, b4r2s3);
+        getListTextField().add(3, b4r3);
+        getListTextField().add(4, b4r4);
+        getListTextField().add(5, b4r5);
+        getListTextField().add(6, b4r6);
         maxPos = getListTextField().size();
     }
 
@@ -81,14 +80,6 @@ public class Hal2Listing extends javax.swing.JPanel {
 
     public static void setMaxPos(int maxPos) {
         Hal2Listing.maxPos = maxPos;
-    }
-
-    public TextField getB4r1() {
-        return b4r1;
-    }
-
-    public void setB4r1(TextField b4r1) {
-        this.b4r1 = b4r1;
     }
 
     public TextField getB4r2s1() {
@@ -174,7 +165,6 @@ public class Hal2Listing extends javax.swing.JPanel {
 
         hal2Listing1 = new sp.imageClass.Hal2Listing();
         jLayeredPane1 = new javax.swing.JLayeredPane();
-        b4r1 = new sp.component.TextField();
         b4r2s1 = new sp.component.TextField();
         b4r2s2 = new sp.component.TextField();
         b4r2s3 = new sp.component.TextField();
@@ -187,39 +177,33 @@ public class Hal2Listing extends javax.swing.JPanel {
 
         jLayeredPane1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        b4r1.setAngka(true);
-        b4r1.setMaxDigit(999);
-        b4r1.setMinDigit(1);
-        b4r1.setRequired(true);
-        jLayeredPane1.add(b4r1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, 30));
-
         b4r2s1.setAngka(true);
         b4r2s1.setMaxDigit(999);
         b4r2s1.setMinDigit(1);
         b4r2s1.setRequired(true);
-        jLayeredPane1.add(b4r2s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 40, 30));
+        jLayeredPane1.add(b4r2s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 40, 30));
 
         b4r2s2.setAngka(true);
         b4r2s2.setMaxDigit(999);
         b4r2s2.setMinDigit(1);
         b4r2s2.setRequired(true);
-        jLayeredPane1.add(b4r2s2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, 40, 30));
+        jLayeredPane1.add(b4r2s2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 40, 30));
 
         b4r2s3.setAngka(true);
         b4r2s3.setMaxDigit(999);
         b4r2s3.setMinDigit(1);
         b4r2s3.setRequired(true);
-        jLayeredPane1.add(b4r2s3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 40, 30));
+        jLayeredPane1.add(b4r2s3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 40, 30));
 
         b4r3.setHuruf(true);
         b4r3.setLength(100);
         b4r3.setRequired(true);
-        jLayeredPane1.add(b4r3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 160, 30));
+        jLayeredPane1.add(b4r3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 220, 30));
 
         b4r4.setHuruf(true);
         b4r4.setLength(5);
         b4r4.setRequired(true);
-        jLayeredPane1.add(b4r4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, 70, 30));
+        jLayeredPane1.add(b4r4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 160, 80, 30));
 
         b4r5.setAngka(true);
         b4r5.setKhusus(true);
@@ -227,13 +211,13 @@ public class Hal2Listing extends javax.swing.JPanel {
         b4r5.setMaxDigit(64);
         b4r5.setMinDigit(15);
         b4r5.setRequired(true);
-        jLayeredPane1.add(b4r5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 120, 40, 30));
+        jLayeredPane1.add(b4r5, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 160, 40, 30));
 
         b4r6.setAngka(true);
         b4r6.setHuruf(true);
         b4r6.setLength(200);
         b4r6.setRequired(true);
-        jLayeredPane1.add(b4r6, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 120, 210, 30));
+        jLayeredPane1.add(b4r6, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 160, 290, 30));
 
         javax.swing.GroupLayout hal2Listing1Layout = new javax.swing.GroupLayout(hal2Listing1);
         hal2Listing1.setLayout(hal2Listing1Layout);
@@ -251,7 +235,6 @@ public class Hal2Listing extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private sp.component.TextField b4r1;
     private sp.component.TextField b4r2s1;
     private sp.component.TextField b4r2s2;
     private sp.component.TextField b4r2s3;
