@@ -8,7 +8,7 @@ package sp.form;
 import java.util.ArrayList;
 import javax.swing.JLayeredPane;
 import sp.component.TextField;
-import sp.util.FormControl;
+import sp.util.ListControl;
 
 /**
  *
@@ -26,7 +26,7 @@ public class Hal2Listing extends javax.swing.JPanel {
     public Hal2Listing() {
         initComponents();
         addListTextfield();
-        setListTextFieldHal2Listing(FormControl.setFixedPos(startPos, getListTextField()));
+        setListTextFieldHal2Listing(ListControl.setFixedPos(startPos, getListTextField()));
     }
 
     public int getMaxPertanyaan() {
