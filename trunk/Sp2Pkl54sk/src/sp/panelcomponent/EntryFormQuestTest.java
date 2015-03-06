@@ -56,8 +56,6 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
         h5 = new javax.swing.JButton();
         h6 = new javax.swing.JButton();
         MainPanel = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        hal11 = new sp.form.Hal1();
         jScrollPane2 = new javax.swing.JScrollPane();
         hal21 = new sp.form.Hal2();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -68,13 +66,15 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
         hal51 = new sp.form.Hal5();
         jScrollPane6 = new javax.swing.JScrollPane();
         hal61 = new sp.form.Hal6();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        hal11 = new sp.form.Hal1();
         backBtn = new sp.componentButton.BackminButton();
         nextBtn = new sp.componentButton.NextButton();
         saveBtn = new sp.componentButton.Savebutton();
         closeBtn = new sp.componentButton.Closebutton();
         minimizebutton1 = new sp.componentButton.Minimizebutton();
         closeminbutton1 = new sp.componentButton.Closeminbutton();
-        updateBtn = new javax.swing.JButton();
+        updateBtn = new sp.componentButton.Updatebutton1();
 
         errDesc.setColumns(20);
         errDesc.setRows(5);
@@ -103,10 +103,6 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
 
         MainPanel.setLayout(new java.awt.CardLayout());
 
-        jScrollPane1.setViewportView(hal11);
-
-        MainPanel.add(jScrollPane1, "hal1");
-
         jScrollPane2.setViewportView(hal21);
 
         MainPanel.add(jScrollPane2, "hal2");
@@ -127,6 +123,10 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
 
         MainPanel.add(jScrollPane6, "hal6");
 
+        jScrollPane1.setViewportView(hal11);
+
+        MainPanel.add(jScrollPane1, "hal1");
+
         backBtn.setText("");
 
         nextBtn.setText("");
@@ -139,7 +139,7 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
 
         closeminbutton1.setText("");
 
-        updateBtn.setText("UPDATE");
+        updateBtn.setText("");
 
         javax.swing.GroupLayout bgquest1Layout = new javax.swing.GroupLayout(bgquest1);
         bgquest1.setLayout(bgquest1Layout);
@@ -162,20 +162,18 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
                             .addComponent(h6))))
                 .addGap(43, 43, 43)
                 .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(bgquest1Layout.createSequentialGroup()
-                        .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 924, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(32, Short.MAX_VALUE))
+                    .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 727, Short.MAX_VALUE)
                     .addGroup(bgquest1Layout.createSequentialGroup()
                         .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(nextBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(updateBtn)
-                        .addGap(18, 18, 18)
-                        .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(closeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(48, 48, 48))))
+                        .addComponent(updateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(closeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(48, 48, 48))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgquest1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(minimizebutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -185,45 +183,48 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
         );
         bgquest1Layout.setVerticalGroup(
             bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgquest1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(errorTable1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(53, 53, 53)
-                .addComponent(errField)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(59, 59, 59))
             .addGroup(bgquest1Layout.createSequentialGroup()
-                .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(bgquest1Layout.createSequentialGroup()
-                        .addGap(230, 230, 230)
-                        .addComponent(h1)
-                        .addGap(18, 18, 18)
-                        .addComponent(h2)
-                        .addGap(18, 18, 18)
-                        .addComponent(h3)
-                        .addGap(18, 18, 18)
-                        .addComponent(h4)
-                        .addGap(18, 18, 18)
-                        .addComponent(h5)
-                        .addGap(18, 18, 18)
-                        .addComponent(h6))
+                .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(bgquest1Layout.createSequentialGroup()
                         .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(bgquest1Layout.createSequentialGroup()
+                                .addGap(230, 230, 230)
+                                .addComponent(h1)
+                                .addGap(18, 18, 18)
+                                .addComponent(h2)
+                                .addGap(18, 18, 18)
+                                .addComponent(h3)
+                                .addGap(18, 18, 18)
+                                .addComponent(h4)
+                                .addGap(18, 18, 18)
+                                .addComponent(h5)
+                                .addGap(18, 18, 18)
+                                .addComponent(h6))
                             .addComponent(minimizebutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(closeminbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(83, 83, 83)
-                        .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 547, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(nextBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(closeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(updateBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(242, 242, 242)
+                        .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(nextBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(closeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(updateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(39, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgquest1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgquest1Layout.createSequentialGroup()
+                        .addComponent(errorTable1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(53, 53, 53)
+                        .addComponent(errField)
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(59, 59, 59))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgquest1Layout.createSequentialGroup()
+                        .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 547, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(98, 98, 98))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -285,7 +286,7 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
     private sp.componentButton.Minimizebutton minimizebutton1;
     private sp.componentButton.NextButton nextBtn;
     private sp.componentButton.Savebutton saveBtn;
-    private javax.swing.JButton updateBtn;
+    private sp.componentButton.Updatebutton1 updateBtn;
     // End of variables declaration//GEN-END:variables
 
     /**

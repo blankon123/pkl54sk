@@ -57,23 +57,20 @@
                   </Group>
                   <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="MainPanel" min="-2" pref="924" max="-2" attributes="0"/>
-                          <EmptySpace pref="32" max="32767" attributes="0"/>
-                      </Group>
+                      <Component id="MainPanel" alignment="0" pref="727" max="32767" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="backBtn" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="nextBtn" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="updateBtn" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="saveBtn" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="closeBtn" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                          <Component id="updateBtn" min="-2" pref="91" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="saveBtn" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="closeBtn" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
@@ -86,53 +83,59 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Component id="errorTable1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                  <Component id="errField" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jScrollPane7" min="-2" pref="84" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-              </Group>
               <Group type="102" attributes="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="230" max="-2" attributes="0"/>
-                          <Component id="h1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="h2" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="h3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="h4" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="h5" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="h6" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="230" max="-2" attributes="0"/>
+                                  <Component id="h1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="h2" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="h3" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="h4" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="h5" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="h6" min="-2" max="-2" attributes="0"/>
+                              </Group>
                               <Component id="minimizebutton1" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="closeminbutton1" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
-                          <Component id="MainPanel" min="-2" pref="547" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="242" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="backBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nextBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                  <Component id="saveBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="closeBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
-                  </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="backBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="nextBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                          <Component id="saveBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="closeBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="updateBtn" alignment="0" max="32767" attributes="0"/>
+                      <Component id="updateBtn" alignment="1" min="-2" pref="44" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="39" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="errorTable1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                          <Component id="errField" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jScrollPane7" min="-2" pref="84" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="MainPanel" min="-2" pref="547" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
           </Group>
         </DimensionLayout>
@@ -215,19 +218,6 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignCardLayout"/>
           <SubComponents>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
-                  <CardConstraints cardName="hal1"/>
-                </Constraint>
-              </Constraints>
-
-              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-              <SubComponents>
-                <Component class="sp.form.Hal1" name="hal11">
-                </Component>
-              </SubComponents>
-            </Container>
             <Container class="javax.swing.JScrollPane" name="jScrollPane2">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
@@ -293,6 +283,19 @@
                 </Component>
               </SubComponents>
             </Container>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                  <CardConstraints cardName="hal1"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="sp.form.Hal1" name="hal11">
+                </Component>
+              </SubComponents>
+            </Container>
           </SubComponents>
         </Container>
         <Component class="sp.componentButton.BackminButton" name="backBtn">
@@ -325,9 +328,9 @@
             <Property name="text" type="java.lang.String" value=""/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="updateBtn">
+        <Component class="sp.componentButton.Updatebutton1" name="updateBtn">
           <Properties>
-            <Property name="text" type="java.lang.String" value="UPDATE"/>
+            <Property name="text" type="java.lang.String" value=""/>
           </Properties>
         </Component>
       </SubComponents>

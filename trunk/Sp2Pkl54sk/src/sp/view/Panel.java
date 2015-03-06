@@ -51,7 +51,7 @@ public class Panel extends javax.swing.JPanel {
 
         namaLabel.setFont(new java.awt.Font("abeatbyKai", 1, 18)); // NOI18N
         namaLabel.setForeground(new java.awt.Color(204, 204, 255));
-        namaLabel.setText("jLabel1");
+        namaLabel.setText("User Name");
 
         closeminbutton1.setText("");
 
@@ -80,11 +80,12 @@ public class Panel extends javax.swing.JPanel {
                     .addGroup(background2Layout.createSequentialGroup()
                         .addComponent(navbarButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(111, 111, 111)
-                        .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 920, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(background2Layout.createSequentialGroup()
-                        .addGap(1233, 1233, 1233)
-                        .addComponent(namaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 920, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, background2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(namaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(19, 19, 19))
         );
         background2Layout.setVerticalGroup(
             background2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -92,14 +93,14 @@ public class Panel extends javax.swing.JPanel {
                 .addGroup(background2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(closeminbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(minimizebutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(namaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(background2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(background2Layout.createSequentialGroup()
-                        .addGap(119, 119, 119)
+                        .addGap(164, 164, 164)
                         .addComponent(navbarButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(background2Layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
+                        .addGap(14, 14, 14)
+                        .addComponent(namaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(40, 40, 40)
                         .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 609, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(31, Short.MAX_VALUE))
         );

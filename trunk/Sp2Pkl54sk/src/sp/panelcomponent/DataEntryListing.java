@@ -40,20 +40,20 @@ public class DataEntryListing extends javax.swing.JPanel {
         listingDataEntry1Layout.setHorizontalGroup(
             listingDataEntry1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, listingDataEntry1Layout.createSequentialGroup()
-                .addContainerGap(621, Short.MAX_VALUE)
-                .addGroup(listingDataEntry1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addContainerGap(563, Short.MAX_VALUE)
+                .addGroup(listingDataEntry1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(backtobutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(startButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(144, 144, 144))
+                .addGap(202, 202, 202))
         );
         listingDataEntry1Layout.setVerticalGroup(
             listingDataEntry1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, listingDataEntry1Layout.createSequentialGroup()
                 .addContainerGap(266, Short.MAX_VALUE)
                 .addComponent(startButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
+                .addGap(18, 18, 18)
                 .addComponent(backtobutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(253, 253, 253))
+                .addGap(263, 263, 263))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
