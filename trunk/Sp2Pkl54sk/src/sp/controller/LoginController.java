@@ -68,8 +68,10 @@ public class LoginController implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         try {
-            CheckConnection cekCon = new CheckConnection();
+            System.out.println("here");
+            CheckConnection.createConnection();
             doLogin();
+            
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(loginPanel, "Koneksi DB Bermasalah", "DB Inconnect", JOptionPane.WARNING_MESSAGE);
         }

@@ -91,51 +91,107 @@ public class LandingMenuControllerTest {
                 panel.getNavbarButton1().getHomebutton1().resetButton();
             }
         });
-        landingButton.getSelectButton1().addActionListener(new ActionListener() {
+
+        landingButton.getListinglandingbutton1().addActionListener(new ActionListener() {
 
             @Override
-            public void actionPerformed(ActionEvent ae) {
-                if (landingButton.getState().equalsIgnoreCase("listing")) {
-                    CardController.show("menuListing");
-                    menuListing.getLabel().setText("Listing ...");
-                    panel.getNavbarButton1().getListingbutton1().Activebutton();
-                    panel.getNavbarButton1().getHomebutton1().resetButton();
-                } else {
-                    CardController.show("menuQuest");
-                    menuQuest.getLabel().setText("Questionnaire ...");
-                    panel.getNavbarButton1().getQuestionnairebutton1().Activebutton();
-                    panel.getNavbarButton1().getHomebutton1().resetButton();
-                }
-
+            public void actionPerformed(ActionEvent e) {
+                CardController.show("menuListing");
+                menuListing.getLabel().setText("Listing DSART");
+                panel.getNavbarButton1().getListingbutton1().Activebutton();
+                panel.getNavbarButton1().getHomebutton1().resetButton();
             }
         });
-        menuListing.getSelectButton1().addActionListener(new ActionListener() {
+
+        landingButton.getQuestionnairelandingbutton1().addActionListener(new ActionListener() {
 
             @Override
-            public void actionPerformed(ActionEvent ae) {
-                if (menuListing.getState().equalsIgnoreCase("dataentry")) {
-                    CardController.show("entrylisting");
-                } else if (menuListing.getState().equalsIgnoreCase("update")) {
-                    CardController.show("updatelisting");
-                } else {
-
-                }
+            public void actionPerformed(ActionEvent e) {
+                CardController.show("menuQuest");
+                menuQuest.getLabel().setText("Kuesioner VSEM.PKL54.P");
+                panel.getNavbarButton1().getQuestionnairebutton1().Activebutton();
+                panel.getNavbarButton1().getHomebutton1().resetButton();
+                //throw new UnsupportedOperationException("Not supported yet."); To change body of generated methods, choose Tools | Templates.
             }
+
         });
-        menuQuest.getSelectButton1().addActionListener(new ActionListener() {
+
+//        landingButton.getSelectButton1().addActionListener(new ActionListener() {
+//
+//            @Override
+//            public void actionPerformed(ActionEvent ae) {
+//                if (landingButton.getState().equalsIgnoreCase("listing")) {
+//                    CardController.show("menuListing");
+//                    menuListing.getLabel().setText("Listing ...");
+//                    panel.getNavbarButton1().getListingbutton1().Activebutton();
+//                    panel.getNavbarButton1().getHomebutton1().resetButton();
+//                } else {
+//                    CardController.show("menuQuest");
+//                    menuQuest.getLabel().setText("Questionnaire ...");
+//                    panel.getNavbarButton1().getQuestionnairebutton1().Activebutton();
+//                    panel.getNavbarButton1().getHomebutton1().resetButton();
+//                }
+//
+//            }
+//        });
+        menuListing.getDataentrybutton1().addActionListener(new ActionListener(){
+            
 
             @Override
-            public void actionPerformed(ActionEvent ae) {
-                if (menuQuest.getState().equalsIgnoreCase("dataentry")) {
-                    CardController.show("entryquest");
-                } else if (menuQuest.getState().equalsIgnoreCase("update")) {
-                    loadUpdateDB();
-                    CardController.show("updatequest");
-                } else {
+            public void actionPerformed(ActionEvent e) {
+                            CardController.show("entrylisting");
 
-                }
+                //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
             }
         });
+
+//        menuListing.getSelectButton1().addActionListener(new ActionListener() {
+//
+//            @Override
+//            public void actionPerformed(ActionEvent ae) {
+//                if (menuListing.getState().equalsIgnoreCase("dataentry")) {
+//                    CardController.show("entrylisting");
+//                } else if (menuListing.getState().equalsIgnoreCase("update")) {
+//                    CardController.show("updatelisting");
+//                } else {
+//
+//                }
+//            }
+//        });
+        menuQuest.getUpdatebutton1().addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CardController.show("updatequest");
+                //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+        });
+
+        menuQuest.getDataentrybutton1().addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CardController.show("entryquest");
+//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+        });
+
+//        menuQuest.getSelectButton1().addActionListener(new ActionListener() {
+//
+//            @Override
+//            public void actionPerformed(ActionEvent ae) {
+//                if (menuQuest.getState().equalsIgnoreCase("dataentry")) {
+//                    CardController.show("entryquest");
+//                } else if (menuQuest.getState().equalsIgnoreCase("update")) {
+//                    loadUpdateDB();
+//                    CardController.show("updatequest");
+//                } else {
+//
+//                }
+//            }
+//        });
         menuListing.getBackButton1().addActionListener(new ActionListener() {
 
             @Override
