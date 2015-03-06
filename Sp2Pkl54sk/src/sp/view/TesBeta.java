@@ -280,6 +280,7 @@ public class TesBeta extends javax.swing.JFrame {
 
     private void setLoginController() {
         controller = new LoginController(panel1, MainPanel, getLoginPanel1());
+        loginPanel1.getPassword1().addKeyListener(controller);
         loginPanel1.getLoginButton1().addActionListener(controller);
     }
 
