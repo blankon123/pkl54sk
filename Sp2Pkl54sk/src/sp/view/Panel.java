@@ -22,6 +22,7 @@ public class Panel extends javax.swing.JPanel {
     public Panel() {
         initComponents();
         navbarButton1.getHomebutton1().setActive(true);
+        menuListing.getUpdatebutton1().setActive(false);
         controller = new LandingMenuControllerTest(getEntryListing(), getDataEntryQuest1(), getUpdateListing1(), updateQuest1, this, MainPanel, getMenuListing(), getMenuQuest(), landingButton1);
     }
 
