@@ -38,12 +38,12 @@ public class Panel extends javax.swing.JPanel {
         background1 = new sp.background.Background();
         MainPanel = new javax.swing.JPanel();
         landingButton1 = new sp.panelcomponent.LandingButton();
+        menuListing = new sp.panelcomponent.Menu();
         menuQuest = new sp.panelcomponent.Menu();
         EntryListing = new sp.panelcomponent.DataEntryListing();
         EntryQuest = new sp.panelcomponent.DataEntryQuest();
         updateListing1 = new sp.panelcomponent.UpdateListing();
         updateQuest1 = new sp.panelcomponent.UpdateQuest();
-        menuListing = new sp.panelcomponent.Menu();
         navbarButton1 = new sp.panelcomponent.NavbarButton();
         closeminbutton1 = new sp.componentButton.Closeminbutton();
         minimizebutton1 = new sp.componentButton.Minimizebutton();
@@ -52,6 +52,7 @@ public class Panel extends javax.swing.JPanel {
 
         MainPanel.setLayout(new java.awt.CardLayout());
         MainPanel.add(landingButton1, "landing");
+        MainPanel.add(menuListing, "menuListing");
         MainPanel.add(menuQuest, "menuQuest");
         MainPanel.add(EntryListing, "entrylisting");
         MainPanel.add(EntryQuest, "entryquest");
@@ -59,7 +60,6 @@ public class Panel extends javax.swing.JPanel {
         updateListing1.getAccessibleContext().setAccessibleName("");
 
         MainPanel.add(updateQuest1, "updatequest");
-        MainPanel.add(menuListing, "menuListing");
 
         closeminbutton1.setText("");
 

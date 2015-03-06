@@ -27,33 +27,33 @@ public class DataEntryListing extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        questDataEntry2 = new sp.component.QuestDataEntry();
+        listingDataEntry1 = new sp.component.ListingDataEntry();
         backtobutton1 = new sp.componentButton.Backtobutton();
         startButton1 = new sp.componentButton.StartButton();
 
-        backtobutton1.setText("backtobutton1");
+        backtobutton1.setText("");
 
-        startButton1.setText("startButton2");
+        startButton1.setText("");
 
-        javax.swing.GroupLayout questDataEntry2Layout = new javax.swing.GroupLayout(questDataEntry2);
-        questDataEntry2.setLayout(questDataEntry2Layout);
-        questDataEntry2Layout.setHorizontalGroup(
-            questDataEntry2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, questDataEntry2Layout.createSequentialGroup()
-                .addContainerGap(632, Short.MAX_VALUE)
-                .addGroup(questDataEntry2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(startButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(backtobutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(133, 133, 133))
+        javax.swing.GroupLayout listingDataEntry1Layout = new javax.swing.GroupLayout(listingDataEntry1);
+        listingDataEntry1.setLayout(listingDataEntry1Layout);
+        listingDataEntry1Layout.setHorizontalGroup(
+            listingDataEntry1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, listingDataEntry1Layout.createSequentialGroup()
+                .addContainerGap(621, Short.MAX_VALUE)
+                .addGroup(listingDataEntry1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(backtobutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(startButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(144, 144, 144))
         );
-        questDataEntry2Layout.setVerticalGroup(
-            questDataEntry2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, questDataEntry2Layout.createSequentialGroup()
-                .addContainerGap(251, Short.MAX_VALUE)
+        listingDataEntry1Layout.setVerticalGroup(
+            listingDataEntry1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, listingDataEntry1Layout.createSequentialGroup()
+                .addContainerGap(266, Short.MAX_VALUE)
                 .addComponent(startButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
+                .addGap(28, 28, 28)
                 .addComponent(backtobutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(263, 263, 263))
+                .addGap(253, 253, 253))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -62,14 +62,14 @@ public class DataEntryListing extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(questDataEntry2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(listingDataEntry1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(questDataEntry2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(listingDataEntry1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -77,7 +77,7 @@ public class DataEntryListing extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private sp.componentButton.Backtobutton backtobutton1;
-    private sp.component.QuestDataEntry questDataEntry2;
+    private sp.component.ListingDataEntry listingDataEntry1;
     private sp.componentButton.StartButton startButton1;
     // End of variables declaration//GEN-END:variables
 

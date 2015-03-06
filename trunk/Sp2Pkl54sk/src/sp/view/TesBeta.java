@@ -10,6 +10,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JPanel;
 import javax.swing.JTable;
+import sp.controller.ButtonController;
 import sp.controller.LoginController;
 import sp.controller.SaveController;
 import sp.controller.UpdateController21;
@@ -29,6 +30,7 @@ public class TesBeta extends javax.swing.JFrame {
      * Creates new form TesBeta
      */
     LoginController controller;
+    ButtonController butcontroller;
 
     public TesBeta() {
         initComponents();
@@ -40,7 +42,8 @@ public class TesBeta extends javax.swing.JFrame {
         setControllerSave();
         setLoginController();
         setLoadToFormController();
-
+        
+        butcontroller = new ButtonController (this, entryQuest, entryListing, MainPanel);
         loginPanel1.getCloseminbutton1().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
@@ -83,51 +86,51 @@ public class TesBeta extends javax.swing.JFrame {
                 entryDariNol();
             }
         });
-        entryQuest.getCloseBtn().addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent ae) {
-                ConfirmClose konfirm = new ConfirmClose(null, rootPaneCheckingEnabled);
-                konfirm.getYa().addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        konfirm.setVisible(false);
-                        ConfirmClose konfirm1 = new ConfirmClose(null, rootPaneCheckingEnabled);
-                        konfirm1.getYa().addActionListener(new ActionListener() {
-                            @Override
-                            public void actionPerformed(ActionEvent e) {
-                                konfirm1.setVisible(false);
-                                closeQuest();
-                            }
-                        });
-                        konfirm1.setVisible(rootPaneCheckingEnabled);
-                    }
-                });
-                konfirm.setVisible(rootPaneCheckingEnabled);
-            }
-        });
-        entryListing.getCloseBtn().addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent ae) {
-                ConfirmClose konfirm = new ConfirmClose(null, rootPaneCheckingEnabled);
-                konfirm.getYa().addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        konfirm.setVisible(false);
-                        ConfirmClose konfirm1 = new ConfirmClose(null, rootPaneCheckingEnabled);
-                        konfirm1.getYa().addActionListener(new ActionListener() {
-                            @Override
-                            public void actionPerformed(ActionEvent e) {
-                                konfirm1.setVisible(false);
-                                controller.previous();
-                                controller.previous();
-                            }
-                        });
-                        konfirm1.setVisible(rootPaneCheckingEnabled);
-                    }
-                });
-                konfirm.setVisible(rootPaneCheckingEnabled);
-            }
-        });
+//        entryQuest.getCloseBtn().addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent ae) {
+//                ConfirmClose konfirm = new ConfirmClose(null, rootPaneCheckingEnabled);
+//                konfirm.getYa().addActionListener(new ActionListener() {
+//                    @Override
+//                    public void actionPerformed(ActionEvent e) {
+//                        konfirm.setVisible(false);
+//                        ConfirmClose konfirm1 = new ConfirmClose(null, rootPaneCheckingEnabled);
+//                        konfirm1.getYa().addActionListener(new ActionListener() {
+//                            @Override
+//                            public void actionPerformed(ActionEvent e) {
+//                                konfirm1.setVisible(false);
+//                                closeQuest();
+//                            }
+//                        });
+//                        konfirm1.setVisible(rootPaneCheckingEnabled);
+//                    }
+//                });
+//                konfirm.setVisible(rootPaneCheckingEnabled);
+//            }
+//        });
+//        entryListing.getCloseBtn().addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent ae) {
+//                ConfirmClose konfirm = new ConfirmClose(null, rootPaneCheckingEnabled);
+//                konfirm.getYa().addActionListener(new ActionListener() {
+//                    @Override
+//                    public void actionPerformed(ActionEvent e) {
+//                        konfirm.setVisible(false);
+//                        ConfirmClose konfirm1 = new ConfirmClose(null, rootPaneCheckingEnabled);
+//                        konfirm1.getYa().addActionListener(new ActionListener() {
+//                            @Override
+//                            public void actionPerformed(ActionEvent e) {
+//                                konfirm1.setVisible(false);
+//                                controller.previous();
+//                                controller.previous();
+//                            }
+//                        });
+//                        konfirm1.setVisible(rootPaneCheckingEnabled);
+//                    }
+//                });
+//                konfirm.setVisible(rootPaneCheckingEnabled);
+//            }
+//        });
         panel1.getMinimizebutton1().addActionListener(new ActionListener() {
 
             @Override
@@ -197,7 +200,7 @@ public class TesBeta extends javax.swing.JFrame {
 
         MainPanel.setLayout(new java.awt.CardLayout());
         MainPanel.add(loginPanel1, "login");
-        MainPanel.add(panel1, "card5");
+        MainPanel.add(panel1, "panel");
         MainPanel.add(entryQuest, "entryquest");
         MainPanel.add(entryListing, "entrylisting");
 

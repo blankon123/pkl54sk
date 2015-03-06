@@ -93,6 +93,13 @@
                 </Constraint>
               </Constraints>
             </Component>
+            <Component class="sp.panelcomponent.Menu" name="menuListing">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                  <CardConstraints cardName="menuListing"/>
+                </Constraint>
+              </Constraints>
+            </Component>
             <Component class="sp.panelcomponent.Menu" name="menuQuest">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
@@ -128,13 +135,6 @@
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
                   <CardConstraints cardName="updatequest"/>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="sp.panelcomponent.Menu" name="menuListing">
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
-                  <CardConstraints cardName="menuListing"/>
                 </Constraint>
               </Constraints>
             </Component>
