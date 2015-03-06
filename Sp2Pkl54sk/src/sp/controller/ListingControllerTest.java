@@ -59,8 +59,9 @@ public class ListingControllerTest {
             @Override
             public void actionPerformed(ActionEvent e) {
                 form.setActive(form.getH1());
-                form.setInactive(form.getH2(), form.getH3(), form.getH4(), form.getH5(), form.getH6());
+                form.setInactive(form.getH2());
                 form.controller.show("hal1");
+                setI(1);
             }
         });
         
@@ -69,50 +70,13 @@ public class ListingControllerTest {
             @Override
             public void actionPerformed(ActionEvent e) {
                 form.setActive(form.getH2());
-                form.setInactive(form.getH1(), form.getH3(), form.getH4(), form.getH5(), form.getH6());
+                form.setInactive(form.getH1());
                 form.controller.show("hal2");
+                setI(2);
             }
         });
         
-        form.getH3().addActionListener(new ActionListener() {
-            
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                form.setActive(form.getH2());
-                form.setInactive(form.getH1(), form.getH2(), form.getH4(), form.getH5(), form.getH6());
-                form.controller.show("hal3");
-            }
-        });
         
-        form.getH4().addActionListener(new ActionListener() {
-            
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                form.setActive(form.getH4());
-                form.setInactive(form.getH1(), form.getH3(), form.getH2(), form.getH5(), form.getH6());
-                form.controller.show("hal4");
-            }
-        });
-        
-        form.getH5().addActionListener(new ActionListener() {
-            
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                form.setActive(form.getH5());
-                form.setInactive(form.getH1(), form.getH3(), form.getH4(), form.getH2(), form.getH6());
-                form.controller.show("hal5");
-            }
-        });
-        
-        form.getH6().addActionListener(new ActionListener() {
-            
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                form.setActive(form.getH6());
-                form.setInactive(form.getH1(), form.getH3(), form.getH4(), form.getH5(), form.getH2());
-                form.controller.show("hal6");
-            }
-        });
         
         nextButton.addActionListener(new ActionListener() {
 
@@ -120,11 +84,11 @@ public class ListingControllerTest {
             public void actionPerformed(ActionEvent ae) {
                 //controller.next();
                 plus();
-                if(getI()%6==0){
+                if(getI()%3==0){
                     plus();
                     
                 }
-                setState(hal+(getI()%6));
+                setState(hal+(getI()%3));
                 controller.show(getState());
                 
                
@@ -136,10 +100,10 @@ public class ListingControllerTest {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 minus();
-                if(getI()%6==0){
+                if(getI()%3==0){
                     minus();
                 } else if(getI()<0){
-                    setI(5);
+                    setI(2);
                 }
                 
                 setState(hal+(getI()%6));

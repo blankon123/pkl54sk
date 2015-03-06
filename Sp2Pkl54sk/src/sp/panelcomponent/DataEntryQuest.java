@@ -41,26 +41,26 @@ public class DataEntryQuest extends javax.swing.JPanel {
         questDataEntry1Layout.setHorizontalGroup(
             questDataEntry1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(questDataEntry1Layout.createSequentialGroup()
-                .addGap(91, 91, 91)
-                .addComponent(tableUpdate1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45)
-                .addGroup(questDataEntry1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(93, 93, 93)
+                .addComponent(tableUpdate1, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38)
+                .addGroup(questDataEntry1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(startButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(backtobutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addContainerGap(238, Short.MAX_VALUE))
         );
         questDataEntry1Layout.setVerticalGroup(
             questDataEntry1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, questDataEntry1Layout.createSequentialGroup()
-                .addContainerGap(139, Short.MAX_VALUE)
-                .addComponent(tableUpdate1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(133, 133, 133))
             .addGroup(questDataEntry1Layout.createSequentialGroup()
-                .addGap(235, 235, 235)
+                .addGap(250, 250, 250)
                 .addComponent(startButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
+                .addGap(48, 48, 48)
                 .addComponent(backtobutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, questDataEntry1Layout.createSequentialGroup()
+                .addContainerGap(165, Short.MAX_VALUE)
+                .addComponent(tableUpdate1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(107, 107, 107))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

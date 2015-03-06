@@ -54,20 +54,20 @@ public class LandingButton extends javax.swing.JPanel {
         container1Layout.setHorizontalGroup(
             container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(container1Layout.createSequentialGroup()
-                .addContainerGap(272, Short.MAX_VALUE)
+                .addGap(168, 168, 168)
                 .addComponent(listinglandingbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(96, 96, 96)
+                .addGap(114, 114, 114)
                 .addComponent(questionnairelandingbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(234, 234, 234))
+                .addContainerGap(320, Short.MAX_VALUE))
         );
         container1Layout.setVerticalGroup(
             container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(container1Layout.createSequentialGroup()
-                .addGap(127, 127, 127)
+                .addGap(147, 147, 147)
                 .addGroup(container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(questionnairelandingbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(listinglandingbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(202, Short.MAX_VALUE))
+                    .addComponent(listinglandingbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(questionnairelandingbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(182, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
