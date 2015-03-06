@@ -307,13 +307,13 @@ public class Hal1Listing extends javax.swing.JPanel {
         b1r6s1.setHuruf(true);
         b1r6s1.setLength(100);
         b1r6s1.setRequired(true);
-        jLayeredPane1.add(b1r6s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 470, 560, 30));
+        jLayeredPane1.add(b1r6s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 470, 570, 30));
 
         b1r6s2.setAngka(true);
         b1r6s2.setHuruf(true);
         b1r6s2.setLength(100);
         b1r6s2.setRequired(true);
-        jLayeredPane1.add(b1r6s2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 500, 560, 30));
+        jLayeredPane1.add(b1r6s2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 500, 570, 30));
 
         b2r1.setAngka(true);
         b2r1.setMaxDigit(999);
