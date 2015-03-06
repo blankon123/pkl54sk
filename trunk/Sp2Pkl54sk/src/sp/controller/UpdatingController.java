@@ -13,10 +13,7 @@ import sp.form.Hal2;
 import sp.form.Hal4;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTable;
@@ -31,7 +28,6 @@ import sp.model.B3;
 import sp.model.B4;
 import sp.util.ErrorControl;
 import sp.util.FormControl;
-import sp.util.LogMessage;
 import sp.validasi.*;
 
 /**
@@ -97,7 +93,10 @@ public class UpdatingController implements ActionListener {
         Validate(b1, b2, b3, b4);
 
         if (validNotNull()) {
-            if ((validB1.cek() && validB2.cek() && validB4.cek()) && validB3.cek().isEmpty()) {
+            if ((validB1.cek().isEmpty() 
+                    && validB2.cek() 
+                    && validB4.cek()) 
+                    && validB3.cek().isEmpty()) {
                 b1.setFlag("0");
                 try {
                     updatingDB();
@@ -108,7 +107,7 @@ public class UpdatingController implements ActionListener {
             } else {
                 ErrorControl.resetErr();
                 String err = "";
-                if (!validB1.cek()) {
+                if (!validB1.cek().isEmpty()) {
                     err += "\nB1";
                 }
                 if (!validB2.cek()) {
@@ -142,11 +141,11 @@ public class UpdatingController implements ActionListener {
 
     public void Validate(B1 b1, B2 b2, B3 b3, B4 b4) {
         ValidasiB1 validb1 = new ValidasiB1(b1);
-        ValidasiB2 validb2 = new ValidasiB2(b2);
+        //ValidasiB2 validb2 = new ValidasiB2(b2);
         ValidasiB3 validb3 = new ValidasiB3(b3, b2view);
-        ValidasiB4 validb4 = new ValidasiB4(b4);
-        if (validb1.cek2() != null) {
-            ErrorControl.addErr(validb1.cek2());
+        //ValidasiB4 validb4 = new ValidasiB4(b4);
+        if (validb1.cek() != null) {
+            ErrorControl.addErr(validb1.cek());
         }
         if (validb3.cek() != null) {
             ErrorControl.addErr(validb3.cek());

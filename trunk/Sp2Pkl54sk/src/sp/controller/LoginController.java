@@ -5,13 +5,16 @@
  */
 package sp.controller;
 
+import static com.sun.java.accessibility.util.AWTEventMonitor.addKeyListener;
 import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import sp.dao.UserDAO;
@@ -25,7 +28,7 @@ import sp.view.Panel;
  *
  * @author M Arif Rosyanto
  */
-public class LoginController implements ActionListener {
+public class LoginController implements ActionListener, KeyListener {
 
     JPanel MainPanel;
     CardLayoutController controller;
@@ -50,8 +53,8 @@ public class LoginController implements ActionListener {
                 controller.previous();
                 try {
                     LogMessage.write("Logout\n-----------------------------------------------------------------");
-                } catch (IOException e){
-                    
+                } catch (IOException e) {
+
                 }
                 UserControl.logOut();
             }
@@ -68,14 +71,12 @@ public class LoginController implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         try {
-            System.out.println("here");
             CheckConnection.createConnection();
             doLogin();
-            
+
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(loginPanel, "Koneksi DB Bermasalah", "DB Inconnect", JOptionPane.WARNING_MESSAGE);
         }
-
     }
 
     private void doLogin() {
@@ -126,4 +127,26 @@ public class LoginController implements ActionListener {
         controller.next();
     }
 
+    @Override
+    public void keyPressed(KeyEvent e) {
+        if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+            try {
+                CheckConnection.createConnection();
+                doLogin();
+
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(loginPanel, "Koneksi DB Bermasalah", "DB Inconnect", JOptionPane.WARNING_MESSAGE);
+            }
+        }
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+
+    }
 }
