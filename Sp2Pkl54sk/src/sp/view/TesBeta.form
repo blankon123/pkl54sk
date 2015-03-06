@@ -47,7 +47,7 @@
         <Component class="sp.view.Panel" name="panel1">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
-              <CardConstraints cardName="card5"/>
+              <CardConstraints cardName="panel"/>
             </Constraint>
           </Constraints>
         </Component>
