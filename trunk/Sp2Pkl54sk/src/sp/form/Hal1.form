@@ -230,6 +230,7 @@
                 <Property name="maxDigit" type="int" value="129999"/>
                 <Property name="minDigit" type="int" value="120000"/>
                 <Property name="posisi" type="int" value="13"/>
+                <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
