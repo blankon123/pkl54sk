@@ -45,18 +45,17 @@ public class MenuListing extends javax.swing.JPanel {
         container1Layout.setHorizontalGroup(
             container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(container1Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(Label, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(container1Layout.createSequentialGroup()
                 .addGroup(container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(container1Layout.createSequentialGroup()
                         .addGap(296, 296, 296)
                         .addComponent(dataentrybutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(container1Layout.createSequentialGroup()
                         .addGap(266, 266, 266)
-                        .addComponent(backButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(499, Short.MAX_VALUE))
+                        .addComponent(backButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(container1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(Label, javax.swing.GroupLayout.PREFERRED_SIZE, 569, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(479, Short.MAX_VALUE))
         );
         container1Layout.setVerticalGroup(
             container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
