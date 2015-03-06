@@ -17,7 +17,7 @@ public class Menu extends javax.swing.JPanel {
     private String state;
     public Menu() {
         initComponents();
-        selectButton1.setEnabled(false);
+        
         this.setOpaque(false);
     }
     
@@ -36,7 +36,6 @@ public class Menu extends javax.swing.JPanel {
         container1 = new sp.component.Container();
         Label = new javax.swing.JLabel();
         backButton1 = new sp.componentButton.BackButton();
-        selectButton1 = new sp.componentButton.SelectButton();
         updatebutton1 = new sp.componentButton.Updatebutton();
         dataentrybutton1 = new sp.componentButton.Dataentrybutton();
 
@@ -45,8 +44,6 @@ public class Menu extends javax.swing.JPanel {
         Label.setText("Label");
 
         backButton1.setText("");
-
-        selectButton1.setText("");
 
         updatebutton1.setText("");
         updatebutton1.addActionListener(new java.awt.event.ActionListener() {
@@ -66,23 +63,21 @@ public class Menu extends javax.swing.JPanel {
         container1.setLayout(container1Layout);
         container1Layout.setHorizontalGroup(
             container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, container1Layout.createSequentialGroup()
-                .addContainerGap(273, Short.MAX_VALUE)
-                .addComponent(updatebutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(112, 112, 112)
-                .addComponent(dataentrybutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(217, 217, 217))
             .addGroup(container1Layout.createSequentialGroup()
-                .addGroup(container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(selectButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(container1Layout.createSequentialGroup()
-                            .addGap(48, 48, 48)
-                            .addComponent(Label))
-                        .addGroup(container1Layout.createSequentialGroup()
-                            .addGap(410, 410, 410)
-                            .addComponent(backButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(48, 48, 48)
+                .addComponent(Label)
+                .addContainerGap(931, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, container1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, container1Layout.createSequentialGroup()
+                        .addComponent(updatebutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(112, 112, 112)
+                        .addComponent(dataentrybutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(217, 217, 217))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, container1Layout.createSequentialGroup()
+                        .addComponent(backButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(352, 352, 352))))
         );
         container1Layout.setVerticalGroup(
             container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -91,11 +86,9 @@ public class Menu extends javax.swing.JPanel {
                 .addGroup(container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(updatebutton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(dataentrybutton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(50, 50, 50)
-                .addComponent(selectButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(81, 81, 81)
                 .addComponent(backButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(54, 54, 54))
+                .addGap(113, 113, 113))
             .addGroup(container1Layout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addComponent(Label)
@@ -120,15 +113,13 @@ public class Menu extends javax.swing.JPanel {
 
     private void updatebutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updatebutton1ActionPerformed
         getDataentrybutton1().resetButton();
-        getSelectButton1().setEnabled(true);
-        getSelectButton1().activeButton();
+        
         setState("update");
     }//GEN-LAST:event_updatebutton1ActionPerformed
 
     private void dataentrybutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dataentrybutton1ActionPerformed
         getUpdatebutton1().resetButton();
-        getSelectButton1().setEnabled(true);
-        getSelectButton1().activeButton();
+        
         setState("dataentry");
     }//GEN-LAST:event_dataentrybutton1ActionPerformed
 
@@ -138,7 +129,6 @@ public class Menu extends javax.swing.JPanel {
     private sp.componentButton.BackButton backButton1;
     private sp.component.Container container1;
     private sp.componentButton.Dataentrybutton dataentrybutton1;
-    private sp.componentButton.SelectButton selectButton1;
     private sp.componentButton.Updatebutton updatebutton1;
     // End of variables declaration//GEN-END:variables
 
@@ -173,9 +163,7 @@ public class Menu extends javax.swing.JPanel {
     /**
      * @return the selectButton1
      */
-    public sp.componentButton.SelectButton getSelectButton1() {
-        return selectButton1;
-    }
+    
 
     /**
      * @return the updatebutton1

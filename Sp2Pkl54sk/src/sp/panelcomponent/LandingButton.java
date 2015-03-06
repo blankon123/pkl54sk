@@ -34,7 +34,6 @@ public class LandingButton extends javax.swing.JPanel {
         container1 = new sp.component.Container();
         listinglandingbutton1 = new sp.componentButton.Listinglandingbutton();
         questionnairelandingbutton1 = new sp.componentButton.Questionnairelandingbutton();
-        selectButton1 = new sp.componentButton.SelectButton();
 
         listinglandingbutton1.setText("");
         listinglandingbutton1.addActionListener(new java.awt.event.ActionListener() {
@@ -50,34 +49,25 @@ public class LandingButton extends javax.swing.JPanel {
             }
         });
 
-        selectButton1.setText("");
-
         javax.swing.GroupLayout container1Layout = new javax.swing.GroupLayout(container1);
         container1.setLayout(container1Layout);
         container1Layout.setHorizontalGroup(
             container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(container1Layout.createSequentialGroup()
-                .addContainerGap(238, Short.MAX_VALUE)
-                .addGroup(container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, container1Layout.createSequentialGroup()
-                        .addComponent(listinglandingbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(126, 126, 126)
-                        .addComponent(questionnairelandingbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(238, 238, 238))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, container1Layout.createSequentialGroup()
-                        .addComponent(selectButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(373, 373, 373))))
+                .addContainerGap(272, Short.MAX_VALUE)
+                .addComponent(listinglandingbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(96, 96, 96)
+                .addComponent(questionnairelandingbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(234, 234, 234))
         );
         container1Layout.setVerticalGroup(
             container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(container1Layout.createSequentialGroup()
-                .addGap(83, 83, 83)
+                .addGap(127, 127, 127)
                 .addGroup(container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(listinglandingbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(questionnairelandingbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(66, 66, 66)
-                .addComponent(selectButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(108, Short.MAX_VALUE))
+                    .addComponent(questionnairelandingbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(listinglandingbutton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(202, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -96,13 +86,13 @@ public class LandingButton extends javax.swing.JPanel {
 
     private void listinglandingbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listinglandingbutton1ActionPerformed
         getQuestionnairelandingbutton1().resetButton();
-        getSelectButton1().activeButton();
+        
         setState("listing");
     }//GEN-LAST:event_listinglandingbutton1ActionPerformed
 
     private void questionnairelandingbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_questionnairelandingbutton1ActionPerformed
         getListinglandingbutton1().resetButton();
-        getSelectButton1().activeButton();
+        
         setState("quest");
     }//GEN-LAST:event_questionnairelandingbutton1ActionPerformed
 
@@ -111,7 +101,6 @@ public class LandingButton extends javax.swing.JPanel {
     private sp.component.Container container1;
     private sp.componentButton.Listinglandingbutton listinglandingbutton1;
     private sp.componentButton.Questionnairelandingbutton questionnairelandingbutton1;
-    private sp.componentButton.SelectButton selectButton1;
     // End of variables declaration//GEN-END:variables
     
     public sp.componentButton.Listinglandingbutton getListinglandingbutton1() {
@@ -128,10 +117,7 @@ public class LandingButton extends javax.swing.JPanel {
     /**
      * @return the selectButton1
      */
-    public sp.componentButton.SelectButton getSelectButton1() {
-        return selectButton1;
-    }
-
+   
     /**
      * @return the state
      */
