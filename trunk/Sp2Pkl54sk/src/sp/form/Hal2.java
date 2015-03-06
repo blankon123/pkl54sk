@@ -384,7 +384,7 @@ public class Hal2 extends javax.swing.JPanel {
         b3r3.setAngka(true);
         b3r3.setKhusus(true);
         b3r3.setKhususType('2');
-        b3r3.setMaxDigit(65);
+        b3r3.setMaxDigit(64);
         b3r3.setMinDigit(15);
         b3r3.setPosisi(2);
         b3r3.setRequired(true);
@@ -495,17 +495,16 @@ public class Hal2 extends javax.swing.JPanel {
         jLayeredPane1.add(b3r10, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 1230, 30, 30));
 
         b3r11.setAngka(true);
-        b3r11.setHuruf(true);
         b3r11.setLength(2);
-        b3r11.setMaxDigit(99);
+        b3r11.setMaxDigit(10);
+        b3r11.setMinDigit(1);
         b3r11.setPosisi(18);
-        b3r11.setRequired(true);
         jLayeredPane1.add(b3r11, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 200, 30, 30));
 
         b3r12.setAngka(true);
         b3r12.setMaxDigit(6);
+        b3r12.setMinDigit(1);
         b3r12.setPosisi(19);
-        b3r12.setRequired(true);
         jLayeredPane1.add(b3r12, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 430, 30, 30));
 
         b3r13.setAngka(true);
