@@ -87,6 +87,7 @@ public class UpdateController21 implements ActionListener {
 
     private void setAllField(B1 data1, B2 data2, B3 data3, B4 data4) {
         entryForm.getHal11().setFieldHal1(data1, data2);
+        entryForm.getHal11().toUpdateForm();
         entryForm.getHal21().setFieldHal2(data3, data4);
         entryForm.getHal31().setFieldHal3(data4);
         entryForm.getHal41().setFieldHal4(data4);

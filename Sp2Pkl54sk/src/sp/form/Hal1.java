@@ -270,6 +270,14 @@ public class Hal1 extends javax.swing.JPanel {
         this.jLayeredPane1 = jLayeredPane1;
     }
     
+    public void toUpdateForm(){
+        getB1r1().setEditable(false);
+        getB1r2().setEditable(false);
+        getB1r3().setEditable(false);
+        getB1r5().setEditable(false);
+        getB1r6().setEditable(false);
+    }
+    
     
 
     /**

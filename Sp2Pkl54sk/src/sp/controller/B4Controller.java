@@ -5,7 +5,6 @@
  */
 package sp.controller;
 
-import sp.form.Hal2;
 import sp.form.Hal3;
 import sp.form.Hal4;
 import sp.form.Hal5;
