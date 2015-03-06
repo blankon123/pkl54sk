@@ -271,84 +271,84 @@ public class Hal6 extends javax.swing.JPanel {
         b4br50.setAngka(true);
         b4br50.setMaxDigit(10);
         b4br50.setRequired(true);
-        jLayeredPane1.add(b4br50, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 40, 40, 30));
+        jLayeredPane1.add(b4br50, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 50, 40, 30));
 
         b4br51.setAngka(true);
         b4br51.setMaxDigit(10);
         b4br51.setRequired(true);
-        jLayeredPane1.add(b4br51, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 80, 40, 30));
+        jLayeredPane1.add(b4br51, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 110, 40, 30));
 
         b4br52.setBackground(new java.awt.Color(217, 217, 217));
         b4br52.setAngka(true);
         b4br52.setMaxDigit(10);
         b4br52.setRequired(true);
-        jLayeredPane1.add(b4br52, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 120, 40, 30));
+        jLayeredPane1.add(b4br52, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 160, 40, 30));
 
         b4br53.setAngka(true);
         b4br53.setMaxDigit(10);
         b4br53.setRequired(true);
-        jLayeredPane1.add(b4br53, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 150, 40, 30));
+        jLayeredPane1.add(b4br53, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 210, 40, 30));
 
         b4br54.setBackground(new java.awt.Color(217, 217, 217));
         b4br54.setAngka(true);
         b4br54.setMaxDigit(10);
         b4br54.setRequired(true);
-        jLayeredPane1.add(b4br54, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 190, 40, 30));
+        jLayeredPane1.add(b4br54, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 260, 40, 30));
 
         b4br55.setAngka(true);
         b4br55.setMaxDigit(10);
         b4br55.setRequired(true);
-        jLayeredPane1.add(b4br55, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 230, 40, 30));
+        jLayeredPane1.add(b4br55, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 310, 40, 30));
 
         b4br56.setBackground(new java.awt.Color(217, 217, 217));
         b4br56.setAngka(true);
         b4br56.setMaxDigit(10);
         b4br56.setRequired(true);
-        jLayeredPane1.add(b4br56, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 270, 40, 30));
+        jLayeredPane1.add(b4br56, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 360, 40, 30));
 
         b4br57.setAngka(true);
         b4br57.setMaxDigit(10);
         b4br57.setRequired(true);
-        jLayeredPane1.add(b4br57, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 310, 40, 30));
+        jLayeredPane1.add(b4br57, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 420, 40, 30));
 
         b4br58.setBackground(new java.awt.Color(217, 217, 217));
         b4br58.setAngka(true);
         b4br58.setMaxDigit(10);
         b4br58.setRequired(true);
-        jLayeredPane1.add(b4br58, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 360, 40, 30));
+        jLayeredPane1.add(b4br58, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 480, 40, 30));
 
         b4br59.setAngka(true);
         b4br59.setMaxDigit(10);
         b4br59.setRequired(true);
-        jLayeredPane1.add(b4br59, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 400, 40, 30));
+        jLayeredPane1.add(b4br59, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 530, 40, 30));
 
         b4br60.setBackground(new java.awt.Color(217, 217, 217));
         b4br60.setAngka(true);
         b4br60.setMaxDigit(10);
         b4br60.setRequired(true);
-        jLayeredPane1.add(b4br60, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 440, 40, 30));
+        jLayeredPane1.add(b4br60, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 590, 40, 30));
 
         b4br61.setAngka(true);
         b4br61.setMaxDigit(10);
         b4br61.setRequired(true);
-        jLayeredPane1.add(b4br61, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 480, 40, 30));
+        jLayeredPane1.add(b4br61, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 640, 40, 30));
 
         b4br62.setBackground(new java.awt.Color(217, 217, 217));
         b4br62.setAngka(true);
         b4br62.setMaxDigit(10);
         b4br62.setRequired(true);
-        jLayeredPane1.add(b4br62, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 520, 40, 30));
+        jLayeredPane1.add(b4br62, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 690, 40, 30));
 
         b4br63.setAngka(true);
         b4br63.setMaxDigit(10);
         b4br63.setRequired(true);
-        jLayeredPane1.add(b4br63, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 560, 40, 30));
+        jLayeredPane1.add(b4br63, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 740, 40, 30));
 
         b4br64.setBackground(new java.awt.Color(217, 217, 217));
         b4br64.setAngka(true);
         b4br64.setMaxDigit(10);
         b4br64.setRequired(true);
-        jLayeredPane1.add(b4br64, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 600, 40, 30));
+        jLayeredPane1.add(b4br64, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 790, 40, 30));
 
         javax.swing.GroupLayout hal61Layout = new javax.swing.GroupLayout(hal61);
         hal61.setLayout(hal61Layout);
