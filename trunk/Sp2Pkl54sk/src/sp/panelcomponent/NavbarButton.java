@@ -124,7 +124,10 @@ public class NavbarButton extends javax.swing.JPanel {
     }//GEN-LAST:event_homebutton1MouseClicked
 
     private void aboutbutton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aboutbutton1MousePressed
-        // TODO add your handling code here:
+        getListingbutton1().resetButton();
+        getHomebutton1().resetButton();
+        getLogoutbutton1().resetButton();
+        getQuestionnairebutton1().resetButton();
     }//GEN-LAST:event_aboutbutton1MousePressed
 
     private void homebutton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_homebutton1MousePressed

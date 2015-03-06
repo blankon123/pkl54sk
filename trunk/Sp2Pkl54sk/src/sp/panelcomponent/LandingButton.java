@@ -86,13 +86,11 @@ public class LandingButton extends javax.swing.JPanel {
 
     private void listinglandingbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listinglandingbutton1ActionPerformed
         getQuestionnairelandingbutton1().resetButton();
-        
         setState("listing");
     }//GEN-LAST:event_listinglandingbutton1ActionPerformed
 
     private void questionnairelandingbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_questionnairelandingbutton1ActionPerformed
         getListinglandingbutton1().resetButton();
-        
         setState("quest");
     }//GEN-LAST:event_questionnairelandingbutton1ActionPerformed
 
