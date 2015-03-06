@@ -53,7 +53,7 @@
                   </Group>
                   <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="huhuh" min="-2" pref="803" max="-2" attributes="0"/>
+                      <Component id="MainPanel" min="-2" pref="803" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="backBtn" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -91,7 +91,7 @@
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="127" max="-2" attributes="0"/>
-                          <Component id="huhuh" max="32767" attributes="0"/>
+                          <Component id="MainPanel" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -158,11 +158,11 @@
         </Component>
         <Component class="sp.panelcomponent.ErrorTable" name="errorTable2">
         </Component>
-        <Container class="javax.swing.JPanel" name="huhuh">
+        <Container class="javax.swing.JPanel" name="MainPanel">
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignCardLayout"/>
           <SubComponents>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+            <Container class="javax.swing.JScrollPane" name="hal1">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
                   <CardConstraints cardName="hal1"/>
@@ -178,7 +178,7 @@
             <Container class="javax.swing.JScrollPane" name="hal2">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
-                  <CardConstraints cardName="card3"/>
+                  <CardConstraints cardName="hal2"/>
                 </Constraint>
               </Constraints>
 

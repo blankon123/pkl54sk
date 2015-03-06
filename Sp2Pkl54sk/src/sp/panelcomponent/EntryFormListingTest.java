@@ -22,7 +22,7 @@ public class EntryFormListingTest extends javax.swing.JPanel {
         initComponents();
         setActive(h1);
         setInactive(h2);
-        controller = new ListingControllerTest(this, nextBtn, getBackBtn(), getCloseBtn(), getSaveBtn(), huhuh);
+        controller = new ListingControllerTest(this, nextBtn, getBackBtn(), getCloseBtn(), getSaveBtn(), MainPanel);
     }
     
     public void setActive(JButton hal) {
@@ -52,8 +52,8 @@ public class EntryFormListingTest extends javax.swing.JPanel {
         closeminbutton1 = new sp.componentButton.Closeminbutton();
         minimizebutton1 = new sp.componentButton.Minimizebutton();
         errorTable2 = new sp.panelcomponent.ErrorTable();
-        huhuh = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        MainPanel = new javax.swing.JPanel();
+        hal1 = new javax.swing.JScrollPane();
         hal1Listing1 = new sp.form.Hal1Listing();
         hal2 = new javax.swing.JScrollPane();
         hal2Listing1 = new sp.form.Hal2Listing();
@@ -81,15 +81,15 @@ public class EntryFormListingTest extends javax.swing.JPanel {
 
         minimizebutton1.setText("");
 
-        huhuh.setLayout(new java.awt.CardLayout());
+        MainPanel.setLayout(new java.awt.CardLayout());
 
-        jScrollPane1.setViewportView(hal1Listing1);
+        hal1.setViewportView(hal1Listing1);
 
-        huhuh.add(jScrollPane1, "hal1");
+        MainPanel.add(hal1, "hal1");
 
         hal2.setViewportView(hal2Listing1);
 
-        huhuh.add(hal2, "card3");
+        MainPanel.add(hal2, "hal2");
 
         javax.swing.GroupLayout bgquest1Layout = new javax.swing.GroupLayout(bgquest1);
         bgquest1.setLayout(bgquest1Layout);
@@ -109,7 +109,7 @@ public class EntryFormListingTest extends javax.swing.JPanel {
                     .addComponent(h1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(98, 98, 98)
                 .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(huhuh, javax.swing.GroupLayout.PREFERRED_SIZE, 803, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 803, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(bgquest1Layout.createSequentialGroup()
                         .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -140,7 +140,7 @@ public class EntryFormListingTest extends javax.swing.JPanel {
                         .addGap(0, 111, Short.MAX_VALUE))
                     .addGroup(bgquest1Layout.createSequentialGroup()
                         .addGap(127, 127, 127)
-                        .addComponent(huhuh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(18, 18, 18)
                 .addGroup(bgquest1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -177,6 +177,7 @@ public class EntryFormListingTest extends javax.swing.JPanel {
     }//GEN-LAST:event_backBtnActionPerformed
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel MainPanel;
     private sp.componentButton.BackminButton backBtn;
     private sp.background.Bgquest bgquest1;
     private sp.componentButton.Closebutton closeBtn;
@@ -184,11 +185,10 @@ public class EntryFormListingTest extends javax.swing.JPanel {
     private sp.panelcomponent.ErrorTable errorTable2;
     private javax.swing.JButton h1;
     private javax.swing.JButton h2;
+    private javax.swing.JScrollPane hal1;
     private sp.form.Hal1Listing hal1Listing1;
     private javax.swing.JScrollPane hal2;
     private sp.form.Hal2Listing hal2Listing1;
-    private javax.swing.JPanel huhuh;
-    private javax.swing.JScrollPane jScrollPane1;
     private sp.componentButton.Minimizebutton minimizebutton1;
     private sp.componentButton.NextButton nextBtn;
     private sp.componentButton.Savebutton saveBtn;
