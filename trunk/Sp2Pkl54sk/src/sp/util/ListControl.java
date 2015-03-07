@@ -5,7 +5,7 @@
  */
 package sp.util;
 
-import sp.component.TextField;
+import sp.component.TextFieldListing;
 import java.awt.Component;
 import java.awt.Container;
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ import javax.swing.JScrollPane;
  */
 public class ListControl {
 
-    private static LinkedList<TextField> listForm;
+    private static LinkedList<TextFieldListing> listForm;
     private static List limitSection;
     private static int posisi;
     private static JPanel Parent;
@@ -31,7 +31,7 @@ public class ListControl {
 
     static {
         limitSection = new ArrayList();
-        listForm = new LinkedList<TextField>();
+        listForm = new LinkedList<TextFieldListing>();
         formCompare = new FormCompare();
     }
 
@@ -54,16 +54,16 @@ public class ListControl {
      *
      * @param text TextField
      */
-    public static void addtoForm(TextField text) {
+    public static void addtoForm(TextFieldListing text) {
         listForm.add(text);
     }
 
-    public static LinkedList<TextField> getListForm() {
+    public static LinkedList<TextFieldListing> getListForm() {
         //  Collections.sort(listForm,formCompare);
         return listForm;
     }
 
-    public static TextField getTextFieldbyPosisi(int posisi) {
+    public static TextFieldListing getTextFieldbyPosisi(int posisi) {
         return listForm.get(posisi);
     }
 
@@ -73,7 +73,7 @@ public class ListControl {
      * @param txt1
      * @param txt2
      */
-    public static void disableText(TextField txt1, TextField txt2) {
+    public static void disableText(TextFieldListing txt1, TextFieldListing txt2) {
         int i = txt1.getPosisi();
         int j = txt2.getPosisi();
         while (i < j) {
@@ -87,7 +87,7 @@ public class ListControl {
      *
      * @param txt1
      */
-    public static void disableText(TextField txt1) {
+    public static void disableText(TextFieldListing txt1) {
         int i = getPosisi() + 1;
         int j = txt1.getPosisi() - 1;
         while (i < j) {
@@ -134,7 +134,7 @@ public class ListControl {
         }
     }
 
-    public static void remove(TextField txt) {
+    public static void remove(TextFieldListing txt) {
         listForm.remove(txt);
     }
 
@@ -145,7 +145,7 @@ public class ListControl {
         listForm.get(getPosisi()).setText("");
     }
 
-    public static TextField getCurrentText() {
+    public static TextFieldListing getCurrentText() {
         return listForm.get(getPosisi());
     }
 
@@ -165,10 +165,10 @@ public class ListControl {
         }
     }
 
-    private static class FormCompare implements Comparator<TextField> {
+    private static class FormCompare implements Comparator<TextFieldListing> {
 
         @Override
-        public int compare(TextField o1, TextField o2) {
+        public int compare(TextFieldListing o1, TextFieldListing o2) {
             if (o1.getPosisi() < o2.getPosisi()) {
                 return -1;
             } else {
@@ -183,7 +183,7 @@ public class ListControl {
      * @param cardName
      * @param txtTarget
      */
-    public static void skipTo(String cardName, TextField txtTarget) {
+    public static void skipTo(String cardName, TextFieldListing txtTarget) {
         controller.show(cardName);
         txtTarget.requestFocus();
     }
@@ -193,9 +193,9 @@ public class ListControl {
      *
      * @param txtTarget
      */
-    public static void skipTo(TextField txtTarget) {
+    public static void skipTo(TextFieldListing txtTarget) {
         txtTarget.requestFocus();
-        FormControl.disableText(txtTarget);
+        ListControl.disableText(txtTarget);
     }
 
     public static List getLimitSection() {
@@ -247,7 +247,7 @@ public class ListControl {
         return controller.getScrollPane();
     }
 
-    public static ArrayList<TextField> setFixedPos(int startPos, ArrayList<TextField> arrList) {
+    public static ArrayList<TextFieldListing> setFixedPos(int startPos, ArrayList<TextFieldListing> arrList) {
         int posHal = startPos;
         int pos = 0;
         for (int i = 0; i < arrList.size(); i++) {
@@ -258,7 +258,7 @@ public class ListControl {
         return arrList;
     }
     
-    public static ArrayList<TextField> setFixedPos1(int startPos, ArrayList<TextField> arrList) {
+    public static ArrayList<TextFieldListing> setFixedPos1(int startPos, ArrayList<TextFieldListing> arrList) {
         int posHal = startPos;
         int pos = 0;
         for (int i = 0; i < arrList.size(); i++) {
@@ -280,7 +280,7 @@ class ResetTextL {
         boolean kondisi = false;
 
         try {
-            TextField jt = (TextField) c;
+            TextFieldListing jt = (TextFieldListing) c;
             kondisi = true;
         } catch (Exception e) {
         }
@@ -293,7 +293,7 @@ class ResetTextL {
         for (Component c : comp) {
             listComp.add(c);
             if (isJTextField(c)) {
-                TextField jt = (TextField) c;
+                TextFieldListing jt = (TextFieldListing) c;
                 if (jt.isEditable()) {
                     jt.setText("");
                     jt.setBackground(null);
@@ -314,7 +314,7 @@ class ResetTextL {
         for (Component co : comp) {
             listComp.add(co);
             if (isJTextField(co)) {
-                TextField field = (TextField) co;
+                TextFieldListing field = (TextFieldListing) co;
                 if (field.getName().equalsIgnoreCase(textfieldTujuan)) {
                     field.setEditable(false);
                 }
