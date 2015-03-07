@@ -85,7 +85,7 @@ public class UpdatingController implements ActionListener {
         b3 = b3Controller.B3hasil();
         b4 = b4Controller.B4hasil();
 
-        validB1 = new ValidasiB1(b1);
+        validB1 = new ValidasiB1(b1,b1view);
         validB2 = new ValidasiB2(b2);
         validB3 = new ValidasiB3(b3, b2view);
         validB4 = new ValidasiB4(b4);
@@ -140,7 +140,7 @@ public class UpdatingController implements ActionListener {
     }
 
     public void Validate(B1 b1, B2 b2, B3 b3, B4 b4) {
-        ValidasiB1 validb1 = new ValidasiB1(b1);
+        ValidasiB1 validb1 = new ValidasiB1(b1,b1view);
         //ValidasiB2 validb2 = new ValidasiB2(b2);
         ValidasiB3 validb3 = new ValidasiB3(b3, b2view);
         //ValidasiB4 validb4 = new ValidasiB4(b4);
