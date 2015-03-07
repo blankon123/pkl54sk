@@ -31,6 +31,12 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
         initComponents();
         setActive(h1);
         setInactive(h2, h3, h4, h5, h6);
+        h1.setBackground(new Color(45,79,123));
+        h2.setBackground(new Color(45,79,123));
+        h3.setBackground(new Color(45,79,123));
+        h4.setBackground(new Color(45,79,123));
+        h5.setBackground(new Color(45,79,123));
+        h6.setBackground(new Color(45,79,123));
         setCardManager();
         controller = new QuestControllerTest(this, nextBtn, getBackBtn(), getCloseBtn(), getSaveBtn(), getUpdateBtn(), MainPanel);
     }
@@ -252,7 +258,7 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     public void setActive(JButton hal) {
-        hal.setForeground(new Color(125, 175, 204));
+        hal.setForeground(new Color(217, 226, 233));
     }
 
     public void setInactive(JButton x, JButton y, JButton z, JButton w, JButton v) {
