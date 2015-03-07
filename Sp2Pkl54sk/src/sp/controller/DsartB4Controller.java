@@ -6,7 +6,7 @@
 package sp.controller;
 
 import java.util.ArrayList;
-import sp.component.TextField;
+import sp.component.TextFieldListing;
 import sp.form.Hal2Listing;
 import sp.model.Dsartb4;
 import sp.model.DsartoptionB4r4;
@@ -37,7 +37,7 @@ public class DsartB4Controller {
 //       
         int j =0;
         //b4view.addListTextfield();
-        ArrayList<TextField> dummy = b4view.getListTextField();
+        ArrayList<TextFieldListing> dummy = b4view.getListTextFieldListing();
         for (int i = 0; i < dummy.size(); i+=7) {
             b4[j].setB4r2s1(dummy.get(i+1).getText());
             b4[j].setB4r2s2(dummy.get(i+2).getText());

@@ -11,9 +11,9 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
-import sp.controller.CardLayoutController;
 import sp.controller.QuestControllerTest;
 import sp.form.*;
+import sp.util.CardLayoutController;
 
 /**
  *

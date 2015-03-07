@@ -7,7 +7,7 @@ package sp.form;
 
 import java.util.ArrayList;
 import javax.swing.JLayeredPane;
-import sp.component.TextField;
+import sp.component.TextFieldListing;
 import sp.util.ListControl;
 
 /**
@@ -19,21 +19,21 @@ public class Hal2Listing extends javax.swing.JPanel {
     /**
      * Creates new form Hal2Listing
      */
-    private ArrayList<TextField> listTextFieldHal2Listing = new ArrayList<TextField>();
+    private ArrayList<TextFieldListing> listTextFieldHal2Listing = new ArrayList<TextFieldListing>();
     protected static int startPos = Hal1Listing.maxPos;
     protected static int maxPos;
 
     public Hal2Listing() {
         initComponents();
         addListTextfield();
-        setListTextFieldHal2Listing(ListControl.setFixedPos(startPos, getListTextField()));
+        setListTextFieldListingHal2Listing(ListControl.setFixedPos(startPos, getListTextFieldListing()));
     }
 
     public int getMaxPertanyaan() {
         return maxPos;
     }
 
-    public ArrayList<TextField> getListTextField() {
+    public ArrayList<TextFieldListing> getListTextFieldListing() {
         return listTextFieldHal2Listing;
     }
 
@@ -48,155 +48,155 @@ public class Hal2Listing extends javax.swing.JPanel {
 //        b4r6.setText(b.getB4r6());
 //    }
     private void addListTextfield() {
-        getListTextField().add(0, Ab4r2s1);
-        getListTextField().add(1, Ab4r2s2);
-        getListTextField().add(2, Ab4r2s3);
-        getListTextField().add(3, Ab4r3);
-        getListTextField().add(4, Ab4r4);
-        getListTextField().add(5, Ab4r5);
-        getListTextField().add(6, Ab4r6);
-        getListTextField().add(7, Bb4r2s1);
-        getListTextField().add(8, Bb4r2s2);
-        getListTextField().add(9, Bb4r2s3);
-        getListTextField().add(10, Bb4r3);
-        getListTextField().add(11, Bb4r4);
-        getListTextField().add(12, Bb4r5);
-        getListTextField().add(13, Bb4r6);
-        getListTextField().add(14, Cb4r2s1);
-        getListTextField().add(15, Cb4r2s2);
-        getListTextField().add(16, Cb4r2s3);
-        getListTextField().add(17, Cb4r3);
-        getListTextField().add(18, Cb4r4);
-        getListTextField().add(19, Cb4r5);
-        getListTextField().add(20, Cb4r6);
-        getListTextField().add(21, Db4r2s1);
-        getListTextField().add(22, Db4r2s2);
-        getListTextField().add(23, Db4r2s3);
-        getListTextField().add(24, Db4r3);
-        getListTextField().add(25, Db4r4);
-        getListTextField().add(26, Db4r5);
-        getListTextField().add(27, Db4r6);
-        getListTextField().add(28, Eb4r2s1);
-        getListTextField().add(29, Eb4r2s2);
-        getListTextField().add(30, Eb4r2s3);
-        getListTextField().add(31, Eb4r3);
-        getListTextField().add(32, Eb4r4);
-        getListTextField().add(33, Eb4r5);
-        getListTextField().add(34, Eb4r6);
-        getListTextField().add(35, Fb4r2s1);
-        getListTextField().add(36, Fb4r2s2);
-        getListTextField().add(37, Fb4r2s3);
-        getListTextField().add(38, Fb4r3);
-        getListTextField().add(39, Fb4r4);
-        getListTextField().add(40, Fb4r5);
-        getListTextField().add(41, Fb4r6);
-        getListTextField().add(42, Gb4r2s1);
-        getListTextField().add(43, Gb4r2s2);
-        getListTextField().add(44, Gb4r2s3);
-        getListTextField().add(45, Gb4r3);
-        getListTextField().add(46, Gb4r4);
-        getListTextField().add(47, Gb4r5);
-        getListTextField().add(48, Gb4r6);
-        getListTextField().add(49, Hb4r2s1);
-        getListTextField().add(50, Hb4r2s2);
-        getListTextField().add(51, Hb4r2s3);
-        getListTextField().add(52, Hb4r3);
-        getListTextField().add(53, Hb4r4);
-        getListTextField().add(54, Hb4r5);
-        getListTextField().add(55, Hb4r6);
-        getListTextField().add(56, Ib4r2s1);
-        getListTextField().add(57, Ib4r2s2);
-        getListTextField().add(58, Ib4r2s3);
-        getListTextField().add(59, Ib4r3);
-        getListTextField().add(60, Ib4r4);
-        getListTextField().add(61, Ib4r5);
-        getListTextField().add(62, Ib4r6);
-        getListTextField().add(63, Jb4r2s1);
-        getListTextField().add(64, Jb4r2s2);
-        getListTextField().add(65, Jb4r2s3);
-        getListTextField().add(66, Jb4r3);
-        getListTextField().add(67, Jb4r4);
-        getListTextField().add(68, Jb4r5);
-        getListTextField().add(69, Jb4r6);
-        getListTextField().add(70, Kb4r2s1);
-        getListTextField().add(71, Kb4r2s2);
-        getListTextField().add(72, Kb4r2s3);
-        getListTextField().add(73, Kb4r3);
-        getListTextField().add(74, Kb4r4);
-        getListTextField().add(75, Kb4r5);
-        getListTextField().add(76, Kb4r6);
-        getListTextField().add(77, Lb4r2s1);
-        getListTextField().add(78, Lb4r2s2);
-        getListTextField().add(79, Lb4r2s3);
-        getListTextField().add(80, Lb4r3);
-        getListTextField().add(81, Lb4r4);
-        getListTextField().add(82, Lb4r5);
-        getListTextField().add(83, Lb4r6);
-        getListTextField().add(84, Mb4r2s1);
-        getListTextField().add(85, Mb4r2s2);
-        getListTextField().add(86, Mb4r2s3);
-        getListTextField().add(87, Mb4r3);
-        getListTextField().add(88, Mb4r4);
-        getListTextField().add(89, Mb4r5);
-        getListTextField().add(90, Mb4r6);
-        getListTextField().add(91, Nb4r2s1);
-        getListTextField().add(92, Nb4r2s2);
-        getListTextField().add(93, Nb4r2s3);
-        getListTextField().add(94, Nb4r3);
-        getListTextField().add(95, Nb4r4);
-        getListTextField().add(96, Nb4r5);
-        getListTextField().add(97, Nb4r6);
-        getListTextField().add(98, Ob4r2s1);
-        getListTextField().add(99, Ob4r2s2);
-        getListTextField().add(100, Ob4r2s3);
-        getListTextField().add(101, Ob4r3);
-        getListTextField().add(102, Ob4r4);
-        getListTextField().add(103, Ob4r5);
-        getListTextField().add(104, Ob4r6);
-        getListTextField().add(105, Pb4r2s1);
-        getListTextField().add(106, Pb4r2s2);
-        getListTextField().add(107, Pb4r2s3);
-        getListTextField().add(108, Pb4r3);
-        getListTextField().add(109, Pb4r4);
-        getListTextField().add(110, Pb4r5);
-        getListTextField().add(111, Pb4r6);
-        getListTextField().add(112, Qb4r2s1);
-        getListTextField().add(113, Qb4r2s2);
-        getListTextField().add(114, Qb4r2s3);
-        getListTextField().add(115, Qb4r3);
-        getListTextField().add(116, Qb4r4);
-        getListTextField().add(117, Qb4r5);
-        getListTextField().add(118, Qb4r6);
-        getListTextField().add(119, Rb4r2s1);
-        getListTextField().add(120, Rb4r2s2);
-        getListTextField().add(121, Rb4r2s3);
-        getListTextField().add(122, Rb4r3);
-        getListTextField().add(123, Rb4r4);
-        getListTextField().add(124, Rb4r5);
-        getListTextField().add(125, Rb4r6);
-        getListTextField().add(126, Sb4r2s1);
-        getListTextField().add(127, Sb4r2s2);
-        getListTextField().add(128, Sb4r2s3);
-        getListTextField().add(129, Sb4r3);
-        getListTextField().add(130, Sb4r4);
-        getListTextField().add(131, Sb4r5);
-        getListTextField().add(132, Sb4r6);
-        getListTextField().add(133, Tb4r2s1);
-        getListTextField().add(134, Tb4r2s2);
-        getListTextField().add(135, Tb4r2s3);
-        getListTextField().add(136, Tb4r3);
-        getListTextField().add(137, Tb4r4);
-        getListTextField().add(138, Tb4r5);
-        getListTextField().add(139, Tb4r6);
-        maxPos = getListTextField().size();
+        getListTextFieldListing().add(0, Ab4r2s1);
+        getListTextFieldListing().add(1, Ab4r2s2);
+        getListTextFieldListing().add(2, Ab4r2s3);
+        getListTextFieldListing().add(3, Ab4r3);
+        getListTextFieldListing().add(4, Ab4r4);
+        getListTextFieldListing().add(5, Ab4r5);
+        getListTextFieldListing().add(6, Ab4r6);
+        getListTextFieldListing().add(7, Bb4r2s1);
+        getListTextFieldListing().add(8, Bb4r2s2);
+        getListTextFieldListing().add(9, Bb4r2s3);
+        getListTextFieldListing().add(10, Bb4r3);
+        getListTextFieldListing().add(11, Bb4r4);
+        getListTextFieldListing().add(12, Bb4r5);
+        getListTextFieldListing().add(13, Bb4r6);
+        getListTextFieldListing().add(14, Cb4r2s1);
+        getListTextFieldListing().add(15, Cb4r2s2);
+        getListTextFieldListing().add(16, Cb4r2s3);
+        getListTextFieldListing().add(17, Cb4r3);
+        getListTextFieldListing().add(18, Cb4r4);
+        getListTextFieldListing().add(19, Cb4r5);
+        getListTextFieldListing().add(20, Cb4r6);
+        getListTextFieldListing().add(21, Db4r2s1);
+        getListTextFieldListing().add(22, Db4r2s2);
+        getListTextFieldListing().add(23, Db4r2s3);
+        getListTextFieldListing().add(24, Db4r3);
+        getListTextFieldListing().add(25, Db4r4);
+        getListTextFieldListing().add(26, Db4r5);
+        getListTextFieldListing().add(27, Db4r6);
+        getListTextFieldListing().add(28, Eb4r2s1);
+        getListTextFieldListing().add(29, Eb4r2s2);
+        getListTextFieldListing().add(30, Eb4r2s3);
+        getListTextFieldListing().add(31, Eb4r3);
+        getListTextFieldListing().add(32, Eb4r4);
+        getListTextFieldListing().add(33, Eb4r5);
+        getListTextFieldListing().add(34, Eb4r6);
+        getListTextFieldListing().add(35, Fb4r2s1);
+        getListTextFieldListing().add(36, Fb4r2s2);
+        getListTextFieldListing().add(37, Fb4r2s3);
+        getListTextFieldListing().add(38, Fb4r3);
+        getListTextFieldListing().add(39, Fb4r4);
+        getListTextFieldListing().add(40, Fb4r5);
+        getListTextFieldListing().add(41, Fb4r6);
+        getListTextFieldListing().add(42, Gb4r2s1);
+        getListTextFieldListing().add(43, Gb4r2s2);
+        getListTextFieldListing().add(44, Gb4r2s3);
+        getListTextFieldListing().add(45, Gb4r3);
+        getListTextFieldListing().add(46, Gb4r4);
+        getListTextFieldListing().add(47, Gb4r5);
+        getListTextFieldListing().add(48, Gb4r6);
+        getListTextFieldListing().add(49, Hb4r2s1);
+        getListTextFieldListing().add(50, Hb4r2s2);
+        getListTextFieldListing().add(51, Hb4r2s3);
+        getListTextFieldListing().add(52, Hb4r3);
+        getListTextFieldListing().add(53, Hb4r4);
+        getListTextFieldListing().add(54, Hb4r5);
+        getListTextFieldListing().add(55, Hb4r6);
+        getListTextFieldListing().add(56, Ib4r2s1);
+        getListTextFieldListing().add(57, Ib4r2s2);
+        getListTextFieldListing().add(58, Ib4r2s3);
+        getListTextFieldListing().add(59, Ib4r3);
+        getListTextFieldListing().add(60, Ib4r4);
+        getListTextFieldListing().add(61, Ib4r5);
+        getListTextFieldListing().add(62, Ib4r6);
+        getListTextFieldListing().add(63, Jb4r2s1);
+        getListTextFieldListing().add(64, Jb4r2s2);
+        getListTextFieldListing().add(65, Jb4r2s3);
+        getListTextFieldListing().add(66, Jb4r3);
+        getListTextFieldListing().add(67, Jb4r4);
+        getListTextFieldListing().add(68, Jb4r5);
+        getListTextFieldListing().add(69, Jb4r6);
+        getListTextFieldListing().add(70, Kb4r2s1);
+        getListTextFieldListing().add(71, Kb4r2s2);
+        getListTextFieldListing().add(72, Kb4r2s3);
+        getListTextFieldListing().add(73, Kb4r3);
+        getListTextFieldListing().add(74, Kb4r4);
+        getListTextFieldListing().add(75, Kb4r5);
+        getListTextFieldListing().add(76, Kb4r6);
+        getListTextFieldListing().add(77, Lb4r2s1);
+        getListTextFieldListing().add(78, Lb4r2s2);
+        getListTextFieldListing().add(79, Lb4r2s3);
+        getListTextFieldListing().add(80, Lb4r3);
+        getListTextFieldListing().add(81, Lb4r4);
+        getListTextFieldListing().add(82, Lb4r5);
+        getListTextFieldListing().add(83, Lb4r6);
+        getListTextFieldListing().add(84, Mb4r2s1);
+        getListTextFieldListing().add(85, Mb4r2s2);
+        getListTextFieldListing().add(86, Mb4r2s3);
+        getListTextFieldListing().add(87, Mb4r3);
+        getListTextFieldListing().add(88, Mb4r4);
+        getListTextFieldListing().add(89, Mb4r5);
+        getListTextFieldListing().add(90, Mb4r6);
+        getListTextFieldListing().add(91, Nb4r2s1);
+        getListTextFieldListing().add(92, Nb4r2s2);
+        getListTextFieldListing().add(93, Nb4r2s3);
+        getListTextFieldListing().add(94, Nb4r3);
+        getListTextFieldListing().add(95, Nb4r4);
+        getListTextFieldListing().add(96, Nb4r5);
+        getListTextFieldListing().add(97, Nb4r6);
+        getListTextFieldListing().add(98, Ob4r2s1);
+        getListTextFieldListing().add(99, Ob4r2s2);
+        getListTextFieldListing().add(100, Ob4r2s3);
+        getListTextFieldListing().add(101, Ob4r3);
+        getListTextFieldListing().add(102, Ob4r4);
+        getListTextFieldListing().add(103, Ob4r5);
+        getListTextFieldListing().add(104, Ob4r6);
+        getListTextFieldListing().add(105, Pb4r2s1);
+        getListTextFieldListing().add(106, Pb4r2s2);
+        getListTextFieldListing().add(107, Pb4r2s3);
+        getListTextFieldListing().add(108, Pb4r3);
+        getListTextFieldListing().add(109, Pb4r4);
+        getListTextFieldListing().add(110, Pb4r5);
+        getListTextFieldListing().add(111, Pb4r6);
+        getListTextFieldListing().add(112, Qb4r2s1);
+        getListTextFieldListing().add(113, Qb4r2s2);
+        getListTextFieldListing().add(114, Qb4r2s3);
+        getListTextFieldListing().add(115, Qb4r3);
+        getListTextFieldListing().add(116, Qb4r4);
+        getListTextFieldListing().add(117, Qb4r5);
+        getListTextFieldListing().add(118, Qb4r6);
+        getListTextFieldListing().add(119, Rb4r2s1);
+        getListTextFieldListing().add(120, Rb4r2s2);
+        getListTextFieldListing().add(121, Rb4r2s3);
+        getListTextFieldListing().add(122, Rb4r3);
+        getListTextFieldListing().add(123, Rb4r4);
+        getListTextFieldListing().add(124, Rb4r5);
+        getListTextFieldListing().add(125, Rb4r6);
+        getListTextFieldListing().add(126, Sb4r2s1);
+        getListTextFieldListing().add(127, Sb4r2s2);
+        getListTextFieldListing().add(128, Sb4r2s3);
+        getListTextFieldListing().add(129, Sb4r3);
+        getListTextFieldListing().add(130, Sb4r4);
+        getListTextFieldListing().add(131, Sb4r5);
+        getListTextFieldListing().add(132, Sb4r6);
+        getListTextFieldListing().add(133, Tb4r2s1);
+        getListTextFieldListing().add(134, Tb4r2s2);
+        getListTextFieldListing().add(135, Tb4r2s3);
+        getListTextFieldListing().add(136, Tb4r3);
+        getListTextFieldListing().add(137, Tb4r4);
+        getListTextFieldListing().add(138, Tb4r5);
+        getListTextFieldListing().add(139, Tb4r6);
+        maxPos = getListTextFieldListing().size();
     }
 
-    public ArrayList<TextField> getListTextFieldHal2Listing() {
+    public ArrayList<TextFieldListing> getListTextFieldListingHal2Listing() {
         return listTextFieldHal2Listing;
     }
 
-    public void setListTextFieldHal2Listing(ArrayList<TextField> listTextFieldHal2Listing) {
-        this.listTextFieldHal2Listing = listTextFieldHal2Listing;
+    public void setListTextFieldListingHal2Listing(ArrayList<TextFieldListing> listTextFieldListingHal2Listing) {
+        this.listTextFieldHal2Listing = listTextFieldListingHal2Listing;
     }
 
     public static int getStartPos() {
@@ -215,1123 +215,1123 @@ public class Hal2Listing extends javax.swing.JPanel {
         Hal2Listing.maxPos = maxPos;
     }
 
-    public TextField getAb4r2s1() {
+    public TextFieldListing getAb4r2s1() {
         return Ab4r2s1;
     }
 
-    public void setAb4r2s1(TextField Ab4r2s1) {
+    public void setAb4r2s1(TextFieldListing Ab4r2s1) {
         this.Ab4r2s1 = Ab4r2s1;
     }
 
-    public TextField getAb4r2s2() {
+    public TextFieldListing getAb4r2s2() {
         return Ab4r2s2;
     }
 
-    public void setAb4r2s2(TextField Ab4r2s2) {
+    public void setAb4r2s2(TextFieldListing Ab4r2s2) {
         this.Ab4r2s2 = Ab4r2s2;
     }
 
-    public TextField getAb4r2s3() {
+    public TextFieldListing getAb4r2s3() {
         return Ab4r2s3;
     }
 
-    public void setAb4r2s3(TextField Ab4r2s3) {
+    public void setAb4r2s3(TextFieldListing Ab4r2s3) {
         this.Ab4r2s3 = Ab4r2s3;
     }
 
-    public TextField getAb4r3() {
+    public TextFieldListing getAb4r3() {
         return Ab4r3;
     }
 
-    public void setAb4r3(TextField Ab4r3) {
+    public void setAb4r3(TextFieldListing Ab4r3) {
         this.Ab4r3 = Ab4r3;
     }
 
-    public TextField getAb4r4() {
+    public TextFieldListing getAb4r4() {
         return Ab4r4;
     }
 
-    public void setAb4r4(TextField Ab4r4) {
+    public void setAb4r4(TextFieldListing Ab4r4) {
         this.Ab4r4 = Ab4r4;
     }
 
-    public TextField getAb4r5() {
+    public TextFieldListing getAb4r5() {
         return Ab4r5;
     }
 
-    public void setAb4r5(TextField Ab4r5) {
+    public void setAb4r5(TextFieldListing Ab4r5) {
         this.Ab4r5 = Ab4r5;
     }
 
-    public TextField getAb4r6() {
+    public TextFieldListing getAb4r6() {
         return Ab4r6;
     }
 
-    public void setAb4r6(TextField Ab4r6) {
+    public void setAb4r6(TextFieldListing Ab4r6) {
         this.Ab4r6 = Ab4r6;
     }
 
-    public TextField getBb4r2s1() {
+    public TextFieldListing getBb4r2s1() {
         return Bb4r2s1;
     }
 
-    public void setBb4r2s1(TextField Bb4r2s1) {
+    public void setBb4r2s1(TextFieldListing Bb4r2s1) {
         this.Bb4r2s1 = Bb4r2s1;
     }
 
-    public TextField getBb4r2s2() {
+    public TextFieldListing getBb4r2s2() {
         return Bb4r2s2;
     }
 
-    public void setBb4r2s2(TextField Bb4r2s2) {
+    public void setBb4r2s2(TextFieldListing Bb4r2s2) {
         this.Bb4r2s2 = Bb4r2s2;
     }
 
-    public TextField getBb4r2s3() {
+    public TextFieldListing getBb4r2s3() {
         return Bb4r2s3;
     }
 
-    public void setBb4r2s3(TextField Bb4r2s3) {
+    public void setBb4r2s3(TextFieldListing Bb4r2s3) {
         this.Bb4r2s3 = Bb4r2s3;
     }
 
-    public TextField getBb4r3() {
+    public TextFieldListing getBb4r3() {
         return Bb4r3;
     }
 
-    public void setBb4r3(TextField Bb4r3) {
+    public void setBb4r3(TextFieldListing Bb4r3) {
         this.Bb4r3 = Bb4r3;
     }
 
-    public TextField getBb4r4() {
+    public TextFieldListing getBb4r4() {
         return Bb4r4;
     }
 
-    public void setBb4r4(TextField Bb4r4) {
+    public void setBb4r4(TextFieldListing Bb4r4) {
         this.Bb4r4 = Bb4r4;
     }
 
-    public TextField getBb4r5() {
+    public TextFieldListing getBb4r5() {
         return Bb4r5;
     }
 
-    public void setBb4r5(TextField Bb4r5) {
+    public void setBb4r5(TextFieldListing Bb4r5) {
         this.Bb4r5 = Bb4r5;
     }
 
-    public TextField getBb4r6() {
+    public TextFieldListing getBb4r6() {
         return Bb4r6;
     }
 
-    public void setBb4r6(TextField Bb4r6) {
+    public void setBb4r6(TextFieldListing Bb4r6) {
         this.Bb4r6 = Bb4r6;
     }
 
-    public TextField getCb4r2s1() {
+    public TextFieldListing getCb4r2s1() {
         return Cb4r2s1;
     }
 
-    public void setCb4r2s1(TextField Cb4r2s1) {
+    public void setCb4r2s1(TextFieldListing Cb4r2s1) {
         this.Cb4r2s1 = Cb4r2s1;
     }
 
-    public TextField getCb4r2s2() {
+    public TextFieldListing getCb4r2s2() {
         return Cb4r2s2;
     }
 
-    public void setCb4r2s2(TextField Cb4r2s2) {
+    public void setCb4r2s2(TextFieldListing Cb4r2s2) {
         this.Cb4r2s2 = Cb4r2s2;
     }
 
-    public TextField getCb4r2s3() {
+    public TextFieldListing getCb4r2s3() {
         return Cb4r2s3;
     }
 
-    public void setCb4r2s3(TextField Cb4r2s3) {
+    public void setCb4r2s3(TextFieldListing Cb4r2s3) {
         this.Cb4r2s3 = Cb4r2s3;
     }
 
-    public TextField getCb4r3() {
+    public TextFieldListing getCb4r3() {
         return Cb4r3;
     }
 
-    public void setCb4r3(TextField Cb4r3) {
+    public void setCb4r3(TextFieldListing Cb4r3) {
         this.Cb4r3 = Cb4r3;
     }
 
-    public TextField getCb4r4() {
+    public TextFieldListing getCb4r4() {
         return Cb4r4;
     }
 
-    public void setCb4r4(TextField Cb4r4) {
+    public void setCb4r4(TextFieldListing Cb4r4) {
         this.Cb4r4 = Cb4r4;
     }
 
-    public TextField getCb4r5() {
+    public TextFieldListing getCb4r5() {
         return Cb4r5;
     }
 
-    public void setCb4r5(TextField Cb4r5) {
+    public void setCb4r5(TextFieldListing Cb4r5) {
         this.Cb4r5 = Cb4r5;
     }
 
-    public TextField getCb4r6() {
+    public TextFieldListing getCb4r6() {
         return Cb4r6;
     }
 
-    public void setCb4r6(TextField Cb4r6) {
+    public void setCb4r6(TextFieldListing Cb4r6) {
         this.Cb4r6 = Cb4r6;
     }
 
-    public TextField getDb4r2s1() {
+    public TextFieldListing getDb4r2s1() {
         return Db4r2s1;
     }
 
-    public void setDb4r2s1(TextField Db4r2s1) {
+    public void setDb4r2s1(TextFieldListing Db4r2s1) {
         this.Db4r2s1 = Db4r2s1;
     }
 
-    public TextField getDb4r2s2() {
+    public TextFieldListing getDb4r2s2() {
         return Db4r2s2;
     }
 
-    public void setDb4r2s2(TextField Db4r2s2) {
+    public void setDb4r2s2(TextFieldListing Db4r2s2) {
         this.Db4r2s2 = Db4r2s2;
     }
 
-    public TextField getDb4r2s3() {
+    public TextFieldListing getDb4r2s3() {
         return Db4r2s3;
     }
 
-    public void setDb4r2s3(TextField Db4r2s3) {
+    public void setDb4r2s3(TextFieldListing Db4r2s3) {
         this.Db4r2s3 = Db4r2s3;
     }
 
-    public TextField getDb4r3() {
+    public TextFieldListing getDb4r3() {
         return Db4r3;
     }
 
-    public void setDb4r3(TextField Db4r3) {
+    public void setDb4r3(TextFieldListing Db4r3) {
         this.Db4r3 = Db4r3;
     }
 
-    public TextField getDb4r4() {
+    public TextFieldListing getDb4r4() {
         return Db4r4;
     }
 
-    public void setDb4r4(TextField Db4r4) {
+    public void setDb4r4(TextFieldListing Db4r4) {
         this.Db4r4 = Db4r4;
     }
 
-    public TextField getDb4r5() {
+    public TextFieldListing getDb4r5() {
         return Db4r5;
     }
 
-    public void setDb4r5(TextField Db4r5) {
+    public void setDb4r5(TextFieldListing Db4r5) {
         this.Db4r5 = Db4r5;
     }
 
-    public TextField getDb4r6() {
+    public TextFieldListing getDb4r6() {
         return Db4r6;
     }
 
-    public void setDb4r6(TextField Db4r6) {
+    public void setDb4r6(TextFieldListing Db4r6) {
         this.Db4r6 = Db4r6;
     }
 
-    public TextField getEb4r2s1() {
+    public TextFieldListing getEb4r2s1() {
         return Eb4r2s1;
     }
 
-    public void setEb4r2s1(TextField Eb4r2s1) {
+    public void setEb4r2s1(TextFieldListing Eb4r2s1) {
         this.Eb4r2s1 = Eb4r2s1;
     }
 
-    public TextField getEb4r2s2() {
+    public TextFieldListing getEb4r2s2() {
         return Eb4r2s2;
     }
 
-    public void setEb4r2s2(TextField Eb4r2s2) {
+    public void setEb4r2s2(TextFieldListing Eb4r2s2) {
         this.Eb4r2s2 = Eb4r2s2;
     }
 
-    public TextField getEb4r2s3() {
+    public TextFieldListing getEb4r2s3() {
         return Eb4r2s3;
     }
 
-    public void setEb4r2s3(TextField Eb4r2s3) {
+    public void setEb4r2s3(TextFieldListing Eb4r2s3) {
         this.Eb4r2s3 = Eb4r2s3;
     }
 
-    public TextField getEb4r3() {
+    public TextFieldListing getEb4r3() {
         return Eb4r3;
     }
 
-    public void setEb4r3(TextField Eb4r3) {
+    public void setEb4r3(TextFieldListing Eb4r3) {
         this.Eb4r3 = Eb4r3;
     }
 
-    public TextField getEb4r4() {
+    public TextFieldListing getEb4r4() {
         return Eb4r4;
     }
 
-    public void setEb4r4(TextField Eb4r4) {
+    public void setEb4r4(TextFieldListing Eb4r4) {
         this.Eb4r4 = Eb4r4;
     }
 
-    public TextField getEb4r5() {
+    public TextFieldListing getEb4r5() {
         return Eb4r5;
     }
 
-    public void setEb4r5(TextField Eb4r5) {
+    public void setEb4r5(TextFieldListing Eb4r5) {
         this.Eb4r5 = Eb4r5;
     }
 
-    public TextField getEb4r6() {
+    public TextFieldListing getEb4r6() {
         return Eb4r6;
     }
 
-    public void setEb4r6(TextField Eb4r6) {
+    public void setEb4r6(TextFieldListing Eb4r6) {
         this.Eb4r6 = Eb4r6;
     }
 
-    public TextField getFb4r2s1() {
+    public TextFieldListing getFb4r2s1() {
         return Fb4r2s1;
     }
 
-    public void setFb4r2s1(TextField Fb4r2s1) {
+    public void setFb4r2s1(TextFieldListing Fb4r2s1) {
         this.Fb4r2s1 = Fb4r2s1;
     }
 
-    public TextField getFb4r2s2() {
+    public TextFieldListing getFb4r2s2() {
         return Fb4r2s2;
     }
 
-    public void setFb4r2s2(TextField Fb4r2s2) {
+    public void setFb4r2s2(TextFieldListing Fb4r2s2) {
         this.Fb4r2s2 = Fb4r2s2;
     }
 
-    public TextField getFb4r2s3() {
+    public TextFieldListing getFb4r2s3() {
         return Fb4r2s3;
     }
 
-    public void setFb4r2s3(TextField Fb4r2s3) {
+    public void setFb4r2s3(TextFieldListing Fb4r2s3) {
         this.Fb4r2s3 = Fb4r2s3;
     }
 
-    public TextField getFb4r3() {
+    public TextFieldListing getFb4r3() {
         return Fb4r3;
     }
 
-    public void setFb4r3(TextField Fb4r3) {
+    public void setFb4r3(TextFieldListing Fb4r3) {
         this.Fb4r3 = Fb4r3;
     }
 
-    public TextField getFb4r4() {
+    public TextFieldListing getFb4r4() {
         return Fb4r4;
     }
 
-    public void setFb4r4(TextField Fb4r4) {
+    public void setFb4r4(TextFieldListing Fb4r4) {
         this.Fb4r4 = Fb4r4;
     }
 
-    public TextField getFb4r5() {
+    public TextFieldListing getFb4r5() {
         return Fb4r5;
     }
 
-    public void setFb4r5(TextField Fb4r5) {
+    public void setFb4r5(TextFieldListing Fb4r5) {
         this.Fb4r5 = Fb4r5;
     }
 
-    public TextField getFb4r6() {
+    public TextFieldListing getFb4r6() {
         return Fb4r6;
     }
 
-    public void setFb4r6(TextField Fb4r6) {
+    public void setFb4r6(TextFieldListing Fb4r6) {
         this.Fb4r6 = Fb4r6;
     }
 
-    public TextField getGb4r2s1() {
+    public TextFieldListing getGb4r2s1() {
         return Gb4r2s1;
     }
 
-    public void setGb4r2s1(TextField Gb4r2s1) {
+    public void setGb4r2s1(TextFieldListing Gb4r2s1) {
         this.Gb4r2s1 = Gb4r2s1;
     }
 
-    public TextField getGb4r2s2() {
+    public TextFieldListing getGb4r2s2() {
         return Gb4r2s2;
     }
 
-    public void setGb4r2s2(TextField Gb4r2s2) {
+    public void setGb4r2s2(TextFieldListing Gb4r2s2) {
         this.Gb4r2s2 = Gb4r2s2;
     }
 
-    public TextField getGb4r2s3() {
+    public TextFieldListing getGb4r2s3() {
         return Gb4r2s3;
     }
 
-    public void setGb4r2s3(TextField Gb4r2s3) {
+    public void setGb4r2s3(TextFieldListing Gb4r2s3) {
         this.Gb4r2s3 = Gb4r2s3;
     }
 
-    public TextField getGb4r3() {
+    public TextFieldListing getGb4r3() {
         return Gb4r3;
     }
 
-    public void setGb4r3(TextField Gb4r3) {
+    public void setGb4r3(TextFieldListing Gb4r3) {
         this.Gb4r3 = Gb4r3;
     }
 
-    public TextField getGb4r4() {
+    public TextFieldListing getGb4r4() {
         return Gb4r4;
     }
 
-    public void setGb4r4(TextField Gb4r4) {
+    public void setGb4r4(TextFieldListing Gb4r4) {
         this.Gb4r4 = Gb4r4;
     }
 
-    public TextField getGb4r5() {
+    public TextFieldListing getGb4r5() {
         return Gb4r5;
     }
 
-    public void setGb4r5(TextField Gb4r5) {
+    public void setGb4r5(TextFieldListing Gb4r5) {
         this.Gb4r5 = Gb4r5;
     }
 
-    public TextField getGb4r6() {
+    public TextFieldListing getGb4r6() {
         return Gb4r6;
     }
 
-    public void setGb4r6(TextField Gb4r6) {
+    public void setGb4r6(TextFieldListing Gb4r6) {
         this.Gb4r6 = Gb4r6;
     }
 
-    public TextField getHb4r2s1() {
+    public TextFieldListing getHb4r2s1() {
         return Hb4r2s1;
     }
 
-    public void setHb4r2s1(TextField Hb4r2s1) {
+    public void setHb4r2s1(TextFieldListing Hb4r2s1) {
         this.Hb4r2s1 = Hb4r2s1;
     }
 
-    public TextField getHb4r2s2() {
+    public TextFieldListing getHb4r2s2() {
         return Hb4r2s2;
     }
 
-    public void setHb4r2s2(TextField Hb4r2s2) {
+    public void setHb4r2s2(TextFieldListing Hb4r2s2) {
         this.Hb4r2s2 = Hb4r2s2;
     }
 
-    public TextField getHb4r2s3() {
+    public TextFieldListing getHb4r2s3() {
         return Hb4r2s3;
     }
 
-    public void setHb4r2s3(TextField Hb4r2s3) {
+    public void setHb4r2s3(TextFieldListing Hb4r2s3) {
         this.Hb4r2s3 = Hb4r2s3;
     }
 
-    public TextField getHb4r3() {
+    public TextFieldListing getHb4r3() {
         return Hb4r3;
     }
 
-    public void setHb4r3(TextField Hb4r3) {
+    public void setHb4r3(TextFieldListing Hb4r3) {
         this.Hb4r3 = Hb4r3;
     }
 
-    public TextField getHb4r4() {
+    public TextFieldListing getHb4r4() {
         return Hb4r4;
     }
 
-    public void setHb4r4(TextField Hb4r4) {
+    public void setHb4r4(TextFieldListing Hb4r4) {
         this.Hb4r4 = Hb4r4;
     }
 
-    public TextField getHb4r5() {
+    public TextFieldListing getHb4r5() {
         return Hb4r5;
     }
 
-    public void setHb4r5(TextField Hb4r5) {
+    public void setHb4r5(TextFieldListing Hb4r5) {
         this.Hb4r5 = Hb4r5;
     }
 
-    public TextField getHb4r6() {
+    public TextFieldListing getHb4r6() {
         return Hb4r6;
     }
 
-    public void setHb4r6(TextField Hb4r6) {
+    public void setHb4r6(TextFieldListing Hb4r6) {
         this.Hb4r6 = Hb4r6;
     }
 
-    public TextField getIb4r2s1() {
+    public TextFieldListing getIb4r2s1() {
         return Ib4r2s1;
     }
 
-    public void setIb4r2s1(TextField Ib4r2s1) {
+    public void setIb4r2s1(TextFieldListing Ib4r2s1) {
         this.Ib4r2s1 = Ib4r2s1;
     }
 
-    public TextField getIb4r2s2() {
+    public TextFieldListing getIb4r2s2() {
         return Ib4r2s2;
     }
 
-    public void setIb4r2s2(TextField Ib4r2s2) {
+    public void setIb4r2s2(TextFieldListing Ib4r2s2) {
         this.Ib4r2s2 = Ib4r2s2;
     }
 
-    public TextField getIb4r2s3() {
+    public TextFieldListing getIb4r2s3() {
         return Ib4r2s3;
     }
 
-    public void setIb4r2s3(TextField Ib4r2s3) {
+    public void setIb4r2s3(TextFieldListing Ib4r2s3) {
         this.Ib4r2s3 = Ib4r2s3;
     }
 
-    public TextField getIb4r3() {
+    public TextFieldListing getIb4r3() {
         return Ib4r3;
     }
 
-    public void setIb4r3(TextField Ib4r3) {
+    public void setIb4r3(TextFieldListing Ib4r3) {
         this.Ib4r3 = Ib4r3;
     }
 
-    public TextField getIb4r4() {
+    public TextFieldListing getIb4r4() {
         return Ib4r4;
     }
 
-    public void setIb4r4(TextField Ib4r4) {
+    public void setIb4r4(TextFieldListing Ib4r4) {
         this.Ib4r4 = Ib4r4;
     }
 
-    public TextField getIb4r5() {
+    public TextFieldListing getIb4r5() {
         return Ib4r5;
     }
 
-    public void setIb4r5(TextField Ib4r5) {
+    public void setIb4r5(TextFieldListing Ib4r5) {
         this.Ib4r5 = Ib4r5;
     }
 
-    public TextField getIb4r6() {
+    public TextFieldListing getIb4r6() {
         return Ib4r6;
     }
 
-    public void setIb4r6(TextField Ib4r6) {
+    public void setIb4r6(TextFieldListing Ib4r6) {
         this.Ib4r6 = Ib4r6;
     }
 
-    public TextField getJb4r2s1() {
+    public TextFieldListing getJb4r2s1() {
         return Jb4r2s1;
     }
 
-    public void setJb4r2s1(TextField Jb4r2s1) {
+    public void setJb4r2s1(TextFieldListing Jb4r2s1) {
         this.Jb4r2s1 = Jb4r2s1;
     }
 
-    public TextField getJb4r2s2() {
+    public TextFieldListing getJb4r2s2() {
         return Jb4r2s2;
     }
 
-    public void setJb4r2s2(TextField Jb4r2s2) {
+    public void setJb4r2s2(TextFieldListing Jb4r2s2) {
         this.Jb4r2s2 = Jb4r2s2;
     }
 
-    public TextField getJb4r2s3() {
+    public TextFieldListing getJb4r2s3() {
         return Jb4r2s3;
     }
 
-    public void setJb4r2s3(TextField Jb4r2s3) {
+    public void setJb4r2s3(TextFieldListing Jb4r2s3) {
         this.Jb4r2s3 = Jb4r2s3;
     }
 
-    public TextField getJb4r3() {
+    public TextFieldListing getJb4r3() {
         return Jb4r3;
     }
 
-    public void setJb4r3(TextField Jb4r3) {
+    public void setJb4r3(TextFieldListing Jb4r3) {
         this.Jb4r3 = Jb4r3;
     }
 
-    public TextField getJb4r4() {
+    public TextFieldListing getJb4r4() {
         return Jb4r4;
     }
 
-    public void setJb4r4(TextField Jb4r4) {
+    public void setJb4r4(TextFieldListing Jb4r4) {
         this.Jb4r4 = Jb4r4;
     }
 
-    public TextField getJb4r5() {
+    public TextFieldListing getJb4r5() {
         return Jb4r5;
     }
 
-    public void setJb4r5(TextField Jb4r5) {
+    public void setJb4r5(TextFieldListing Jb4r5) {
         this.Jb4r5 = Jb4r5;
     }
 
-    public TextField getJb4r6() {
+    public TextFieldListing getJb4r6() {
         return Jb4r6;
     }
 
-    public void setJb4r6(TextField Jb4r6) {
+    public void setJb4r6(TextFieldListing Jb4r6) {
         this.Jb4r6 = Jb4r6;
     }
 
-    public TextField getKb4r2s1() {
+    public TextFieldListing getKb4r2s1() {
         return Kb4r2s1;
     }
 
-    public void setKb4r2s1(TextField Kb4r2s1) {
+    public void setKb4r2s1(TextFieldListing Kb4r2s1) {
         this.Kb4r2s1 = Kb4r2s1;
     }
 
-    public TextField getKb4r2s2() {
+    public TextFieldListing getKb4r2s2() {
         return Kb4r2s2;
     }
 
-    public void setKb4r2s2(TextField Kb4r2s2) {
+    public void setKb4r2s2(TextFieldListing Kb4r2s2) {
         this.Kb4r2s2 = Kb4r2s2;
     }
 
-    public TextField getKb4r2s3() {
+    public TextFieldListing getKb4r2s3() {
         return Kb4r2s3;
     }
 
-    public void setKb4r2s3(TextField Kb4r2s3) {
+    public void setKb4r2s3(TextFieldListing Kb4r2s3) {
         this.Kb4r2s3 = Kb4r2s3;
     }
 
-    public TextField getKb4r3() {
+    public TextFieldListing getKb4r3() {
         return Kb4r3;
     }
 
-    public void setKb4r3(TextField Kb4r3) {
+    public void setKb4r3(TextFieldListing Kb4r3) {
         this.Kb4r3 = Kb4r3;
     }
 
-    public TextField getKb4r4() {
+    public TextFieldListing getKb4r4() {
         return Kb4r4;
     }
 
-    public void setKb4r4(TextField Kb4r4) {
+    public void setKb4r4(TextFieldListing Kb4r4) {
         this.Kb4r4 = Kb4r4;
     }
 
-    public TextField getKb4r5() {
+    public TextFieldListing getKb4r5() {
         return Kb4r5;
     }
 
-    public void setKb4r5(TextField Kb4r5) {
+    public void setKb4r5(TextFieldListing Kb4r5) {
         this.Kb4r5 = Kb4r5;
     }
 
-    public TextField getKb4r6() {
+    public TextFieldListing getKb4r6() {
         return Kb4r6;
     }
 
-    public void setKb4r6(TextField Kb4r6) {
+    public void setKb4r6(TextFieldListing Kb4r6) {
         this.Kb4r6 = Kb4r6;
     }
 
-    public TextField getLb4r2s1() {
+    public TextFieldListing getLb4r2s1() {
         return Lb4r2s1;
     }
 
-    public void setLb4r2s1(TextField Lb4r2s1) {
+    public void setLb4r2s1(TextFieldListing Lb4r2s1) {
         this.Lb4r2s1 = Lb4r2s1;
     }
 
-    public TextField getLb4r2s2() {
+    public TextFieldListing getLb4r2s2() {
         return Lb4r2s2;
     }
 
-    public void setLb4r2s2(TextField Lb4r2s2) {
+    public void setLb4r2s2(TextFieldListing Lb4r2s2) {
         this.Lb4r2s2 = Lb4r2s2;
     }
 
-    public TextField getLb4r2s3() {
+    public TextFieldListing getLb4r2s3() {
         return Lb4r2s3;
     }
 
-    public void setLb4r2s3(TextField Lb4r2s3) {
+    public void setLb4r2s3(TextFieldListing Lb4r2s3) {
         this.Lb4r2s3 = Lb4r2s3;
     }
 
-    public TextField getLb4r3() {
+    public TextFieldListing getLb4r3() {
         return Lb4r3;
     }
 
-    public void setLb4r3(TextField Lb4r3) {
+    public void setLb4r3(TextFieldListing Lb4r3) {
         this.Lb4r3 = Lb4r3;
     }
 
-    public TextField getLb4r4() {
+    public TextFieldListing getLb4r4() {
         return Lb4r4;
     }
 
-    public void setLb4r4(TextField Lb4r4) {
+    public void setLb4r4(TextFieldListing Lb4r4) {
         this.Lb4r4 = Lb4r4;
     }
 
-    public TextField getLb4r5() {
+    public TextFieldListing getLb4r5() {
         return Lb4r5;
     }
 
-    public void setLb4r5(TextField Lb4r5) {
+    public void setLb4r5(TextFieldListing Lb4r5) {
         this.Lb4r5 = Lb4r5;
     }
 
-    public TextField getLb4r6() {
+    public TextFieldListing getLb4r6() {
         return Lb4r6;
     }
 
-    public void setLb4r6(TextField Lb4r6) {
+    public void setLb4r6(TextFieldListing Lb4r6) {
         this.Lb4r6 = Lb4r6;
     }
 
-    public TextField getMb4r2s1() {
+    public TextFieldListing getMb4r2s1() {
         return Mb4r2s1;
     }
 
-    public void setMb4r2s1(TextField Mb4r2s1) {
+    public void setMb4r2s1(TextFieldListing Mb4r2s1) {
         this.Mb4r2s1 = Mb4r2s1;
     }
 
-    public TextField getMb4r2s2() {
+    public TextFieldListing getMb4r2s2() {
         return Mb4r2s2;
     }
 
-    public void setMb4r2s2(TextField Mb4r2s2) {
+    public void setMb4r2s2(TextFieldListing Mb4r2s2) {
         this.Mb4r2s2 = Mb4r2s2;
     }
 
-    public TextField getMb4r2s3() {
+    public TextFieldListing getMb4r2s3() {
         return Mb4r2s3;
     }
 
-    public void setMb4r2s3(TextField Mb4r2s3) {
+    public void setMb4r2s3(TextFieldListing Mb4r2s3) {
         this.Mb4r2s3 = Mb4r2s3;
     }
 
-    public TextField getMb4r3() {
+    public TextFieldListing getMb4r3() {
         return Mb4r3;
     }
 
-    public void setMb4r3(TextField Mb4r3) {
+    public void setMb4r3(TextFieldListing Mb4r3) {
         this.Mb4r3 = Mb4r3;
     }
 
-    public TextField getMb4r4() {
+    public TextFieldListing getMb4r4() {
         return Mb4r4;
     }
 
-    public void setMb4r4(TextField Mb4r4) {
+    public void setMb4r4(TextFieldListing Mb4r4) {
         this.Mb4r4 = Mb4r4;
     }
 
-    public TextField getMb4r5() {
+    public TextFieldListing getMb4r5() {
         return Mb4r5;
     }
 
-    public void setMb4r5(TextField Mb4r5) {
+    public void setMb4r5(TextFieldListing Mb4r5) {
         this.Mb4r5 = Mb4r5;
     }
 
-    public TextField getMb4r6() {
+    public TextFieldListing getMb4r6() {
         return Mb4r6;
     }
 
-    public void setMb4r6(TextField Mb4r6) {
+    public void setMb4r6(TextFieldListing Mb4r6) {
         this.Mb4r6 = Mb4r6;
     }
 
-    public TextField getNb4r2s1() {
+    public TextFieldListing getNb4r2s1() {
         return Nb4r2s1;
     }
 
-    public void setNb4r2s1(TextField Nb4r2s1) {
+    public void setNb4r2s1(TextFieldListing Nb4r2s1) {
         this.Nb4r2s1 = Nb4r2s1;
     }
 
-    public TextField getNb4r2s2() {
+    public TextFieldListing getNb4r2s2() {
         return Nb4r2s2;
     }
 
-    public void setNb4r2s2(TextField Nb4r2s2) {
+    public void setNb4r2s2(TextFieldListing Nb4r2s2) {
         this.Nb4r2s2 = Nb4r2s2;
     }
 
-    public TextField getNb4r2s3() {
+    public TextFieldListing getNb4r2s3() {
         return Nb4r2s3;
     }
 
-    public void setNb4r2s3(TextField Nb4r2s3) {
+    public void setNb4r2s3(TextFieldListing Nb4r2s3) {
         this.Nb4r2s3 = Nb4r2s3;
     }
 
-    public TextField getNb4r3() {
+    public TextFieldListing getNb4r3() {
         return Nb4r3;
     }
 
-    public void setNb4r3(TextField Nb4r3) {
+    public void setNb4r3(TextFieldListing Nb4r3) {
         this.Nb4r3 = Nb4r3;
     }
 
-    public TextField getNb4r4() {
+    public TextFieldListing getNb4r4() {
         return Nb4r4;
     }
 
-    public void setNb4r4(TextField Nb4r4) {
+    public void setNb4r4(TextFieldListing Nb4r4) {
         this.Nb4r4 = Nb4r4;
     }
 
-    public TextField getNb4r5() {
+    public TextFieldListing getNb4r5() {
         return Nb4r5;
     }
 
-    public void setNb4r5(TextField Nb4r5) {
+    public void setNb4r5(TextFieldListing Nb4r5) {
         this.Nb4r5 = Nb4r5;
     }
 
-    public TextField getNb4r6() {
+    public TextFieldListing getNb4r6() {
         return Nb4r6;
     }
 
-    public void setNb4r6(TextField Nb4r6) {
+    public void setNb4r6(TextFieldListing Nb4r6) {
         this.Nb4r6 = Nb4r6;
     }
 
-    public TextField getOb4r2s1() {
+    public TextFieldListing getOb4r2s1() {
         return Ob4r2s1;
     }
 
-    public void setOb4r2s1(TextField Ob4r2s1) {
+    public void setOb4r2s1(TextFieldListing Ob4r2s1) {
         this.Ob4r2s1 = Ob4r2s1;
     }
 
-    public TextField getOb4r2s2() {
+    public TextFieldListing getOb4r2s2() {
         return Ob4r2s2;
     }
 
-    public void setOb4r2s2(TextField Ob4r2s2) {
+    public void setOb4r2s2(TextFieldListing Ob4r2s2) {
         this.Ob4r2s2 = Ob4r2s2;
     }
 
-    public TextField getOb4r2s3() {
+    public TextFieldListing getOb4r2s3() {
         return Ob4r2s3;
     }
 
-    public void setOb4r2s3(TextField Ob4r2s3) {
+    public void setOb4r2s3(TextFieldListing Ob4r2s3) {
         this.Ob4r2s3 = Ob4r2s3;
     }
 
-    public TextField getOb4r3() {
+    public TextFieldListing getOb4r3() {
         return Ob4r3;
     }
 
-    public void setOb4r3(TextField Ob4r3) {
+    public void setOb4r3(TextFieldListing Ob4r3) {
         this.Ob4r3 = Ob4r3;
     }
 
-    public TextField getOb4r4() {
+    public TextFieldListing getOb4r4() {
         return Ob4r4;
     }
 
-    public void setOb4r4(TextField Ob4r4) {
+    public void setOb4r4(TextFieldListing Ob4r4) {
         this.Ob4r4 = Ob4r4;
     }
 
-    public TextField getOb4r5() {
+    public TextFieldListing getOb4r5() {
         return Ob4r5;
     }
 
-    public void setOb4r5(TextField Ob4r5) {
+    public void setOb4r5(TextFieldListing Ob4r5) {
         this.Ob4r5 = Ob4r5;
     }
 
-    public TextField getOb4r6() {
+    public TextFieldListing getOb4r6() {
         return Ob4r6;
     }
 
-    public void setOb4r6(TextField Ob4r6) {
+    public void setOb4r6(TextFieldListing Ob4r6) {
         this.Ob4r6 = Ob4r6;
     }
 
-    public TextField getPb4r2s1() {
+    public TextFieldListing getPb4r2s1() {
         return Pb4r2s1;
     }
 
-    public void setPb4r2s1(TextField Pb4r2s1) {
+    public void setPb4r2s1(TextFieldListing Pb4r2s1) {
         this.Pb4r2s1 = Pb4r2s1;
     }
 
-    public TextField getPb4r2s2() {
+    public TextFieldListing getPb4r2s2() {
         return Pb4r2s2;
     }
 
-    public void setPb4r2s2(TextField Pb4r2s2) {
+    public void setPb4r2s2(TextFieldListing Pb4r2s2) {
         this.Pb4r2s2 = Pb4r2s2;
     }
 
-    public TextField getPb4r2s3() {
+    public TextFieldListing getPb4r2s3() {
         return Pb4r2s3;
     }
 
-    public void setPb4r2s3(TextField Pb4r2s3) {
+    public void setPb4r2s3(TextFieldListing Pb4r2s3) {
         this.Pb4r2s3 = Pb4r2s3;
     }
 
-    public TextField getPb4r3() {
+    public TextFieldListing getPb4r3() {
         return Pb4r3;
     }
 
-    public void setPb4r3(TextField Pb4r3) {
+    public void setPb4r3(TextFieldListing Pb4r3) {
         this.Pb4r3 = Pb4r3;
     }
 
-    public TextField getPb4r4() {
+    public TextFieldListing getPb4r4() {
         return Pb4r4;
     }
 
-    public void setPb4r4(TextField Pb4r4) {
+    public void setPb4r4(TextFieldListing Pb4r4) {
         this.Pb4r4 = Pb4r4;
     }
 
-    public TextField getPb4r5() {
+    public TextFieldListing getPb4r5() {
         return Pb4r5;
     }
 
-    public void setPb4r5(TextField Pb4r5) {
+    public void setPb4r5(TextFieldListing Pb4r5) {
         this.Pb4r5 = Pb4r5;
     }
 
-    public TextField getPb4r6() {
+    public TextFieldListing getPb4r6() {
         return Pb4r6;
     }
 
-    public void setPb4r6(TextField Pb4r6) {
+    public void setPb4r6(TextFieldListing Pb4r6) {
         this.Pb4r6 = Pb4r6;
     }
 
-    public TextField getQb4r2s1() {
+    public TextFieldListing getQb4r2s1() {
         return Qb4r2s1;
     }
 
-    public void setQb4r2s1(TextField Qb4r2s1) {
+    public void setQb4r2s1(TextFieldListing Qb4r2s1) {
         this.Qb4r2s1 = Qb4r2s1;
     }
 
-    public TextField getQb4r2s2() {
+    public TextFieldListing getQb4r2s2() {
         return Qb4r2s2;
     }
 
-    public void setQb4r2s2(TextField Qb4r2s2) {
+    public void setQb4r2s2(TextFieldListing Qb4r2s2) {
         this.Qb4r2s2 = Qb4r2s2;
     }
 
-    public TextField getQb4r2s3() {
+    public TextFieldListing getQb4r2s3() {
         return Qb4r2s3;
     }
 
-    public void setQb4r2s3(TextField Qb4r2s3) {
+    public void setQb4r2s3(TextFieldListing Qb4r2s3) {
         this.Qb4r2s3 = Qb4r2s3;
     }
 
-    public TextField getQb4r3() {
+    public TextFieldListing getQb4r3() {
         return Qb4r3;
     }
 
-    public void setQb4r3(TextField Qb4r3) {
+    public void setQb4r3(TextFieldListing Qb4r3) {
         this.Qb4r3 = Qb4r3;
     }
 
-    public TextField getQb4r4() {
+    public TextFieldListing getQb4r4() {
         return Qb4r4;
     }
 
-    public void setQb4r4(TextField Qb4r4) {
+    public void setQb4r4(TextFieldListing Qb4r4) {
         this.Qb4r4 = Qb4r4;
     }
 
-    public TextField getQb4r5() {
+    public TextFieldListing getQb4r5() {
         return Qb4r5;
     }
 
-    public void setQb4r5(TextField Qb4r5) {
+    public void setQb4r5(TextFieldListing Qb4r5) {
         this.Qb4r5 = Qb4r5;
     }
 
-    public TextField getQb4r6() {
+    public TextFieldListing getQb4r6() {
         return Qb4r6;
     }
 
-    public void setQb4r6(TextField Qb4r6) {
+    public void setQb4r6(TextFieldListing Qb4r6) {
         this.Qb4r6 = Qb4r6;
     }
 
-    public TextField getRb4r2s1() {
+    public TextFieldListing getRb4r2s1() {
         return Rb4r2s1;
     }
 
-    public void setRb4r2s1(TextField Rb4r2s1) {
+    public void setRb4r2s1(TextFieldListing Rb4r2s1) {
         this.Rb4r2s1 = Rb4r2s1;
     }
 
-    public TextField getRb4r2s2() {
+    public TextFieldListing getRb4r2s2() {
         return Rb4r2s2;
     }
 
-    public void setRb4r2s2(TextField Rb4r2s2) {
+    public void setRb4r2s2(TextFieldListing Rb4r2s2) {
         this.Rb4r2s2 = Rb4r2s2;
     }
 
-    public TextField getRb4r2s3() {
+    public TextFieldListing getRb4r2s3() {
         return Rb4r2s3;
     }
 
-    public void setRb4r2s3(TextField Rb4r2s3) {
+    public void setRb4r2s3(TextFieldListing Rb4r2s3) {
         this.Rb4r2s3 = Rb4r2s3;
     }
 
-    public TextField getRb4r3() {
+    public TextFieldListing getRb4r3() {
         return Rb4r3;
     }
 
-    public void setRb4r3(TextField Rb4r3) {
+    public void setRb4r3(TextFieldListing Rb4r3) {
         this.Rb4r3 = Rb4r3;
     }
 
-    public TextField getRb4r4() {
+    public TextFieldListing getRb4r4() {
         return Rb4r4;
     }
 
-    public void setRb4r4(TextField Rb4r4) {
+    public void setRb4r4(TextFieldListing Rb4r4) {
         this.Rb4r4 = Rb4r4;
     }
 
-    public TextField getRb4r5() {
+    public TextFieldListing getRb4r5() {
         return Rb4r5;
     }
 
-    public void setRb4r5(TextField Rb4r5) {
+    public void setRb4r5(TextFieldListing Rb4r5) {
         this.Rb4r5 = Rb4r5;
     }
 
-    public TextField getRb4r6() {
+    public TextFieldListing getRb4r6() {
         return Rb4r6;
     }
 
-    public void setRb4r6(TextField Rb4r6) {
+    public void setRb4r6(TextFieldListing Rb4r6) {
         this.Rb4r6 = Rb4r6;
     }
 
-    public TextField getSb4r2s1() {
+    public TextFieldListing getSb4r2s1() {
         return Sb4r2s1;
     }
 
-    public void setSb4r2s1(TextField Sb4r2s1) {
+    public void setSb4r2s1(TextFieldListing Sb4r2s1) {
         this.Sb4r2s1 = Sb4r2s1;
     }
 
-    public TextField getSb4r2s2() {
+    public TextFieldListing getSb4r2s2() {
         return Sb4r2s2;
     }
 
-    public void setSb4r2s2(TextField Sb4r2s2) {
+    public void setSb4r2s2(TextFieldListing Sb4r2s2) {
         this.Sb4r2s2 = Sb4r2s2;
     }
 
-    public TextField getSb4r2s3() {
+    public TextFieldListing getSb4r2s3() {
         return Sb4r2s3;
     }
 
-    public void setSb4r2s3(TextField Sb4r2s3) {
+    public void setSb4r2s3(TextFieldListing Sb4r2s3) {
         this.Sb4r2s3 = Sb4r2s3;
     }
 
-    public TextField getSb4r3() {
+    public TextFieldListing getSb4r3() {
         return Sb4r3;
     }
 
-    public void setSb4r3(TextField Sb4r3) {
+    public void setSb4r3(TextFieldListing Sb4r3) {
         this.Sb4r3 = Sb4r3;
     }
 
-    public TextField getSb4r4() {
+    public TextFieldListing getSb4r4() {
         return Sb4r4;
     }
 
-    public void setSb4r4(TextField Sb4r4) {
+    public void setSb4r4(TextFieldListing Sb4r4) {
         this.Sb4r4 = Sb4r4;
     }
 
-    public TextField getSb4r5() {
+    public TextFieldListing getSb4r5() {
         return Sb4r5;
     }
 
-    public void setSb4r5(TextField Sb4r5) {
+    public void setSb4r5(TextFieldListing Sb4r5) {
         this.Sb4r5 = Sb4r5;
     }
 
-    public TextField getSb4r6() {
+    public TextFieldListing getSb4r6() {
         return Sb4r6;
     }
 
-    public void setSb4r6(TextField Sb4r6) {
+    public void setSb4r6(TextFieldListing Sb4r6) {
         this.Sb4r6 = Sb4r6;
     }
 
-    public TextField getTb4r2s1() {
+    public TextFieldListing getTb4r2s1() {
         return Tb4r2s1;
     }
 
-    public void setTb4r2s1(TextField Tb4r2s1) {
+    public void setTb4r2s1(TextFieldListing Tb4r2s1) {
         this.Tb4r2s1 = Tb4r2s1;
     }
 
-    public TextField getTb4r2s2() {
+    public TextFieldListing getTb4r2s2() {
         return Tb4r2s2;
     }
 
-    public void setTb4r2s2(TextField Tb4r2s2) {
+    public void setTb4r2s2(TextFieldListing Tb4r2s2) {
         this.Tb4r2s2 = Tb4r2s2;
     }
 
-    public TextField getTb4r2s3() {
+    public TextFieldListing getTb4r2s3() {
         return Tb4r2s3;
     }
 
-    public void setTb4r2s3(TextField Tb4r2s3) {
+    public void setTb4r2s3(TextFieldListing Tb4r2s3) {
         this.Tb4r2s3 = Tb4r2s3;
     }
 
-    public TextField getTb4r3() {
+    public TextFieldListing getTb4r3() {
         return Tb4r3;
     }
 
-    public void setTb4r3(TextField Tb4r3) {
+    public void setTb4r3(TextFieldListing Tb4r3) {
         this.Tb4r3 = Tb4r3;
     }
 
-    public TextField getTb4r4() {
+    public TextFieldListing getTb4r4() {
         return Tb4r4;
     }
 
-    public void setTb4r4(TextField Tb4r4) {
+    public void setTb4r4(TextFieldListing Tb4r4) {
         this.Tb4r4 = Tb4r4;
     }
 
-    public TextField getTb4r5() {
+    public TextFieldListing getTb4r5() {
         return Tb4r5;
     }
 
-    public void setTb4r5(TextField Tb4r5) {
+    public void setTb4r5(TextFieldListing Tb4r5) {
         this.Tb4r5 = Tb4r5;
     }
 
-    public TextField getTb4r6() {
+    public TextFieldListing getTb4r6() {
         return Tb4r6;
     }
 
-    public void setTb4r6(TextField Tb4r6) {
+    public void setTb4r6(TextFieldListing Tb4r6) {
         this.Tb4r6 = Tb4r6;
     }
     
@@ -1364,146 +1364,146 @@ public class Hal2Listing extends javax.swing.JPanel {
 
         hal2Listing1 = new sp.imageClass.Hal2Listing();
         jLayeredPane1 = new javax.swing.JLayeredPane();
-        Ab4r2s1 = new sp.component.TextField();
-        Ab4r2s2 = new sp.component.TextField();
-        Ab4r2s3 = new sp.component.TextField();
-        Ab4r3 = new sp.component.TextField();
-        Ab4r4 = new sp.component.TextField();
-        Ab4r5 = new sp.component.TextField();
-        Ab4r6 = new sp.component.TextField();
-        Bb4r2s1 = new sp.component.TextField();
-        Bb4r2s2 = new sp.component.TextField();
-        Bb4r2s3 = new sp.component.TextField();
-        Bb4r3 = new sp.component.TextField();
-        Bb4r4 = new sp.component.TextField();
-        Bb4r5 = new sp.component.TextField();
-        Bb4r6 = new sp.component.TextField();
-        Cb4r2s1 = new sp.component.TextField();
-        Cb4r2s2 = new sp.component.TextField();
-        Cb4r2s3 = new sp.component.TextField();
-        Cb4r3 = new sp.component.TextField();
-        Cb4r4 = new sp.component.TextField();
-        Cb4r5 = new sp.component.TextField();
-        Cb4r6 = new sp.component.TextField();
-        Db4r2s1 = new sp.component.TextField();
-        Db4r2s2 = new sp.component.TextField();
-        Db4r2s3 = new sp.component.TextField();
-        Db4r3 = new sp.component.TextField();
-        Db4r4 = new sp.component.TextField();
-        Db4r5 = new sp.component.TextField();
-        Db4r6 = new sp.component.TextField();
-        Eb4r2s1 = new sp.component.TextField();
-        Eb4r2s2 = new sp.component.TextField();
-        Eb4r2s3 = new sp.component.TextField();
-        Eb4r3 = new sp.component.TextField();
-        Eb4r4 = new sp.component.TextField();
-        Eb4r5 = new sp.component.TextField();
-        Eb4r6 = new sp.component.TextField();
-        Fb4r2s1 = new sp.component.TextField();
-        Fb4r2s2 = new sp.component.TextField();
-        Fb4r2s3 = new sp.component.TextField();
-        Fb4r3 = new sp.component.TextField();
-        Fb4r4 = new sp.component.TextField();
-        Fb4r5 = new sp.component.TextField();
-        Fb4r6 = new sp.component.TextField();
-        Gb4r2s1 = new sp.component.TextField();
-        Gb4r2s2 = new sp.component.TextField();
-        Gb4r2s3 = new sp.component.TextField();
-        Gb4r3 = new sp.component.TextField();
-        Gb4r4 = new sp.component.TextField();
-        Gb4r5 = new sp.component.TextField();
-        Gb4r6 = new sp.component.TextField();
-        Hb4r2s1 = new sp.component.TextField();
-        Hb4r2s2 = new sp.component.TextField();
-        Hb4r2s3 = new sp.component.TextField();
-        Hb4r3 = new sp.component.TextField();
-        Hb4r4 = new sp.component.TextField();
-        Hb4r5 = new sp.component.TextField();
-        Hb4r6 = new sp.component.TextField();
-        Ib4r2s1 = new sp.component.TextField();
-        Ib4r2s2 = new sp.component.TextField();
-        Ib4r2s3 = new sp.component.TextField();
-        Ib4r3 = new sp.component.TextField();
-        Ib4r4 = new sp.component.TextField();
-        Ib4r5 = new sp.component.TextField();
-        Ib4r6 = new sp.component.TextField();
-        Jb4r2s1 = new sp.component.TextField();
-        Jb4r2s2 = new sp.component.TextField();
-        Jb4r2s3 = new sp.component.TextField();
-        Jb4r3 = new sp.component.TextField();
-        Jb4r4 = new sp.component.TextField();
-        Jb4r5 = new sp.component.TextField();
-        Jb4r6 = new sp.component.TextField();
-        Kb4r2s1 = new sp.component.TextField();
-        Kb4r2s2 = new sp.component.TextField();
-        Kb4r2s3 = new sp.component.TextField();
-        Kb4r3 = new sp.component.TextField();
-        Kb4r4 = new sp.component.TextField();
-        Kb4r5 = new sp.component.TextField();
-        Kb4r6 = new sp.component.TextField();
-        Lb4r2s1 = new sp.component.TextField();
-        Lb4r2s2 = new sp.component.TextField();
-        Lb4r2s3 = new sp.component.TextField();
-        Lb4r3 = new sp.component.TextField();
-        Lb4r4 = new sp.component.TextField();
-        Lb4r5 = new sp.component.TextField();
-        Lb4r6 = new sp.component.TextField();
-        Mb4r2s1 = new sp.component.TextField();
-        Mb4r2s2 = new sp.component.TextField();
-        Mb4r2s3 = new sp.component.TextField();
-        Mb4r3 = new sp.component.TextField();
-        Mb4r4 = new sp.component.TextField();
-        Mb4r5 = new sp.component.TextField();
-        Mb4r6 = new sp.component.TextField();
-        Nb4r2s1 = new sp.component.TextField();
-        Nb4r2s2 = new sp.component.TextField();
-        Nb4r2s3 = new sp.component.TextField();
-        Nb4r3 = new sp.component.TextField();
-        Nb4r4 = new sp.component.TextField();
-        Nb4r5 = new sp.component.TextField();
-        Nb4r6 = new sp.component.TextField();
-        Ob4r2s1 = new sp.component.TextField();
-        Ob4r2s2 = new sp.component.TextField();
-        Ob4r2s3 = new sp.component.TextField();
-        Ob4r3 = new sp.component.TextField();
-        Ob4r4 = new sp.component.TextField();
-        Ob4r5 = new sp.component.TextField();
-        Ob4r6 = new sp.component.TextField();
-        Pb4r2s1 = new sp.component.TextField();
-        Pb4r2s2 = new sp.component.TextField();
-        Pb4r2s3 = new sp.component.TextField();
-        Pb4r3 = new sp.component.TextField();
-        Pb4r4 = new sp.component.TextField();
-        Pb4r5 = new sp.component.TextField();
-        Pb4r6 = new sp.component.TextField();
-        Qb4r2s1 = new sp.component.TextField();
-        Qb4r2s2 = new sp.component.TextField();
-        Qb4r2s3 = new sp.component.TextField();
-        Qb4r3 = new sp.component.TextField();
-        Qb4r4 = new sp.component.TextField();
-        Qb4r5 = new sp.component.TextField();
-        Qb4r6 = new sp.component.TextField();
-        Rb4r2s1 = new sp.component.TextField();
-        Rb4r2s2 = new sp.component.TextField();
-        Rb4r2s3 = new sp.component.TextField();
-        Rb4r3 = new sp.component.TextField();
-        Rb4r4 = new sp.component.TextField();
-        Rb4r5 = new sp.component.TextField();
-        Rb4r6 = new sp.component.TextField();
-        Sb4r2s1 = new sp.component.TextField();
-        Sb4r2s2 = new sp.component.TextField();
-        Sb4r2s3 = new sp.component.TextField();
-        Sb4r3 = new sp.component.TextField();
-        Sb4r4 = new sp.component.TextField();
-        Sb4r5 = new sp.component.TextField();
-        Sb4r6 = new sp.component.TextField();
-        Tb4r2s1 = new sp.component.TextField();
-        Tb4r2s2 = new sp.component.TextField();
-        Tb4r2s3 = new sp.component.TextField();
-        Tb4r3 = new sp.component.TextField();
-        Tb4r4 = new sp.component.TextField();
-        Tb4r5 = new sp.component.TextField();
-        Tb4r6 = new sp.component.TextField();
+        Ab4r2s1 = new sp.component.TextFieldListing();
+        Ab4r2s2 = new sp.component.TextFieldListing();
+        Ab4r2s3 = new sp.component.TextFieldListing();
+        Ab4r3 = new sp.component.TextFieldListing();
+        Ab4r4 = new sp.component.TextFieldListing();
+        Ab4r5 = new sp.component.TextFieldListing();
+        Ab4r6 = new sp.component.TextFieldListing();
+        Bb4r2s1 = new sp.component.TextFieldListing();
+        Bb4r2s2 = new sp.component.TextFieldListing();
+        Bb4r2s3 = new sp.component.TextFieldListing();
+        Bb4r3 = new sp.component.TextFieldListing();
+        Bb4r4 = new sp.component.TextFieldListing();
+        Bb4r5 = new sp.component.TextFieldListing();
+        Bb4r6 = new sp.component.TextFieldListing();
+        Cb4r2s1 = new sp.component.TextFieldListing();
+        Cb4r2s2 = new sp.component.TextFieldListing();
+        Cb4r2s3 = new sp.component.TextFieldListing();
+        Cb4r3 = new sp.component.TextFieldListing();
+        Cb4r4 = new sp.component.TextFieldListing();
+        Cb4r5 = new sp.component.TextFieldListing();
+        Cb4r6 = new sp.component.TextFieldListing();
+        Db4r2s1 = new sp.component.TextFieldListing();
+        Db4r2s2 = new sp.component.TextFieldListing();
+        Db4r2s3 = new sp.component.TextFieldListing();
+        Db4r3 = new sp.component.TextFieldListing();
+        Db4r4 = new sp.component.TextFieldListing();
+        Db4r5 = new sp.component.TextFieldListing();
+        Db4r6 = new sp.component.TextFieldListing();
+        Eb4r2s1 = new sp.component.TextFieldListing();
+        Eb4r2s2 = new sp.component.TextFieldListing();
+        Eb4r2s3 = new sp.component.TextFieldListing();
+        Eb4r3 = new sp.component.TextFieldListing();
+        Eb4r4 = new sp.component.TextFieldListing();
+        Eb4r5 = new sp.component.TextFieldListing();
+        Eb4r6 = new sp.component.TextFieldListing();
+        Fb4r2s1 = new sp.component.TextFieldListing();
+        Fb4r2s2 = new sp.component.TextFieldListing();
+        Fb4r2s3 = new sp.component.TextFieldListing();
+        Fb4r3 = new sp.component.TextFieldListing();
+        Fb4r4 = new sp.component.TextFieldListing();
+        Fb4r5 = new sp.component.TextFieldListing();
+        Fb4r6 = new sp.component.TextFieldListing();
+        Gb4r2s1 = new sp.component.TextFieldListing();
+        Gb4r2s2 = new sp.component.TextFieldListing();
+        Gb4r2s3 = new sp.component.TextFieldListing();
+        Gb4r3 = new sp.component.TextFieldListing();
+        Gb4r4 = new sp.component.TextFieldListing();
+        Gb4r5 = new sp.component.TextFieldListing();
+        Gb4r6 = new sp.component.TextFieldListing();
+        Hb4r2s1 = new sp.component.TextFieldListing();
+        Hb4r2s2 = new sp.component.TextFieldListing();
+        Hb4r2s3 = new sp.component.TextFieldListing();
+        Hb4r3 = new sp.component.TextFieldListing();
+        Hb4r4 = new sp.component.TextFieldListing();
+        Hb4r5 = new sp.component.TextFieldListing();
+        Hb4r6 = new sp.component.TextFieldListing();
+        Ib4r2s1 = new sp.component.TextFieldListing();
+        Ib4r2s2 = new sp.component.TextFieldListing();
+        Ib4r2s3 = new sp.component.TextFieldListing();
+        Ib4r3 = new sp.component.TextFieldListing();
+        Ib4r4 = new sp.component.TextFieldListing();
+        Ib4r5 = new sp.component.TextFieldListing();
+        Ib4r6 = new sp.component.TextFieldListing();
+        Jb4r2s1 = new sp.component.TextFieldListing();
+        Jb4r2s2 = new sp.component.TextFieldListing();
+        Jb4r2s3 = new sp.component.TextFieldListing();
+        Jb4r3 = new sp.component.TextFieldListing();
+        Jb4r4 = new sp.component.TextFieldListing();
+        Jb4r5 = new sp.component.TextFieldListing();
+        Jb4r6 = new sp.component.TextFieldListing();
+        Kb4r2s1 = new sp.component.TextFieldListing();
+        Kb4r2s2 = new sp.component.TextFieldListing();
+        Kb4r2s3 = new sp.component.TextFieldListing();
+        Kb4r3 = new sp.component.TextFieldListing();
+        Kb4r4 = new sp.component.TextFieldListing();
+        Kb4r5 = new sp.component.TextFieldListing();
+        Kb4r6 = new sp.component.TextFieldListing();
+        Lb4r2s1 = new sp.component.TextFieldListing();
+        Lb4r2s2 = new sp.component.TextFieldListing();
+        Lb4r2s3 = new sp.component.TextFieldListing();
+        Lb4r3 = new sp.component.TextFieldListing();
+        Lb4r4 = new sp.component.TextFieldListing();
+        Lb4r5 = new sp.component.TextFieldListing();
+        Lb4r6 = new sp.component.TextFieldListing();
+        Mb4r2s1 = new sp.component.TextFieldListing();
+        Mb4r2s2 = new sp.component.TextFieldListing();
+        Mb4r2s3 = new sp.component.TextFieldListing();
+        Mb4r3 = new sp.component.TextFieldListing();
+        Mb4r4 = new sp.component.TextFieldListing();
+        Mb4r5 = new sp.component.TextFieldListing();
+        Mb4r6 = new sp.component.TextFieldListing();
+        Nb4r2s1 = new sp.component.TextFieldListing();
+        Nb4r2s2 = new sp.component.TextFieldListing();
+        Nb4r2s3 = new sp.component.TextFieldListing();
+        Nb4r3 = new sp.component.TextFieldListing();
+        Nb4r4 = new sp.component.TextFieldListing();
+        Nb4r5 = new sp.component.TextFieldListing();
+        Nb4r6 = new sp.component.TextFieldListing();
+        Ob4r2s1 = new sp.component.TextFieldListing();
+        Ob4r2s2 = new sp.component.TextFieldListing();
+        Ob4r2s3 = new sp.component.TextFieldListing();
+        Ob4r3 = new sp.component.TextFieldListing();
+        Ob4r4 = new sp.component.TextFieldListing();
+        Ob4r5 = new sp.component.TextFieldListing();
+        Ob4r6 = new sp.component.TextFieldListing();
+        Pb4r2s1 = new sp.component.TextFieldListing();
+        Pb4r2s2 = new sp.component.TextFieldListing();
+        Pb4r2s3 = new sp.component.TextFieldListing();
+        Pb4r3 = new sp.component.TextFieldListing();
+        Pb4r4 = new sp.component.TextFieldListing();
+        Pb4r5 = new sp.component.TextFieldListing();
+        Pb4r6 = new sp.component.TextFieldListing();
+        Qb4r2s1 = new sp.component.TextFieldListing();
+        Qb4r2s2 = new sp.component.TextFieldListing();
+        Qb4r2s3 = new sp.component.TextFieldListing();
+        Qb4r3 = new sp.component.TextFieldListing();
+        Qb4r4 = new sp.component.TextFieldListing();
+        Qb4r5 = new sp.component.TextFieldListing();
+        Qb4r6 = new sp.component.TextFieldListing();
+        Rb4r2s1 = new sp.component.TextFieldListing();
+        Rb4r2s2 = new sp.component.TextFieldListing();
+        Rb4r2s3 = new sp.component.TextFieldListing();
+        Rb4r3 = new sp.component.TextFieldListing();
+        Rb4r4 = new sp.component.TextFieldListing();
+        Rb4r5 = new sp.component.TextFieldListing();
+        Rb4r6 = new sp.component.TextFieldListing();
+        Sb4r2s1 = new sp.component.TextFieldListing();
+        Sb4r2s2 = new sp.component.TextFieldListing();
+        Sb4r2s3 = new sp.component.TextFieldListing();
+        Sb4r3 = new sp.component.TextFieldListing();
+        Sb4r4 = new sp.component.TextFieldListing();
+        Sb4r5 = new sp.component.TextFieldListing();
+        Sb4r6 = new sp.component.TextFieldListing();
+        Tb4r2s1 = new sp.component.TextFieldListing();
+        Tb4r2s2 = new sp.component.TextFieldListing();
+        Tb4r2s3 = new sp.component.TextFieldListing();
+        Tb4r3 = new sp.component.TextFieldListing();
+        Tb4r4 = new sp.component.TextFieldListing();
+        Tb4r5 = new sp.component.TextFieldListing();
+        Tb4r6 = new sp.component.TextFieldListing();
 
         setLayout(new java.awt.BorderLayout());
 
@@ -2432,146 +2432,146 @@ public class Hal2Listing extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private sp.component.TextField Ab4r2s1;
-    private sp.component.TextField Ab4r2s2;
-    private sp.component.TextField Ab4r2s3;
-    private sp.component.TextField Ab4r3;
-    private sp.component.TextField Ab4r4;
-    private sp.component.TextField Ab4r5;
-    private sp.component.TextField Ab4r6;
-    private sp.component.TextField Bb4r2s1;
-    private sp.component.TextField Bb4r2s2;
-    private sp.component.TextField Bb4r2s3;
-    private sp.component.TextField Bb4r3;
-    private sp.component.TextField Bb4r4;
-    private sp.component.TextField Bb4r5;
-    private sp.component.TextField Bb4r6;
-    private sp.component.TextField Cb4r2s1;
-    private sp.component.TextField Cb4r2s2;
-    private sp.component.TextField Cb4r2s3;
-    private sp.component.TextField Cb4r3;
-    private sp.component.TextField Cb4r4;
-    private sp.component.TextField Cb4r5;
-    private sp.component.TextField Cb4r6;
-    private sp.component.TextField Db4r2s1;
-    private sp.component.TextField Db4r2s2;
-    private sp.component.TextField Db4r2s3;
-    private sp.component.TextField Db4r3;
-    private sp.component.TextField Db4r4;
-    private sp.component.TextField Db4r5;
-    private sp.component.TextField Db4r6;
-    private sp.component.TextField Eb4r2s1;
-    private sp.component.TextField Eb4r2s2;
-    private sp.component.TextField Eb4r2s3;
-    private sp.component.TextField Eb4r3;
-    private sp.component.TextField Eb4r4;
-    private sp.component.TextField Eb4r5;
-    private sp.component.TextField Eb4r6;
-    private sp.component.TextField Fb4r2s1;
-    private sp.component.TextField Fb4r2s2;
-    private sp.component.TextField Fb4r2s3;
-    private sp.component.TextField Fb4r3;
-    private sp.component.TextField Fb4r4;
-    private sp.component.TextField Fb4r5;
-    private sp.component.TextField Fb4r6;
-    private sp.component.TextField Gb4r2s1;
-    private sp.component.TextField Gb4r2s2;
-    private sp.component.TextField Gb4r2s3;
-    private sp.component.TextField Gb4r3;
-    private sp.component.TextField Gb4r4;
-    private sp.component.TextField Gb4r5;
-    private sp.component.TextField Gb4r6;
-    private sp.component.TextField Hb4r2s1;
-    private sp.component.TextField Hb4r2s2;
-    private sp.component.TextField Hb4r2s3;
-    private sp.component.TextField Hb4r3;
-    private sp.component.TextField Hb4r4;
-    private sp.component.TextField Hb4r5;
-    private sp.component.TextField Hb4r6;
-    private sp.component.TextField Ib4r2s1;
-    private sp.component.TextField Ib4r2s2;
-    private sp.component.TextField Ib4r2s3;
-    private sp.component.TextField Ib4r3;
-    private sp.component.TextField Ib4r4;
-    private sp.component.TextField Ib4r5;
-    private sp.component.TextField Ib4r6;
-    private sp.component.TextField Jb4r2s1;
-    private sp.component.TextField Jb4r2s2;
-    private sp.component.TextField Jb4r2s3;
-    private sp.component.TextField Jb4r3;
-    private sp.component.TextField Jb4r4;
-    private sp.component.TextField Jb4r5;
-    private sp.component.TextField Jb4r6;
-    private sp.component.TextField Kb4r2s1;
-    private sp.component.TextField Kb4r2s2;
-    private sp.component.TextField Kb4r2s3;
-    private sp.component.TextField Kb4r3;
-    private sp.component.TextField Kb4r4;
-    private sp.component.TextField Kb4r5;
-    private sp.component.TextField Kb4r6;
-    private sp.component.TextField Lb4r2s1;
-    private sp.component.TextField Lb4r2s2;
-    private sp.component.TextField Lb4r2s3;
-    private sp.component.TextField Lb4r3;
-    private sp.component.TextField Lb4r4;
-    private sp.component.TextField Lb4r5;
-    private sp.component.TextField Lb4r6;
-    private sp.component.TextField Mb4r2s1;
-    private sp.component.TextField Mb4r2s2;
-    private sp.component.TextField Mb4r2s3;
-    private sp.component.TextField Mb4r3;
-    private sp.component.TextField Mb4r4;
-    private sp.component.TextField Mb4r5;
-    private sp.component.TextField Mb4r6;
-    private sp.component.TextField Nb4r2s1;
-    private sp.component.TextField Nb4r2s2;
-    private sp.component.TextField Nb4r2s3;
-    private sp.component.TextField Nb4r3;
-    private sp.component.TextField Nb4r4;
-    private sp.component.TextField Nb4r5;
-    private sp.component.TextField Nb4r6;
-    private sp.component.TextField Ob4r2s1;
-    private sp.component.TextField Ob4r2s2;
-    private sp.component.TextField Ob4r2s3;
-    private sp.component.TextField Ob4r3;
-    private sp.component.TextField Ob4r4;
-    private sp.component.TextField Ob4r5;
-    private sp.component.TextField Ob4r6;
-    private sp.component.TextField Pb4r2s1;
-    private sp.component.TextField Pb4r2s2;
-    private sp.component.TextField Pb4r2s3;
-    private sp.component.TextField Pb4r3;
-    private sp.component.TextField Pb4r4;
-    private sp.component.TextField Pb4r5;
-    private sp.component.TextField Pb4r6;
-    private sp.component.TextField Qb4r2s1;
-    private sp.component.TextField Qb4r2s2;
-    private sp.component.TextField Qb4r2s3;
-    private sp.component.TextField Qb4r3;
-    private sp.component.TextField Qb4r4;
-    private sp.component.TextField Qb4r5;
-    private sp.component.TextField Qb4r6;
-    private sp.component.TextField Rb4r2s1;
-    private sp.component.TextField Rb4r2s2;
-    private sp.component.TextField Rb4r2s3;
-    private sp.component.TextField Rb4r3;
-    private sp.component.TextField Rb4r4;
-    private sp.component.TextField Rb4r5;
-    private sp.component.TextField Rb4r6;
-    private sp.component.TextField Sb4r2s1;
-    private sp.component.TextField Sb4r2s2;
-    private sp.component.TextField Sb4r2s3;
-    private sp.component.TextField Sb4r3;
-    private sp.component.TextField Sb4r4;
-    private sp.component.TextField Sb4r5;
-    private sp.component.TextField Sb4r6;
-    private sp.component.TextField Tb4r2s1;
-    private sp.component.TextField Tb4r2s2;
-    private sp.component.TextField Tb4r2s3;
-    private sp.component.TextField Tb4r3;
-    private sp.component.TextField Tb4r4;
-    private sp.component.TextField Tb4r5;
-    private sp.component.TextField Tb4r6;
+    private sp.component.TextFieldListing Ab4r2s1;
+    private sp.component.TextFieldListing Ab4r2s2;
+    private sp.component.TextFieldListing Ab4r2s3;
+    private sp.component.TextFieldListing Ab4r3;
+    private sp.component.TextFieldListing Ab4r4;
+    private sp.component.TextFieldListing Ab4r5;
+    private sp.component.TextFieldListing Ab4r6;
+    private sp.component.TextFieldListing Bb4r2s1;
+    private sp.component.TextFieldListing Bb4r2s2;
+    private sp.component.TextFieldListing Bb4r2s3;
+    private sp.component.TextFieldListing Bb4r3;
+    private sp.component.TextFieldListing Bb4r4;
+    private sp.component.TextFieldListing Bb4r5;
+    private sp.component.TextFieldListing Bb4r6;
+    private sp.component.TextFieldListing Cb4r2s1;
+    private sp.component.TextFieldListing Cb4r2s2;
+    private sp.component.TextFieldListing Cb4r2s3;
+    private sp.component.TextFieldListing Cb4r3;
+    private sp.component.TextFieldListing Cb4r4;
+    private sp.component.TextFieldListing Cb4r5;
+    private sp.component.TextFieldListing Cb4r6;
+    private sp.component.TextFieldListing Db4r2s1;
+    private sp.component.TextFieldListing Db4r2s2;
+    private sp.component.TextFieldListing Db4r2s3;
+    private sp.component.TextFieldListing Db4r3;
+    private sp.component.TextFieldListing Db4r4;
+    private sp.component.TextFieldListing Db4r5;
+    private sp.component.TextFieldListing Db4r6;
+    private sp.component.TextFieldListing Eb4r2s1;
+    private sp.component.TextFieldListing Eb4r2s2;
+    private sp.component.TextFieldListing Eb4r2s3;
+    private sp.component.TextFieldListing Eb4r3;
+    private sp.component.TextFieldListing Eb4r4;
+    private sp.component.TextFieldListing Eb4r5;
+    private sp.component.TextFieldListing Eb4r6;
+    private sp.component.TextFieldListing Fb4r2s1;
+    private sp.component.TextFieldListing Fb4r2s2;
+    private sp.component.TextFieldListing Fb4r2s3;
+    private sp.component.TextFieldListing Fb4r3;
+    private sp.component.TextFieldListing Fb4r4;
+    private sp.component.TextFieldListing Fb4r5;
+    private sp.component.TextFieldListing Fb4r6;
+    private sp.component.TextFieldListing Gb4r2s1;
+    private sp.component.TextFieldListing Gb4r2s2;
+    private sp.component.TextFieldListing Gb4r2s3;
+    private sp.component.TextFieldListing Gb4r3;
+    private sp.component.TextFieldListing Gb4r4;
+    private sp.component.TextFieldListing Gb4r5;
+    private sp.component.TextFieldListing Gb4r6;
+    private sp.component.TextFieldListing Hb4r2s1;
+    private sp.component.TextFieldListing Hb4r2s2;
+    private sp.component.TextFieldListing Hb4r2s3;
+    private sp.component.TextFieldListing Hb4r3;
+    private sp.component.TextFieldListing Hb4r4;
+    private sp.component.TextFieldListing Hb4r5;
+    private sp.component.TextFieldListing Hb4r6;
+    private sp.component.TextFieldListing Ib4r2s1;
+    private sp.component.TextFieldListing Ib4r2s2;
+    private sp.component.TextFieldListing Ib4r2s3;
+    private sp.component.TextFieldListing Ib4r3;
+    private sp.component.TextFieldListing Ib4r4;
+    private sp.component.TextFieldListing Ib4r5;
+    private sp.component.TextFieldListing Ib4r6;
+    private sp.component.TextFieldListing Jb4r2s1;
+    private sp.component.TextFieldListing Jb4r2s2;
+    private sp.component.TextFieldListing Jb4r2s3;
+    private sp.component.TextFieldListing Jb4r3;
+    private sp.component.TextFieldListing Jb4r4;
+    private sp.component.TextFieldListing Jb4r5;
+    private sp.component.TextFieldListing Jb4r6;
+    private sp.component.TextFieldListing Kb4r2s1;
+    private sp.component.TextFieldListing Kb4r2s2;
+    private sp.component.TextFieldListing Kb4r2s3;
+    private sp.component.TextFieldListing Kb4r3;
+    private sp.component.TextFieldListing Kb4r4;
+    private sp.component.TextFieldListing Kb4r5;
+    private sp.component.TextFieldListing Kb4r6;
+    private sp.component.TextFieldListing Lb4r2s1;
+    private sp.component.TextFieldListing Lb4r2s2;
+    private sp.component.TextFieldListing Lb4r2s3;
+    private sp.component.TextFieldListing Lb4r3;
+    private sp.component.TextFieldListing Lb4r4;
+    private sp.component.TextFieldListing Lb4r5;
+    private sp.component.TextFieldListing Lb4r6;
+    private sp.component.TextFieldListing Mb4r2s1;
+    private sp.component.TextFieldListing Mb4r2s2;
+    private sp.component.TextFieldListing Mb4r2s3;
+    private sp.component.TextFieldListing Mb4r3;
+    private sp.component.TextFieldListing Mb4r4;
+    private sp.component.TextFieldListing Mb4r5;
+    private sp.component.TextFieldListing Mb4r6;
+    private sp.component.TextFieldListing Nb4r2s1;
+    private sp.component.TextFieldListing Nb4r2s2;
+    private sp.component.TextFieldListing Nb4r2s3;
+    private sp.component.TextFieldListing Nb4r3;
+    private sp.component.TextFieldListing Nb4r4;
+    private sp.component.TextFieldListing Nb4r5;
+    private sp.component.TextFieldListing Nb4r6;
+    private sp.component.TextFieldListing Ob4r2s1;
+    private sp.component.TextFieldListing Ob4r2s2;
+    private sp.component.TextFieldListing Ob4r2s3;
+    private sp.component.TextFieldListing Ob4r3;
+    private sp.component.TextFieldListing Ob4r4;
+    private sp.component.TextFieldListing Ob4r5;
+    private sp.component.TextFieldListing Ob4r6;
+    private sp.component.TextFieldListing Pb4r2s1;
+    private sp.component.TextFieldListing Pb4r2s2;
+    private sp.component.TextFieldListing Pb4r2s3;
+    private sp.component.TextFieldListing Pb4r3;
+    private sp.component.TextFieldListing Pb4r4;
+    private sp.component.TextFieldListing Pb4r5;
+    private sp.component.TextFieldListing Pb4r6;
+    private sp.component.TextFieldListing Qb4r2s1;
+    private sp.component.TextFieldListing Qb4r2s2;
+    private sp.component.TextFieldListing Qb4r2s3;
+    private sp.component.TextFieldListing Qb4r3;
+    private sp.component.TextFieldListing Qb4r4;
+    private sp.component.TextFieldListing Qb4r5;
+    private sp.component.TextFieldListing Qb4r6;
+    private sp.component.TextFieldListing Rb4r2s1;
+    private sp.component.TextFieldListing Rb4r2s2;
+    private sp.component.TextFieldListing Rb4r2s3;
+    private sp.component.TextFieldListing Rb4r3;
+    private sp.component.TextFieldListing Rb4r4;
+    private sp.component.TextFieldListing Rb4r5;
+    private sp.component.TextFieldListing Rb4r6;
+    private sp.component.TextFieldListing Sb4r2s1;
+    private sp.component.TextFieldListing Sb4r2s2;
+    private sp.component.TextFieldListing Sb4r2s3;
+    private sp.component.TextFieldListing Sb4r3;
+    private sp.component.TextFieldListing Sb4r4;
+    private sp.component.TextFieldListing Sb4r5;
+    private sp.component.TextFieldListing Sb4r6;
+    private sp.component.TextFieldListing Tb4r2s1;
+    private sp.component.TextFieldListing Tb4r2s2;
+    private sp.component.TextFieldListing Tb4r2s3;
+    private sp.component.TextFieldListing Tb4r3;
+    private sp.component.TextFieldListing Tb4r4;
+    private sp.component.TextFieldListing Tb4r5;
+    private sp.component.TextFieldListing Tb4r6;
     private sp.imageClass.Hal2Listing hal2Listing1;
     private javax.swing.JLayeredPane jLayeredPane1;
     // End of variables declaration//GEN-END:variables
