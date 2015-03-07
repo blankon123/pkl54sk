@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 06, 2015 at 02:09 AM
+-- Generation Time: Mar 07, 2015 at 01:23 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -44,14 +44,6 @@ CREATE TABLE IF NOT EXISTS `b1` (
   `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `b1`
---
-
-INSERT INTO `b1` (`nks`, `b1r1`, `b1r2`, `b1r3`, `b1r4`, `b1r5`, `b1r6`, `b1r7`, `b1r8`, `b1r9`, `b1r10`, `nim`, `flag`, `flag2`, `timestamp`) VALUES
-('731121B1', '73', '1', '12', '1', '1B', '1', 'Thosan Girisona', 'perumahan sukamaju', '1', '1', '127402', '1', '2', '2015-03-06 00:56:49'),
-('731121B50', '73', '1', '12', '1', '1B', '50', 'Thosan Girisona', 'perumahan sukamaju', '1', '1', '127402', '0', '2', '2015-03-06 00:57:32');
-
 -- --------------------------------------------------------
 
 --
@@ -69,14 +61,6 @@ CREATE TABLE IF NOT EXISTS `b2` (
   `b2r3s2d1` enum('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31') NOT NULL COMMENT 'tanggal pencacahan kortim',
   `b2r3s2d2` enum('1','2','3','4','5','6','7','8','9','10','11','12') NOT NULL COMMENT 'bulan pencacahn kortim'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `b2`
---
-
-INSERT INTO `b2` (`nksb2`, `b2r1s1`, `b2r1s2`, `b2r2s1`, `b2r2s2`, `b2r3s1d1`, `b2r3s1d2`, `b2r3s2d1`, `b2r3s2d2`) VALUES
-('731121B1', 'Tiara', 'Choerul', '127403', '127403', '3', '3', '4', '3'),
-('731121B50', 'Tiara', 'Choerul', '127403', '127403', '3', '3', '4', '3');
 
 -- --------------------------------------------------------
 
@@ -104,21 +88,13 @@ CREATE TABLE IF NOT EXISTS `b3` (
   `b3r9s1d4` enum('1','2') NOT NULL,
   `b3r9s2` enum('1','2','3','4') DEFAULT NULL,
   `b3r10` enum('0','1','2') DEFAULT NULL COMMENT 'Lapangan usaha atau bidang pekerjaan seminggu terakhir',
-  `b3r11` varchar(2) NOT NULL,
-  `b3r12` enum('0','1','2','3','4','5','6') NOT NULL COMMENT 'Status/kedudukan dalam pekerjaan utama seminggu terakhir',
+  `b3r11` varchar(2) DEFAULT NULL,
+  `b3r12` enum('0','1','2','3','4','5','6') DEFAULT NULL COMMENT 'Status/kedudukan dalam pekerjaan utama seminggu terakhir',
   `b3r13` enum('1','2','3','4','5','6','7') NOT NULL COMMENT 'Status penguasaan bangunan tempat tinggal',
   `b3r14` enum('1','2','3','4','5','6','7') NOT NULL COMMENT 'Jenis atap terluas',
   `b3r15` enum('1','2','3','4') NOT NULL COMMENT 'Jenis dinding terluas',
   `b3r16` enum('1','2','3','4','5','6') NOT NULL COMMENT 'Jenis lantai terluas'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `b3`
---
-
-INSERT INTO `b3` (`nksb3`, `b3r1`, `b3r2`, `b3r3`, `b3r4s1`, `b3r4s2`, `b3r5s1`, `b3r5s2`, `b3r6`, `b3r7`, `b3r8s1`, `b3r8s2`, `b3r8s3`, `b3r9s1d1`, `b3r9s1d2`, `b3r9s1d3`, `b3r9s1d4`, `b3r9s2`, `b3r10`, `b3r11`, `b3r12`, `b3r13`, `b3r14`, `b3r15`, `b3r16`) VALUES
-('731121B1', 'Thosan Girisona S', '1', '21', '18', '08', '18', '08', '1', '4', '2', '1', '1', '2', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1'),
-('731121B50', 'Thosan Girisona S', '1', '21', '18', '08', '18', '08', '1', '4', '2', '1', '1', '2', '1', '1', '1', '3', '1', '1', '1', '1', '1', '1', '1');
 
 -- --------------------------------------------------------
 
@@ -221,14 +197,6 @@ CREATE TABLE IF NOT EXISTS `b4` (
   `b4br64` enum('0','1','2','3','4','5','6','7','8','9','10') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `b4`
---
-
-INSERT INTO `b4` (`nksb4`, `b4ar1`, `b4ar2`, `b4ar3`, `b4ar4`, `b4ar5`, `b4ar6`, `b4ar7`, `b4ar8`, `b4ar9`, `b4ar10`, `b4ar11`, `b4ar12`, `b4ar13`, `b4ar14`, `b4ar15`, `b4ar16`, `b4ar17`, `b4ar18`, `b4ar19`, `b4ar20`, `b4ar21`, `b4ar22`, `b4ar23`, `b4ar24`, `b4ar25`, `b4ar26`, `b4ar27`, `b4br1`, `b4br2`, `b4br3`, `b4br4`, `b4br5`, `b4br6`, `b4br7`, `b4br8`, `b4br9`, `b4br10`, `b4br11`, `b4br12`, `b4br13`, `b4br14`, `b4br15`, `b4br16`, `b4br17`, `b4br18`, `b4br19`, `b4br20`, `b4br21`, `b4br22`, `b4br23`, `b4br24`, `b4br25`, `b4br26`, `b4br27`, `b4br28`, `b4br29`, `b4br30`, `b4br31`, `b4br32`, `b4br33`, `b4br34`, `b4br35`, `b4br36`, `b4br37`, `b4br38`, `b4br39`, `b4br40`, `b4br41`, `b4br42`, `b4br43`, `b4br44`, `b4br45`, `b4br46`, `b4br47`, `b4br48`, `b4br49`, `b4br50`, `b4br51`, `b4br52`, `b4br53`, `b4br54`, `b4br55`, `b4br56`, `b4br57`, `b4br58`, `b4br59`, `b4br60`, `b4br61`, `b4br62`, `b4br63`, `b4br64`) VALUES
-('731121B1', '1', '1', '1', '1', '1', '1', '1', '1', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '4', '4', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '8', '8', '8', '8', '8', '8', '8', '8', '8', '8', '9', '9', '9', '5', '5', '4', '1', '2', '3', '4', '5', '6', '7', '8', '9', '7', '6', '6', '6', '6', '6', '6', '6', '6'),
-('731121B50', '1', '1', '1', '1', '1', '1', '1', '1', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '4', '4', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '7', '8', '8', '8', '8', '8', '8', '8', '8', '8', '8', '9', '9', '9', '5', '5', '4', '1', '2', '3', '4', '5', '6', '7', '8', '9', '7', '6', '6', '6', '6', '6', '6', '6', '6');
-
 -- --------------------------------------------------------
 
 --
@@ -239,6 +207,113 @@ CREATE TABLE IF NOT EXISTS `b5` (
   `nksb5` varchar(13) NOT NULL,
   `catatan` text
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dsartb1`
+--
+
+CREATE TABLE IF NOT EXISTS `dsartb1` (
+  `nbs` varchar(15) NOT NULL COMMENT 'Gabungan kode b1r1,b1r2,b1r3,b1r4,b1r5',
+  `b1r1` enum('73','12') NOT NULL COMMENT 'Kabupaten/kota',
+  `b1r2` varchar(3) NOT NULL COMMENT 'Kecamatan',
+  `b1r3` varchar(3) NOT NULL COMMENT 'Desa/ Kelurahan',
+  `b1r4` varchar(4) NOT NULL COMMENT 'Nomor Blok Sensus',
+  `b1r5` varchar(3) NOT NULL COMMENT 'Nomor urut Sampel Blok Sensus',
+  `b1r6s1` text NOT NULL COMMENT 'Alamat RT/RW',
+  `b1r6s2` text NOT NULL COMMENT 'Dusun/Lingkungan/Kampung',
+  `nim` varchar(6) NOT NULL,
+  `flag` enum('0','1') NOT NULL,
+  `flag2` enum('1','2') NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `isLocked` enum('1','0') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dsartb2`
+--
+
+CREATE TABLE IF NOT EXISTS `dsartb2` (
+  `nbsb2` varchar(15) NOT NULL COMMENT 'primmary blok 2',
+  `b2r1` int(3) NOT NULL COMMENT 'Jumlah Ruta Biasa',
+  `b2r2` int(4) NOT NULL COMMENT 'Jumlah Anggota Ruta',
+  `b2r3s1` int(3) NOT NULL COMMENT 'Total 15-24',
+  `b2r3s2` int(3) NOT NULL COMMENT 'Total 25-44',
+  `b2r3s3` int(3) NOT NULL COMMENT 'Total 45-64',
+  `b2r3s4` int(4) NOT NULL COMMENT 'Total 15-64'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dsartb3`
+--
+
+CREATE TABLE IF NOT EXISTS `dsartb3` (
+  `nbs3` varchar(15) NOT NULL COMMENT 'primmary b3',
+  `b3r1` varchar(60) NOT NULL COMMENT 'Nama Kortim',
+  `b3r2` varchar(7) NOT NULL COMMENT 'Nim Kortim',
+  `b3r3` varchar(2) NOT NULL COMMENT 'Tanggal pemilihan sampel maret 2015'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dsartb4`
+--
+
+CREATE TABLE IF NOT EXISTS `dsartb4` (
+  `nuart` varchar(29) NOT NULL COMMENT 'gabungan dari (nbs,b4r1)',
+  `b4r1` varchar(1) NOT NULL COMMENT 'No Urut',
+  `b4r2s1` varchar(3) NOT NULL COMMENT 'Bangunan Fisik',
+  `b4r2s2` varchar(3) NOT NULL COMMENT 'Bangunan Sensus',
+  `b4r2s3` varchar(3) NOT NULL COMMENT 'Rumah tangga biasa',
+  `b4r3` varchar(60) NOT NULL COMMENT 'Nama Anggota Rumah Tangga',
+  `b4r4` enum('1','2') NOT NULL COMMENT 'Jenis Kelamin',
+  `b4r5` varchar(3) NOT NULL COMMENT 'Umur',
+  `b4r6` text NOT NULL COMMENT 'Alamat'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dsartoption_b1r1`
+--
+
+CREATE TABLE IF NOT EXISTS `dsartoption_b1r1` (
+  `Kode` enum('73','12') NOT NULL,
+  `Keterangan` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `dsartoption_b1r1`
+--
+
+INSERT INTO `dsartoption_b1r1` (`Kode`, `Keterangan`) VALUES
+('73', 'Bandung'),
+('12', 'Indramayu');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dsartoption_b4r4`
+--
+
+CREATE TABLE IF NOT EXISTS `dsartoption_b4r4` (
+  `Kode` enum('1','2') NOT NULL,
+  `Keterangan` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `dsartoption_b4r4`
+--
+
+INSERT INTO `dsartoption_b4r4` (`Kode`, `Keterangan`) VALUES
+('1', 'Laki laki'),
+('2', 'Perempuan');
 
 -- --------------------------------------------------------
 
@@ -575,6 +650,42 @@ ALTER TABLE `b5`
  ADD PRIMARY KEY (`nksb5`);
 
 --
+-- Indexes for table `dsartb1`
+--
+ALTER TABLE `dsartb1`
+ ADD PRIMARY KEY (`nbs`), ADD KEY `b1r1` (`b1r1`);
+
+--
+-- Indexes for table `dsartb2`
+--
+ALTER TABLE `dsartb2`
+ ADD PRIMARY KEY (`nbsb2`), ADD KEY `nbsb2` (`nbsb2`);
+
+--
+-- Indexes for table `dsartb3`
+--
+ALTER TABLE `dsartb3`
+ ADD PRIMARY KEY (`nbs3`), ADD KEY `nbs3` (`nbs3`);
+
+--
+-- Indexes for table `dsartb4`
+--
+ALTER TABLE `dsartb4`
+ ADD PRIMARY KEY (`nuart`), ADD KEY `b4r4` (`b4r4`), ADD KEY `b4r4_2` (`b4r4`);
+
+--
+-- Indexes for table `dsartoption_b1r1`
+--
+ALTER TABLE `dsartoption_b1r1`
+ ADD PRIMARY KEY (`Kode`);
+
+--
+-- Indexes for table `dsartoption_b4r4`
+--
+ALTER TABLE `dsartoption_b4r4`
+ ADD PRIMARY KEY (`Kode`);
+
+--
 -- Indexes for table `opsi_tingkat_keseringan`
 --
 ALTER TABLE `opsi_tingkat_keseringan`
@@ -735,6 +846,30 @@ ADD CONSTRAINT `b4_ibfk_9` FOREIGN KEY (`b4ar8`) REFERENCES `opsi_tingkat_keseri
 --
 ALTER TABLE `b5`
 ADD CONSTRAINT `b5_ibfk_1` FOREIGN KEY (`nksb5`) REFERENCES `b1` (`nks`) ON DELETE NO ACTION ON UPDATE CASCADE;
+
+--
+-- Constraints for table `dsartb1`
+--
+ALTER TABLE `dsartb1`
+ADD CONSTRAINT `Dsartb1_ibfk_1` FOREIGN KEY (`b1r1`) REFERENCES `dsartoption_b1r1` (`Kode`) ON DELETE NO ACTION ON UPDATE CASCADE;
+
+--
+-- Constraints for table `dsartb2`
+--
+ALTER TABLE `dsartb2`
+ADD CONSTRAINT `Dsartb2_ibfk_1` FOREIGN KEY (`nbsb2`) REFERENCES `dsartb1` (`nbs`) ON DELETE NO ACTION ON UPDATE CASCADE;
+
+--
+-- Constraints for table `dsartb3`
+--
+ALTER TABLE `dsartb3`
+ADD CONSTRAINT `Dsartb3_ibfk_1` FOREIGN KEY (`nbs3`) REFERENCES `dsartb1` (`nbs`) ON DELETE NO ACTION ON UPDATE CASCADE;
+
+--
+-- Constraints for table `dsartb4`
+--
+ALTER TABLE `dsartb4`
+ADD CONSTRAINT `Dsartb4_ibfk_1` FOREIGN KEY (`b4r4`) REFERENCES `dsartoption_b4r4` (`Kode`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
