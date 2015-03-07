@@ -39,7 +39,6 @@ public class DsartB4Controller {
         //b4view.addListTextfield();
         ArrayList<TextField> dummy = b4view.getListTextField();
         for (int i = 0; i < dummy.size(); i+=7) {
-            System.out.println(dummy.get(i).getText());
             b4[j].setB4r2s1(dummy.get(i+1).getText());
             b4[j].setB4r2s2(dummy.get(i+2).getText());
             b4[j].setB4r2s3(dummy.get(i+3).getText());

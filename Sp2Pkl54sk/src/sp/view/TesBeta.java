@@ -302,7 +302,7 @@ public class TesBeta extends javax.swing.JFrame {
     private void entryDariNol() {
         entryQuest.getSaveBtn().setEnabled(true);
         entryQuest.getUpdateBtn().setEnabled(false);
-        FormControl.clearAll();
+        //FormControl.clearAll();
         FormControl.getController().first();
         controller.show("entryQuest");
     }

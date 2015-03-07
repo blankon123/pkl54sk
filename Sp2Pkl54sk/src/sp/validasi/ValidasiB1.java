@@ -24,8 +24,9 @@ public class ValidasiB1 {
     TextField dummy;
     private ArrayList<Error> b1listerr;
 
-    public ValidasiB1(B1 b1) {
+    public ValidasiB1(B1 b1,Hal1 biveiw) {
         this.b1 = b1;
+        this.b1view = biveiw;
     }
 
     public ArrayList<Error> cek() {
@@ -69,7 +70,7 @@ public class ValidasiB1 {
     }
 
     private void cekR6() {
-        if(b1.getB1r6().length()<3){
+        if(b1.getB1r6().length()<2){
             dummy = getError(b1view.getB1r6());
             b1view.setB1r6(dummy);
             b1listerr.add(b1listerr.size(), new Error("b1r6", "Kesalahan Panjang Kode", 1));

@@ -30,7 +30,7 @@ public class B1Controller {
 
     public B1 B1hasil() {
         b1.setNks(b1view.getB1r1().getText()+b1view.getB1r2().getText()+
-                b1view.getB1r3().getText()+b1view.getB1r5().getText()+"B"+b1view.getB1r6().getText());
+                b1view.getB1r3().getText()+b1view.getB1r5().getText()+b1view.getB1r6().getText());
         //OptionB1r1Dao.getInstance().entity();
         //System.out.println("\nlol1\n");
         //System.out.println("S"+b1view.getB1r1().getText()+"S");
