@@ -42,11 +42,11 @@
             <Property name="useNullLayout" type="boolean" value="false"/>
           </Layout>
           <SubComponents>
-            <Component class="sp.component.TextField" name="Ab4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Ab4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -55,80 +55,71 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Ab4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Ab4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
-                <Property name="required" type="boolean" value="true"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Ab4r2s2ActionPerformed"/>
-              </Events>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="160" width="50" height="30"/>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="sp.component.TextField" name="Ab4r2s3">
-              <Properties>
-                <Property name="angka" type="boolean" value="true"/>
-                <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="160" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="160" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Ab4r3">
+            <Component class="sp.component.TextFieldListing" name="Ab4r2s3">
+              <Properties>
+                <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
+                <Property name="maxDigit" type="int" value="999"/>
+                <Property name="required" type="boolean" value="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="170" y="160" width="40" height="30"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="sp.component.TextFieldListing" name="Ab4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Ab4r3ActionPerformed"/>
-              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="220" y="160" width="220" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Ab4r4">
+            <Component class="sp.component.TextFieldListing" name="Ab4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="160" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="160" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Ab4r5">
+            <Component class="sp.component.TextFieldListing" name="Ab4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="160" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="160" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Ab4r6">
+            <Component class="sp.component.TextFieldListing" name="Ab4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -137,15 +128,15 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="160" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="160" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Bb4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Bb4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -154,33 +145,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Bb4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Bb4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="200" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="200" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Bb4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Bb4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="200" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="200" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Bb4r3">
+            <Component class="sp.component.TextFieldListing" name="Bb4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -192,36 +183,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Bb4r4">
+            <Component class="sp.component.TextFieldListing" name="Bb4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="200" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="200" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Bb4r5">
+            <Component class="sp.component.TextFieldListing" name="Bb4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="200" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="200" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Bb4r6">
+            <Component class="sp.component.TextFieldListing" name="Bb4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -230,15 +218,15 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="200" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="200" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Cb4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Cb4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -247,33 +235,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Cb4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Cb4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="240" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="240" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Cb4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Cb4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="240" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="240" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Cb4r3">
+            <Component class="sp.component.TextFieldListing" name="Cb4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -285,36 +273,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Cb4r4">
+            <Component class="sp.component.TextFieldListing" name="Cb4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="240" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="240" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Cb4r5">
+            <Component class="sp.component.TextFieldListing" name="Cb4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="240" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="240" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Cb4r6">
+            <Component class="sp.component.TextFieldListing" name="Cb4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -323,15 +308,15 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="240" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="240" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Db4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Db4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -340,33 +325,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Db4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Db4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="280" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="280" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Db4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Db4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="280" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="280" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Db4r3">
+            <Component class="sp.component.TextFieldListing" name="Db4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -378,36 +363,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Db4r4">
+            <Component class="sp.component.TextFieldListing" name="Db4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="280" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="280" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Db4r5">
+            <Component class="sp.component.TextFieldListing" name="Db4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="280" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="280" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Db4r6">
+            <Component class="sp.component.TextFieldListing" name="Db4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -416,15 +398,15 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="280" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="280" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Eb4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Eb4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -433,33 +415,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Eb4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Eb4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="320" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="320" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Eb4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Eb4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="320" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="320" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Eb4r3">
+            <Component class="sp.component.TextFieldListing" name="Eb4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -471,36 +453,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Eb4r4">
+            <Component class="sp.component.TextFieldListing" name="Eb4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="320" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="320" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Eb4r5">
+            <Component class="sp.component.TextFieldListing" name="Eb4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="320" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="320" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Eb4r6">
+            <Component class="sp.component.TextFieldListing" name="Eb4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -509,15 +488,15 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="320" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="320" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Fb4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Fb4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -526,33 +505,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Fb4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Fb4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="360" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="360" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Fb4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Fb4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="360" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="360" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Fb4r3">
+            <Component class="sp.component.TextFieldListing" name="Fb4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -564,36 +543,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Fb4r4">
+            <Component class="sp.component.TextFieldListing" name="Fb4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="360" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="360" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Fb4r5">
+            <Component class="sp.component.TextFieldListing" name="Fb4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="360" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="360" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Fb4r6">
+            <Component class="sp.component.TextFieldListing" name="Fb4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -602,15 +578,15 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="360" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="360" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Gb4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Gb4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -619,33 +595,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Gb4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Gb4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="410" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="410" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Gb4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Gb4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="410" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="410" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Gb4r3">
+            <Component class="sp.component.TextFieldListing" name="Gb4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -657,36 +633,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Gb4r4">
+            <Component class="sp.component.TextFieldListing" name="Gb4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="410" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="410" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Gb4r5">
+            <Component class="sp.component.TextFieldListing" name="Gb4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="410" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="410" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Gb4r6">
+            <Component class="sp.component.TextFieldListing" name="Gb4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -695,15 +668,15 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="410" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="410" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Hb4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Hb4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -712,33 +685,123 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Hb4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Hb4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="450" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="450" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Hb4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Hb4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="450" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="450" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Hb4r3">
+            <Component class="sp.component.TextFieldListing" name="Hb4r3">
+              <Properties>
+                <Property name="huruf" type="boolean" value="true"/>
+                <Property name="length" type="int" value="100"/>
+                <Property name="required" type="boolean" value="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="220" y="450" width="220" height="30"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="sp.component.TextFieldListing" name="Hb4r4">
+              <Properties>
+                <Property name="huruf" type="boolean" value="true"/>
+                <Property name="length" type="int" value="1"/>
+                <Property name="required" type="boolean" value="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="480" y="450" width="40" height="30"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="sp.component.TextFieldListing" name="Hb4r5">
+              <Properties>
+                <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="2"/>
+                <Property name="maxDigit" type="int" value="64"/>
+                <Property name="minDigit" type="int" value="15"/>
+                <Property name="required" type="boolean" value="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="560" y="450" width="40" height="30"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="sp.component.TextFieldListing" name="Hb4r6">
+              <Properties>
+                <Property name="angka" type="boolean" value="true"/>
+                <Property name="huruf" type="boolean" value="true"/>
+                <Property name="length" type="int" value="200"/>
+                <Property name="required" type="boolean" value="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="630" y="450" width="280" height="30"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="sp.component.TextFieldListing" name="Ib4r2s1">
+              <Properties>
+                <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
+                <Property name="maxDigit" type="int" value="999"/>
+                <Property name="required" type="boolean" value="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="50" y="490" width="40" height="30"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="sp.component.TextFieldListing" name="Ib4r2s2">
+              <Properties>
+                <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
+                <Property name="maxDigit" type="int" value="999"/>
+                <Property name="required" type="boolean" value="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="110" y="490" width="40" height="30"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="sp.component.TextFieldListing" name="Ib4r2s3">
+              <Properties>
+                <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
+                <Property name="maxDigit" type="int" value="999"/>
+                <Property name="required" type="boolean" value="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="170" y="490" width="40" height="30"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="sp.component.TextFieldListing" name="Ib4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -750,36 +813,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Hb4r4">
+            <Component class="sp.component.TextFieldListing" name="Ib4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="450" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="490" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Hb4r5">
+            <Component class="sp.component.TextFieldListing" name="Ib4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="450" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="490" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Hb4r6">
+            <Component class="sp.component.TextFieldListing" name="Ib4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -788,111 +848,15 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="450" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="490" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Ib4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Jb4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
-                <Property name="required" type="boolean" value="true"/>
-              </Properties>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="50" y="490" width="40" height="30"/>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="sp.component.TextField" name="Ib4r2s2">
-              <Properties>
-                <Property name="angka" type="boolean" value="true"/>
-                <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
-                <Property name="required" type="boolean" value="true"/>
-              </Properties>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="490" width="50" height="30"/>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="sp.component.TextField" name="Ib4r2s3">
-              <Properties>
-                <Property name="angka" type="boolean" value="true"/>
-                <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
-                <Property name="required" type="boolean" value="true"/>
-              </Properties>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="490" width="50" height="30"/>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="sp.component.TextField" name="Ib4r3">
-              <Properties>
-                <Property name="huruf" type="boolean" value="true"/>
-                <Property name="length" type="int" value="100"/>
-                <Property name="required" type="boolean" value="true"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Ib4r3ActionPerformed"/>
-              </Events>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="220" y="450" width="220" height="30"/>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="sp.component.TextField" name="Ib4r4">
-              <Properties>
-                <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
-                <Property name="required" type="boolean" value="true"/>
-              </Properties>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="490" width="90" height="30"/>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="sp.component.TextField" name="Ib4r5">
-              <Properties>
-                <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
-                <Property name="maxDigit" type="int" value="64"/>
-                <Property name="minDigit" type="int" value="15"/>
-                <Property name="required" type="boolean" value="true"/>
-              </Properties>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="490" width="50" height="30"/>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="sp.component.TextField" name="Ib4r6">
-              <Properties>
-                <Property name="angka" type="boolean" value="true"/>
-                <Property name="huruf" type="boolean" value="true"/>
-                <Property name="length" type="int" value="200"/>
-                <Property name="required" type="boolean" value="true"/>
-              </Properties>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="490" width="290" height="30"/>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="sp.component.TextField" name="Jb4r2s1">
-              <Properties>
-                <Property name="angka" type="boolean" value="true"/>
-                <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -901,33 +865,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Jb4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Jb4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="530" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="530" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Jb4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Jb4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="530" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="530" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Jb4r3">
+            <Component class="sp.component.TextFieldListing" name="Jb4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -939,36 +903,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Jb4r4">
+            <Component class="sp.component.TextFieldListing" name="Jb4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="530" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="530" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Jb4r5">
+            <Component class="sp.component.TextFieldListing" name="Jb4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="530" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="530" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Jb4r6">
+            <Component class="sp.component.TextFieldListing" name="Jb4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -977,15 +938,15 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="530" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="530" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Kb4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Kb4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -994,33 +955,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Kb4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Kb4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="570" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="570" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Kb4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Kb4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="570" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="570" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Kb4r3">
+            <Component class="sp.component.TextFieldListing" name="Kb4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -1032,36 +993,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Kb4r4">
+            <Component class="sp.component.TextFieldListing" name="Kb4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="570" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="570" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Kb4r5">
+            <Component class="sp.component.TextFieldListing" name="Kb4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="570" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="570" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Kb4r6">
+            <Component class="sp.component.TextFieldListing" name="Kb4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -1070,15 +1028,15 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="570" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="570" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Lb4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Lb4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -1087,33 +1045,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Lb4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Lb4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="610" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="610" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Lb4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Lb4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="610" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="610" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Lb4r3">
+            <Component class="sp.component.TextFieldListing" name="Lb4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -1125,36 +1083,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Lb4r4">
+            <Component class="sp.component.TextFieldListing" name="Lb4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="610" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="610" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Lb4r5">
+            <Component class="sp.component.TextFieldListing" name="Lb4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="610" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="610" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Lb4r6">
+            <Component class="sp.component.TextFieldListing" name="Lb4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -1163,15 +1118,15 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="610" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="610" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Mb4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Mb4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -1180,33 +1135,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Mb4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Mb4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="650" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="650" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Mb4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Mb4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="650" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="650" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Mb4r3">
+            <Component class="sp.component.TextFieldListing" name="Mb4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -1218,36 +1173,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Mb4r4">
+            <Component class="sp.component.TextFieldListing" name="Mb4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="650" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="650" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Mb4r5">
+            <Component class="sp.component.TextFieldListing" name="Mb4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="650" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="650" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Mb4r6">
+            <Component class="sp.component.TextFieldListing" name="Mb4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -1256,15 +1208,15 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="650" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="650" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Nb4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Nb4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -1273,33 +1225,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Nb4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Nb4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="690" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="690" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Nb4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Nb4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="690" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="690" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Nb4r3">
+            <Component class="sp.component.TextFieldListing" name="Nb4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -1311,36 +1263,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Nb4r4">
+            <Component class="sp.component.TextFieldListing" name="Nb4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="690" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="690" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Nb4r5">
+            <Component class="sp.component.TextFieldListing" name="Nb4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="690" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="690" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Nb4r6">
+            <Component class="sp.component.TextFieldListing" name="Nb4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -1349,15 +1298,15 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="690" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="690" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Ob4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Ob4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -1366,33 +1315,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Ob4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Ob4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="730" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="730" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Ob4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Ob4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="730" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="730" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Ob4r3">
+            <Component class="sp.component.TextFieldListing" name="Ob4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -1404,36 +1353,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Ob4r4">
+            <Component class="sp.component.TextFieldListing" name="Ob4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="730" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="730" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Ob4r5">
+            <Component class="sp.component.TextFieldListing" name="Ob4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="730" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="730" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Ob4r6">
+            <Component class="sp.component.TextFieldListing" name="Ob4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -1442,15 +1388,15 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="730" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="730" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Pb4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Pb4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -1459,33 +1405,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Pb4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Pb4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="770" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="770" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Pb4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Pb4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="770" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="770" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Pb4r3">
+            <Component class="sp.component.TextFieldListing" name="Pb4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -1497,36 +1443,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Pb4r4">
+            <Component class="sp.component.TextFieldListing" name="Pb4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="770" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="770" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Pb4r5">
+            <Component class="sp.component.TextFieldListing" name="Pb4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="770" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="770" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Pb4r6">
+            <Component class="sp.component.TextFieldListing" name="Pb4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -1535,15 +1478,15 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="770" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="770" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Qb4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Qb4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -1552,33 +1495,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Qb4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Qb4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="810" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="810" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Qb4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Qb4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="810" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="810" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Qb4r3">
+            <Component class="sp.component.TextFieldListing" name="Qb4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -1590,36 +1533,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Qb4r4">
+            <Component class="sp.component.TextFieldListing" name="Qb4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="810" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="810" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Qb4r5">
+            <Component class="sp.component.TextFieldListing" name="Qb4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="810" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="810" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Qb4r6">
+            <Component class="sp.component.TextFieldListing" name="Qb4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -1628,15 +1568,15 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="810" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="810" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Rb4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Rb4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -1645,33 +1585,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Rb4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Rb4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="850" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="850" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Rb4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Rb4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="850" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="850" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Rb4r3">
+            <Component class="sp.component.TextFieldListing" name="Rb4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -1683,36 +1623,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Rb4r4">
+            <Component class="sp.component.TextFieldListing" name="Rb4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="850" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="850" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Rb4r5">
+            <Component class="sp.component.TextFieldListing" name="Rb4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="850" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="850" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Rb4r6">
+            <Component class="sp.component.TextFieldListing" name="Rb4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -1721,50 +1658,50 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="850" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="850" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Sb4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Sb4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="50" y="890" width="40" height="30"/>
+                  <AbsoluteConstraints x="50" y="900" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Sb4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Sb4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="890" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="900" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Sb4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Sb4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="890" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="900" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Sb4r3">
+            <Component class="sp.component.TextFieldListing" name="Sb4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -1772,40 +1709,37 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="220" y="890" width="220" height="30"/>
+                  <AbsoluteConstraints x="220" y="900" width="220" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Sb4r4">
+            <Component class="sp.component.TextFieldListing" name="Sb4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="890" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="900" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Sb4r5">
+            <Component class="sp.component.TextFieldListing" name="Sb4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="890" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="900" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Sb4r6">
+            <Component class="sp.component.TextFieldListing" name="Sb4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -1814,15 +1748,15 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="890" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="900" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Tb4r2s1">
+            <Component class="sp.component.TextFieldListing" name="Tb4r2s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -1831,33 +1765,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Tb4r2s2">
+            <Component class="sp.component.TextFieldListing" name="Tb4r2s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="100" y="940" width="50" height="30"/>
+                  <AbsoluteConstraints x="110" y="940" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Tb4r2s3">
+            <Component class="sp.component.TextFieldListing" name="Tb4r2s3">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="3"/>
                 <Property name="maxDigit" type="int" value="999"/>
-                <Property name="minDigit" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="160" y="940" width="50" height="30"/>
+                  <AbsoluteConstraints x="170" y="940" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Tb4r3">
+            <Component class="sp.component.TextFieldListing" name="Tb4r3">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
                 <Property name="length" type="int" value="100"/>
@@ -1869,36 +1803,33 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Tb4r4">
+            <Component class="sp.component.TextFieldListing" name="Tb4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="3"/>
-                <Property name="length" type="int" value="5"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="450" y="940" width="90" height="30"/>
+                  <AbsoluteConstraints x="480" y="940" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Tb4r5">
+            <Component class="sp.component.TextFieldListing" name="Tb4r5">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="khusus" type="boolean" value="true"/>
-                <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="64"/>
                 <Property name="minDigit" type="int" value="15"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="940" width="50" height="30"/>
+                  <AbsoluteConstraints x="560" y="940" width="40" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="sp.component.TextField" name="Tb4r6">
+            <Component class="sp.component.TextFieldListing" name="Tb4r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
                 <Property name="huruf" type="boolean" value="true"/>
@@ -1907,7 +1838,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="620" y="940" width="290" height="30"/>
+                  <AbsoluteConstraints x="630" y="940" width="280" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
