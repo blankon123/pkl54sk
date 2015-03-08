@@ -16,16 +16,16 @@
     <class>sp.model.OpsiTingkatKeseringan</class>
     <class>sp.model.OptionB1r9</class>
     <class>sp.model.OptionB3r12</class>
+    <class>sp.model.B3</class>
     <class>sp.model.B2</class>
+    <class>sp.model.B1</class>
     <class>sp.model.OptionB1r4</class>
     <class>sp.model.Username</class>
-    <class>sp.model.DsartoptionB1r1</class>
-    <class>sp.model.DsartoptionB4r4</class>
     <class>sp.model.Dsartb2</class>
-    <class>sp.model.B1</class>
-    <class>sp.model.B3</class>
     <class>sp.model.Dsartb3</class>
+    <class>sp.model.DsartoptionB1r1</class>
     <class>sp.model.Dsartb4</class>
+    <class>sp.model.DsartoptionB4r4</class>
     <class>sp.model.Dsartb1</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/pkl54sk?zeroDateTimeBehavior=convertToNull"/>

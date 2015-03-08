@@ -31,7 +31,7 @@ public class SaveCtrlListing implements ActionListener {
     private Dsartb1 b1;
     private Dsartb2 b2;
     private Dsartb3 b3;
-    private Dsartb4[] b4;
+    private ArrayList<Dsartb4> b4;
 
     private final JTable tab;
     private ValListB1 validB1;
@@ -40,7 +40,7 @@ public class SaveCtrlListing implements ActionListener {
     private ValListB4 validB4;
     private final JPanel mainPanel;
 
-    public SaveCtrlListing(Dsartb1 b1, Dsartb2 b2, Dsartb3 b3, Dsartb4[] b4, Hal1Listing b1view, Hal2Listing b2view, JPanel tq, JTable tab) {
+    public SaveCtrlListing(Dsartb1 b1, Dsartb2 b2, Dsartb3 b3, ArrayList<Dsartb4> b4, Hal1Listing b1view, Hal2Listing b2view, JPanel tq, JTable tab) {
         this.b1 = b1;
         this.b2 = b2;
         this.b3 = b3;
@@ -157,7 +157,8 @@ public class SaveCtrlListing implements ActionListener {
         DsartB2Dao.getInstance().save(b2);
         DsartB3Dao.getInstance().save(b3);
         for(Dsartb4 a : b4){
-            DsartB4Dao.getInstance().save(b4);
+            System.out.println(a.toString());
+            DsartB4Dao.getInstance().save(a);
         }
     }
 

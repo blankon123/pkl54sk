@@ -8,6 +8,7 @@ package sp.model;
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Basic;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -16,6 +17,7 @@ import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -23,7 +25,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author Ristika Nugraha [12.7350]
+ * @author Thosan Girisona S
  */
 @Entity
 @Table(name = "dsartb1")
@@ -85,6 +87,10 @@ public class Dsartb1 implements Serializable {
     @JoinColumn(name = "b1r1", referencedColumnName = "Kode")
     @ManyToOne(optional = false)
     private DsartoptionB1r1 b1r1;
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "dsartb1")
+    private Dsartb2 dsartb2;
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "dsartb1")
+    private Dsartb3 dsartb3;
 
     public Dsartb1() {
     }
@@ -210,6 +216,22 @@ public class Dsartb1 implements Serializable {
 
     public void setB1r1(DsartoptionB1r1 b1r1) {
         this.b1r1 = b1r1;
+    }
+
+    public Dsartb2 getDsartb2() {
+        return dsartb2;
+    }
+
+    public void setDsartb2(Dsartb2 dsartb2) {
+        this.dsartb2 = dsartb2;
+    }
+
+    public Dsartb3 getDsartb3() {
+        return dsartb3;
+    }
+
+    public void setDsartb3(Dsartb3 dsartb3) {
+        this.dsartb3 = dsartb3;
     }
 
     @Override

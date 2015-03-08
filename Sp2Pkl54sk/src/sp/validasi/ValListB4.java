@@ -5,6 +5,7 @@
  */
 package sp.validasi;
 
+import java.util.ArrayList;
 import sp.model.Dsartb2;
 import sp.model.Dsartb4;
 
@@ -13,9 +14,9 @@ import sp.model.Dsartb4;
  * @author Ristika Nugraha [12.7350]
  */
 public class ValListB4 {
-    Dsartb4[] b4;
+    ArrayList<Dsartb4> b4;
 
-    public ValListB4(Dsartb4[] b4) {
+    public ValListB4(ArrayList<Dsartb4> b4) {
         this.b4 = b4;
     }
     

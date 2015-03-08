@@ -6,7 +6,7 @@
 package sp.model;
 
 import java.io.Serializable;
-import java.util.Collection;
+import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -21,7 +21,7 @@ import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
- * @author StephenCN
+ * @author Thosan Girisona S
  */
 @Entity
 @Table(name = "dsartoption_b4r4")
@@ -40,7 +40,7 @@ public class DsartoptionB4r4 implements Serializable {
     @Column(name = "Keterangan")
     private String keterangan;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "b4r4")
-    private Collection<Dsartb4> dsartb4Collection;
+    private List<Dsartb4> dsartb4List;
 
     public DsartoptionB4r4() {
     }
@@ -71,12 +71,12 @@ public class DsartoptionB4r4 implements Serializable {
     }
 
     @XmlTransient
-    public Collection<Dsartb4> getDsartb4Collection() {
-        return dsartb4Collection;
+    public List<Dsartb4> getDsartb4List() {
+        return dsartb4List;
     }
 
-    public void setDsartb4Collection(Collection<Dsartb4> dsartb4Collection) {
-        this.dsartb4Collection = dsartb4Collection;
+    public void setDsartb4List(List<Dsartb4> dsartb4List) {
+        this.dsartb4List = dsartb4List;
     }
 
     @Override
