@@ -44,7 +44,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Ab4r2s2.setText("3");
         Ab4r2s3.setText("3");
         Ab4r3.setText("a");
-        Ab4r4.setText("l");
+        Ab4r4.setText("1");
         Ab4r5.setText("33");
         Ab4r6.setText("l");
         
@@ -52,7 +52,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Bb4r2s2.setText("3");
         Bb4r2s3.setText("3");
         Bb4r3.setText("a");
-        Bb4r4.setText("l");
+        Bb4r4.setText("1");
         Bb4r5.setText("33");
         Bb4r6.setText("l");
         
@@ -60,7 +60,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Cb4r2s2.setText("3");
         Cb4r2s3.setText("3");
         Cb4r3.setText("a");
-        Cb4r4.setText("l");
+        Cb4r4.setText("1");
         Cb4r5.setText("33");
         Cb4r6.setText("l");
         
@@ -68,7 +68,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Db4r2s2.setText("3");
         Db4r2s3.setText("3");
         Db4r3.setText("a");
-        Db4r4.setText("l");
+        Db4r4.setText("1");
         Db4r5.setText("33");
         Db4r6.setText("l");
         
@@ -76,7 +76,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Eb4r2s2.setText("3");
         Eb4r2s3.setText("3");
         Eb4r3.setText("a");
-        Eb4r4.setText("l");
+        Eb4r4.setText("1");
         Eb4r5.setText("33");
         Eb4r6.setText("l");
         
@@ -84,7 +84,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Fb4r2s2.setText("3");
         Fb4r2s3.setText("3");
         Fb4r3.setText("a");
-        Fb4r4.setText("l");
+        Fb4r4.setText("1");
         Fb4r5.setText("33");
         Fb4r6.setText("l");
         
@@ -92,7 +92,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Gb4r2s2.setText("3");
         Gb4r2s3.setText("3");
         Gb4r3.setText("a");
-        Gb4r4.setText("l");
+        Gb4r4.setText("1");
         Gb4r5.setText("33");
         Gb4r6.setText("l");
         
@@ -100,7 +100,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Hb4r2s2.setText("3");
         Hb4r2s3.setText("3");
         Hb4r3.setText("a");
-        Hb4r4.setText("l");
+        Hb4r4.setText("1");
         Hb4r5.setText("33");
         Hb4r6.setText("l");
         
@@ -108,7 +108,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Ib4r2s2.setText("3");
         Ib4r2s3.setText("3");
         Ib4r3.setText("a");
-        Ib4r4.setText("l");
+        Ib4r4.setText("1");
         Ib4r5.setText("33");
         Ib4r6.setText("l");
         
@@ -116,7 +116,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Jb4r2s2.setText("3");
         Jb4r2s3.setText("3");
         Jb4r3.setText("a");
-        Jb4r4.setText("l");
+        Jb4r4.setText("1");
         Jb4r5.setText("33");
         Jb4r6.setText("l");
         
@@ -124,7 +124,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Kb4r2s2.setText("3");
         Kb4r2s3.setText("3");
         Kb4r3.setText("a");
-        Kb4r4.setText("l");
+        Kb4r4.setText("1");
         Kb4r5.setText("33");
         Kb4r6.setText("l");
         
@@ -132,7 +132,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Lb4r2s2.setText("3");
         Lb4r2s3.setText("3");
         Lb4r3.setText("a");
-        Lb4r4.setText("l");
+        Lb4r4.setText("1");
         Lb4r5.setText("33");
         Lb4r6.setText("l");
         
@@ -140,7 +140,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Mb4r2s2.setText("3");
         Mb4r2s3.setText("3");
         Mb4r3.setText("a");
-        Mb4r4.setText("l");
+        Mb4r4.setText("1");
         Mb4r5.setText("33");
         Mb4r6.setText("l");
         
@@ -148,7 +148,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Nb4r2s2.setText("3");
         Nb4r2s3.setText("3");
         Nb4r3.setText("a");
-        Nb4r4.setText("l");
+        Nb4r4.setText("1");
         Nb4r5.setText("33");
         Nb4r6.setText("l");
         
@@ -156,7 +156,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Ob4r2s2.setText("3");
         Ob4r2s3.setText("3");
         Ob4r3.setText("a");
-        Ob4r4.setText("l");
+        Ob4r4.setText("1");
         Ob4r5.setText("33");
         Ob4r6.setText("l");
         
@@ -164,7 +164,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Pb4r2s2.setText("3");
         Pb4r2s3.setText("3");
         Pb4r3.setText("a");
-        Pb4r4.setText("l");
+        Pb4r4.setText("1");
         Pb4r5.setText("33");
         Pb4r6.setText("l");
         
@@ -172,7 +172,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Qb4r2s2.setText("3");
         Qb4r2s3.setText("3");
         Qb4r3.setText("a");
-        Qb4r4.setText("l");
+        Qb4r4.setText("1");
         Qb4r5.setText("33");
         Qb4r6.setText("l");
         
@@ -180,7 +180,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Rb4r2s2.setText("3");
         Rb4r2s3.setText("3");
         Rb4r3.setText("a");
-        Rb4r4.setText("l");
+        Rb4r4.setText("1");
         Rb4r5.setText("33");
         Rb4r6.setText("l");
         
@@ -188,7 +188,7 @@ public class Hal2Listing extends javax.swing.JPanel {
         Sb4r2s2.setText("3");
         Sb4r2s3.setText("3");
         Sb4r3.setText("a");
-        Sb4r4.setText("l");
+        Sb4r4.setText("1");
         Sb4r5.setText("33");
         Sb4r6.setText("l");
         
@@ -196,14 +196,13 @@ public class Hal2Listing extends javax.swing.JPanel {
         Tb4r2s2.setText("3");
         Tb4r2s3.setText("3");
         Tb4r3.setText("a");
-        Tb4r4.setText("l");
+        Tb4r4.setText("1");
         Tb4r5.setText("33");
         Tb4r6.setText("l");
         
     }
 
     public void addListTextfield() {
-        getListTextFieldListing().add(0, Ab4r2s1);
         getListTextFieldListing().add(0, Ab4r2s1);
         getListTextFieldListing().add(1, Ab4r2s2);
         getListTextFieldListing().add(2, Ab4r2s3);
@@ -2586,8 +2585,8 @@ public class Hal2Listing extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private sp.component.TextFieldListing Ab4r2s2;
     private sp.component.TextFieldListing Ab4r2s1;
+    private sp.component.TextFieldListing Ab4r2s2;
     private sp.component.TextFieldListing Ab4r2s3;
     private sp.component.TextFieldListing Ab4r3;
     private sp.component.TextFieldListing Ab4r4;

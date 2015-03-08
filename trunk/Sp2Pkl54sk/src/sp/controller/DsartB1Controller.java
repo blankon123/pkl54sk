@@ -30,16 +30,11 @@ public class DsartB1Controller {
     }
 
     public Dsartb1 B1hasil() {
-        //b1.setNks(b1view.getB1r1().getText()+b1view.getB1r2().getText()+
-        //b1view.getB1r3().getText()+b1view.getB1r4().getText()+"B"+b1view.getB1r5().getText());
-        //OptionB1r1Dao.getInstance().entity();
-        //System.out.println("\nlol1\n");
-        //System.out.println("S"+b1view.getB1r1().getText()+"S");
-        //opb1r1 = OptionB1r1Dao.getInstance().entity().getReference(OptionB1r1.class, b1view.getB1r1().getText());
         String kodeKab = b1view.getB1r1().getText();
         String kodeKec = b1view.getB1r2().getText();
         String kodeDes = b1view.getB1r3().getText();
         String kodeNbs = b1view.getB1r4().getText();
+        
         b1.setNbs(kodeKab + kodeKec + kodeDes + kodeNbs);
         b1.setB1r1(new DsartoptionB1r1(kodeKab));
         b1.setB1r2(kodeKec);

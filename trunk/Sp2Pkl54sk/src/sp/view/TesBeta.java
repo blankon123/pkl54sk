@@ -297,12 +297,10 @@ public class TesBeta extends javax.swing.JFrame {
         Dsartb1 db1 = new Dsartb1();
         Dsartb2 db2 = new Dsartb2();
         Dsartb3 db3 = new Dsartb3();
-        Dsartb4[] db4db4;
-        db4db4 = new Dsartb4[20];
-//        Dsartb4[] arr = getB4arr(db1, db4, halL2);
+        ArrayList<Dsartb4> db4 = new ArrayList<Dsartb4>();
 
         JTable errTab = getEntryListing().getErrorTable2().getTabelError();
-        SaveCtrlListing save = new SaveCtrlListing(db1, db2, db3, db4db4, halL1, halL2, MainPanel, errTab);
+        SaveCtrlListing save = new SaveCtrlListing(db1, db2, db3, db4, halL1, halL2, MainPanel, errTab);
         entryListing.getSaveBtn().addActionListener(save);
     }
 
@@ -335,52 +333,52 @@ public class TesBeta extends javax.swing.JFrame {
         controller.show("entryQuest");
     }
 
-    private Dsartb4[] getB4arr(Dsartb1 db1, Dsartb4 db4, Hal2Listing halL2) {
-        Dsartb4[] arr;
-        arr = new Dsartb4[21];
-        int j = 0;
-        halL2.addListTextfield();
-//        ArrayList<TextFieldListing> dummy = halL2.getListTextFieldListingHal2Listing();
-//        for (int i = 0; i < dummy.size(); i += 7) {
-//            arr[i].setDsartb1(db1);
-//            arr[i].setNbs(db1.getNbs());
-//            arr[i].setNuart(arr[i].getNbs()+arr[i].getB4r1());
-//            arr[i].setB4r1(getString(i+1));
-            arr[0] = new Dsartb4(db1.getNbs(), db4.getNbs()+"01", "01", halL2.getAb4r2s1().getText(), halL2.getAb4r2s2().getText(), halL2.getAb4r2s3().getText(), halL2.getAb4r3().getText(), halL2.getAb4r5().getText(), halL2.getAb4r6().getText());
-            arr[1] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getBb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            arr[2] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getCb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            arr[3] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getDb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            arr[4] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getEb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            arr[5] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getFb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            arr[6] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getGb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            arr[7] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getHb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            arr[8] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getIb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            arr[9] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getJb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            arr[10] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getKb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            arr[11] = new Dsartb4(db1.getNbs(), db4.getNbs()+"01", "01", halL2.getLb4r2s1().getText(), halL2.getAb4r2s2().getText(), halL2.getAb4r2s3().getText(), halL2.getAb4r3().getText(), halL2.getAb4r5().getText(), halL2.getAb4r6().getText());
-            arr[12] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getMb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            arr[13] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getNb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            arr[14] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getOb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            arr[15] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getPb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            arr[16] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getQb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            arr[17] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getRb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            arr[18] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getSb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            arr[19] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getTb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
-            
-            for(int i = 0 ; i< 20 ; i++){
-                arr[i].setB4r4(new DsartoptionB4r4("p"));
-            }
-//            arr[j].setB4r2s1(dummy.get(i + 1).getText());
-//            arr[j].setB4r2s2(dummy.get(i + 2).getText());
-//            arr[j].setB4r2s3(dummy.get(i + 3).getText());
-//            arr[j].setB4r3(dummy.get(i + 4).getText());
-//            arr[j].setB4r4(new DsartoptionB4r4(dummy.get(i + 5).getText()));
-//            arr[j].setB4r5(dummy.get(i + 6).getText());
-//            arr[j].setB4r6(dummy.get(i + 7).getText());
-//            j++;
-//        }
-        return arr;
-    }
+//    private Dsartb4[] getB4arr(Dsartb1 db1, Dsartb4 db4, Hal2Listing halL2) {
+//        Dsartb4[] arr;
+//        arr = new Dsartb4[21];
+//        int j = 0;
+//        halL2.addListTextfield();
+////        ArrayList<TextFieldListing> dummy = halL2.getListTextFieldListingHal2Listing();
+////        for (int i = 0; i < dummy.size(); i += 7) {
+////            arr[i].setDsartb1(db1);
+////            arr[i].setNbs(db1.getNbs());
+////            arr[i].setNuart(arr[i].getNbs()+arr[i].getB4r1());
+////            arr[i].setB4r1(getString(i+1));
+//            arr[0] = new Dsartb4(db1.getNbs(), db4.getNbs()+"01", "01", halL2.getAb4r2s1().getText(), halL2.getAb4r2s2().getText(), halL2.getAb4r2s3().getText(), halL2.getAb4r3().getText(), halL2.getAb4r5().getText(), halL2.getAb4r6().getText());
+//            arr[1] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getBb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            arr[2] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getCb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            arr[3] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getDb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            arr[4] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getEb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            arr[5] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getFb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            arr[6] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getGb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            arr[7] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getHb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            arr[8] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getIb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            arr[9] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getJb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            arr[10] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getKb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            arr[11] = new Dsartb4(db1.getNbs(), db4.getNbs()+"01", "01", halL2.getLb4r2s1().getText(), halL2.getAb4r2s2().getText(), halL2.getAb4r2s3().getText(), halL2.getAb4r3().getText(), halL2.getAb4r5().getText(), halL2.getAb4r6().getText());
+//            arr[12] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getMb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            arr[13] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getNb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            arr[14] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getOb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            arr[15] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getPb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            arr[16] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getQb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            arr[17] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getRb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            arr[18] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getSb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            arr[19] = new Dsartb4(db1.getNbs(), db4.getNbs()+"02", "02", halL2.getTb4r2s1().getText(), halL2.getBb4r2s2().getText(), halL2.getBb4r2s3().getText(), halL2.getBb4r3().getText(), halL2.getBb4r5().getText(), halL2.getBb4r6().getText());
+//            
+//            for(int i = 0 ; i< 20 ; i++){
+//                arr[i].setB4r4(new DsartoptionB4r4("p"));
+//            }
+////            arr[j].setB4r2s1(dummy.get(i + 1).getText());
+////            arr[j].setB4r2s2(dummy.get(i + 2).getText());
+////            arr[j].setB4r2s3(dummy.get(i + 3).getText());
+////            arr[j].setB4r3(dummy.get(i + 4).getText());
+////            arr[j].setB4r4(new DsartoptionB4r4(dummy.get(i + 5).getText()));
+////            arr[j].setB4r5(dummy.get(i + 6).getText());
+////            arr[j].setB4r6(dummy.get(i + 7).getText());
+////            j++;
+////        }
+//        return arr;
+//    }
     
      public String getString(int angka) {
         String no = Integer.toString(angka);
