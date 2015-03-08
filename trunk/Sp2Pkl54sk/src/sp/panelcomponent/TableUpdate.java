@@ -22,23 +22,23 @@ public class TableUpdate extends javax.swing.JPanel {
     
     public TableUpdate() {
         initComponents();
-        model = new TableUpdateModel();
         jScrollPane1.getViewport().setOpaque(false);
         setOpaque(false);
         tabelUpdate.setOpaque(false);
         setLebarKolom();
-        tabelUpdate.setModel(model);
     }
     
     public void setLebarKolom(){ 
         TableColumn column;
         this.tabelUpdate.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF); 
         column = this.tabelUpdate.getColumnModel().getColumn(0); 
-        column.setPreferredWidth(220);
+        column.setPreferredWidth(150);
         column = this.tabelUpdate.getColumnModel().getColumn(1); 
-        column.setPreferredWidth(80); 
+        column.setPreferredWidth(150); 
         column = this.tabelUpdate.getColumnModel().getColumn(2); 
-        column.setPreferredWidth(140); 
+        column.setPreferredWidth(150); 
+        column = this.tabelUpdate.getColumnModel().getColumn(3); 
+        column.setPreferredWidth(50); 
     }
 
     public TableUpdateModel getModel() {
@@ -70,25 +70,8 @@ public class TableUpdate extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         tabelUpdate = new javax.swing.JTable();
 
-        tabelUpdate.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "No", "Nama KRT", "Tanggal", "Clean/Error"
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-        });
+        sp.model.TableUpdateModel model = new sp.model.TableUpdateModel();
+        tabelUpdate.setModel(model);
         jScrollPane1.setViewportView(tabelUpdate);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

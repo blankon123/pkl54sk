@@ -172,15 +172,15 @@ public class LandingMenuControllerTest {
 //                }
 //            }
 //        });
-        menuQuest.getUpdatebutton1().addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                CardController.show("updatequest");
+//        menuQuest.getUpdatebutton1().addActionListener(new ActionListener() {
+//
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                CardController.show("updatequest");
                 //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
-
-        });
+//            }
+//
+//        });
 
         menuQuest.getDataentrybutton1().addActionListener(new ActionListener() {
 

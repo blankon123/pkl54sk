@@ -8,6 +8,7 @@ package sp.form;
 import java.util.ArrayList;
 import javax.swing.JLayeredPane;
 import sp.component.TextFieldListing;
+import sp.model.Dsartb4;
 import sp.util.ListControl;
 
 /**
@@ -25,9 +26,10 @@ public class Hal2Listing extends javax.swing.JPanel {
 
     public Hal2Listing() {
         initComponents();
+        setFieldHal2();
         addListTextfield();
-        setListTextFieldListingHal2Listing(ListControl.setFixedPos(startPos, getListTextFieldListing()));
-    }
+        setListTextFieldListingHal2Listing(ListControl.setFixedPos(startPos, getListTextFieldListing()));        
+    }  
 
     public int getMaxPertanyaan() {
         return maxPos;
@@ -37,17 +39,170 @@ public class Hal2Listing extends javax.swing.JPanel {
         return listTextFieldHal2Listing;
     }
 
-    //    public void setFieldHal1(B2Listing b) {
-//        b4r1.setText(b.getB4r1());
-//        b4r2s1.setText(b.getB4r2s1());
-//        b4r2s2.setText(b.getB4r2s2());
-//        b4r2s3.setText(b.getB4r2s3());
-//        b4r3.setText(b.getB4r3());
-//        b4r4.setText(b.getB4r4());
-//        b4r5.setText(b.getB4r5());
-//        b4r6.setText(b.getB4r6());
-//    }
-    private void addListTextfield() {
+    public void setFieldHal2() {
+        Ab4r2s1.setText("3");
+        Ab4r2s2.setText("3");
+        Ab4r2s3.setText("3");
+        Ab4r3.setText("a");
+        Ab4r4.setText("l");
+        Ab4r5.setText("33");
+        Ab4r6.setText("l");
+        
+        Bb4r2s1.setText("3");
+        Bb4r2s2.setText("3");
+        Bb4r2s3.setText("3");
+        Bb4r3.setText("a");
+        Bb4r4.setText("l");
+        Bb4r5.setText("33");
+        Bb4r6.setText("l");
+        
+        Cb4r2s1.setText("3");
+        Cb4r2s2.setText("3");
+        Cb4r2s3.setText("3");
+        Cb4r3.setText("a");
+        Cb4r4.setText("l");
+        Cb4r5.setText("33");
+        Cb4r6.setText("l");
+        
+        Db4r2s1.setText("3");
+        Db4r2s2.setText("3");
+        Db4r2s3.setText("3");
+        Db4r3.setText("a");
+        Db4r4.setText("l");
+        Db4r5.setText("33");
+        Db4r6.setText("l");
+        
+        Eb4r2s1.setText("3");
+        Eb4r2s2.setText("3");
+        Eb4r2s3.setText("3");
+        Eb4r3.setText("a");
+        Eb4r4.setText("l");
+        Eb4r5.setText("33");
+        Eb4r6.setText("l");
+        
+        Fb4r2s1.setText("3");
+        Fb4r2s2.setText("3");
+        Fb4r2s3.setText("3");
+        Fb4r3.setText("a");
+        Fb4r4.setText("l");
+        Fb4r5.setText("33");
+        Fb4r6.setText("l");
+        
+        Gb4r2s1.setText("3");
+        Gb4r2s2.setText("3");
+        Gb4r2s3.setText("3");
+        Gb4r3.setText("a");
+        Gb4r4.setText("l");
+        Gb4r5.setText("33");
+        Gb4r6.setText("l");
+        
+        Hb4r2s1.setText("3");
+        Hb4r2s2.setText("3");
+        Hb4r2s3.setText("3");
+        Hb4r3.setText("a");
+        Hb4r4.setText("l");
+        Hb4r5.setText("33");
+        Hb4r6.setText("l");
+        
+        Ib4r2s1.setText("3");
+        Ib4r2s2.setText("3");
+        Ib4r2s3.setText("3");
+        Ib4r3.setText("a");
+        Ib4r4.setText("l");
+        Ib4r5.setText("33");
+        Ib4r6.setText("l");
+        
+        Jb4r2s1.setText("3");
+        Jb4r2s2.setText("3");
+        Jb4r2s3.setText("3");
+        Jb4r3.setText("a");
+        Jb4r4.setText("l");
+        Jb4r5.setText("33");
+        Jb4r6.setText("l");
+        
+        Kb4r2s1.setText("3");
+        Kb4r2s2.setText("3");
+        Kb4r2s3.setText("3");
+        Kb4r3.setText("a");
+        Kb4r4.setText("l");
+        Kb4r5.setText("33");
+        Kb4r6.setText("l");
+        
+        Lb4r2s1.setText("3");
+        Lb4r2s2.setText("3");
+        Lb4r2s3.setText("3");
+        Lb4r3.setText("a");
+        Lb4r4.setText("l");
+        Lb4r5.setText("33");
+        Lb4r6.setText("l");
+        
+        Mb4r2s1.setText("3");
+        Mb4r2s2.setText("3");
+        Mb4r2s3.setText("3");
+        Mb4r3.setText("a");
+        Mb4r4.setText("l");
+        Mb4r5.setText("33");
+        Mb4r6.setText("l");
+        
+        Nb4r2s1.setText("3");
+        Nb4r2s2.setText("3");
+        Nb4r2s3.setText("3");
+        Nb4r3.setText("a");
+        Nb4r4.setText("l");
+        Nb4r5.setText("33");
+        Nb4r6.setText("l");
+        
+        Ob4r2s1.setText("3");
+        Ob4r2s2.setText("3");
+        Ob4r2s3.setText("3");
+        Ob4r3.setText("a");
+        Ob4r4.setText("l");
+        Ob4r5.setText("33");
+        Ob4r6.setText("l");
+        
+        Pb4r2s1.setText("3");
+        Pb4r2s2.setText("3");
+        Pb4r2s3.setText("3");
+        Pb4r3.setText("a");
+        Pb4r4.setText("l");
+        Pb4r5.setText("33");
+        Pb4r6.setText("l");
+        
+        Qb4r2s1.setText("3");
+        Qb4r2s2.setText("3");
+        Qb4r2s3.setText("3");
+        Qb4r3.setText("a");
+        Qb4r4.setText("l");
+        Qb4r5.setText("33");
+        Qb4r6.setText("l");
+        
+        Rb4r2s1.setText("3");
+        Rb4r2s2.setText("3");
+        Rb4r2s3.setText("3");
+        Rb4r3.setText("a");
+        Rb4r4.setText("l");
+        Rb4r5.setText("33");
+        Rb4r6.setText("l");
+        
+        Sb4r2s1.setText("3");
+        Sb4r2s2.setText("3");
+        Sb4r2s3.setText("3");
+        Sb4r3.setText("a");
+        Sb4r4.setText("l");
+        Sb4r5.setText("33");
+        Sb4r6.setText("l");
+        
+        Tb4r2s1.setText("3");
+        Tb4r2s2.setText("3");
+        Tb4r2s3.setText("3");
+        Tb4r3.setText("a");
+        Tb4r4.setText("l");
+        Tb4r5.setText("33");
+        Tb4r6.setText("l");
+        
+    }
+
+    public void addListTextfield() {
         getListTextFieldListing().add(0, Ab4r2s1);
         getListTextFieldListing().add(0, Ab4r2s1);
         getListTextFieldListing().add(1, Ab4r2s2);
@@ -1335,8 +1490,6 @@ public class Hal2Listing extends javax.swing.JPanel {
     public void setTb4r6(TextFieldListing Tb4r6) {
         this.Tb4r6 = Tb4r6;
     }
-    
-    
 
     public sp.imageClass.Hal2Listing getHal2Listing1() {
         return hal2Listing1;

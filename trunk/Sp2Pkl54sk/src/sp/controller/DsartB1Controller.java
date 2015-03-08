@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package sp.controller;
+
 import sp.model.Dsartb1;
 import sp.form.Hal1Listing;
 import sp.model.DsartoptionB1r1;
@@ -39,7 +40,7 @@ public class DsartB1Controller {
         String kodeKec = b1view.getB1r2().getText();
         String kodeDes = b1view.getB1r3().getText();
         String kodeNbs = b1view.getB1r4().getText();
-        b1.setNbs(kodeKab+kodeKec+kodeDes+kodeNbs);
+        b1.setNbs(kodeKab + kodeKec + kodeDes + kodeNbs);
         b1.setB1r1(new DsartoptionB1r1(kodeKab));
         b1.setB1r2(kodeKec);
         b1.setB1r3(kodeDes);
@@ -53,10 +54,10 @@ public class DsartB1Controller {
         b1.setFlag(UserControl.getFlag());
         b1.setFlag2(UserControl.getFlag2());
         b1.setTimestamp(null);
-        
+        b1.setIsLocked("1");
+
         //System.out.println(b1.toString()+" "+b1.getB1r1()+" "+b1.getB1r2()+" "+b1.getB1r3()+" "+b1.getB1r4()+" "+b1.getB1r5());
         //B1Dao.getInstance().save(b1);
         return b1;
-        //return b1;
     }
 }

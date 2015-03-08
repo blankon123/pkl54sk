@@ -53,6 +53,7 @@ public class B1Controller {
         b1.setFlag2(UserControl.getFlag2());
         b1.setTimestamp(null);
         
+        
         //System.out.println(b1.toString()+" "+b1.getB1r1()+" "+b1.getB1r2()+" "+b1.getB1r3()+" "+b1.getB1r4()+" "+b1.getB1r5());
         //B1Dao.getInstance().save(b1);
         return b1;

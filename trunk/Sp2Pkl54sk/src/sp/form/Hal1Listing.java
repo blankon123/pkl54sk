@@ -8,6 +8,9 @@ package sp.form;
 import java.util.ArrayList;
 import javax.swing.JLayeredPane;
 import sp.component.TextFieldListing;
+import sp.model.Dsartb1;
+import sp.model.Dsartb2;
+import sp.model.Dsartb3;
 import sp.util.ListControl;
 
 /**
@@ -37,24 +40,25 @@ public class Hal1Listing extends javax.swing.JPanel {
         return listTextFieldHal1Listing;
     }
 
-    //    public void setFieldHal1(B1Listing b) {
-//        b1r1.setText(b.getB1r1());
-//        b1r2.setText(b.getB1r2());
-//        b1r3.setText(b.getB1r3());
-//        b1r4.setText(b.getB1r4());
-//        b1r5.setText(b.getB1r5());
-//        b1r6s1.setText(b.getB1r6s1());
-//        b1r6s2.setText(b.getB1r6s2());
-//        b2r1.setText(b.getB2r1());
-//        b2r2.setText(b.getB2r2());
-//        b2r3s1.setText(b.getB2r3s1());
-//        b2r3s2.setText(b.getB2r3s2());
-//        b2r3s3.setText(b.getB2r3s3());
-//        b2r3s4.setText(b.getB2r3s4());
-//        b3r1.setText(b.getB3r1());
-//        b3r2.setText(b.getB3r2());
-//        b3r3.setText(b.getB3r3());
-//    }
+        public void setFieldHal1(Dsartb1 b, Dsartb2 c, Dsartb3 d) {
+        b1r1.setText(b.getB1r1().getKode());
+        b1r2.setText(b.getB1r2());
+        b1r3.setText(b.getB1r3());
+        b1r4.setText(b.getB1r4());
+        b1r5.setText(b.getB1r5());
+        b1r6s1.setText(b.getB1r6s1());
+        b1r6s2.setText(b.getB1r6s2());
+        b2r1.setText(getString(c.getB2r1()));
+        b2r2.setText(getString(c.getB2r2()));
+        b2r3s1.setText(getString(c.getB2r3s1()));
+        b2r3s2.setText(getString(c.getB2r3s2()));
+        b2r3s3.setText(getString(c.getB2r3s3()));
+        b2r3s4.setText(getString(c.getB2r3s4()));
+        b3r1.setText(d.getB3r1());
+        b3r2.setText(d.getB3r2());
+        b3r3.setText(d.getB3r3());
+    }
+        
     private void addListTextfield() {
         getListTextFieldListing().add(0, b1r1);
         getListTextFieldListing().add(1, b1r2);
@@ -397,4 +401,12 @@ public class Hal1Listing extends javax.swing.JPanel {
     private sp.imageClass.Hal1Listing hal1Listing1;
     private javax.swing.JLayeredPane jLayeredPane1;
     // End of variables declaration//GEN-END:variables
+
+    public String getString(int angka) {
+        String no = Integer.toString(angka);
+        while(no.length()<3){
+            no = "0" + no;
+        }
+        return no;
+    }
 }

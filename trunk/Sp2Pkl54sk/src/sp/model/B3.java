@@ -21,7 +21,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author Thosan Girisona S
+ * @author Ristika Nugraha [12.7350]
  */
 @Entity
 @Table(name = "b3")
@@ -64,27 +64,35 @@ public class B3 implements Serializable {
     private String b3r9s2;
     @Column(name = "b3r10")
     private String b3r10;
-    @Basic(optional = false)
     @Column(name = "b3r11")
     private String b3r11;
-    @JoinColumn(name = "b3r8s3", referencedColumnName = "Kode")
-    @ManyToOne(optional = false)
-    private OptionYaTidak b3r8s3;
-    @JoinColumn(name = "nksb3", referencedColumnName = "nks", insertable = false, updatable = false)
-    @OneToOne(optional = false)
-    private B1 b1;
     @JoinColumn(name = "b3r9s1d1", referencedColumnName = "Kode")
     @ManyToOne(optional = false)
     private OptionYaTidak b3r9s1d1;
+    @JoinColumn(name = "nksb3", referencedColumnName = "nks", insertable = false, updatable = false)
+    @OneToOne(optional = false)
+    private B1 b1;
+    @JoinColumn(name = "b3r8s3", referencedColumnName = "Kode")
+    @ManyToOne(optional = false)
+    private OptionYaTidak b3r8s3;
     @JoinColumn(name = "b3r9s1d2", referencedColumnName = "Kode")
     @ManyToOne(optional = false)
     private OptionYaTidak b3r9s1d2;
+    @JoinColumn(name = "b3r6", referencedColumnName = "Kode")
+    @ManyToOne(optional = false)
+    private OptionB3r6 b3r6;
     @JoinColumn(name = "b3r9s1d3", referencedColumnName = "Kode")
     @ManyToOne(optional = false)
     private OptionYaTidak b3r9s1d3;
     @JoinColumn(name = "b3r9s1d4", referencedColumnName = "Kode")
     @ManyToOne(optional = false)
     private OptionYaTidak b3r9s1d4;
+    @JoinColumn(name = "b3r8s1", referencedColumnName = "Kode")
+    @ManyToOne(optional = false)
+    private OptionYaTidak b3r8s1;
+    @JoinColumn(name = "b3r15", referencedColumnName = "Kode")
+    @ManyToOne(optional = false)
+    private OptionB3r15 b3r15;
     @JoinColumn(name = "b3r7", referencedColumnName = "Kode")
     @ManyToOne(optional = false)
     private OptionB3r7 b3r7;
@@ -92,29 +100,20 @@ public class B3 implements Serializable {
     @ManyToOne(optional = false)
     private OptionB3r2 b3r2;
     @JoinColumn(name = "b3r12", referencedColumnName = "Kode")
-    @ManyToOne(optional = false)
+    @ManyToOne
     private OptionB3r12 b3r12;
-    @JoinColumn(name = "b3r15", referencedColumnName = "Kode")
-    @ManyToOne(optional = false)
-    private OptionB3r15 b3r15;
-    @JoinColumn(name = "b3r8s1", referencedColumnName = "Kode")
-    @ManyToOne(optional = false)
-    private OptionYaTidak b3r8s1;
-    @JoinColumn(name = "b3r16", referencedColumnName = "Kode")
-    @ManyToOne(optional = false)
-    private OptionB3r16 b3r16;
-    @JoinColumn(name = "b3r13", referencedColumnName = "Kode")
-    @ManyToOne(optional = false)
-    private OptionB3r13 b3r13;
-    @JoinColumn(name = "b3r6", referencedColumnName = "Kode")
-    @ManyToOne(optional = false)
-    private OptionB3r6 b3r6;
-    @JoinColumn(name = "b3r14", referencedColumnName = "Kode")
-    @ManyToOne(optional = false)
-    private OptionB3r14 b3r14;
     @JoinColumn(name = "b3r8s2", referencedColumnName = "Kode")
     @ManyToOne(optional = false)
     private OptionYaTidak b3r8s2;
+    @JoinColumn(name = "b3r13", referencedColumnName = "Kode")
+    @ManyToOne(optional = false)
+    private OptionB3r13 b3r13;
+    @JoinColumn(name = "b3r14", referencedColumnName = "Kode")
+    @ManyToOne(optional = false)
+    private OptionB3r14 b3r14;
+    @JoinColumn(name = "b3r16", referencedColumnName = "Kode")
+    @ManyToOne(optional = false)
+    private OptionB3r16 b3r16;
 
     public B3() {
     }
@@ -123,13 +122,12 @@ public class B3 implements Serializable {
         this.nksb3 = nksb3;
     }
 
-    public B3(String nksb3, String b3r1, String b3r3, String b3r4s1, String b3r5s1, String b3r11) {
+    public B3(String nksb3, String b3r1, String b3r3, String b3r4s1, String b3r5s1) {
         this.nksb3 = nksb3;
         this.b3r1 = b3r1;
         this.b3r3 = b3r3;
         this.b3r4s1 = b3r4s1;
         this.b3r5s1 = b3r5s1;
-        this.b3r11 = b3r11;
     }
 
     public String getNksb3() {
@@ -212,12 +210,12 @@ public class B3 implements Serializable {
         this.b3r11 = b3r11;
     }
 
-    public OptionYaTidak getB3r8s3() {
-        return b3r8s3;
+    public OptionYaTidak getB3r9s1d1() {
+        return b3r9s1d1;
     }
 
-    public void setB3r8s3(OptionYaTidak b3r8s3) {
-        this.b3r8s3 = b3r8s3;
+    public void setB3r9s1d1(OptionYaTidak b3r9s1d1) {
+        this.b3r9s1d1 = b3r9s1d1;
     }
 
     public B1 getB1() {
@@ -228,12 +226,12 @@ public class B3 implements Serializable {
         this.b1 = b1;
     }
 
-    public OptionYaTidak getB3r9s1d1() {
-        return b3r9s1d1;
+    public OptionYaTidak getB3r8s3() {
+        return b3r8s3;
     }
 
-    public void setB3r9s1d1(OptionYaTidak b3r9s1d1) {
-        this.b3r9s1d1 = b3r9s1d1;
+    public void setB3r8s3(OptionYaTidak b3r8s3) {
+        this.b3r8s3 = b3r8s3;
     }
 
     public OptionYaTidak getB3r9s1d2() {
@@ -242,6 +240,14 @@ public class B3 implements Serializable {
 
     public void setB3r9s1d2(OptionYaTidak b3r9s1d2) {
         this.b3r9s1d2 = b3r9s1d2;
+    }
+
+    public OptionB3r6 getB3r6() {
+        return b3r6;
+    }
+
+    public void setB3r6(OptionB3r6 b3r6) {
+        this.b3r6 = b3r6;
     }
 
     public OptionYaTidak getB3r9s1d3() {
@@ -258,6 +264,22 @@ public class B3 implements Serializable {
 
     public void setB3r9s1d4(OptionYaTidak b3r9s1d4) {
         this.b3r9s1d4 = b3r9s1d4;
+    }
+
+    public OptionYaTidak getB3r8s1() {
+        return b3r8s1;
+    }
+
+    public void setB3r8s1(OptionYaTidak b3r8s1) {
+        this.b3r8s1 = b3r8s1;
+    }
+
+    public OptionB3r15 getB3r15() {
+        return b3r15;
+    }
+
+    public void setB3r15(OptionB3r15 b3r15) {
+        this.b3r15 = b3r15;
     }
 
     public OptionB3r7 getB3r7() {
@@ -284,28 +306,12 @@ public class B3 implements Serializable {
         this.b3r12 = b3r12;
     }
 
-    public OptionB3r15 getB3r15() {
-        return b3r15;
+    public OptionYaTidak getB3r8s2() {
+        return b3r8s2;
     }
 
-    public void setB3r15(OptionB3r15 b3r15) {
-        this.b3r15 = b3r15;
-    }
-
-    public OptionYaTidak getB3r8s1() {
-        return b3r8s1;
-    }
-
-    public void setB3r8s1(OptionYaTidak b3r8s1) {
-        this.b3r8s1 = b3r8s1;
-    }
-
-    public OptionB3r16 getB3r16() {
-        return b3r16;
-    }
-
-    public void setB3r16(OptionB3r16 b3r16) {
-        this.b3r16 = b3r16;
+    public void setB3r8s2(OptionYaTidak b3r8s2) {
+        this.b3r8s2 = b3r8s2;
     }
 
     public OptionB3r13 getB3r13() {
@@ -316,14 +322,6 @@ public class B3 implements Serializable {
         this.b3r13 = b3r13;
     }
 
-    public OptionB3r6 getB3r6() {
-        return b3r6;
-    }
-
-    public void setB3r6(OptionB3r6 b3r6) {
-        this.b3r6 = b3r6;
-    }
-
     public OptionB3r14 getB3r14() {
         return b3r14;
     }
@@ -332,12 +330,12 @@ public class B3 implements Serializable {
         this.b3r14 = b3r14;
     }
 
-    public OptionYaTidak getB3r8s2() {
-        return b3r8s2;
+    public OptionB3r16 getB3r16() {
+        return b3r16;
     }
 
-    public void setB3r8s2(OptionYaTidak b3r8s2) {
-        this.b3r8s2 = b3r8s2;
+    public void setB3r16(OptionB3r16 b3r16) {
+        this.b3r16 = b3r16;
     }
 
     @Override

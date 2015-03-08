@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author StephenCN
+ * @author Ristika Nugraha [12.7350]
  */
 @Entity
 @Table(name = "dsartb2")
