@@ -117,7 +117,7 @@
             <Component class="sp.component.TextField" name="b1r6">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="maxDigit" type="int" value="99"/>
+                <Property name="maxDigit" type="int" value="20"/>
                 <Property name="minDigit" type="int" value="1"/>
                 <Property name="posisi" type="int" value="5"/>
                 <Property name="required" type="boolean" value="true"/>

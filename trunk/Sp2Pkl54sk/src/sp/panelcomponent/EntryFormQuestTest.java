@@ -87,7 +87,7 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
         jScrollPane7.setViewportView(errDesc);
 
         errField.setFont(new java.awt.Font("abeatbyKai", 0, 18)); // NOI18N
-        errField.setText("jLabel1");
+        errField.setText("Error");
 
         h1.setFont(new java.awt.Font("abeatbyKai", 0, 11)); // NOI18N
         h1.setForeground(new java.awt.Color(51, 255, 255));
@@ -186,7 +186,7 @@ public class EntryFormQuestTest extends javax.swing.JPanel {
                         .addComponent(closeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(36, 36, 36))
                     .addGroup(bgquest1Layout.createSequentialGroup()
-                        .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 949, Short.MAX_VALUE)
                         .addGap(23, 23, 23))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgquest1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)

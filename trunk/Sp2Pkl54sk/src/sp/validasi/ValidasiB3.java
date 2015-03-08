@@ -103,7 +103,7 @@ public class ValidasiB3 {
             if (b3.getB3r9s2() != null) {
                 dummy = getError(b3view.getB3r9s2());
                 b3view.setB3r9s2(dummy);
-                b3listerr.add(b3listerr.size(), new Error("b3r9s2", "Kesalahan Korelasi dengan b3r9a", 2));
+                b3listerr.add(b3listerr.size(), new Error("b3r9s2", "Harus Kosong Karena Tidak Melakukan Apapun", 2));
             }
         } else if (b3.getB3r9s1d1().getKode().equals("2") && b3.getB3r9s2().equals("1")) {
             dummy = getError(b3view.getB3r9s2());
@@ -128,11 +128,15 @@ public class ValidasiB3 {
                 && b3.getB3r9s2() == null) {
             dummy = getError(b3view.getB3r9s2());
             b3view.setB3r9s2(dummy);
-            b3listerr.add(b3listerr.size(), new Error("b3r9s2", "Kesalahan Korelasi dengan b3r9s1", 2));
-        } else if (b3.getB3r9s2() != null && !antara14(b3.getB3r9s2())) {
-            dummy = getError(b3view.getB3r9s2());
-            b3view.setB3r9s2(dummy);
-            b3listerr.add(b3listerr.size(), new Error("b3r9s2", "Kesalahan Korelasi dengan b3r9s1", 2));
+            b3listerr.add(b3listerr.size(), new Error("b3r9s2", "Harus Terisi Antara 1-4", 2));
+        } else if (b3.getB3r9s2() != null) {
+            int minDigit = b3view.getB3r9s2().getMinDigit();
+            int maxDigit = b3view.getB3r9s2().getMaxDigit();
+            if (Integer.valueOf(b3.getB3r9s2()) > maxDigit || Integer.valueOf(b3.getB3r9s2()) < minDigit) {
+                dummy = getError(b3view.getB3r9s2());
+                b3view.setB3r9s2(dummy);
+                b3listerr.add(b3listerr.size(), new Error("b3r9s2", "Harus Terisi Antara " + minDigit + "-" + maxDigit, 2));
+            }
         }
     }
 
@@ -140,55 +144,82 @@ public class ValidasiB3 {
         if (b3.getB3r9s1d1().getKode().equals("2") && b3.getB3r10() == null) {
             dummy = getError(b3view.getB3r10());
             b3view.setB3r10(dummy);
-            b3listerr.add(b3listerr.size(), new Error("b3r10", "Harus Terisi karena Bekerja", 2));
+            b3listerr.add(b3listerr.size(), new Error("b3r10", "Harus Terisi karena Tidak Bekerja", 2));
         }
         if (b3.getB3r9s1d1().getKode().equals("1") && b3.getB3r10() != null) {
             dummy = getError(b3view.getB3r10());
             b3view.setB3r10(dummy);
-            b3listerr.add(b3listerr.size(), new Error("b3r10", "Harus Terisi karena Bekerja", 2));
+            b3listerr.add(b3listerr.size(), new Error("b3r10", "Harus Kosong karena Bekerja", 2));
+        } else if (b3.getB3r10() != null) {
+            int minDigit = b3view.getB3r10().getMinDigit();
+            int maxDigit = b3view.getB3r10().getMaxDigit();
+            if (Integer.valueOf(b3.getB3r10()) > maxDigit || Integer.valueOf(b3.getB3r10()) < minDigit) {
+                dummy = getError(b3view.getB3r10());
+                b3view.setB3r10(dummy);
+                b3listerr.add(b3listerr.size(), new Error("b3r10", "Harus Terisi Antara " + minDigit + "-" + maxDigit, 2));
+            }
         }
     }
 
     private void cekB3R11() {
         if (b3.getB3r10() == null) {
-            if (!b3.getB3r9s1d1().getKode().equals("1")) {
+            if (b3.getB3r9s1d1().getKode().equals("1")) {
+                if (b3.getB3r11() == null) {
+                    dummy = getError(b3view.getB3r11());
+                    b3view.setB3r11(dummy);
+                    b3listerr.add(b3listerr.size(), new Error("b3r11", "Harus Terisi Karena B3r9s1d1=1", 2));
+                }
+            } else if (b3.getB3r11() == null) {
                 dummy = getError(b3view.getB3r11());
                 b3view.setB3r11(dummy);
-                b3listerr.add(b3listerr.size(), new Error("b3r11", "Kesalahan Korelasi dengan b3r9a1 dan b3r10", 2));
+                b3listerr.add(b3listerr.size(), new Error("b3r11", "Harus Terisi Karena B3r9s1d1=1", 2));
             }
-        } else {
-            if (!b3.getB3r10().equals("1")) {
+        } else if (b3.getB3r10().equals("1")) {
+            if (b3.getB3r11() == null) {
                 dummy = getError(b3view.getB3r11());
                 b3view.setB3r11(dummy);
-                b3listerr.add(b3listerr.size(), new Error("b3r11", "Kesalahan Korelasi dengan b3r9a1 dan b3r10", 2));
+                b3listerr.add(b3listerr.size(), new Error("b3r11", "Harus Terisi Karena B3r10=1", 2));
+            }
+        } else if (b3.getB3r11() != null) {
+            int minDigit = b3view.getB3r11().getMinDigit();
+            int maxDigit = b3view.getB3r11().getMaxDigit();
+            if (Integer.valueOf(b3.getB3r11()) > maxDigit || Integer.valueOf(b3.getB3r11()) < minDigit) {
+                dummy = getError(b3view.getB3r11());
+                b3view.setB3r11(dummy);
+                b3listerr.add(b3listerr.size(), new Error("b3r11", "Harus Terisi Antara " + minDigit + "-" + maxDigit, 2));
             }
         }
     }
 
     private void cekB3R12() {
         if (b3.getB3r10() == null) {
-            if (!b3.getB3r9s1d1().getKode().equals("1")) {
+            if (b3.getB3r9s1d1().getKode().equals("1")) {
+                if (b3.getB3r12() == null) {
+                    dummy = getError(b3view.getB3r12());
+                    b3view.setB3r12(dummy);
+                    b3listerr.add(b3listerr.size(), new Error("b3r12", "Harus Terisi Karena B3r9s1d1=1", 2));
+                }
+            } else if (b3.getB3r12() == null) {
                 dummy = getError(b3view.getB3r12());
                 b3view.setB3r12(dummy);
-                b3listerr.add(b3listerr.size(), new Error("b3r12", "Kesalahan Korelasi dengan b3r9a1 dan b3r10", 2));
+                b3listerr.add(b3listerr.size(), new Error("b3r12", "Harus Terisi Karena B3r9s1d1=1", 2));
+
             }
-        } else {
-            if (!b3.getB3r10().equals("1")) {
+        } else if (b3.getB3r10().equals("1")) {
+            if (b3.getB3r12() == null) {
                 dummy = getError(b3view.getB3r12());
                 b3view.setB3r12(dummy);
-                b3listerr.add(b3listerr.size(), new Error("b3r12", "Kesalahan Korelasi dengan b3r9a1 dan b3r10", 2));
+                b3listerr.add(b3listerr.size(), new Error("b3r12", "Harus Terisi Karena B3r10=1", 2));
+            }
+        } else if (b3.getB3r12() != null) {
+            int minDigit = b3view.getB3r12().getMinDigit();
+            int maxDigit = b3view.getB3r12().getMaxDigit();
+            if (Integer.valueOf(b3.getB3r12().getKode()) > maxDigit || Integer.valueOf(b3.getB3r12().getKode()) < minDigit) {
+                dummy = getError(b3view.getB3r12());
+                b3view.setB3r12(dummy);
+                b3listerr.add(b3listerr.size(), new Error("b3r12", "Harus Terisi Antara " + minDigit + "-" + maxDigit, 2));
             }
         }
     }
 
-    private boolean antara14(String key) {
-        boolean valid = false;
-        if (key.equals("1")
-                || key.equals("2")
-                || key.equals("3")
-                || key.equals("4")) {
-            valid = true;
-        }
-        return valid;
-    }
 }

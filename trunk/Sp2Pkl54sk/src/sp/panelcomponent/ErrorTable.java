@@ -33,7 +33,7 @@ public class ErrorTable extends javax.swing.JPanel {
         TableColumn column;
         this.tabelError.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF); 
         column = this.tabelError.getColumnModel().getColumn(0); 
-        column.setPreferredWidth(35);
+        column.setPreferredWidth(50);
         column = this.tabelError.getColumnModel().getColumn(1); 
         column.setPreferredWidth(155); 
     }

@@ -49,6 +49,7 @@ public class Hal2Listing extends javax.swing.JPanel {
 //    }
     private void addListTextfield() {
         getListTextFieldListing().add(0, Ab4r2s1);
+        getListTextFieldListing().add(0, Ab4r2s1);
         getListTextFieldListing().add(1, Ab4r2s2);
         getListTextFieldListing().add(2, Ab4r2s3);
         getListTextFieldListing().add(3, Ab4r3);
@@ -2432,8 +2433,8 @@ public class Hal2Listing extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private sp.component.TextFieldListing Ab4r2s1;
     private sp.component.TextFieldListing Ab4r2s2;
+    private sp.component.TextFieldListing Ab4r2s1;
     private sp.component.TextFieldListing Ab4r2s3;
     private sp.component.TextFieldListing Ab4r3;
     private sp.component.TextFieldListing Ab4r4;

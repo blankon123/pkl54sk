@@ -46,7 +46,6 @@ public class TextField extends JTextField {
         setTextfield();
         setKeyListener();
         setFocus();
-        setDoc();
     }
 
     public void setTextfield() {
@@ -99,18 +98,6 @@ public class TextField extends JTextField {
         });
     }
 
-    public void setDoc() {
-        setDocument(new PlainDocument() {
-            @Override
-            public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
-                super.insertString(offs, str, a); //To change body of generated methods, choose Tools | Templates.
-                if (getLength() == length) {
-                    FormControl.next();
-                }
-            }
-        });
-    }
-
     public void checkContent(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_ENTER) {
             String a = TextField.this.getText();
@@ -149,7 +136,7 @@ public class TextField extends JTextField {
             next();
         } else {
             setValid(false);
-            JOptionPane.showMessageDialog(null, "Digit salah!\nIsian harus antara " + minDigit + " sampai " + maxDigit);
+            JOptionPane.showMessageDialog(null, "Digit salah!\nIsian harus antara " + minDigit + " sampai " + maxDigit,"Salah Batasan",JOptionPane.WARNING_MESSAGE);
             TextField.this.setBackground(new Color(251, 64, 64));
             TextField.this.setText("");
         }
@@ -160,7 +147,7 @@ public class TextField extends JTextField {
             next();
         } else {
             setValid(false);
-            JOptionPane.showMessageDialog(null, "Digit Salah!\nIsian tidak boleh lebih dari " + length + " karakter");
+            JOptionPane.showMessageDialog(null, "Digit Salah!\nIsian tidak boleh lebih dari " + length + " karakter","Salah Panjang",JOptionPane.WARNING_MESSAGE);
             TextField.this.setText("");
         }
     }
@@ -171,7 +158,7 @@ public class TextField extends JTextField {
         if (a == c1 || a == c2) {
             next();
         } else {
-            JOptionPane.showMessageDialog(null, "Digit salah!\nIsian hanya boleh 12 atau 73");
+            JOptionPane.showMessageDialog(null, "Digit salah!\nIsian hanya boleh 12 atau 73","Salah Constraint",JOptionPane.WARNING_MESSAGE);
             //TextField.this.setBackground(new Color(251, 64, 64)); //merah
             //scolorSblm = new Color(Color.red);
             setValid(false);
@@ -185,7 +172,7 @@ public class TextField extends JTextField {
             next();
         } else {
             setValid(false);
-            JOptionPane.showMessageDialog(null, "Digit salah!\nIsian harus antara " + minDigit + " sampai " + maxDigit + " atau 0");
+            JOptionPane.showMessageDialog(null, "Digit salah!\nIsian harus antara " + minDigit + " sampai " + maxDigit + " atau kosong","Salah Constraint",JOptionPane.WARNING_MESSAGE);
             TextField.this.setBackground(new Color(251, 64, 64)); //merah
             TextField.this.setText("");
         }

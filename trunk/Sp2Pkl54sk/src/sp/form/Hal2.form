@@ -87,8 +87,10 @@
             <Component class="sp.component.TextField" name="b3r4s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="huruf" type="boolean" value="true"/>
                 <Property name="khusus" type="boolean" value="true"/>
                 <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="94"/>
                 <Property name="minDigit" type="int" value="11"/>
                 <Property name="posisi" type="int" value="3"/>
@@ -103,6 +105,7 @@
             <Component class="sp.component.TextField" name="b3r4s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="99"/>
                 <Property name="minDigit" type="int" value="1"/>
                 <Property name="posisi" type="int" value="4"/>
@@ -116,8 +119,10 @@
             <Component class="sp.component.TextField" name="b3r5s1">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="huruf" type="boolean" value="true"/>
                 <Property name="khusus" type="boolean" value="true"/>
                 <Property name="khususType" type="char" value="2"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="94"/>
                 <Property name="minDigit" type="int" value="11"/>
                 <Property name="posisi" type="int" value="5"/>
@@ -132,6 +137,7 @@
             <Component class="sp.component.TextField" name="b3r5s2">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="99"/>
                 <Property name="minDigit" type="int" value="1"/>
                 <Property name="posisi" type="int" value="6"/>
@@ -296,6 +302,7 @@
             <Component class="sp.component.TextField" name="b3r11">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="10"/>
                 <Property name="minDigit" type="int" value="1"/>
                 <Property name="posisi" type="int" value="18"/>
@@ -309,6 +316,7 @@
             <Component class="sp.component.TextField" name="b3r12">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
+                <Property name="length" type="int" value="1"/>
                 <Property name="maxDigit" type="int" value="6"/>
                 <Property name="minDigit" type="int" value="1"/>
                 <Property name="posisi" type="int" value="19"/>
