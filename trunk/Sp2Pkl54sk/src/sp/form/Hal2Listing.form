@@ -96,6 +96,8 @@
             <Component class="sp.component.TextFieldListing" name="Ab4r4">
               <Properties>
                 <Property name="huruf" type="boolean" value="true"/>
+                <Property name="khusus" type="boolean" value="true"/>
+                <Property name="khususType" type="char" value="3"/>
                 <Property name="length" type="int" value="1"/>
                 <Property name="required" type="boolean" value="true"/>
               </Properties>

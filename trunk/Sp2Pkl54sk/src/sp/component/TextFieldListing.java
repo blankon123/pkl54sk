@@ -108,6 +108,12 @@ public class TextFieldListing extends JTextField {
                         cekConstraint(a1);
                     } else if ((isHuruf()) || ((isHuruf()) && (isAngka()))) {
                         cekLength(a);
+                        if (isKhusus()) {
+                            if (khususType == '3') {
+                                cekType3(a);
+                                System.out.println("Cek 3");
+                            }
+                        }
                     } else if ((isKhusus() && (isAngka()))) {
                         if (khususType == '1') {
                             // khusus untuk kabupaten
@@ -125,8 +131,6 @@ public class TextFieldListing extends JTextField {
                     JOptionPane.showMessageDialog(null, "Isian tidak boleh kosong", "Error", JOptionPane.ERROR_MESSAGE);
                     setText("");
                 }
-            } else {
-                next();
             }
         }
     }
@@ -136,7 +140,7 @@ public class TextFieldListing extends JTextField {
             next();
         } else {
             setValid(false);
-            JOptionPane.showMessageDialog(null, "Digit salah!\nIsian harus antara " + minDigit + " sampai " + maxDigit,"Salah Constraint",JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Digit salah!\nIsian harus antara " + minDigit + " sampai " + maxDigit, "Salah Constraint", JOptionPane.WARNING_MESSAGE);
             TextFieldListing.this.setBackground(new Color(251, 64, 64));
             TextFieldListing.this.setText("");
         }
@@ -147,7 +151,7 @@ public class TextFieldListing extends JTextField {
             next();
         } else {
             setValid(false);
-            JOptionPane.showMessageDialog(null, "Digit Salah!\nIsian tidak boleh lebih dari " + length + " karakter","Salah Panjang",JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Digit Salah!\nIsian tidak boleh lebih dari " + length + " karakter", "Salah Panjang", JOptionPane.WARNING_MESSAGE);
             TextFieldListing.this.setText("");
         }
     }
@@ -158,7 +162,7 @@ public class TextFieldListing extends JTextField {
         if (a == c1 || a == c2) {
             next();
         } else {
-            JOptionPane.showMessageDialog(null, "Digit salah!\nIsian hanya boleh 12 atau 73","Salah Constraint",JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Digit salah!\nIsian hanya boleh 12 atau 73", "Salah Constraint", JOptionPane.WARNING_MESSAGE);
             //TextField.this.setBackground(new Color(251, 64, 64)); //merah
             //scolorSblm = new Color(Color.red);
             setValid(false);
@@ -172,8 +176,19 @@ public class TextFieldListing extends JTextField {
             next();
         } else {
             setValid(false);
-            JOptionPane.showMessageDialog(null, "Digit salah!\nIsian harus antara " + minDigit + " sampai " + maxDigit + " atau Kosong","Salah Constraint",JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Digit salah!\nIsian harus antara " + minDigit + " sampai " + maxDigit + " atau Kosong", "Salah Constraint", JOptionPane.WARNING_MESSAGE);
             TextFieldListing.this.setBackground(new Color(251, 64, 64)); //merah
+            TextFieldListing.this.setText("");
+        }
+    }
+
+    public void cekType3(String a) {
+        if ("P".equals(a) || "L".equals(a)) {
+            next();
+        } else {
+            setValid(false);
+            JOptionPane.showMessageDialog(null, "Isian hanya boleh L atau P", "Salah Isian", JOptionPane.WARNING_MESSAGE);
+            TextFieldListing.this.setBackground(new Color(251, 64, 64));
             TextFieldListing.this.setText("");
         }
     }
@@ -293,8 +308,8 @@ public class TextFieldListing extends JTextField {
     public void setValid(boolean valid) {
         this.valid = valid;
     }
-    
-    public void setText(String text){
+
+    public void setText(String text) {
         super.setBackground(new Color(160, 255, 66));
         super.setText(text);
     }
