@@ -391,8 +391,10 @@ public class Hal2 extends javax.swing.JPanel {
         jLayeredPane1.add(b3r3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, 40, 30));
 
         b3r4s1.setAngka(true);
+        b3r4s1.setHuruf(true);
         b3r4s1.setKhusus(true);
         b3r4s1.setKhususType('2');
+        b3r4s1.setLength(2);
         b3r4s1.setMaxDigit(94);
         b3r4s1.setMinDigit(11);
         b3r4s1.setPosisi(3);
@@ -400,14 +402,17 @@ public class Hal2 extends javax.swing.JPanel {
         jLayeredPane1.add(b3r4s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 220, 40, 20));
 
         b3r4s2.setAngka(true);
+        b3r4s2.setLength(2);
         b3r4s2.setMaxDigit(99);
         b3r4s2.setMinDigit(1);
         b3r4s2.setPosisi(4);
         jLayeredPane1.add(b3r4s2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 250, 40, 20));
 
         b3r5s1.setAngka(true);
+        b3r5s1.setHuruf(true);
         b3r5s1.setKhusus(true);
         b3r5s1.setKhususType('2');
+        b3r5s1.setLength(2);
         b3r5s1.setMaxDigit(94);
         b3r5s1.setMinDigit(11);
         b3r5s1.setPosisi(5);
@@ -415,6 +420,7 @@ public class Hal2 extends javax.swing.JPanel {
         jLayeredPane1.add(b3r5s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 290, 40, 20));
 
         b3r5s2.setAngka(true);
+        b3r5s2.setLength(2);
         b3r5s2.setMaxDigit(99);
         b3r5s2.setMinDigit(1);
         b3r5s2.setPosisi(6);
@@ -495,12 +501,14 @@ public class Hal2 extends javax.swing.JPanel {
         jLayeredPane1.add(b3r10, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 1230, 30, 30));
 
         b3r11.setAngka(true);
+        b3r11.setLength(2);
         b3r11.setMaxDigit(10);
         b3r11.setMinDigit(1);
         b3r11.setPosisi(18);
         jLayeredPane1.add(b3r11, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 200, 30, 30));
 
         b3r12.setAngka(true);
+        b3r12.setLength(1);
         b3r12.setMaxDigit(6);
         b3r12.setMinDigit(1);
         b3r12.setPosisi(19);

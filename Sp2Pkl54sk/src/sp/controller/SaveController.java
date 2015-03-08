@@ -211,6 +211,7 @@ public class SaveController implements ActionListener {
     }
 
     private void toDefault() {
+        tab.setModel(new TableErrorModel());
         FormControl.clearAll();
         FormControl.getController().first();
     }

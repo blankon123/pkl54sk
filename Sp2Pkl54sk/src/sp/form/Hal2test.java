@@ -10,6 +10,7 @@ import java.awt.Rectangle;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import javax.swing.JComponent;
+import javax.swing.JOptionPane;
 import javax.swing.JViewport;
 import sp.controller.B3Controller;
 import sp.model.B1;
@@ -113,8 +114,13 @@ public class Hal2test extends javax.swing.JFrame {
         b1.setNks("120010121516");
         B3Controller b3Controller = new B3Controller(b3, b1, hal21);
         ValidasiB3 validasiB3 = new ValidasiB3(b3Controller.B3hasil(), hal21);
-        ErrorControl.addErr(validasiB3.cek());
-        errorTable1.getTabelError().setModel(ErrorControl.getTableRow());
+        if (validasiB3.cek() != null) {
+            ErrorControl.addErr(validasiB3.cek());
+            errorTable1.getTabelError().setModel(ErrorControl.getTableRow());
+        }
+        else{
+            JOptionPane.showMessageDialog(rootPane, "Tidak Terdapat Error");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -148,17 +154,17 @@ public class Hal2test extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Hal2test().setVisible(true);
-                
+
                 KeyboardFocusManager.getCurrentKeyboardFocusManager().
                         addPropertyChangeListener("focusOwner", new PropertyChangeListener() {
-                            
+
                             @Override
                             public void propertyChange(PropertyChangeEvent evt) {
-                                
+
                                 if (!(evt.getNewValue() instanceof JComponent)) {
                                     return;
                                 }
-                                
+
                                 JViewport viewport = (JViewport) hal21.getParent();
                                 JComponent focused = (JComponent) evt.getNewValue();
                                 if (hal21.isAncestorOf(focused)) {

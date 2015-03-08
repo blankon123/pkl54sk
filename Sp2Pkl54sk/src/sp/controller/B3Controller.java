@@ -50,15 +50,28 @@ public class B3Controller {
         b3.setB3r9s1d2(new OptionYaTidak(b3view.getB3r9s1d2().getText()));
         b3.setB3r9s1d3(new OptionYaTidak(b3view.getB3r9s1d3().getText()));
         b3.setB3r9s1d4(new OptionYaTidak(b3view.getB3r9s1d4().getText()));
-        
-        if(!cekNull(b3view.getB3r9s2().getText()).equals("")){
-        b3.setB3r9s2(b3view.getB3r9s2().getText());}
-        if(!cekNull(b3view.getB3r10().getText()).equals("")){
-        b3.setB3r10(b3view.getB3r10().getText());}
-        if(!cekNull(b3view.getB3r11().getText()).equals("")){
-        b3.setB3r11(b3view.getB3r11().getText());}
-        b3.setB3r12(new OptionB3r12(cekNull(b3view.getB3r12().getText())));
-        
+
+        if (!cekNull(b3view.getB3r9s2().getText()).equals("")) {
+            b3.setB3r9s2(b3view.getB3r9s2().getText());
+        } else {
+            b3.setB3r9s2(null);
+        }
+        if (!cekNull(b3view.getB3r10().getText()).equals("")) {
+            b3.setB3r10(b3view.getB3r10().getText());
+        } else {
+            b3.setB3r10(null);
+        }
+        if (!cekNull(b3view.getB3r11().getText()).equals("")) {
+            b3.setB3r11(b3view.getB3r11().getText());
+        } else {
+            b3.setB3r11(null);
+        }
+        if (!cekNull(b3view.getB3r11().getText()).equals("")) {
+            b3.setB3r12(new OptionB3r12(cekNull(b3view.getB3r12().getText())));
+        } else {
+            b3.setB3r12(null);
+        }
+
         b3.setB3r13(new OptionB3r13(b3view.getB3r13().getText()));
         b3.setB3r14(new OptionB3r14(b3view.getB3r14().getText()));
         b3.setB3r15(new OptionB3r15(b3view.getB3r15().getText()));
@@ -71,7 +84,7 @@ public class B3Controller {
         String t = "";
         if (text != null) {
             if (!text.isEmpty()) {
-                t=text;
+                t = text;
             }
         }
         return t;
