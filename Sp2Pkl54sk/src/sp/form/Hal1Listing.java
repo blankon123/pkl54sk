@@ -282,89 +282,100 @@ public class Hal1Listing extends javax.swing.JPanel {
         b1r1.setAngka(true);
         b1r1.setKhusus(true);
         b1r1.setKhususType('1');
+        b1r1.setLength(2);
         b1r1.setRequired(true);
-        jLayeredPane1.add(b1r1, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 220, 90, 40));
+        jLayeredPane1.add(b1r1, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 230, 70, 30));
 
         b1r2.setAngka(true);
+        b1r2.setLength(3);
         b1r2.setMaxDigit(999);
-        b1r2.setMinDigit(1);
         b1r2.setRequired(true);
-        jLayeredPane1.add(b1r2, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 270, 130, 40));
+        jLayeredPane1.add(b1r2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 280, 100, 30));
 
         b1r3.setAngka(true);
+        b1r3.setLength(3);
         b1r3.setMaxDigit(999);
-        b1r3.setMinDigit(1);
         b1r3.setRequired(true);
-        jLayeredPane1.add(b1r3, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 310, 130, 40));
+        jLayeredPane1.add(b1r3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 330, 100, 30));
 
         b1r4.setAngka(true);
+        b1r4.setLength(3);
         b1r4.setMaxDigit(999);
         b1r4.setRequired(true);
-        jLayeredPane1.add(b1r4, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 360, 130, 40));
+        jLayeredPane1.add(b1r4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 370, 100, 30));
 
         b1r5.setAngka(true);
+        b1r5.setLength(3);
         b1r5.setMaxDigit(999);
         b1r5.setRequired(true);
-        jLayeredPane1.add(b1r5, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 410, 130, 40));
+        jLayeredPane1.add(b1r5, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 420, 100, 30));
 
         b1r6s1.setAngka(true);
         b1r6s1.setHuruf(true);
         b1r6s1.setLength(100);
         b1r6s1.setRequired(true);
-        jLayeredPane1.add(b1r6s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 470, 570, 30));
+        jLayeredPane1.add(b1r6s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 480, 550, 30));
 
         b1r6s2.setAngka(true);
         b1r6s2.setHuruf(true);
         b1r6s2.setLength(100);
         b1r6s2.setRequired(true);
-        jLayeredPane1.add(b1r6s2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 500, 570, 30));
+        jLayeredPane1.add(b1r6s2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 510, 550, 30));
 
         b2r1.setAngka(true);
+        b2r1.setLength(3);
         b2r1.setMaxDigit(999);
         b2r1.setRequired(true);
-        jLayeredPane1.add(b2r1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 610, 130, 40));
+        jLayeredPane1.add(b2r1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 620, 100, 30));
 
         b2r2.setAngka(true);
+        b2r2.setLength(4);
         b2r2.setMaxDigit(9999);
         b2r2.setRequired(true);
-        jLayeredPane1.add(b2r2, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 660, 190, 40));
+        jLayeredPane1.add(b2r2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 680, 130, 30));
 
         b2r3s1.setAngka(true);
+        b2r3s1.setLength(3);
         b2r3s1.setMaxDigit(999);
         b2r3s1.setRequired(true);
-        jLayeredPane1.add(b2r3s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 770, 130, 40));
+        jLayeredPane1.add(b2r3s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 790, 100, 30));
 
         b2r3s2.setAngka(true);
+        b2r3s2.setLength(3);
         b2r3s2.setMaxDigit(999);
         b2r3s2.setRequired(true);
-        jLayeredPane1.add(b2r3s2, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 840, 130, 40));
+        jLayeredPane1.add(b2r3s2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 860, 100, 30));
 
         b2r3s3.setAngka(true);
+        b2r3s3.setLength(3);
         b2r3s3.setMaxDigit(999);
         b2r3s3.setRequired(true);
-        jLayeredPane1.add(b2r3s3, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 910, 130, 40));
+        jLayeredPane1.add(b2r3s3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 920, 100, 30));
 
         b2r3s4.setAngka(true);
+        b2r3s4.setLength(4);
         b2r3s4.setMaxDigit(9999);
         b2r3s4.setRequired(true);
-        jLayeredPane1.add(b2r3s4, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 970, 190, 40));
+        jLayeredPane1.add(b2r3s4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 980, 130, 30));
 
         b3r1.setHuruf(true);
         b3r1.setLength(100);
         b3r1.setRequired(true);
-        jLayeredPane1.add(b3r1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 1070, 560, 40));
+        jLayeredPane1.add(b3r1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 1090, 540, 30));
 
         b3r2.setAngka(true);
+        b3r2.setLength(6);
         b3r2.setMaxDigit(129999);
-        b3r2.setMinDigit(120000);
+        b3r2.setMinDigit(110000);
         b3r2.setRequired(true);
-        jLayeredPane1.add(b3r2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 1120, 250, 40));
+        jLayeredPane1.add(b3r2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 1140, 190, 30));
 
         b3r3.setAngka(true);
+        b3r3.setLength(2);
         b3r3.setMaxDigit(31);
         b3r3.setMinDigit(1);
         b3r3.setRequired(true);
-        jLayeredPane1.add(b3r3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 1170, 50, 40));
+        jLayeredPane1.add(b3r3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 1180, 40, 30));
 
         javax.swing.GroupLayout hal1Listing1Layout = new javax.swing.GroupLayout(hal1Listing1);
         hal1Listing1.setLayout(hal1Listing1Layout);
@@ -379,7 +390,6 @@ public class Hal1Listing extends javax.swing.JPanel {
 
         add(hal1Listing1, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private sp.component.TextFieldListing b1r1;
