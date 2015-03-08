@@ -296,7 +296,6 @@
             <Component class="sp.component.TextField" name="b3r11">
               <Properties>
                 <Property name="angka" type="boolean" value="true"/>
-                <Property name="length" type="int" value="2"/>
                 <Property name="maxDigit" type="int" value="10"/>
                 <Property name="minDigit" type="int" value="1"/>
                 <Property name="posisi" type="int" value="18"/>

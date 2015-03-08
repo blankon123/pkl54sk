@@ -15,7 +15,7 @@ import sp.componentButton.NextButton;
 import sp.componentButton.Savebutton;
 import sp.panelcomponent.EntryFormListingTest;
 import sp.util.CardLayoutController;
-import sp.util.FormControl;
+import sp.util.ListControl;
 
 /**
  *
@@ -51,7 +51,7 @@ public class ListingControllerTest {
         controller = new CardLayoutController();
         controller.setCardLayout((CardLayout) Mainpanel.getLayout());
         controller.setParentCard(Mainpanel);
-        FormControl.init(Mainpanel, controller);
+        ListControl.init(Mainpanel, controller);
         
         form.getH1().addActionListener(new ActionListener() {
             

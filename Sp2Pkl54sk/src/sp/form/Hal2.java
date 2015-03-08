@@ -495,7 +495,6 @@ public class Hal2 extends javax.swing.JPanel {
         jLayeredPane1.add(b3r10, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 1230, 30, 30));
 
         b3r11.setAngka(true);
-        b3r11.setLength(2);
         b3r11.setMaxDigit(10);
         b3r11.setMinDigit(1);
         b3r11.setPosisi(18);
