@@ -24,18 +24,21 @@ public class ErrorTable extends javax.swing.JPanel {
      */
     public ErrorTable() {
         initComponents();
-        error=new ErrorManager();
-        tabelError.setModel(error.getError());
+//        error=new ErrorManager();
+//        tabelError.setModel(error.getError());
         SetLebarKolom();
     }
     
     public void SetLebarKolom(){ 
         TableColumn column;
         this.tabelError.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF); 
+        int x = this.tabelError.getWidth();
         column = this.tabelError.getColumnModel().getColumn(0); 
         column.setPreferredWidth(50);
         column = this.tabelError.getColumnModel().getColumn(1); 
-        column.setPreferredWidth(155); 
+        column.setPreferredWidth(120); 
+        column = this.tabelError.getColumnModel().getColumn(2); 
+        column.setPreferredWidth(50); 
     }
 
     public JTable getTabelError() {
@@ -57,30 +60,19 @@ public class ErrorTable extends javax.swing.JPanel {
         setMaximumSize(new java.awt.Dimension(100, 32767));
         setMinimumSize(new java.awt.Dimension(100, 0));
 
-        tabelError.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
-            },
-            new String [] {
-                "Kode", "Deskripsi Error"
-            }
-        ));
+        sp.model.TableErrorModel model = new sp.model.TableErrorModel();
+        tabelError.setModel(model);
         jScrollPane2.setViewportView(tabelError);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 14, Short.MAX_VALUE))
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 286, Short.MAX_VALUE)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 275, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 

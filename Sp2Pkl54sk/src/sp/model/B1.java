@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author Thosan Girisona S
+ * @author Ristika Nugraha [12.7350]
  */
 @Entity
 @Table(name = "b1")
@@ -43,6 +43,8 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "B1.findByFlag2", query = "SELECT b FROM B1 b WHERE b.flag2 = :flag2"),
     @NamedQuery(name = "B1.findByTimestamp", query = "SELECT b FROM B1 b WHERE b.timestamp = :timestamp")})
 public class B1 implements Serializable {
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "b1")
+    private B3 b3;
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
@@ -93,14 +95,6 @@ public class B1 implements Serializable {
     @JoinColumn(name = "b1r9", referencedColumnName = "Kode")
     @ManyToOne(optional = false)
     private OptionB1r9 b1r9;
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "b1")
-    private B2 b2;
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "b1")
-    private B3 b3;
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "b1")
-    private B4 b4;
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "b1")
-    private B5 b5;
 
     public B1() {
     }
@@ -244,38 +238,6 @@ public class B1 implements Serializable {
         this.b1r9 = b1r9;
     }
 
-    public B2 getB2() {
-        return b2;
-    }
-
-    public void setB2(B2 b2) {
-        this.b2 = b2;
-    }
-
-    public B3 getB3() {
-        return b3;
-    }
-
-    public void setB3(B3 b3) {
-        this.b3 = b3;
-    }
-
-    public B4 getB4() {
-        return b4;
-    }
-
-    public void setB4(B4 b4) {
-        this.b4 = b4;
-    }
-
-    public B5 getB5() {
-        return b5;
-    }
-
-    public void setB5(B5 b5) {
-        this.b5 = b5;
-    }
-
     @Override
     public int hashCode() {
         int hash = 0;
@@ -299,6 +261,14 @@ public class B1 implements Serializable {
     @Override
     public String toString() {
         return "sp.model.B1[ nks=" + nks + " ]";
+    }
+
+    public B3 getB3() {
+        return b3;
+    }
+
+    public void setB3(B3 b3) {
+        this.b3 = b3;
     }
     
 }

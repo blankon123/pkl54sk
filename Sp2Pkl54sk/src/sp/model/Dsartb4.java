@@ -15,12 +15,13 @@ import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author StephenCN
+ * @author Ristika Nugraha [12.7350]
  */
 @Entity
 @Table(name = "dsartb4")
@@ -33,10 +34,10 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Dsartb4.findByB4r2s2", query = "SELECT d FROM Dsartb4 d WHERE d.b4r2s2 = :b4r2s2"),
     @NamedQuery(name = "Dsartb4.findByB4r2s3", query = "SELECT d FROM Dsartb4 d WHERE d.b4r2s3 = :b4r2s3"),
     @NamedQuery(name = "Dsartb4.findByB4r3", query = "SELECT d FROM Dsartb4 d WHERE d.b4r3 = :b4r3"),
-    @NamedQuery(name = "Dsartb4.findByB4r5", query = "SELECT d FROM Dsartb4 d WHERE d.b4r5 = :b4r5")})
+    @NamedQuery(name = "Dsartb4.findByB4r5", query = "SELECT d FROM Dsartb4 d WHERE d.b4r5 = :b4r5"),
+    @NamedQuery(name = "Dsartb4.findByNbs", query = "SELECT d FROM Dsartb4 d WHERE d.nbs = :nbs")})
 public class Dsartb4 implements Serializable {
     private static final long serialVersionUID = 1L;
-    @Id
     @Basic(optional = false)
     @Column(name = "nuart")
     private String nuart;
@@ -62,18 +63,26 @@ public class Dsartb4 implements Serializable {
     @Lob
     @Column(name = "b4r6")
     private String b4r6;
+    @Id
+    @Basic(optional = false)
+    @Column(name = "nbs")
+    private String nbs;
     @JoinColumn(name = "b4r4", referencedColumnName = "Kode")
     @ManyToOne(optional = false)
     private DsartoptionB4r4 b4r4;
+    @JoinColumn(name = "nbs", referencedColumnName = "nbs", insertable = false, updatable = false)
+    @OneToOne(optional = false)
+    private Dsartb1 dsartb1;
 
     public Dsartb4() {
     }
 
-    public Dsartb4(String nuart) {
-        this.nuart = nuart;
+    public Dsartb4(String nbs) {
+        this.nbs = nbs;
     }
 
-    public Dsartb4(String nuart, String b4r1, String b4r2s1, String b4r2s2, String b4r2s3, String b4r3, String b4r5, String b4r6) {
+    public Dsartb4(String nbs, String nuart, String b4r1, String b4r2s1, String b4r2s2, String b4r2s3, String b4r3, String b4r5, String b4r6) {
+        this.nbs = nbs;
         this.nuart = nuart;
         this.b4r1 = b4r1;
         this.b4r2s1 = b4r2s1;
@@ -148,6 +157,14 @@ public class Dsartb4 implements Serializable {
         this.b4r6 = b4r6;
     }
 
+    public String getNbs() {
+        return nbs;
+    }
+
+    public void setNbs(String nbs) {
+        this.nbs = nbs;
+    }
+
     public DsartoptionB4r4 getB4r4() {
         return b4r4;
     }
@@ -156,10 +173,18 @@ public class Dsartb4 implements Serializable {
         this.b4r4 = b4r4;
     }
 
+    public Dsartb1 getDsartb1() {
+        return dsartb1;
+    }
+
+    public void setDsartb1(Dsartb1 dsartb1) {
+        this.dsartb1 = dsartb1;
+    }
+
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (nuart != null ? nuart.hashCode() : 0);
+        hash += (nbs != null ? nbs.hashCode() : 0);
         return hash;
     }
 
@@ -170,7 +195,7 @@ public class Dsartb4 implements Serializable {
             return false;
         }
         Dsartb4 other = (Dsartb4) object;
-        if ((this.nuart == null && other.nuart != null) || (this.nuart != null && !this.nuart.equals(other.nuart))) {
+        if ((this.nbs == null && other.nbs != null) || (this.nbs != null && !this.nbs.equals(other.nbs))) {
             return false;
         }
         return true;
@@ -178,7 +203,7 @@ public class Dsartb4 implements Serializable {
 
     @Override
     public String toString() {
-        return "sp.model.Dsartb4[ nuart=" + nuart + " ]";
+        return "sp.model.Dsartb4[ nbs=" + nbs + " ]";
     }
     
 }

@@ -8,6 +8,8 @@ package sp.panelcomponent;
 import java.awt.Color;
 import javax.swing.JButton;
 import sp.controller.ListingControllerTest;
+import sp.form.Hal1Listing;
+import sp.form.Hal2Listing;
 
 /**
  *
@@ -253,4 +255,18 @@ public class EntryFormListingTest extends javax.swing.JPanel {
     public sp.componentButton.Minimizebutton getMinimizebutton1() {
         return minimizebutton1;
     }
+
+    public Hal1Listing getHal1Listing1() {
+        return hal1Listing1;
+    }
+
+    public Hal2Listing getHal2Listing1() {
+        return hal2Listing1;
+    }
+
+    public ErrorTable getErrorTable2() {
+        return errorTable2;
+    }
+    
+    
 }

@@ -29,6 +29,12 @@ public class DsartB2Controller {
     public Dsartb2 B2hasil() {
         
         b2.setNbsb2(b1.getNbs());
+//        b2.setB2r2(b1.getNbs());
+//        b2.setB2r3s1(b1.getNbs());
+//        b2.setB2r3s2(b1.getNbs());
+//        b2.setB2r3s3(b1.getNbs());
+//        b2.setB2r3s4(b1.getNbs());
+        
         b2.setB2r1(Integer.parseInt(b2view.getB2r1().getText()));
         b2.setB2r2(Integer.parseInt(b2view.getB2r2().getText()));
         b2.setB2r3s1(Integer.parseInt(b2view.getB2r3s1().getText()));
