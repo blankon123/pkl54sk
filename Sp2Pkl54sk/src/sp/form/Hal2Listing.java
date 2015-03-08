@@ -1686,6 +1686,8 @@ public class Hal2Listing extends javax.swing.JPanel {
         jLayeredPane1.add(Ab4r3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 220, 30));
 
         Ab4r4.setHuruf(true);
+        Ab4r4.setKhusus(true);
+        Ab4r4.setKhususType('3');
         Ab4r4.setLength(1);
         Ab4r4.setRequired(true);
         jLayeredPane1.add(Ab4r4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 160, 40, 30));
