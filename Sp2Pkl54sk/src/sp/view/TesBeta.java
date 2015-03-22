@@ -311,8 +311,11 @@ public class TesBeta extends javax.swing.JFrame {
     }
 
     private void setLoadToFormController() {
+        getPanel1().getUpdateQuest1().getNextButton1().setActionCommand("load");
         UpdateController21 updateController = new UpdateController21(getMainPanel(), getEntryQuest(), getPanel1().getUpdateQuest1());
+        
         getPanel1().getUpdateQuest1().getNextButton1().addActionListener(updateController);
+//        CardController.show("updatequest");
     }
 
     private void closeQuest() {
