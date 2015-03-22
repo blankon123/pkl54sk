@@ -19,26 +19,27 @@ public class TableUpdate extends javax.swing.JPanel {
      * Creates new form TableUpdate
      */
     TableUpdateModel model;
-    
+
     public TableUpdate() {
         initComponents();
+        model = new TableUpdateModel();
         jScrollPane1.getViewport().setOpaque(false);
         setOpaque(false);
         tabelUpdate.setOpaque(false);
         setLebarKolom();
     }
-    
-    public void setLebarKolom(){ 
+
+    public void setLebarKolom() {
         TableColumn column;
-        this.tabelUpdate.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF); 
-        column = this.tabelUpdate.getColumnModel().getColumn(0); 
+        this.tabelUpdate.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
+        column = this.tabelUpdate.getColumnModel().getColumn(0);
         column.setPreferredWidth(150);
-        column = this.tabelUpdate.getColumnModel().getColumn(1); 
-        column.setPreferredWidth(150); 
-        column = this.tabelUpdate.getColumnModel().getColumn(2); 
-        column.setPreferredWidth(150); 
-        column = this.tabelUpdate.getColumnModel().getColumn(3); 
-        column.setPreferredWidth(50); 
+        column = this.tabelUpdate.getColumnModel().getColumn(1);
+        column.setPreferredWidth(150);
+        column = this.tabelUpdate.getColumnModel().getColumn(2);
+        column.setPreferredWidth(150);
+        column = this.tabelUpdate.getColumnModel().getColumn(3);
+        column.setPreferredWidth(50);
     }
 
     public TableUpdateModel getModel() {
@@ -56,7 +57,6 @@ public class TableUpdate extends javax.swing.JPanel {
     public void setTabelUpdate(JTable tabelUpdate) {
         this.tabelUpdate = tabelUpdate;
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.

@@ -16,7 +16,10 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import sp.dao.B1Dao;
+import sp.dao.DsartB4Dao;
 import sp.model.B1;
+import sp.model.Dsartb4;
+import sp.model.TableUpdateModel;
 import sp.panelcomponent.DataEntryListing;
 import sp.panelcomponent.DataEntryQuest;
 import sp.panelcomponent.LandingButton;
@@ -42,7 +45,7 @@ public class LandingMenuControllerTest {
     LandingButton landingButton;
     DataEntryListing entryListing;
     DataEntryQuest entryQuest;
-    
+
     UpdateQuest quest;
 
     public LandingMenuControllerTest(DataEntryListing entryListing, DataEntryQuest entryQuest,
@@ -172,22 +175,53 @@ public class LandingMenuControllerTest {
 //                }
 //            }
 //        });
-//        menuQuest.getUpdatebutton1().addActionListener(new ActionListener() {
-//
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                CardController.show("updatequest");
-                //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//            }
-//
-//        });
+        menuQuest.getUpdatebutton1().addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                loadUpdateDB();
+                CardController.show("updatequest");
+
+//                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+        });
 
         menuQuest.getDataentrybutton1().addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
                 CardController.show("entryquest");
-//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+                loadTableListing();
+
+            }
+
+            private void loadTableListing() {
+                String refreshTxt = "";
+                try {
+                    List<Object> results = DsartB4Dao.getInstance().getAll();
+                    if (results.isEmpty()) {
+                        JOptionPane.showMessageDialog(quest, "DSART Kosong");
+                    } else {
+                        JOptionPane.showMessageDialog(quest, "Ditemukan " + results.size() + " data");
+                        List<Dsartb4> data = new ArrayList<>();
+                        int count = results.size();
+                        for (int i = 0; i < count; i++) {
+                            data.add((Dsartb4) results.get(i));
+                        }
+                        //((TableUpdateModel) panel.getEntryQuest().getTableUpdate1().getTabelUpdate().getModel()).setData(data);
+                    }
+                    panel.getEntryQuest().getTableUpdate1().getTabelUpdate();
+                    refreshTxt = "Updating table loaded. Found " + results.size() + " data";
+                } catch (Exception ep) {
+                    refreshTxt = "Failed to load updating table " + ep.getMessage();
+                    System.out.println(refreshTxt);
+                }
+                try {
+                    LogMessage.write(refreshTxt);
+                } catch (IOException ex) {
+                    Logger.getLogger(UpdateController21.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
 
         });
@@ -231,7 +265,7 @@ public class LandingMenuControllerTest {
                 CardController.show("menuListing");
             }
         });
-        
+
         entryQuest.getBacktobutton1().addActionListener(new ActionListener() {
 
             @Override
@@ -268,14 +302,14 @@ public class LandingMenuControllerTest {
                     for (int i = 0; i < count; i++) {
                         data.add((B1) results.get(i));
                     }
-                    panel.getUpdateQuest1().getTableUpdate1().getModel().setData(data);
+                    ((TableUpdateModel) panel.getUpdateQuest1().getTableUpdate1().getTabelUpdate().getModel()).setData(data);
                 }
                 panel.getUpdateQuest1().getTableUpdate1().setLebarKolom();
                 refreshTxt = "Updating table loaded. Found " + results.size() + " data";
             } else {
                 JOptionPane.showMessageDialog(quest, "Please login first");
             }
-        } catch (NullPointerException ep) {
+        } catch (Exception ep) {
             refreshTxt = "Failed to load updating table " + ep.getMessage();
             System.out.println(refreshTxt);
         }
